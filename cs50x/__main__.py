@@ -22,6 +22,10 @@ def home():
 def education():
     return render_template('education.html', title="Education")
 
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html', title="Welcome")
+
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.html', title="Syllabus")
@@ -36,7 +40,7 @@ def media():
 
 @app.route('/registration')
 def registration():
-    return render_template('registration.html', title="Registration")
+    return render_template('registration.html', title="Self-Registration Guide")
 
 @app.route('/resources')
 def resources():
