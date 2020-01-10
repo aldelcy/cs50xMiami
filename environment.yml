@@ -1,7 +1,13 @@
 name: cs50xmiami
 dependencies:
   - python=3.8.3
+  - gunicorn
   - flask
   - flask_assets
   - Jinja2
   - openssl
+  - flask-login
+  - flask-migrate
+  - flask-sqlalchemy
+  - flask-wtf
+  - gunicorn
