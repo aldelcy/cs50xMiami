@@ -1,0 +1,7 @@
+name: cs50xmiami
+dependencies:
+  - python=3.6.1
+  - flask
+  - flask_assets
+  - Jinja2
+  - openssl
