@@ -2,7 +2,7 @@ name: cs50xmiami
 channels:
   - conda-forge
 dependencies:
-  - python=3.8.3
+  - python=3.4.3
   - anaconda
   - flask
   - flask_assets
