@@ -1,1 +1,1 @@
-web: gunicorn deploy:app
+web: gunicorn -w 4 app_file:cs50xmiami
