@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: gunicorn -w 4 cs50x.__main__:app
