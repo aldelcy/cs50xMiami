@@ -12,6 +12,6 @@ dependencies:
   - flask-migrate
   - flask-sqlalchemy
   - flask-wtf
-  - pip
+  - pip=8.0
   - pip:
     - gunicorn
