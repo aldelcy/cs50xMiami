@@ -1,7 +1,9 @@
 name: cs50xmiami
+channels:
+  - conda-forge
 dependencies:
   - python=3.8.3
-  - gunicorn
+  - anaconda
   - flask
   - flask_assets
   - Jinja2
@@ -10,3 +12,6 @@ dependencies:
   - flask-migrate
   - flask-sqlalchemy
   - flask-wtf
+  - pip
+  - pip:
+    - gunicorn
