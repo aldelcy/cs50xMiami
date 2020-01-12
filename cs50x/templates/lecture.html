@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}{{title}} :: {{lecture.title}}{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 page_title">
+            <h4>{{title}}</h4>
+            <h2>{{lecture.title}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 ppt">
+            <iframe class="slides" src="https://docs.google.com/presentation/d/e/{{ lecture.ppt_code }}/embed?start=false&loop=true&delayms=3000" 
+                    frameborder="0" width="100%" allowfullscreen="true" 
+                    mozallowfullscreen="true" webkitallowfullscreen="true">
+            </iframe>
+            <script>
+                function reziseIframe(){
+                    var iframe = $('.ppt iframe');
+                    iframe.height( parseInt(iframe.width()) * 0.59 );
+                }
+                reziseIframe();
+                $(document).resize(function(){ reziseIframe(); })
+            </script>
+        </div>
+        <div class="col-sm-12">
+            <br>
+            <a href="#all-lectures" uk-toggle>
+                <div class="uk-button uk-button-primary">All Lectures</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="all-lectures" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Lectures</h2>
+        <p>
+            {% for (i, l) in lectures %}
+                {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+                <br>
+            {% endfor %}
+        </p>
+        <p class="uk-text-center">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

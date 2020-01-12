@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="col-sm-12">
+            {% include 'schedule.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

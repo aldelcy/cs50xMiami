@@ -1,5 +1,9 @@
 from flask import Flask, redirect, request, session, render_template
 from flask_assets import Environment, Bundle
+import sys, os
+
+sys.path.append(  os.getcwd()  +  '/data/'   )
+import data
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -13,6 +17,8 @@ css = Bundle('./styles/style.css',
              output='gen/styles.css')
 assets.register('css_all', css)
 
+theLectures = data.lectures.items()
+theWeeks = data.weeks.items()
 
 @app.route('/')
 def home():
@@ -29,6 +35,15 @@ def welcome():
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.html', title="Syllabus")
+
+@app.route('/lectures')
+def lectures():
+    return render_template('lectures.html', title="Lectures", weeks=theWeeks)
+
+@app.route('/lecture/<num>')
+def lecture(num):
+    lecture = data.lectures[num]
+    return render_template('lecture.html', title="Lecture", lecture=lecture, lectures=theLectures, page=int(num))
 
 @app.route('/videos')
 def videos():
