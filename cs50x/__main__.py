@@ -3,7 +3,7 @@ from flask_assets import Environment, Bundle
 import sys, os
 from datetime import date
 
-sys.path.append(  os.getcwd()  +  '/data/'   )
+sys.path.append(  os.getcwd()  +  '/cs50x/data/'   )
 import data
 import events
 
