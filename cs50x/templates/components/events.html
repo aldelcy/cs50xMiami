@@ -1,0 +1,28 @@
+<div class="events">
+    {% for event in events %}
+        <div class="event">
+            <div class="bg-image" style="background-image: url('{{event.image}}');">
+                <a href="{{event.link}}"><div class="color-overlay"></div></a>
+            </div>
+            <h6 class="date">
+                {{event.date.strftime('%A %d, %Y')}}
+                ( {{event.start_time.strftime('%-I:%M %p')}}
+                - {{event.end_time.strftime('%-I:%M %p')}} )
+            </h6>
+            <h4 class="bold no_margin title">{{event.title}}</h4>
+            <div class="content">
+                {{event.desc|safe}}
+            </div>
+            <a href="{{event.link}}">
+                <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom event_link">
+                    Register
+                </button>
+            </a>
+        </div>
+    {% endfor %}
+    {% if events|length < 3 %}
+        {% for x in range(3 - events|length) %}
+            <div class="event empty"></div>
+        {% endfor %}
+    {% endif %}
+</div>

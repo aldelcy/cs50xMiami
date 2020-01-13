@@ -3,7 +3,7 @@
 
 {% block body %}
 
-<div class="container">
+<div class="container wrapper">
     <div class="row">
         <div class="col-sm-12 page_title">
             <h4>{{title}}</h4>
@@ -40,7 +40,9 @@
         <h2 class="uk-modal-title">Lectures</h2>
         <p>
             {% for (i, l) in lectures %}
-                {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+                {% if l.title %}
+                    {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+                {% endif %}
                 <br>
             {% endfor %}
         </p>

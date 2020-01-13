@@ -10,13 +10,13 @@
     </thead>
     <tbody>
         {% for (i, week) in weeks %}
-            <tr>
-                <td scope="row">
-                    <h2 style="margin:5px 0;">{{i}}</h2>
+            <tr class="{{ week.topic }} {% if today > week.date %} past {% endif %}">
+                <td scope="row" style="text-align: center;">
+                    <h4 class="bold" style="margin:5px 0;">{{i}}</h4>
                 </td>
-                <td>1/20/2020</td>
+                <td>{{ week.date.strftime('%m/%d') }}</td>
                 {% for lecture in week['lectures'] %}
-                <td><a href="/lecture/{{0}}">{{ lecture.title }}</a></td>
+                    <td><a href="/lecture/{{lecture.number}}">{{ lecture.title }}</a></td>
                 {% endfor %}
                 <td></td>
             </tr>

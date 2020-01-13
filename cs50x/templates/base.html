@@ -6,21 +6,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/assets/faveicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/assets/faveicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/assets/faveicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/faveicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/assets/faveicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/assets/faveicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/assets/faveicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/assets/faveicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/faveicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/static/assets/faveicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/faveicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/assets/faveicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/faveicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/faveicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/assets/faveicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
     
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js" ></script>
+
     <!-- Custom CSS -->
     {% assets "css_all" %}
         <link rel="stylesheet" href="{{ ASSET_URL }}" />
     {% endassets %}
-    
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
   </head>
   <body>
-
 
     <!-- NAVBAR -->
     <nav class="uk-navbar-container" uk-navbar style="padding:0 10%;">
@@ -74,11 +93,29 @@
             </ul>
         </div>    
     </nav>
-    
-    <br><br>
 
     {% block body %}
     {% endblock %}
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>CS50x Miami</h2>
+                        <h3 class="bold" style="color:#5FE0FF;">The Idea Center</h3>
+                        315 N.E. Second Ave <br>
+                        Building 8, 5th Floor <br>
+                        Miami, FL 33132 <br>
+                        --- <br>
+                        <a href="tel:305-237-7868">(305) 237-7868</a>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

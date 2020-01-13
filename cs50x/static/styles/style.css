@@ -1,3 +1,148 @@
-.page_title > * {
+h1, h2, h3,
+h4, h5, h6 {
+    margin: 10px 0;
+}
+
+.page_title > *, .no_margin {
     margin: 5px 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.container.wrapper {
+    margin-top: 50px;
+}
+.container,
+.container.wrapper {
+    /* min-width: 1500px;
+    width: 100%; */
+}
+
+/* TOPICS */
+.scratch { background-color: #fff5e8; }
+.basics { background-color: #ffe9db; }
+.c { background-color: #ffe8ef; }
+.midterm { background-color: #ffffff; }
+.python { background-color: #e8ffff; }
+.mvc1, .mvc2 { background-color: #ffffff; }
+.front_end { background-color: #edffe8; }
+.final { background-color: #ffffff; }
+.full_app { background-color: #ffffff; }
+.javascript, .bootstrap, .github { background-color: #fffee0; }
+.last_week { 
+    background-color: #000;
+    color: #fff;
+}
+
+.index-top {
+    background-position: top;
+    background-size: cover;
+    color: white;
+}
+
+.index-top h1, .index-top h4 {
+    color: white;
+}
+
+.last_week a,
+.last_week h4 { 
+    color: #fff;
+}
+
+.past,
+.past a,
+.past h4{ 
+    background-color: #fff;
+    color: #ccc !important;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.events .event {
+    display: grid;
+    grid-template-rows: 150px 15px auto 1fr auto;
+    grid-gap: 10px;
+    border: dotted 1px #ccc;
+    overflow: hidden;
+}
+.events .event.empty {
+    background-color: #f0f0f0;
+    border: transparent;
+}
+.events .event,
+.events .event.empty {
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.events .event .color-overlay {
+    background-color: #578d9b;
+    width: 100%;
+    padding-top: 150px;
+    opacity: 0.5;
+}
+
+.events .event .bg-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.events .event .date {
+    margin: 0;
+    color: #ff0080;
+}
+
+.events .event .title,
+.events .event .date,
+.events .event .content {
+    padding: 0 20px;
+}
+.events .event .event_link {
+    margin-bottom: 0px !important;
+}
+
+.events .event .content {
+    color: #aaa;
+}
+
+footer {
+    background-image: url('/static/assets/black-bg.jpeg');
+    background-color: #333;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer .footer {
+    background-color: rgba(#000, 0.5);
+    min-height: 200px;
+    color: #fff !important;
+    padding: 100px 0;
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6 {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.infoItem .image {
+    width: 100%;
+    padding: 25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.infoItem .text {
+    padding: 10px 0;
+    color: #aaa;
 }

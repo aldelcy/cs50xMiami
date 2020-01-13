@@ -1,9 +1,11 @@
 from flask import Flask, redirect, request, session, render_template
 from flask_assets import Environment, Bundle
 import sys, os
+from datetime import date
 
 sys.path.append(  os.getcwd()  +  '/data/'   )
 import data
+import events
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -19,10 +21,11 @@ assets.register('css_all', css)
 
 theLectures = data.lectures.items()
 theWeeks = data.weeks.items()
+today = date.today()
 
 @app.route('/')
 def home():
-    return render_template('index.html', title="Home")
+    return render_template('index.html', title="Home", events=events.events, today=today)
 
 @app.route('/education')
 def education():
@@ -38,7 +41,7 @@ def syllabus():
 
 @app.route('/lectures')
 def lectures():
-    return render_template('lectures.html', title="Lectures", weeks=theWeeks)
+    return render_template('lectures.html', title="Lectures", weeks=theWeeks, today=today)
 
 @app.route('/lecture/<num>')
 def lecture(num):

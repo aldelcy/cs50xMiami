@@ -2,11 +2,127 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>{{title}}</h1>
+<div class="index-top" style="background-image:url('/static/assets/black-bg.jpeg');">
+    <div class="container" style="padding: 150px 0;">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="bold" id="hero" style="font-size: 60px;">
+                    <span style="color:#FF6082;">Learn</span> the Basics of <br>
+                    <span style="color:#5FE0FF;">Computer Science</span>
+                </h1>
+                <h4>
+                    The Idea Center’s adaptation of Harvard University’s <b>CS50.</b><br>
+                    An introduction to the intellectual enterprises of computer science,
+                    the art of problem solving and programming, for <b>Miami Dade College</b>
+                    students and the South Florida community.
+                </h4>
+            </div>
+            <div class="col-sm-6"></div>
         </div>
     </div>
+</div>
+
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-4 infoItem">
+            <div class="image" style="background-image: url('/static/assets/learn.jpg');"></div>
+            <h3 class="bold">Learn Programming</h3>
+            <div class="text">Learn the Latin equivalent of programming languages: C. After learning C, you can learn anything. And we'll test that theory by exploring several more languages.</div>
+            <a href="#learn-programming" uk-toggle>more info</a>
+            <div id="learn-programming" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <h2 class="uk-modal-title">Learn Programming</h2>
+                    
+                    <p>In the first few days of class, you'll explore algorithmic thinking and developing programs quickly using a <a href="https://scratch.mit.edu/">Scratch</a>, a graphical programming language via which we'll explore some fundamental programming constructs, by dragging and dropping puzzle pieces.</p>
+                    
+                    <p>We'll then quickly transition to a more traditional text-based language called <a href="https://en.wikipedia.org/wiki/C_programming_language">C</a>, that's actually been around quite a while. And as such, it doesn't come with that many features out of the box, so to speak. So anything you want the computer to do, you're going to have to teach it to do yourself; from the simplest of algorithms, to the most sophisticated. We'll start out rather simply, but will also explore rather complex data structures like stacks, queues, linked lists, trees, and hash tables.</p>
+                    
+                    <p>You'll eventually explore <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>&nbsp;and will learn to use Python as a back-end, Web service. This will give us a chance to explore other languages used in Web Development: <a href="https://en.wikipedia.org/wiki/Html5">HTML</a>, <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, and <a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)">Jinja.</a> You will also learn to develop a database to collect data from users and store data displayed in your Webpages using <a href="https://en.wikipedia.org/wiki/SQLite">SQLite.</a></p>
+                    
+                    <p>This may sound like a lot of new information in a short amount of time. But remember, once you learn C, picking up these other languages will be far easier.</p>   
+                    
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">close</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 infoItem">
+            <div class="image" style="background-image: url('/static/assets/inclusive.jpg');"></div>
+            <h3 class="bold">Solve Problems</h3>
+            <div class="text">We don't just teach you techniques to solve specific problems. You learn to apply algorithmic and mathematical approaches to information and it's computation in several computer science disciplines.</div>
+            <a href="#solve-problems" uk-toggle>more info</a>
+            <div id="solve-problems" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <h2 class="uk-modal-title">Solve Problems</h2>
+                    
+                    <p>CS50x Miami is not designed like a <a href="https://www.inc.com/geoffrey-james/why-coding-bootcamps-dont-work.html">coding bootcamp.</a> Our goal is not to teach you techniques to solve specific problems; instead, our goal is to teach you how to handle ambiguous situations and develop problem solving skills so that you can tackle any problem. Our problem sets are based on real-world problems. When you leave CS50x Miami, you'll get more than a certificate, you'll also gain the ability to learn new techniques.Our most successful students are those that learn how to learn new things.</p>
+                    
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">close</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 infoItem">
+            <div class="image" style="background-image: url('/static/assets/fun.png');"></div>
+            <h3 class="bold">Have Fun!</h3>
+            <div class="text">Partake in a unique course culture revolving around social interaction, pizza, photo booths, and more!</div>
+            <a href="#have-fun" uk-toggle>more info</a>
+            <div id="have-fun" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <h2 class="uk-modal-title">Have Fun!</h2>
+
+                    <p>Since learning to program is a challenging task, we strive to have some fun whenever we can. Each cohort, we host a puzzle day where students take a break from programming to try out some brain teasers. We also hold additional events where students can get to know each other outside of the classroom. CS50x Miami provides a means for students to get to know each other and collaborate, which in turn leads to more successful learning.</p>
+                    
+                    <p>During our lectures students are encouraged to participate in live demonstrations of problems. Often this involves, students playing the role of a computer, mimicking the memory in a computer, or just acting out instructions. The word "lecture" is used pretty loosely in CS50x Miami.</p>
+                    
+                    <p>During the section meetings, students work collaboratively using "pair programming" to solve problems. In addition, our sections and coding hours are lead by CS50x Miami alumni. So students get a break from the instructor for a while and get a chance to receive advice from former students.</p>
+                    
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">close</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <video class="embed-responsive-item" controls="" poster="/static/assets/poster.png">
+                <source src="https://www.dropbox.com/s/flg30yn891h9z9c/ThisisCS50xMiami1.mp4?raw=1" type="video/mp4">
+                <source src="https://www.dropbox.com/s/l8upg170klmstrq/ThisisCS50xMiami1.ogg?raw=1" type="video/ogg">
+                <source src="https://www.dropbox.com/s/0q5o9nbqr79kpku/ThisisCS50xMiami1.webm?raw=1" type="video/webm">
+                <p>There should be a video here, but it seems that your browser does not support this video format. Try opening this page in Google Chrome.</p>
+            </video>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="bold">Upcoming Events</h3>
+            {% include 'components/events.html' %}
+        </div>
+    </div>
+    
+    <br><br>
+
+    <center><h2 class="bold">THE STAFF</h2></center>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3 class="bold">Al Delcy</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="bold">Al Delcy</h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="bold">Al Delcy</h3>
+        </div>
+    </div>
+
 </div>
 {% endblock %}
