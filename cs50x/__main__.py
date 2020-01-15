@@ -45,7 +45,11 @@ def education():
 
 @app.route('/welcome')
 def welcome():
-    return render_template('welcome.html', title="Welcome", cohort=current_cohort)
+    return render_template(
+        'welcome.html', title="Welcome",
+        intro_vid=siteVideos['intro'],
+        cohort=current_cohort, prep_vids=siteVideos['cs50prep']
+    )
 
 @app.route('/syllabus')
 def syllabus():
