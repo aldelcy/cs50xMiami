@@ -218,3 +218,23 @@ footer .footer {
     max-width: 80%;
     margin: 40px auto;
 }
+
+.placeholder {
+    background-color: #ccc;
+    width: 100%;
+}
+
+.placeholder.video {
+    padding-top: 59% ;
+}
+
+.cs50_prep .videos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+#welcome_cohort_title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}

@@ -9,7 +9,7 @@ events = [
         'end_time': time(20,30),
         'link': 'https://www.eventbrite.com/e/intro-to-algorithmic-thinking-cs50x-miami-tickets-88728129223?aff=erelexpmlt',
         'location': 'Venture Cafe Miami, #600 - Deering Room',
-        'image': '/static/assets/cs50presentation.jpg',
-        'icon': '',
+        'image': '/static/assets/events/cs50presentation.jpg',
+        'icon': ''
     }
 ]
