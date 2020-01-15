@@ -23,26 +23,48 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 cs50_prep">
             <center><h2>CS50 Prep</h2></center>
-            <div class="cs50_prep">
-                <div class="videos">
-                    <div class="placeholder video"></div>
-                    <div class="placeholder video"></div>
-                    <div class="placeholder video"></div>
-                    <div class="placeholder video"></div>
-                    <div class="placeholder video"></div>
-                </div>
+            <br><br>
+            <div class="videos">
+                {% for video in  prep_vids %}
+                    {% include 'components/video_widget.html' %}
+                {% endfor %}
             </div>
         </div>
     </div>
 
     <div class="row">
+        <div class="col-sm-8">
+            <h2 class="bold" style="text-decoration: underline;">Recommendation</h2>
+            <h3>Explained (Netflix)</h3>
+            <h4>Season 2 Episode : Coding</h4>
+            It looks at how computer code is pervasive in how it effects our lives.
+            It looks at the development of machine code first in the textile industry and
+            later binary code in early mechanical computers. It also discusses computer logic,
+            algorithms, computer languages, personal computing, and machine learning.
+        </div>
+        <div class="col-sm-4">
+            <a href="https://www.netflix.com/title/80216752">
+                <img src="/static/assets/explained_code.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-sm-6">
-            <center><h2><a href="#">LINK TO Lectures</a></h2></center>
+            <center>
+                <a href="#">
+                    <button class="uk-button uk-button-default uk-button-large">Course Lectures</button>
+                </a>
+            </center>
         </div>
         <div class="col-sm-6">
-            <center><h2><a href="#">LINK TO Psets</a></h2></center>
+            <center>
+                <a href="#">
+                    <button class="uk-button uk-button-default uk-button-large">PSETS</button>
+                </a>
+            </center>
         </div>
     </div>
 
@@ -71,23 +93,15 @@
             <center><h2>Computer Prep</h2></center>
         </div>
         
-        <div class="col-sm-3">
+        <div class="col-sm-6">
             <h4 class="bold">Prepping your system</h4>
             <hr>
             How to configure windows, mac and linux
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6">
             <h4 class="bold">Programming Tools</h4>
             <hr>
             IDEs, Languages and software
-        </div>
-        <div class="col-sm-3">
-            <h4 class="bold"></h4>
-            <hr>
-        </div>
-        <div class="col-sm-3">
-            <h4 class="bold"></h4>
-            <hr>
         </div>
     </div>
 

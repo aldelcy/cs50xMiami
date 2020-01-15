@@ -1,0 +1,18 @@
+<a class="video_item" href="#{{video.modal}}" uk-toggle>
+    <div class="placeholder video" style="background-image: url('{{video.image}}');">
+    </div>
+    <h4>{{video.title}}</h4>
+    <div id="{{video.modal}}" class="uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <h2 class="uk-modal-title">{{video.title}}</h2>
+            <p>
+                {% if video.host == "youtube" %}
+                    <iframe src="https://www.youtube-nocookie.com/embed/{{video.id}}?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
+                            width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive 
+                            uk-video="automute: false">
+                    </iframe>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</a>
