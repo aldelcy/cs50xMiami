@@ -1,18 +1,18 @@
 html {}
 
 body, html {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 button, input,
 div, textarea,
 table, th, td,
 a, nav, navbar, uk-navbar {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 table {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 thead {}
