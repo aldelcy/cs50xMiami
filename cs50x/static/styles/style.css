@@ -1,23 +1,5 @@
-h1, h2, h3,
-h4, h5, h6 {
-    margin: 10px 0;
-}
-
 .page_title > *, .no_margin {
     margin: 5px 0;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.container.wrapper {
-    margin-top: 50px;
-}
-.container,
-.container.wrapper {
-    /* min-width: 1500px;
-    width: 100%; */
 }
 
 /* TOPICS */
@@ -145,4 +127,33 @@ footer .footer {
 .infoItem .text {
     padding: 10px 0;
     color: #aaa;
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 100px;
+    float: right;
+}
+
+.staff-social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 140px;
+    margin: 10px auto 20px;
+}
+
+.staff-social .icon:hover {
+    opacity: 0.5;
+}
+
+.staff {
+    text-align: center;
+}
+
+.staff .desc {
+    max-width: 80%;
+    margin: 40px auto;
 }

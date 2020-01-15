@@ -102,26 +102,55 @@
     
     <br><br>
     
-    <div class="row">
+    <div class="row" style="margin: 100px auto;">
         <div class="col-sm-12">
-            <h3 class="bold">Upcoming Events</h3>
+            <center><h1 class="bold">Upcoming Events</h1></center>
+            <br><br>
             {% include 'components/events.html' %}
         </div>
     </div>
     
     <br><br>
+</div>
+<div class="container-fluid" style="margin: 100px auto; max-width: 1600px;">
+    <center><h1 class="bold">THE TEACHING STAFF</h1></center>
+    <br>
+    <div class="row staff">
+        {% for (i, person) in staff %}
+            <div class="col-sm-4">
+                <img src="/static/assets/{{person.fullname}}.png">
+                <h2>{{person.fullname}}</h2>
+                <h5 class="bold">{{person.role}}</h5>
+                <p class="desc">
+                    Al was previously employed at Launch Code. He worked with an incredible teaching staff
+                    and restructured the material overtime to adapt to the student's pace and learning styles.
+                    This is Al's first cohort for teaching CS50xMiami.
+                </p>
+                <div class="staff-social">
+                    {% for (sc, val) in person.social.items() %}
+                        <a title="{{sc}}" href="https://{{sc}}.com/{{val}}.png/" target="_blank">
+                            <img class="icon" src="/static/assets/social/{{sc}}-black.png" alt="">
+                        </a>
+                    {% endfor %}
+                </div>
 
-    <center><h2 class="bold">THE STAFF</h2></center>
-    <div class="row">
-        <div class="col-sm-4">
-            <h3 class="bold">Al Delcy</h3>
-        </div>
-        <div class="col-sm-4">
-            <h3 class="bold">Al Delcy</h3>
-        </div>
-        <div class="col-sm-4">
-            <h3 class="bold">Al Delcy</h3>
-        </div>
+                <h5 class="bold">
+                    <a href="#{{person.lname}}" uk-toggle>READ MORE</a>
+                </h5>
+
+                <div id="{{person.lname}}" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">{{person.fullname}} - {{person.role}}</h2>
+                        <p>
+                            {{person.desc | safe}}
+                        </p>
+                        <p class="uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 
 </div>

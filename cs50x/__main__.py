@@ -6,6 +6,7 @@ from datetime import date
 sys.path.append(  os.getcwd()  +  '/cs50x/data/'   )
 import data
 import events
+from cs50 import *
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -15,7 +16,7 @@ js = Bundle('./js/script.js',
              output='gen/scripts.js')
 assets.register('js_all', js)
 
-css = Bundle('./styles/style.css',
+css = Bundle('./styles/base.css', './styles/style.css',
              output='gen/styles.css')
 assets.register('css_all', css)
 
@@ -25,7 +26,20 @@ today = date.today()
 
 @app.route('/')
 def home():
-    return render_template('index.html', title="Home", events=events.events, today=today)
+    thisYear = date.today().strftime("%Y")
+    theStaff = staff
+
+    for (i, person) in theStaff.items():
+        person['fullname'] = person['fname'] + " " + person['lname']
+
+
+    print( theStaff )
+    return render_template('index.html', 
+        title="Home", 
+        events=events.events, today=today, 
+        thisYear=thisYear,
+        staff=theStaff.items()
+    )
 
 @app.route('/education')
 def education():
@@ -33,7 +47,7 @@ def education():
 
 @app.route('/welcome')
 def welcome():
-    return render_template('welcome.html', title="Welcome")
+    return render_template('welcome.html', title="Welcome", cohort=current_cohort)
 
 @app.route('/syllabus')
 def syllabus():
