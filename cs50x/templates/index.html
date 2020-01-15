@@ -25,7 +25,7 @@
 <div class="container wrapper">
     <div class="row">
         <div class="col-sm-4 infoItem">
-            <div class="image" style="background-image: url('/static/assets/learn.jpg');"></div>
+            <div class="image" style="background-image: url('/static/assets/home/learn.jpg');"></div>
             <h3 class="bold">Learn Programming</h3>
             <div class="text">Learn the Latin equivalent of programming languages: C. After learning C, you can learn anything. And we'll test that theory by exploring several more languages.</div>
             <a href="#learn-programming" uk-toggle>more info</a>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col-sm-4 infoItem">
-            <div class="image" style="background-image: url('/static/assets/inclusive.jpg');"></div>
+            <div class="image" style="background-image: url('/static/assets/home/inclusive.jpg');"></div>
             <h3 class="bold">Solve Problems</h3>
             <div class="text">We don't just teach you techniques to solve specific problems. You learn to apply algorithmic and mathematical approaches to information and it's computation in several computer science disciplines.</div>
             <a href="#solve-problems" uk-toggle>more info</a>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="col-sm-4 infoItem">
-            <div class="image" style="background-image: url('/static/assets/fun.png');"></div>
+            <div class="image" style="background-image: url('/static/assets/home/fun.png');"></div>
             <h3 class="bold">Have Fun!</h3>
             <div class="text">Partake in a unique course culture revolving around social interaction, pizza, photo booths, and more!</div>
             <a href="#have-fun" uk-toggle>more info</a>
@@ -91,7 +91,7 @@
     
     <div class="row">
         <div class="col-sm-12">
-            <video class="embed-responsive-item" controls="" poster="/static/assets/poster.png">
+            <video class="embed-responsive-item" controls="" poster="/static/assets/home/poster.png">
                 <source src="https://www.dropbox.com/s/flg30yn891h9z9c/ThisisCS50xMiami1.mp4?raw=1" type="video/mp4">
                 <source src="https://www.dropbox.com/s/l8upg170klmstrq/ThisisCS50xMiami1.ogg?raw=1" type="video/ogg">
                 <source src="https://www.dropbox.com/s/0q5o9nbqr79kpku/ThisisCS50xMiami1.webm?raw=1" type="video/webm">
@@ -118,7 +118,7 @@
     <div class="row staff">
         {% for (i, person) in staff %}
             <div class="col-sm-4">
-                <img src="/static/assets/{{person.fullname}}.png">
+                <img src="/static/assets/staff/{{person.fullname}}.png">
                 <h2>{{person.fullname}}</h2>
                 <h5 class="bold">{{person.role}}</h5>
                 <p class="desc">
@@ -128,7 +128,7 @@
                 </p>
                 <div class="staff-social">
                     {% for (sc, val) in person.social.items() %}
-                        <a title="{{sc}}" href="https://{{sc}}.com/{{val}}.png/" target="_blank">
+                        <a title="{{sc}}" href="{{val}}" target="_blank">
                             <img class="icon" src="/static/assets/social/{{sc}}-black.png" alt="">
                         </a>
                     {% endfor %}

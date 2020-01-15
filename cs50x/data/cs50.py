@@ -1,4 +1,5 @@
 current_cohort = "11"
+
 staff = {
     "1" : {
         "fname": "Al",
@@ -14,6 +15,10 @@ staff = {
                 <li>Experience with well over a dozen programming languages.</li> \
                 <li>Other areas of interest: Photography, Web Development, and Gaming.</li> \
             </ul>",
+        "contact": {
+            "phone": "",
+            "email": "al@mdc.edu"
+        },
         "social" : {
             "linkedin" : "al.delcy",
             "instagram" : "aldelcy",
@@ -25,10 +30,13 @@ staff = {
         "lname": "Baz",
         "role" : "Program Coordinator - Teaching Fellow",
         "desc" : "",
+        "contact": {
+            "phone": "305-237-7822",
+            "email": "ubaz@mdc.edu"
+        },
         "social" : {
-            "linkedin" : "",
-            "instagram" : "",
-            "website" : "",
+            "linkedin" : "https://www.linkedin.com/in/urbanobaz",
+            "twitter" : "https://www.twitter.com/ubaz_3"
         }
     },
     "3" : {

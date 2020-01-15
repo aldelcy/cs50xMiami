@@ -32,8 +32,6 @@ def home():
     for (i, person) in theStaff.items():
         person['fullname'] = person['fname'] + " " + person['lname']
 
-
-    print( theStaff )
     return render_template('index.html', 
         title="Home", 
         events=events.events, today=today, 
