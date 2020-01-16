@@ -28,7 +28,7 @@ h4, h5, h6 {
 }
 
 a, a:visited, a:hover {
-    color: #5FE0CB;
+    color: #324EFB;
     font-weight: 400;
     text-decoration:none;
 }
@@ -40,7 +40,7 @@ a, a:visited, a:hover {
 /* OVERWRITES */
 
 .container.wrapper {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .container,
 .container.wrapper {
