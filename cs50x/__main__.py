@@ -68,9 +68,9 @@ def lecture(num):
 def videos():
     return render_template('videos.html', title="Videos")
 
-@app.route('/media')
-def media():
-    return render_template('media.html', title="Media")
+@app.route('/masterclass')
+def masterclass():
+    return render_template('masterclass.html', title="CS50 Masterclass")
 
 @app.route('/registration')
 def registration():

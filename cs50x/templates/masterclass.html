@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+<div style="background-color: #000;">
+    <div class="container wrapper">
+        <div class="row" style="font-size: 50px; color: #999; padding-bottom: 100px;">
+            <div class="col-sm-3">
+                <div style="text-align: end;">
+                    {% for i in range(1, 8) %}
+                        {{i}}<br>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div id="masterclass_title">
+                    <font class="bold" color="#fff">YOU</font> = Awesome( person )<br>
+                    <font class="bold" color="#fff">YOU</font>.join_us( {<br>
+                     &nbsp; &nbsp; &nbsp; &nbsp; "event" : <font class="bold" color="yellow">{{ ".".join(title.split(' ')) }}</font class="bold">, <br>
+                     &nbsp; &nbsp; &nbsp; &nbsp; "when" : <font color="pink">Jan. 16, 2019</font> @ <font color="orange">6:30 PM</font>, <br>
+                     &nbsp; &nbsp; &nbsp; &nbsp; "where" : <font color="lightblue">CIC Miami : Venture Cafe</font> <br>
+                    } ) <br>
+                    See( <font class="bold" color="#fff">YOU</font> ).there( )
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
