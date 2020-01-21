@@ -11,25 +11,70 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 ppt">
-            <iframe class="slides" src="https://docs.google.com/presentation/d/e/{{ lecture.ppt_code }}/embed?start=false&loop=true&delayms=3000" 
-                    frameborder="0" width="100%" allowfullscreen="true" 
-                    mozallowfullscreen="true" webkitallowfullscreen="true">
-            </iframe>
-            <script>
-                function reziseIframe(){
-                    var iframe = $('.ppt iframe');
-                    iframe.height( parseInt(iframe.width()) * 0.59 );
-                }
-                reziseIframe();
-                $(document).resize(function(){ reziseIframe(); })
-            </script>
+        <div class="col-12 col-sm-9 ppt">
+            {% with ppt_code = lecture.ppt_code %}
+                {% include 'components/slide.html' %}
+            {% endwith %}
         </div>
-        <div class="col-sm-12">
+
+
+        <div class="col-12 col-sm-3" style="padding: 15px 20px;">
+            {% if 'harvard_video' in lecture %}
+                <div class="row">
+                    <div style="display: inline-block; width: 20%; margin-right: 2%;">
+                        <img src="/static/assets/harvard_logo.png" alt="">
+                    </div>
+                    <div style="display: inline-block; width: 78%;">
+                        <a href="http://www.youtube.com/watch?v={{lecture.harvard_video.id}}&start={{lecture.harvard_video.time[0]}}&end={{lecture.harvard_video.time[1]}} " target="_blank">Watch HARVARD Lecture</a><br>
+                        <!-- <a href="#hardvard_video" uk-toggle>Watch HARVARD Lecture</a><br> -->
+                        {{lecture.harvard_video.title}} <br>
+                        Duration: <b>{{ ((lecture.harvard_video.time[1] - lecture.harvard_video.time[0]) / 60) | round }} mns</b>
+                    </div>
+                    <div id="hardvard_video" class="uk-modal-container" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                            <h2 class="uk-modal-title">{{lecture.title}}</h2>
+                            <p>
+                                <iframe src="https://www.youtube-nocookie.com/embed/{{lecture.harvard_video.id}}?start={{lecture.harvard_video.time[0]}}&amp;end={{lecture.harvard_video.time[1]}}&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
+                                        width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive 
+                                        uk-video="automute: false">
+                                </iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            
             <br>
+            
             <a href="#all-lectures" uk-toggle>
                 <div class="uk-button uk-button-primary">All Lectures</div>
             </a>
+            
+            <br><br>
+            
+            {% if lecture.videos and lecture.videos | length > 0 %}
+                <br>
+                <h3 class="bold"><u>Videos:</u></h3>
+            {% endif %}
+            
+
+            {% if lecture.resources and lecture.resources | length > 0 %}
+                <h3 class="bold"><u>Resources:</u></h3>
+                <ul>
+                    {% for resource in lecture.resources %}
+                        {% if resource.type == "link" %}
+                            <li><a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a>: {{ resource.desc }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            
+            
+        </div>
+
+
+        <div class="col-sm-12">
+            {{ lecture.desc }}
         </div>
     </div>
 </div>
@@ -41,7 +86,11 @@
         <p>
             {% for (i, l) in lectures %}
                 {% if l.title %}
-                    {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+                    {% if l.published %}
+                        {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+                    {% else %}
+                        {{i}} - {{l.title}}
+                    {% endif %}
                 {% endif %}
                 <br>
             {% endfor %}

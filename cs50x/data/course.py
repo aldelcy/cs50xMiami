@@ -5,16 +5,42 @@ syllabus = {
     {
       'title':    "Scratch",
       'desc':     "hello",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
+      'harvard_video' : {
+        'title': 'Computational Thinking, Scratch',
+        'id': "jjqgP9dpD1k",
+        'time' : [1710,3742]
+      },
       'videos':   {},
-      'resources':{}
+      'resources':[
+        {
+          'type': 'link',
+          'title': 'Scratch',
+          'desc': 'Create stories, games and Animations',
+          'url' : 'https://scratch.mit.edu/'
+        },
+        {
+          'type': 'link',
+          'title': 'Scratch Tutorial',
+          'desc': 'Make your first program',
+          'url' : 'https://www.youtube.com/watch?v=1E8opsBP_98'
+        },
+        {
+          'type': 'link',
+          'title': 'Scratch Game',
+          'desc': 'Sample Mario Game',
+          'url' : 'https://scratch.mit.edu/projects/357390177/'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Computer Setup",
       'desc':     "hello",
       'ppt_code': "2PACX-1vTEu-OlOSGOIKIvDQNVTnOyDgzxdT-8F_Bx-kOW8BweSwa2SJw_qFnc7t92S8mwO7TH5Ee63h3JLwZ2",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Basics': [
@@ -23,86 +49,98 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "The Basics: 2/2",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'C': [
     {
       'title':    "The Command Line",
       'desc':     "hello",
-      'ppt_code': "2PACX-1vRxFfZxGMOTJvX4JB1ervJovwUa9mrcVyF65Kgj0t1ZexcdmeqZPUiVIZ7p5SsFVYWqBNiNv2oL-qX7",
+      'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Variables, Datatypes & Operators",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Conditionals, Arrays & Loops",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Functions & Variables Scope",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Command Line Arguments & Complexity Analysis",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Magic Numbers & Structs",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Algorithms: Search",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Algorithms: Sorting",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Memory Management",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "C: Data Structures (Linked Lists, Queues, Stacks ... )",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Midterm': [
@@ -111,7 +149,8 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {}
   ],
@@ -121,42 +160,48 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Python: Lists, Dictionaries, tuples",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Python: Built-in Methods and Functions",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Python: Classes, Objects",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Python: Inheritance, Abstractions",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Python: Idk yet (Python Challenges?)",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
   ],
   'MVC1': [
@@ -165,14 +210,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "MVC: Jinja2",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Front_end': [
@@ -181,14 +228,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "CSS",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'MVC2': [
@@ -197,14 +246,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "MVC: Flask Alquemy",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Final': [
@@ -213,7 +264,8 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {}
   ],
@@ -223,14 +275,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "App: Coordinating",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Javascript': [
@@ -239,14 +293,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Javacript: Ajax",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Bootstrap': [
@@ -255,14 +311,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Where to get assets",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Github': [
@@ -271,14 +329,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Github: Collaborating",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
   'Last_week': [
@@ -287,14 +347,16 @@ syllabus = {
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     },
     {
       'title':    "Project Presentation",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},
-      'resources':{}
+      'resources':{},
+      'published': False
     }
   ],
 }	

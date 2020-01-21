@@ -16,7 +16,7 @@
                 </td>
                 <td>{{ week.dates[0].strftime('%m/%d') }} - {{ week.dates[1].strftime('%m/%d') }}</td>
                 {% for lecture in week['lectures'] %}
-                    {% if lecture.ppt_code %}
+                    {% if lecture.published %}
                         <td><a href="/lecture/{{lecture.number}}">{{ lecture.title }}</a></td>
                     {% else %}
                         <td>{{ lecture.title }}</td>
