@@ -4,599 +4,481 @@
 {% block body %}
 <div class="container wrapper">
     <div class="row">
-        <div class="col-sm-12">
-            <h1>{{title}}</h1>
-        </div>
+
         <div class="col-sm-12" id="scrollspy-syllabus">
             
-            
-            
+                <header class="card my-3 text-center" id="intro">
+                    <div class="card-body">
+                        <h1 class="mb-0"><b>Cohort 11 {{title}}</b></h1>
+                        <span class="text-center">(subject to change)</span>
+                        <!-- <table id="lectures_table" cellpadding="15" border="3" width="100%">
+                            <tr>
+                                <th>Week</th>
+                                <th>Dates</th>
+                                <th>Tuesday</th>
+                                <th>Thursday</th>
+                                <th>Pset Due / Date</th>
+                            </tr>
+                        
+                            <tr class="done">
+                                <td><h3><b>0</b></h3></td>
+                                <td class="dates">1/21 - 1/23</td>
+                                <td>Scratch</td>
+                                <td>Introduction to the terminal, VSCode, REPL, and CS50 IDE</td>
+                                <td></td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>1</b></h3></td>
+                                <td class="dates">1/28 - 1/30</td>
+                                <td>Datatypes, Variables, Operators Boolean Expressions</td>
+                                <td>Conditionals, Loops, Functions</td>
+                                <td>Pset 0 (2/2/2020)</td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>2</b></h3></td>
+                                <td class="dates">2/4 - 2/6</td>
+                                <td>The Command Line</td>
+                                <td><strong>C:</strong> Variables, Datatypes, Operators</td>
+                                <td>Pset 1 (2/9/2020)</td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>3</b></h3></td>
+                                <td class="dates">2/11 - 2/13</td>
+                                <td><strong>C:</strong> Conditionals, Arrays, Loops</td>
+                                <td><strong>C:</strong> Functions, Variable Scope</td>
+                                <td></td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>4</b></h3></td>
+                                <td class="dates">2/18 - 2/20</td>
+                                <td><strong>C:</strong> Command Line Arguments, Complexity Analysis</td>
+                                <td><strong>C:</strong> Magic Numbers, Structs</td>
+                                <td>Pset 2 (2/23/2020)</td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>5</b></h3></td>
+                                <td class="dates">2/25 - 2/27</td>
+                                <td>Algorithms: Search</td>
+                                <td>Algorithms: Sorting</td>
+                                <td></td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>6</b></h3></td>
+                                <td class="dates"> 3/3 - 3/5</td>
+                                <td>Memory Management</td>
+                                <td><strong>C:</strong> Data Structures (Linked Lists, Queues, Stacks, etc)</td>
+                                <td>Pset 3 (3/8/2019)</td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>7</b></h3></td>
+                                <td class="dates"> 3/10 - 3/12</td>
+                                <td>Test 0 Review</td>
+                                <td>Test 0</td>
+                                <td></td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>8</b></h3></td>
+                                <td class="dates"> 3/17 - 3/19</td>
+                                <td><strong>Python:</strong> (Syntax Comparison to C) Data Types, Strings</td>
+                                <td><strong>Python:</strong> Lists, Dictionaries, Tuples</td>
+                                <td>Pset 4 (3/22/2020)</td>
+                            </tr>
+                            <tr class="done">
+                                <td><h3><b>9</b></h3></td>
+                                <td class="dates"> 3/24 - 3/26</td>
+                                <td><strong>Python:</strong> Built-In Methods, Functions</td>
+                                <td><strong>Python:</strong> Classes, Objects</td>
+                                <td></td>
+                            </tr>
+                            <tr class="python done">
+                                <td><h3><b>10</b></h3></td>
+                                <td class="dates">3/31 - 4/2</td>
+                                <td><strong>Python:</strong> Inheritance, Abstractions</td>
+                                <td><strong>Python:</strong> Python Challenge Day</td>
+                                <td>Pset 5 (4/5/2019)</td>
+                            </tr>
+                            <tr class="python done">
+                                <td><h3><b>11</b></h3></td>
+                                <td class="dates"> 4/7 - 4/9</td>
+                                <td>MVC: Flask</td>
+                                <td>MVC: Jinja</td>
+                                <td></td>
+                            </tr>
+                            <tr class="python">
+                                <td><h3><b>12</b></h3></td>
+                                <td class="dates">4/14 - 14/16</td>
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>Pset 6 (4/19/2020)</td>
+                            </tr>
+                            <tr class="python">
+                                <td><h3><b>13</b></h3></td>
+                                <td class="dates">4/21 - 4/23</td>
+                                <td>MVC: SQL</td>
+                                <td>MVC: Flask, SQL Alchemy</td>
+                                <td></td>
+                            </tr>
+                            <tr class="python">
+                                <td><h3><b>14</b></h3></td>
+                                <td class="dates">4/28 - 4/30</td>
+                                <td>Full App Demo Part 1</td>
+                                <td>Full App Demo Part 2</td>
+                                <td>Pset 7 (5/3/2020)</td>
+                            </tr>
+                            <tr class="python">
+                                <td><h3><b>15</b></h3></td>
+                                <td class="dates">5/5 - 5/7</td>
+                                <td>Test 1 Review</td>
+                                <td>Test 1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h3><b>16</b></h3></td>
+                                <td class="dates">5/12 - 5/14</td>
+                                <td><strong>Javascript:</strong> (Syntax Comparison to C) Data Types, Introduction</td>
+                                <td><strong>Javascript:</strong> This, AJAX, Functions</td>
+                                <td>Pset 8 (5/17/2020)</td>
+                            </tr>
+                            <tr>
+                                <td><h3><b>17</b></h3></td>
+                                <td class="dates">5/19 - 5/21</td>
+                                <td>Bootstrap & Design</td>
+                                <td>Bootstrap & Design</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h3><b>18</b></h3></td>
+                                <td class="dates">5/26 - 5/28</td>
+                                <td>GitHub</td>
+                                <td>GitHub & Hosting</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><h3><b>19</b></h3></td>
+                                <td class="dates">6/2 - 6/4</td>
+                                <td>Hack-a-thon</td>
+                                <td>Project Presentations</td>
+                                <td></td>
+                            </tr>
+                        </table> -->
 
-                <header class="card my-3" id="intro-0">
-                <div class="card-body">
-                    <div class="text-center">
-                    
-                        <h1 class="mb-0"><b>Cohort 11 Schedule</b></h1> <small class="text-center">January 21 - June 4 <br> (subject to change)</small>
+                        <hr class="uk-divider-small">
+                        
+                        <div class="card-text">
+                            <h4><b>Start Date:</b> January 21st (Tuesday)</h4>
+                            <h4><b>End Date:</b> June 4th (Thursday)</h4>
+                            <hr class="uk-divider-small">
+                            <h4><b>Duration:</b> Approximately 20 weeks</h4>
+                            <h4><b>Location:</b> 
+                                The Idea Center <br>
+                                5th floor room 8525
+                            </h4>
+                        </div>
+
+                        <hr class="uk-divider-small">
+
+                        <div class="card-text">
+                            <h3 class="bold">Lectures:</h3>
+                            <div class="tab-2">
+                                Tuesdays &amp; Thursdays from 6:30 to 9:30 PM
+                            </div>
+                            <h3 class="bold">Sections:</h3>
+                            <div class="tab-2">
+                                Friday, 7:00 to 9:00 PM <br>
+                                <b>OR</b> <br>
+                                Saturday, 10:00 am to 12:00 PM
+                            </div>
+                            <h3 class="bold">Coding Hours:</h3>
+                            <div class="tab-2">
+                                Tuesdays &amp; Thursdays, 4:00 to 6:00 PM <br>
+                                Monday &amp; Wednesday 6:00 to 8:00 PM
+                            </div>
+                        </div>
+
+                        <br> <br>
+
+                        <h4 class="bold">No class During the following Holidays</h4>
+
+                        <div>
+                            Washington's Day - Monday, February 17 <br>
+                            Memorial Day - Monday, May 25
+                        </div>
+                    </div>
+                </header>
+
+
+
+                <section class="card my-3" id="schedule">
+                    <div class="card-body">
+
+                        <h4 class="card-text">Each week students will engage in a variety of activities to develop programming and problem solving skills.</h4>
+                        
+                        <p class="card-text">
+                            <p> Each week, students are expected to attend the 2 scheduled lectures, as well as one hands-on learning <a class="bold" href="#section">section</a>. </p> 
+                            <p>
+                                If you miss a lecture, or know in advance when you will miss a lecture, please let someone on the teaching
+                                staff know in advance so we can provide you a link to the lecture video. 
+                            </p>
+                            <p>
+                                The sections will be offered at several different times throughout the week, and students must choose one time and attend that section
+                                regularly. Optional coding hours are also offered which given students additional assistance from the instructor
+                                or one of the other teaching staff members.
+                            </p>
+                        </p>
+                    </div>
+                </section>
+                
+                <section class="card my-3" id="teaching-staff" style="text-align: center;">
+                    <div class="card-body">
+                        <h2 class="card-title">TEACHING STAFF</h2>
                         <hr>
+                        <div class="container">
+                            <div class="row">
+                                {% for (i, person) in staff %}
+                                    <div class="col-12 col-sm-4" style="margin-bottom: 30px;">
+                                        <h3>{{person.fullname}}</h3>
+                                        <h5 class="bold">{{person.role}}</h5>
+                                        <div class="staff-contact">
+                                            {% for (contact, val) in person.contact.items() %}
+                                                {% if val %}
+                                                    <b>{{ contact }}</b> : 
+                                                    <a href="{{ 'tel' if contact == 'phone' else 'mailto' }}:{{ val }}">
+                                                        {{ val }}
+                                                    </a>
+                                                    <br>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="staff-social">
+                                            {% for (sc, val) in person.social.items() %}
+                                                {% if val %}
+                                                    <a title="{{sc}}" href="{{val}}" target="_blank">
+                                                        <img class="icon" src="/static/assets/social/{{sc}}-black.png" alt="">
+                                                    </a>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card my-3" id="lectures">
+                    <div class="card-body">
+                        <h1 class="card-title">LECTURES</h1>
+                        <hr class="uk-divider-small">
+                        <h4>Tuesdays &amp; Thursdays from <b>6:30 to 9:30 PM</b></h4>
+                        
+                        <p>
+                            During our lectures students are encouraged to participate in live demonstrations of problems.
+                            Often this involves, students playing the role of a computer, mimicking the memory in a computer,
+                            or just acting out instructions. The word &quot;lecture&quot; is used pretty loosely in CS50x Miami.
+                            If you miss a lecture, or know in advance when you will miss a lecture, please let someone on the
+                            teaching staff know in advance so we can provide you a link to the lecture video.
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h2>Class breakdown</h2> 
+                        
+                        <div class="card-text" style="font-size: 18px;">
+                            - Announcements ( 10 mns )<br>
+                            - Lecture ( 50-60 mns )<br>
+                            - Break ( 15 mns )<br>
+                            - Exercises and Activities ( 60 mns )<br>
+                            - Recap/Questions and Solutions ( 35 mns )
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">Schedule</h2>
+                        {% include 'components/schedule.html' %}
+                    </div>
+
+                </section>
+                
+                    
+                <section class="card my-3" id="psets">
+                    <div class="card-body">
+                        <h1 class="card-title">PROBLEM SETS</h1>
+                        <hr class="uk-divider-small">
+                        <h4>P-sets are due at <font color="red">11:59 pm</font> on the days listed below.</h4>
+                        
+                        <p>Nine problem sets are assigned during the semester. Each is due by midnight Sunday (see dates below) unless otherwise indicated. Late work is not ordinarily accepted, except in cases of emergency. A schedule of problem sets, subject to change, appears below.</p>
+                        
+                        <p>All students are required to create an account at GitHub and register with the automatic grading system. You will have access to your grades and will be able to submit all P-Sets to the automatic grading system through the course IDE.</p>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">Schedule</h2>
+                        {% include 'components/psets.html' %}
+                    </div>
+
+                    <div class="card-body">
+                        <p>Problem sets are generally graded on three axes. They, along with some pertinent questions to consider, appear below:</p>
+                        
+                        <ul>
+                            <li>Correctness: To what extent is your code consistent with the problem specifications and free of bugs? This is tested by comparing your code against a series of test cases.</li>
+                            <li>Style: To what extent is your code readable (i.e., commented and intended with variables aptly named? Can I easily tell (via braces/indentation) the boundaries of each block of code?Is it clear what this variable does, based on its name? If I didn&rsquo;t understand C code, would I be able to tell what is happening based on comments alone? Are there so few or so many comments that I am distracted by their presence or absence?</li>
+                            <li>Design: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)? Can Repeated code be eliminated? Is there a &ldquo;shorter&rdquo; way to accomplish the same thing? Should some code have been broken out into its own function?</li>
+                        </ul>
+                    </div>
+                </section>
+                    
+                    
+                
+                <section class="card my-3" id="sections">
+                    <div class="card-body">
+                        <h1 class="card-title">SECTIONS</h1>
+                        <hr class="uk-divider-small">
+                        <h4>
+                            Friday, 7:00 - 9:00 PM <br>
+                            Saturday, 10:00 - 12:00 PM
+                        </h4>
+                        
+                        <p>Lectures are supplemented by weekly, 120-minute sections led by the teaching fellows. Sections provide you with opportunities to explore the course&#39;s material in a more intimate environment, with only your teaching fellow and a handful of classmates present, as well as to dive into hands-on activities. Although you can attend multiple sections if your personal schedule allows, you are required to attend the same section you signed up for during selection at minimum.</p>
+                        
+                        <p>Most sections, students will be assigned a programming activity to complete and will be randomly divided into groups of 2. This activity will be related to the material that they learned in the lectures for that week. While these activities are not graded, students gain additional insight into the assigned P-sets. </p>
+                        
+                        <h5>Each Section will contain...</h5>
+                        
+                        <ul class="card-text">
+                            <li>An introduction to the activity of the day. (15 minutes).</li>
+                            <li>An assigned programming activity. (approx. 60 minutes to 85 minutes).</li>
+                            <li>Additional time for discussion. (approx. 15 minutes to 30 minutes).</li>
+                        </ul>
+                        
+                        <p>Section material will correspond with the proceeding lecture material and will will coincide with the schedule above for Harvard Lecture material weeks 0-9b (approximately 15 section meetings).</p>
+                        
+                        <p>A schedule for sessions, subject to change, appears below.</p>
                     </div>
                     
-                
-                    <table id="lectures_table" cellpadding="15" border="3" width="100%">
-                        <tr>
-                            <th>Week</th>
-                            <th>Dates</th>
-                            <th>Tuesday</th>
-                            <th>Thursday</th>
-                            <th>Pset Due / Date</th>
-                        </tr>
-                    
-                        <tr class="done">
-                            <td><h3><b>0</b></h3></td>
-                            <td class="dates">1/21 - 1/23</td>
-                            <td>Scratch</td>
-                            <td>Introduction to the terminal, VSCode, REPL, and CS50 IDE</td>
-                            <td></td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>1</b></h3></td>
-                            <td class="dates">1/28 - 1/30</td>
-                            <td>Datatypes, Variables, Operators Boolean Expressions</td>
-                            <td>Conditionals, Loops, Functions</td>
-                            <td>Pset 0 (2/2/2020)</td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>2</b></h3></td>
-                            <td class="dates">2/4 - 2/6</td>
-                            <td>The Command Line</td>
-                            <td><strong>C:</strong> Variables, Datatypes, Operators</td>
-                            <td>Pset 1 (2/9/2020)</td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>3</b></h3></td>
-                            <td class="dates">2/11 - 2/13</td>
-                            <td><strong>C:</strong> Conditionals, Arrays, Loops</td>
-                            <td><strong>C:</strong> Functions, Variable Scope</td>
-                            <td></td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>4</b></h3></td>
-                            <td class="dates">2/18 - 2/20</td>
-                            <td><strong>C:</strong> Command Line Arguments, Complexity Analysis</td>
-                            <td><strong>C:</strong> Magic Numbers, Structs</td>
-                            <td>Pset 2 (2/23/2020)</td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>5</b></h3></td>
-                            <td class="dates">2/25 - 2/27</td>
-                            <td>Algorithms: Search</td>
-                            <td>Algorithms: Sorting</td>
-                            <td></td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>6</b></h3></td>
-                            <td class="dates"> 3/3 - 3/5</td>
-                            <td>Memory Management</td>
-                            <td><strong>C:</strong> Data Structures (Linked Lists, Queues, Stacks, etc)</td>
-                            <td>Pset 3 (3/8/2019)</td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>7</b></h3></td>
-                            <td class="dates"> 3/10 - 3/12</td>
-                            <td>Test 0 Review</td>
-                            <td>Test 0</td>
-                            <td></td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>8</b></h3></td>
-                            <td class="dates"> 3/17 - 3/19</td>
-                            <td><strong>Python:</strong> (Syntax Comparison to C) Data Types, Strings</td>
-                            <td><strong>Python:</strong> Lists, Dictionaries, Tuples</td>
-                            <td>Pset 4 (3/22/2020)</td>
-                        </tr>
-                        <tr class="done">
-                            <td><h3><b>9</b></h3></td>
-                            <td class="dates"> 3/24 - 3/26</td>
-                            <td><strong>Python:</strong> Built-In Methods, Functions</td>
-                            <td><strong>Python:</strong> Classes, Objects</td>
-                            <td></td>
-                        </tr>
-                        <tr class="python done">
-                            <td><h3><b>10</b></h3></td>
-                            <td class="dates">3/31 - 4/2</td>
-                            <td><strong>Python:</strong> Inheritance, Abstractions</td>
-                            <td><strong>Python:</strong> Python Challenge Day</td>
-                            <td>Pset 5 (4/5/2019)</td>
-                        </tr>
-                        <tr class="python done">
-                            <td><h3><b>11</b></h3></td>
-                            <td class="dates"> 4/7 - 4/9</td>
-                            <td>MVC: Flask</td>
-                            <td>MVC: Jinja</td>
-                            <td></td>
-                        </tr>
-                        <tr class="python">
-                            <td><h3><b>12</b></h3></td>
-                            <td class="dates">4/14 - 14/16</td>
-                            <td>HTML</td>
-                            <td>CSS</td>
-                            <td>Pset 6 (4/19/2020)</td>
-                        </tr>
-                        <tr class="python">
-                            <td><h3><b>13</b></h3></td>
-                            <td class="dates">4/21 - 4/23</td>
-                            <td>MVC: SQL</td>
-                            <td>MVC: Flask, SQL Alchemy</td>
-                            <td></td>
-                        </tr>
-                        <tr class="python">
-                            <td><h3><b>14</b></h3></td>
-                            <td class="dates">4/28 - 4/30</td>
-                            <td>Full App Demo Part 1</td>
-                            <td>Full App Demo Part 2</td>
-                            <td>Pset 7 (5/3/2020)</td>
-                        </tr>
-                        <tr class="python">
-                            <td><h3><b>15</b></h3></td>
-                            <td class="dates">5/5 - 5/7</td>
-                            <td>Test 1 Review</td>
-                            <td>Test 1</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><h3><b>16</b></h3></td>
-                            <td class="dates">5/12 - 5/14</td>
-                            <td><strong>Javascript:</strong> (Syntax Comparison to C) Data Types, Introduction</td>
-                            <td><strong>Javascript:</strong> This, AJAX, Functions</td>
-                            <td>Pset 8 (5/17/2020)</td>
-                        </tr>
-                        <tr>
-                            <td><h3><b>17</b></h3></td>
-                            <td class="dates">5/19 - 5/21</td>
-                            <td>Bootstrap & Design</td>
-                            <td>Bootstrap & Design</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><h3><b>18</b></h3></td>
-                            <td class="dates">5/26 - 5/28</td>
-                            <td>GitHub</td>
-                            <td>GitHub & Hosting</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><h3><b>19</b></h3></td>
-                            <td class="dates">6/2 - 6/4</td>
-                            <td>Hack-a-thon</td>
-                            <td>Project Presentations</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-                </header>
-                
-                <section class="card my-3" id="schedule-3">
-                <div class="card-body">
-                
-                <h5 class="card-text">The course runs for approximately 20 weeks. Lectures are held at the Idea Center, 5th floor room 8525</h5>
-                
-                <ul class="card-text">
-                    <li>Start Date: January 21st (Tuesday)</li>
-                    <li>End Date: June 4th (Thursday)</li>
-                </ul>
-                <br>
-                <b>No class During the following Holidays:</b>
-                <ul>
-                    <li>Monday, February 17 - Washington's Day.</li>
-                    <li>Monday, May 25 - Memorial Day.</li>
-                </ul>
-
-                
-                <h5 class="card-text">Each week students will engage in a variety of activities to develop programming and problem solving skills.</h5>
-                
-                <ul class="card-text">
-                    <li>Lectures: Tuesday &amp; Thursday, 6:30 to 9:30 pm (Idea Center, 5th floor - Room 8525)</li>
-                    <li>Sections: Friday, 7:00 to 9:00 pm and Saturday, 10:00 am to 12:00 pm</li>
-                    <li>Coding Hours: Tuesday &amp; Thursday, 4:00 to 6:00 pm &amp; Monday &amp; Wednesday 6:00 to 8:00 pm.</li>
-                </ul>
-                
-                <p class="card-text">Each week, students are expected to attend the 2 scheduled lectures, plus one hands-on learning section. If you miss a lecture, or know in advance when you will miss a lecture, please let someone on the teaching staff know in advance so we can provide you a link to the lecture video. The sections will be offered at several different times throughout the week, and students must choose one time and attend that section regularly. Optional coding hours are also offered which given students additional assistance from the instructor or one of the other teaching staff members.</p>
-                </div>
-                </section>
-                
-                <section class="card my-3" id="teaching-staff-4">
-                <div class="card-body">
-                <h2 class="card-title">Teaching Staff</h2>
-                <h4>Instructor</h4>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>Al Delcy</td>
-                            <td>adelcy@mdc.edu</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
-                
-                <br>
-                    
-                <h4>Teaching Fellows</h4>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>Urbano Baz</td>
-                            <td>ubaz@mdc.edu</td>
-                        </tr>
-                        <tr>
-                            <td>Gloria Jimenez</td>
-                            <td>gjimena@mdc.edu</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-                </section>
-
-                
-                <section class="card my-3" id="lectures-6">
-                <div class="card-body">
-                <h1 class="card-title">Lectures</h1>
-                
-                <p>During our lectures students are encouraged to participate in live demonstrations of problems. Often this involves, students playing the role of a computer, mimicking the memory in a computer, or just acting out instructions. The word &quot;lecture&quot; is used pretty loosely in CS50x Miami. If you miss a lecture, or know in advance when you will miss a lecture, please let someone on the teaching staff know in advance so we can provide you a link to the lecture video. </p>
-                
-                <br> <br>
-                
-                <h2>Class breakdown</h2> 
-                
-                <ul class="card-text">
-                    <li>Announcements ( 10 mns ).</li>
-                    <li>Small Recap ( 20 mns )</li>
-                    <li>Lecture Part 1 ( 50 mns )</li>
-                    <li>Break ( 15 mns )</li>
-                    <li>Lecture Part 2 ( 50 mns )</li>
-                    <li>Recap/Questions or Activity ( 30 mns )</li>
-                </ul>
-                
-                <br><br>
-                
-                
-                </div>
-                </section>
-                    
-                    
-                    
-                    
-                <section class="card my-3" id="psets-12">
-                <div class="card-body">
-                <h1 class="card-title">Problem Sets</h1>
-                
-                <p>Nine problem sets are assigned during the semester. Each is due by midnight Sunday (see dates below) unless otherwise indicated. Late work is not ordinarily accepted, except in cases of emergency. A schedule of problem sets, subject to change, appears below.</p>
-                
-                <p>All students are required to create an account at GitHub and register with the automatic grading system. You will have access to your grades and will be able to submit all P-Sets to the automatic grading system through the course IDE.</p>
-                
-                <p>P-sets are due at 11:59 pm on the days listed below.</p>
-                
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>P-Set</th>
-                            <th>Description</th>
-                            <th>Due Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/0/index.html">P-Set 0</a></td>
-                            <td>
-                            <p>Implement your very own Scratch project using Chrome, per <a href="https://docs.cs50.net/2019/x/psets/0/scratch.html">this specification</a>.</p>
-                            </td>
-                            <td>8/04/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/1/index.html">P-Set 1</a></td>
-                            <td>
-                            <p>Submit <a href="https://lab.cs50.io/cs50/labs/2019/x/hello/">Hello</a></p>
-                
-                            <p>Submit one of:</p>
-                
-                            <ul>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/mario/less/">this version of Mario</a> if feeling less comfortable</li>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/mario/more/">this version of Mario</a> if feeling more comfortable</li>
-                            </ul>
-                
-                            <p>Submit one of:</p>
-                
-                            <ul>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/cash/">Cash</a> if feeling less comfortable</li>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/credit/">Credit</a> if feeling more comfortable</li>
-                            </ul>
-                            </td>
-                            <td>8/11/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/2/index.html">P-Set 2</a></td>
-                            <td>
-                            <p>Submit any two (2) of:</p>
-                
-                            <ul>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/caesar/">Caesar</a>, if feeling less comfortable</li>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/vigenere/">Vigen&egrave;re</a>, if feeling less comfortable</li>
-                                <li><a href="https://lab.cs50.io/cs50/labs/2019/x/crack/">Crack</a>, if feeling more comfortable</li>
-                            </ul>
-                            </td>
-                            <td>8/26/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/3/index.html">P-Set 3</a></td>
-                            <td>
-                            <p>Submit, using CS50 Lab, <a href="https://lab.cs50.io/cs50/labs/2019/x/whodunit/">Whodunit</a></p>
-                
-                            <p>Submit, using CS50 IDE, one of:</p>
-                
-                            <ul>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/3/resize/less/resize.html">this version of Resize</a>, if feeling less comfortable</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/3/resize/more/resize.html">this version of Resize</a>, if feeling more comfortable</li>
-                            </ul>
-                
-                            <p>Submit <a href="https://docs.cs50.net/2019/x/psets/3/recover/recover.html">Recover</a>, using CS50 IDE</p>
-                            </td>
-                            <td>9/08/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/4/index.html">P-Set 4</a></td>
-                            <td>
-                            <p>Submit, using CS50 IDE, one of:</p>
-                
-                            <ul>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html">this version of Speller</a>, if you&rsquo;d prefer to implement a hash table</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/4/speller/trie/speller.html">this version of Speller</a>, if you&rsquo;d prefer to implement a trie</li>
-                            </ul>
-                            </td>
-                            <td>9/22/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/5/index.html">P-Set 5</a></td>
-                            <td>
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/5/homepage/homepage.html">Homepage</a></p>
-                            </td>
-                            <td>10/6/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/6/index.html">P-Set 6</a></td>
-                            <td>
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/6/sentimental/hello/hello.html">Hello</a> in Python</p>
-                
-                            <p>Submit, using CS50 IDE, one of:</p>
-                
-                            <ul>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/mario/less/mario.html">this version of Mario</a> in Python, if feeling less comfortable</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/mario/more/mario.html">this version of Mario</a> in Python, if feeling more comfortable</li>
-                            </ul>
-                
-                            <p>Submit, using CS50 IDE, one of:</p>
-                
-                            <ul>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/cash/cash.html">Cash</a> in Python</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/credit/credit.html">Credit</a> in Python</li>
-                            </ul>
-                
-                            <p>Submit, using CS50 IDE, one of:</p>
-                
-                            <ul>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/caesar/caesar.html">Caesar</a> in Python</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/crack/crack.html">Crack</a> in Python</li>
-                                <li><a href="https://docs.cs50.net/2019/x/psets/6/sentimental/vigenere/vigenere.html">Vigen&egrave;re</a> in Python</li>
-                            </ul>
-                
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/6/bleep/bleep.html">Bleep</a> in Python</p>
-                            </td>
-                            <td>10/20/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/7/index.html">P-Set 7</a></td>
-                            <td>
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/7/similarities/similarities.html">Similarities</a></p>
-                
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/7/survey/survey.html">Survey</a></p>
-                            </td>
-                            <td>11/3/2019</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://docs.cs50.net/2019/x/psets/8/index.html">P-Set 8</a></td>
-                            <td>
-                            <p>Submit, using CS50 IDE, <a href="https://docs.cs50.net/2019/x/psets/8/finance/finance.html">Finance</a></p>
-                            </td>
-                            <td>11/17/2019</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <p>Problem sets are generally graded on three axes. They, along with some pertinent questions to consider, appear below:</p>
-                
-                <ul>
-                    <li>Correctness: To what extent is your code consistent with the problem specifications and free of bugs? This is tested by comparing your code against a series of test cases.</li>
-                    <li>Style: To what extent is your code readable (i.e., commented and intended with variables aptly named? Can I easily tell (via braces/indentation) the boundaries of each block of code?Is it clear what this variable does, based on its name? If I didn&rsquo;t understand C code, would I be able to tell what is happening based on comments alone? Are there so few or so many comments that I am distracted by their presence or absence?</li>
-                    <li>Design: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)? Can Repeated code be eliminated? Is there a &ldquo;shorter&rdquo; way to accomplish the same thing? Should some code have been broken out into its own function?</li>
-                </ul>
-                </div>
-                </section>
-                    
-                    
-                
-                <section class="card my-3" id="sections-7">
-                <div class="card-body">
-                <h1 class="card-title">Sections</h1>
-                
-                <p>Lectures are supplemented by weekly, 120-minute sections led by the teaching fellows. Sections provide you with opportunities to explore the course&#39;s material in a more intimate environment, with only your teaching fellow and a handful of classmates present, as well as to dive into hands-on activities. Although you can attend multiple sections if your personal schedule allows, you are required to attend the same section you signed up for during selection at minimum.</p>
-                
-                <p>Most sections, students will be assigned a programming activity to complete and will be randomly divided into groups of 2. This activity will be related to the material that they learned in the lectures for that week. While these activities are not graded, students gain additional insight into the assigned P-sets. </p>
-                
-                <p><strong>Section sessions are held Friday, 7:00 - 9:00 pm. Saturday, 10:00 - 12:00 pm.</strong></p>
-                
-                <h5>Each Section will contain...</h5>
-                
-                <ul class="card-text">
-                    <li>An introduction to the activity of the day. (15 minutes).</li>
-                    <li>An assigned programming activity. (approx. 60 minutes to 85 minutes).</li>
-                    <li>Additional time for discussion. (approx. 15 minutes to 30 minutes).</li>
-                </ul>
-                
-                <p>Section material will correspond with the proceeding lecture material and will will coincide with the schedule above for Harvard Lecture material weeks 0-9b (approximately 15 section meetings).</p>
-                
-                <p>A schedule for sessions, subject to change, appears below.</p>
-                
-                <table id="sections" cellpadding="15" width="100%">
-                    <tbody>
-                        <tr>
-                            <td><strong>Session</strong></td>
-                            <td><strong>Topic</strong></td>
-                            <td><strong>Date (Friday)</strong></td>
-                            <td><strong>Date (Saturday)</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 1</td>
-                            <td>C:
-                            Command Line Interface, Data Types, Operators, Conditional Statements, Loops</td>
-                            <td><strong>8/02/2019</strong></td>
-                            <td><strong>8/03/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 2</td>
-                            <td>C:
-                            Arrays, Functions, Variables and Scope, Command Line Arguments, Magic Numbers</td>
-                            <td><strong>8/09/2019</strong></td>
-                            <td><strong>8/10/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 3</td>
-                            <td>Algorithms<br />
-                            Computational Complexity, Sorting (Bubble, Selection, Insertion, Merge), Searching (Linear, Binary)</td>
-                            <td><strong>8/16/2019</strong></td>
-                            <td><strong>8/17/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 4</td>
-                            <td>Memory:<br />
-                            File I/O, Hexadecimal, Pointers, Dynamic Memory Allocation, Structures, Defining Custom Types, Recursion, Call Stack</td>
-                            <td><strong>8/23/2019</strong></td>
-                            <td><strong>8/24/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 5</td>
-                            <td>Data Structures:File Pointers, Singly-Linked Lists, Doubly-Linked Lists, Stacks, Queues, Trees, Hash Tables, Tries</td>
-                            <td><strong>8/30/2019</strong></td>
-                            <td><strong>8/31/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 6</td>
-                            <td>Quiz #0 Review</td>
-                            <td><strong>9/06/2019</strong></td>
-                            <td><strong>9/07/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 7</td>
-                            <td>HTTP:<br />
-                            Internet Primer, IP, TCP, HTML, CSS</td>
-                            <td><strong>9/13/2019</strong></td>
-                            <td><strong>9/14/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 8</td>
-                            <td>Dynamic Programming</td>
-                            <td><strong>9/20/2019</strong></td>
-                            <td><strong>9/21/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 9</td>
-                            <td>Python: Flask, Jinja</td>
-                            <td><strong>9/27/2019</strong></td>
-                            <td><strong>9/28/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 10</td>
-                            <td>JavaScript:<br />
-                            DOM</td>
-                            <td><strong>10/04/2019</strong></td>
-                            <td><strong>10/05/2019</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Week 11</td>
-                            <td>Quiz #1 Review </td>
-                            <td><b>10/11/2019</b></td>
-                            <td><strong>10/12/2019</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Schedule</h2>
+                        <table id="sections" cellpadding="15" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Session</strong></td>
+                                    <td><strong>Topic</strong></td>
+                                    <td><strong>Date (Friday)</strong></td>
+                                    <td><strong>Date (Saturday)</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 1</td>
+                                    <td>C:
+                                    Command Line Interface, Data Types, Operators, Conditional Statements, Loops</td>
+                                    <td><strong>8/02/2019</strong></td>
+                                    <td><strong>8/03/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 2</td>
+                                    <td>C:
+                                    Arrays, Functions, Variables and Scope, Command Line Arguments, Magic Numbers</td>
+                                    <td><strong>8/09/2019</strong></td>
+                                    <td><strong>8/10/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 3</td>
+                                    <td>Algorithms<br />
+                                    Computational Complexity, Sorting (Bubble, Selection, Insertion, Merge), Searching (Linear, Binary)</td>
+                                    <td><strong>8/16/2019</strong></td>
+                                    <td><strong>8/17/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 4</td>
+                                    <td>Memory:<br />
+                                    File I/O, Hexadecimal, Pointers, Dynamic Memory Allocation, Structures, Defining Custom Types, Recursion, Call Stack</td>
+                                    <td><strong>8/23/2019</strong></td>
+                                    <td><strong>8/24/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 5</td>
+                                    <td>Data Structures:File Pointers, Singly-Linked Lists, Doubly-Linked Lists, Stacks, Queues, Trees, Hash Tables, Tries</td>
+                                    <td><strong>8/30/2019</strong></td>
+                                    <td><strong>8/31/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 6</td>
+                                    <td>Quiz #0 Review</td>
+                                    <td><strong>9/06/2019</strong></td>
+                                    <td><strong>9/07/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 7</td>
+                                    <td>HTTP:<br />
+                                    Internet Primer, IP, TCP, HTML, CSS</td>
+                                    <td><strong>9/13/2019</strong></td>
+                                    <td><strong>9/14/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 8</td>
+                                    <td>Dynamic Programming</td>
+                                    <td><strong>9/20/2019</strong></td>
+                                    <td><strong>9/21/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 9</td>
+                                    <td>Python: Flask, Jinja</td>
+                                    <td><strong>9/27/2019</strong></td>
+                                    <td><strong>9/28/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 10</td>
+                                    <td>JavaScript:<br />
+                                    DOM</td>
+                                    <td><strong>10/04/2019</strong></td>
+                                    <td><strong>10/05/2019</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Week 11</td>
+                                    <td>Quiz #1 Review </td>
+                                    <td><b>10/11/2019</b></td>
+                                    <td><strong>10/12/2019</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
                 
                     
-                <section class="card my-3" id="coding-hours-8">
-                <div class="card-body">
-                <h2 class="card-title">Coding Hours</h2>
-                
-                <p>Coding hours are opportunities for assistance with problem sets alongside the course&#39;s teaching staff. Office hours schedule sometimes overlap with sections, but their help is always available as there will be multiple staff members on hand. They take place in the same room as that day&#39;s section.</p>
-                
-                <p><strong>Coding Hours Schedule: Tuesday &amp; Thursday, 4:00 to 6:00 pm &amp; Mondays &amp; Wednesdays 6:00 to 8:00 pm.</strong></p>
-                </div>
+                <section class="card my-3" id="coding-hours">
+                    <div class="card-body">
+                        <h2 class="card-title">CODING HOURS</h2>
+                        <hr class="uk-divider-small">
+                        <h4>
+                            Tuesdays &amp; Thursdays, 4:00 to 6:00 PM <br>
+                            Mondays &amp; Wednesdays, 6:00 to 8:00 PM
+                        </h4>
+                        
+                        <p>Coding hours are opportunities for assistance with problem sets alongside the course&#39;s teaching staff. Office hours schedule sometimes overlap with sections, but their help is always available as there will be multiple staff members on hand. They take place in the same room as that day&#39;s section.</p>
+                        
+                    </div>
                 </section>    
+
                 
-                    
-                <!--
-                <section class="card my-3" id="grading-10">
-                <div class="card-body">
-                <h2 class="card-title">Grading Breakdown</h2>
-                
-                <p>Final grades are determined using the following weights:</p>
-                
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Evaluation</th>
-                            <th>Weight</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Quizzes</td>
-                            <td>25%</td>
-                        </tr>
-                        <tr>
-                            <td>P-Sets</td>
-                            <td>25%</td>
-                        </tr>
-                        <tr>
-                            <td>Final Project Pitch</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <td>Final Project Blog</td>
-                            <td>15%</td>
-                        </tr>
-                        <tr>
-                            <td>Final Project</td>
-                            <td>30%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-                </section>
-                -->
-                
-                <section class="card my-3" id="quizzes-11">
-                <div class="card-body">
-                <h2 class="card-title">Tests</h2>
-                
-                <p>Students will be given two 120-minute quizzes throughout the course. These quizzes are given online and may be taken at any time within the two-week window provided by the instructor.</p>
-                
-                <p>When final grades are computed, your scores on these two quizzes are weighted equally.</p>
-                
-                <p>Unless arranged with the course staff in advance, quizzes cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.</p>
-                </div>
+                <section class="card my-3" id="quizzes">
+                    <div class="card-body">
+                        <h2 class="card-title">QUIZZES</h2>
+                        <hr class="uk-divider-small">
+                        <h4>
+                            <b>QUIZ 0:</b> Thursday, March 12, 2020 <br>
+                            <b>QUIZ 1:</b> Thursday, April 30, 2020
+                        </h4>
+                        <p>Students will be given two 120-minute quizzes throughout the course. These quizzes are given online and may be taken at any time within the two-week window provided by the instructor.</p>
+                        
+                        <p>When final grades are computed, your scores on these two quizzes are weighted equally.</p>
+                        
+                        <p>Unless arranged with the course staff in advance, quizzes cannot ordinarily be taken at alternative times even if missed by accident, except in cases of medical emergency.</p>
+                    </div>
                 </section>
                 
                 
-                <section class="card my-3" id="project-13">
+                <section class="card my-3" id="final-project">
                 <div class="card-body">
-                <h2 class="card-title">Final Project</h2>
+                <h2 class="card-title">FINAL PROJECT</h2>
+                <hr class="uk-divider-small">
                 
                 <p>The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this courses lessons, the nature of your project is entirely up to you, albeit subject to the staff&#39;s approval. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact campus, or that you change the world. Strive to create something that outlives this course.</p>
                 

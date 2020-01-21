@@ -33,6 +33,10 @@ a, a:visited, a:hover {
     text-decoration:none;
 }
 
+a.video_item >*:hover{
+    opacity: 0.5;
+} 
+
 .bold {
     font-weight: 700;
 }
@@ -44,7 +48,7 @@ a, a:visited, a:hover {
 }
 .container,
 .container.wrapper {
-    min-width: 1300px;
+    max-width: 1300px;
 }
 .container, .container-fluid,
 .container.wrapper {
