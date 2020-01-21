@@ -4,9 +4,10 @@ import sys, os
 from datetime import date
 
 sys.path.append(  os.getcwd()  +  '/cs50x/data/'   )
-import data
-import events
-from cs50 import *
+from course import *
+from events import *
+from info import *
+from media import *
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -20,23 +21,25 @@ css = Bundle('./styles/base.css', './styles/style.css',
              output='gen/styles.css')
 assets.register('css_all', css)
 
-theLectures = data.lectures.items()
-theWeeks = data.weeks.items()
+theLectures = lectures
+theWeeks = weeks.items()
+thePsets = psets.items()
 today = date.today()
+
+theStaff = staff.items()
+for (i, person) in theStaff:
+        person['fullname'] = person['fname'] + " " + person['lname']
+
 
 @app.route('/')
 def home():
     thisYear = date.today().strftime("%Y")
-    theStaff = staff
-
-    for (i, person) in theStaff.items():
-        person['fullname'] = person['fname'] + " " + person['lname']
-
+    
     return render_template('index.html', 
         title="Home", 
-        events=events.events, today=today, 
+        events=sessions, today=today, 
         thisYear=thisYear,
-        staff=theStaff.items()
+        staff=theStaff
     )
 
 @app.route('/education')
@@ -48,12 +51,19 @@ def welcome():
     return render_template(
         'welcome.html', title="Welcome",
         intro_vid=siteVideos['intro'],
-        cohort=current_cohort, prep_vids=siteVideos['cs50prep']
+        cohort=current_cohort,
+        prep_vids=siteVideos['cs50prep']
     )
 
 @app.route('/syllabus')
 def syllabus():
-    return render_template('syllabus.html', title="Syllabus")
+    return render_template('syllabus.html',
+        title="Syllabus",
+        staff=theStaff,
+        weeks=theWeeks,
+        psets=thePsets,
+        today=today
+    )
 
 @app.route('/lectures')
 def lectures():
@@ -61,8 +71,13 @@ def lectures():
 
 @app.route('/lecture/<num>')
 def lecture(num):
-    lecture = data.lectures[num]
-    return render_template('lecture.html', title="Lecture", lecture=lecture, lectures=theLectures, page=int(num))
+    lecture = theLectures[num]
+    return render_template('lecture.html',
+        title="Lecture",
+        lecture=lecture,
+        lectures=theLectures.items(),
+        page=int(num)
+    )
 
 @app.route('/videos')
 def videos():

@@ -1,6 +1,6 @@
 from datetime import date, time
 
-events = [
+sessions = [
     {
         'title': 'CS50x Miami: Cohort 11 Master Class info',
         'desc': 'Intro to Algorithmic Thinking | CS50x Miami. <br> Problems, problems everywhere! Problem solving is an essential skill and is in everything you do, just like computing.',

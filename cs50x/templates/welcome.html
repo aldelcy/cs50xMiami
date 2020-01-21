@@ -46,7 +46,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8" style="margin-bottom: 20px;">
             <h2 class="bold" style="text-decoration: underline;">Recommendation</h2>
             <h3>Explained (Netflix)</h3>
             <h4>Season 2 Episode 5: Coding</h4>
@@ -56,7 +56,7 @@
             algorithms, computer languages, personal computing, and machine learning.
         </div>
         <div class="col-sm-4">
-            <a href="https://www.netflix.com/title/80216752" target="_blank">
+            <a class="video_item" href="https://www.netflix.com/title/80216752" target="_blank">
                 <img src="/static/assets/explained_code.jpg" alt="">
             </a>
         </div>
@@ -108,12 +108,10 @@
     </div>    
 
     <div class="row">
-        <div class="col-sm-6">
-            <h4 class="bold">Prepping your system</h4>
-            <hr>
-            How to configure windows, mac and linux
+        <div class="col-sm-4">
+            <div class="placeholder video" style="background-image: url('/static/assets/getting_system_ready.png');"></div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <h4 class="bold">Programming Tools</h4>
             <hr>
             <span class="bold">Python</span> <a href="https://www.python.org/downloads/">Download 3.8.1 here</a><br>
@@ -130,24 +128,24 @@
     <div class="row">
         <div class="col-sm-4">
             <center>
-                <a href="#">
-                    <button class="uk-button uk-button-default uk-button-large">COHORT {{cohort}} SYLLABUS</button>
+                <a href="/syllabus">
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-bottom courseLinks">COHORT {{cohort}} SYLLABUS</button>
                 </a>
             </center>
         </div>
 
         <div class="col-sm-4">
             <center>
-                <a href="#">
-                    <button class="uk-button uk-button-default uk-button-large">COURSE LECTURES</button>
+                <a href="/lectures">
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-bottom courseLinks">COURSE LECTURES</button>
                 </a>
             </center>
         </div>
 
         <div class="col-sm-4">
             <center>
-                <a href="#">
-                    <button class="uk-button uk-button-default uk-button-large">PSETS</button>
+                <a href="/psets">
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-bottom courseLinks">PSETS</button>
                 </a>
             </center>
         </div>

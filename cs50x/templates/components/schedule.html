@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table hide-on-mobile">
     <thead>
         <tr>
             <th>Week</th>
@@ -10,16 +10,52 @@
     </thead>
     <tbody>
         {% for (i, week) in weeks %}
-            <tr class="{{ week.topic }} {% if today > week.date %} past {% endif %}">
+            <tr class="{{ week.topic }} {% if today > week.dates[1] %} past {% endif %}">
                 <td scope="row" style="text-align: center;">
                     <h4 class="bold" style="margin:5px 0;">{{i}}</h4>
                 </td>
-                <td>{{ week.date.strftime('%m/%d') }}</td>
+                <td>{{ week.dates[0].strftime('%m/%d') }} - {{ week.dates[1].strftime('%m/%d') }}</td>
                 {% for lecture in week['lectures'] %}
-                    <td><a href="/lecture/{{lecture.number}}">{{ lecture.title }}</a></td>
+                    {% if lecture.ppt_code %}
+                        <td><a href="/lecture/{{lecture.number}}">{{ lecture.title }}</a></td>
+                    {% else %}
+                        <td>{{ lecture.title }}</td>
+                    {% endif %}
                 {% endfor %}
-                <td></td>
+                <td>
+                    {% if 'pset' in week %}
+                        <a href="{{ week.pset.link }}">Pset Due {{ week.pset.due_date.strftime('%m/%d') }}</a>
+                    {% endif %}
+                </td>
             </tr>
         {% endfor %}
     </tbody>
 </table>
+
+
+
+
+
+
+
+<div class="table show-on-mobile">
+    {% for (i, week) in weeks %}
+        <div class="{{ week.topic }} {% if today > week.dates[1] %} past {% endif %}" style="padding: 20px 25px; margin-bottom: 10px;">
+            <h4 class="bold" style="margin:5px 0;"><u>Week: {{i}}</u></h4>
+            {% for lecture in week['lectures'] %}
+                <h5>
+                    <b>{{ week.dates[loop.index - 1].strftime('%m/%d') }}</b> : 
+                    {% if lecture.ppt_code %}
+                        <a href="/lecture/{{lecture.number}}">{{ lecture.title }}</a>
+                    {% else %}
+                        {{ lecture.title }}
+                    {% endif %}
+                </h5>
+            {% endfor %}
+            {% if 'pset' in week %}
+                <br>
+                <b>Pset Due</b> <a href="{{ week.pset.link }}">{{ week.pset.due_date.strftime('%m/%d') }}</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

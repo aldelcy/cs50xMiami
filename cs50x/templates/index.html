@@ -3,9 +3,9 @@
 
 {% block body %}
 <div class="index-top" style="background-image:url('/static/assets/black-bg.jpeg');">
-    <div class="container" style="padding: 150px 0;">
+    <div class="container" style="padding: 150px 30px;">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-12 col-sm-6">
                 <h1 class="bold" id="hero" style="font-size: 60px;">
                     <span style="color:#FF6082;">Learn</span> the Basics of <br>
                     <span style="color:#5FE0FF;">Computer Science</span>
@@ -17,14 +17,14 @@
                     students and the South Florida community.
                 </h4>
             </div>
-            <div class="col-sm-6"></div>
+            <div class="col-12 col-sm-6"></div>
         </div>
     </div>
 </div>
 
 <div class="container wrapper">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12 col-sm-12">
             
         </div>
     </div>
@@ -32,7 +32,7 @@
 
 <div class="container wrapper">
     <div class="row">
-        <div class="col-sm-4 infoItem">
+        <div class="col-12 col-sm-4 infoItem">
             <div class="image" style="background-image: url('/static/assets/home/learn.jpg');"></div>
             <h3 class="bold">Learn Programming</h3>
             <div class="text">Learn the Latin equivalent of programming languages: C. After learning C, you can learn anything. And we'll test that theory by exploring several more languages.</div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 infoItem">
+        <div class="col-12 col-sm-4 infoItem">
             <div class="image" style="background-image: url('/static/assets/home/inclusive.jpg');"></div>
             <h3 class="bold">Solve Problems</h3>
             <div class="text">We don't just teach you techniques to solve specific problems. You learn to apply algorithmic and mathematical approaches to information and it's computation in several computer science disciplines.</div>
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 infoItem">
+        <div class="col-12 col-sm-4 infoItem">
             <div class="image" style="background-image: url('/static/assets/home/fun.png');"></div>
             <h3 class="bold">Have Fun!</h3>
             <div class="text">Partake in a unique course culture revolving around social interaction, pizza, photo booths, and more!</div>
@@ -98,7 +98,7 @@
     <br><br>
     
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12 col-sm-12">
             <video class="embed-responsive-item" controls="" poster="/static/assets/home/poster.png">
                 <source src="https://www.dropbox.com/s/flg30yn891h9z9c/ThisisCS50xMiami1.mp4?raw=1" type="video/mp4">
                 <source src="https://www.dropbox.com/s/l8upg170klmstrq/ThisisCS50xMiami1.ogg?raw=1" type="video/ogg">
@@ -111,7 +111,7 @@
     <br><br>
     
     <div class="row" style="margin: 100px auto;">
-        <div class="col-sm-12">
+        <div class="col-12 col-sm-12">
             <center><h1 class="bold">Upcoming Events</h1></center>
             <br><br>
             {% include 'components/events.html' %}
@@ -125,20 +125,20 @@
     <br>
     <div class="row staff">
         {% for (i, person) in staff %}
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-4">
                 <img src="/static/assets/staff/{{person.fullname}}.png">
                 <h2>{{person.fullname}}</h2>
                 <h5 class="bold">{{person.role}}</h5>
                 <p class="desc">
-                    Al was previously employed at Launch Code. He worked with an incredible teaching staff
-                    and restructured the material overtime to adapt to the student's pace and learning styles.
-                    This is Al's first cohort for teaching CS50xMiami.
+                    {{person.short_desc}}
                 </p>
                 <div class="staff-social">
                     {% for (sc, val) in person.social.items() %}
-                        <a title="{{sc}}" href="{{val}}" target="_blank">
-                            <img class="icon" src="/static/assets/social/{{sc}}-black.png" alt="">
-                        </a>
+                        {% if val %}
+                            <a title="{{sc}}" href="{{val}}" target="_blank">
+                                <img class="icon" src="/static/assets/social/{{sc}}-black.png" alt="">
+                            </a>
+                        {% endif %}
                     {% endfor %}
                 </div>
 

@@ -33,6 +33,10 @@ a, a:visited, a:hover {
     text-decoration:none;
 }
 
+a.video_item >*:hover{
+    opacity: 0.5;
+} 
+
 .bold {
     font-weight: 700;
 }
@@ -44,7 +48,7 @@ a, a:visited, a:hover {
 }
 .container,
 .container.wrapper {
-    min-width: 1300px;
+    max-width: 1300px;
 }
 .container, .container-fluid,
 .container.wrapper {
@@ -103,7 +107,7 @@ a, a:visited, a:hover {
 
 .events {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
 }
 .events .event {
@@ -168,6 +172,20 @@ footer .footer {
     padding: 100px 0;
 }
 
+.footer .center_text {
+    text-align: center;
+}
+.footer .right_text {
+    text-align: right;
+}
+
+.footer .center_text,
+.footer .right_text,
+.footer .left_text {
+    margin-bottom: 20px;
+}
+
+
 .footer h1,
 .footer h2,
 .footer h3,
@@ -176,6 +194,10 @@ footer .footer {
 .footer h6 {
     color: #fff;
     margin: 5px 0;
+}
+
+.infoItem {
+    margin: 20px auto;
 }
 
 .infoItem .image {
@@ -241,11 +263,39 @@ footer .footer {
 
 .cs50_prep .videos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
 }
 
 #welcome_cohort_title {
     font-size: 50px;
     margin-bottom: 50px;
+}
+
+
+.courseLinks {
+    font-size: large;
+    padding: 20px;
+}
+
+.tab-1 { margin-left: 10px; }
+.tab-2 { margin-left: 20px; }
+
+.show-on-mobile { display: none; }
+
+@media screen and (max-width: 500px) {
+    .footer .center_text,
+    .footer .right_text,
+    .footer .left_text {
+        text-align: center !important;
+        margin: 30px auto;
+    }
+    .social-icons,
+    .footer-logo {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .hide-on-mobile { display: none; }
+    .show-on-mobile { display: block !important; }
 }
