@@ -4,7 +4,12 @@ syllabus = {
   'Scratch': [
     {
       'title':    "Scratch",
-      'desc':     "hello",
+      'desc':     "\
+          <h2 class='bold'>Random Task:</h2>\
+            Use the following random task\
+            <a href='/random_task'> GENERATOR </a>\
+            To generate a radom task\
+      ",
       'ppt_code': "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
       'harvard_video' : {
         'title': 'Computational Thinking, Scratch',
