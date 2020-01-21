@@ -2,6 +2,7 @@ from flask import Flask, redirect, request, session, render_template
 from flask_assets import Environment, Bundle
 import sys, os
 from datetime import date
+from random import randint
 
 sys.path.append(  os.getcwd()  +  '/cs50x/data/'   )
 from course import *
@@ -68,6 +69,11 @@ def syllabus():
 @app.route('/lectures')
 def lectures():
     return render_template('lectures.html', title="Lectures", weeks=theWeeks, today=today)
+
+@app.route('/random_task')
+def random_task():
+    random_task = "Artboard – "+str(randint(1,3))
+    return render_template('random_task.html', title="Random Task", weeks=theWeeks, random_task=random_task, today=today)
 
 @app.route('/lecture/<num>')
 def lecture(num):
