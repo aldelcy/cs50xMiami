@@ -33,7 +33,7 @@ activities = {
                             You must enter the password:<br>
                             <div id="password"></div><br>
                             <div class="uk-margin" style="max-width: 400px; margin: 5px auto;">
-                                <input class="uk-input" type="text" id="thePassword" placeholder="Type password here" value="maRio">
+                                <input class="uk-input" type="text" id="thePassword" placeholder="Type password here">
                             </div> 
                             <button class="uk-button uk-button-primary submit_password"> submit password </button><br>
                         </div>
