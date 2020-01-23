@@ -1,4 +1,4 @@
-from flask import Flask, redirect, request, session, render_template
+from flask import Flask, redirect, request, session, render_template, jsonify
 from flask_assets import Environment, Bundle
 import sys, os
 from datetime import date
@@ -9,6 +9,9 @@ from course import *
 from events import *
 from info import *
 from media import *
+from psets import *
+from activities import *
+from sections import *
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -23,6 +26,7 @@ css = Bundle('./styles/base.css', './styles/style.css',
 assets.register('css_all', css)
 
 theLectures = lectures
+theActivities = activities
 theWeeks = weeks.items()
 thePsets = psets.items()
 today = date.today()
@@ -70,20 +74,25 @@ def syllabus():
 def lectures():
     return render_template('lectures.html', title="Lectures", weeks=theWeeks, today=today)
 
-@app.route('/random_task')
-def random_task():
-    random_task = "Artboard – "+str(randint(1,3))
-    return render_template('random_task.html', title="Random Task", weeks=theWeeks, random_task=random_task, today=today)
-
 @app.route('/lecture/<num>')
 def lecture(num):
     lecture = theLectures[num]
     return render_template('lecture.html',
-        title="Lecture",
+        title=lecture['title'],
         lecture=lecture,
         lectures=theLectures.items(),
         page=int(num)
     )
+
+@app.route('/activity/<id>')
+def activity(id):
+    activity = theActivities[id]
+    return render_template('activity.html', title=activity['title'], activity=activity)
+
+@app.route('/random_task')
+def random_task():
+    random_task = "Artboard – "+str(randint(1,3))
+    return render_template('random_task.html', title="Random Task", weeks=theWeeks, random_task=random_task, today=today)
 
 @app.route('/videos')
 def videos():
@@ -116,6 +125,12 @@ def alumni():
 @app.route('/verification')
 def verification():
     return render_template('/verification.html', title="Verification")
+
+
+@app.route('/spy_submission', methods=["POST"])
+def spy_submission():
+    result = spydecoder( request.form['level'], request.form['code'] )
+    return jsonify(result)
 
 
 if __name__ == "__main__":
