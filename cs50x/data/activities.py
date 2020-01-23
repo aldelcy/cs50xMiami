@@ -25,9 +25,9 @@ activities = {
                         <h3 class="bold"> Your mission should you choose to accept it:</h3>
                         You possess a rare skill to decypher the ancient circuitry<br>
                         Can you decode the secret message?
-                        <br><br>
-                        <div id="message"></div>
-                        <br><br>
+                        <br> <br>
+                        <div id="error_message" style="color: red !important;"></div>
+                        <br>
                         <div class="phase_1">
                             <h4 class="bold">Phase 1:</h4>
                             You must enter the password:<br>
@@ -42,10 +42,11 @@ activities = {
                             WELL DONE!!! You are the nerds we're looking for! <br>
                             You will do well to decode our secret message. BUT, we had to kick it up a notch. <br>
                             Below are some legends to help you decypher the BINARY message.
-                            <br>
-                            <img src="/static/assets/activities/spy/legend.png" width="500px">
-                            <br>
-                            <div class="row" style="max-width: 850px; margin: auto;">
+                            <br><br>
+                            Secret coded decypher thingy : 
+                            <a href="/static/assets/activities/spy/Ascii_table.pdf" target="_blank"> Click Here </a>
+                            <br><br><br>
+                            <div class="row" style="max-width: 1000px; margin: auto;">
                                 <div class="col-12 col-sm-5" style="text-align: left !important;">
                                     <div class="uk-margin">
                                         <textarea class="uk-textarea" rows="5" id="theCode" placeholder="Type the code here"></textarea><br>
