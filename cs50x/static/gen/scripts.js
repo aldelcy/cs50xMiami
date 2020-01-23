@@ -49,7 +49,14 @@ $('.submit_password').click(function(){
                 $('.phase_2').find('textarea').attr("data-code", data[1]);
                 $('.the_secret_image').html( `<img src="/static/assets/activities/spy/Binary_${data[1]}.png">` )
             }else{
-
+                $('#error_message').text( "WHOOOPS! Wrong password !!" + data[1]  );
+                $('#error_message').fadeIn( 500  );
+                setTimeout( function(){
+                    $('#error_message').fadeOut( 500  );
+                }, 4000);
+                setTimeout( function(){
+                    $('#error_message').empty( );
+                }, 4500);
             };
         }
     })
@@ -67,7 +74,14 @@ $('.submit_thecode').click(function(){
                 $('.phase_3').fadeIn(3000);
                 $('.phase_3').find('.message').html(`<h2 class='bold'>${data[1]}</h2>`);
             }else{
-
+                $('#error_message').text( "OUUUUFFF, that's not the right Secret Code !! " + data[1]  );
+                $('#error_message').fadeIn( 500  );
+                setTimeout( function(){
+                    $('#error_message').fadeOut( 500  );
+                }, 4000);
+                setTimeout( function(){
+                    $('#error_message').empty( );
+                }, 4500);
             };
         }
     })
