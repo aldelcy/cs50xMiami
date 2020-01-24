@@ -96,7 +96,7 @@ def spydecoder( level, code ):
         messages = [
             "The cake is a LIE!",
             "To above and Cs50",
-            "Whoa I know code fu!!"
+            "Whoa I know kung fu!!"
         ]
         message = messages[ int(code.split('+')[0])-1 ]
 
