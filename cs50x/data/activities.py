@@ -72,7 +72,7 @@ activities = {
                         </div>            
                         </center>
                     """,
-        'published' : False
+        'published' : True
     }
 }
 
