@@ -12,6 +12,7 @@ from media import *
 from psets import *
 from activities import *
 from sections import *
+from libs import *
 
 app = Flask(__name__)
 app.config[ "DEBUG" ] = True
@@ -126,12 +127,27 @@ def alumni():
 def verification():
     return render_template('/verification.html', title="Verification")
 
-
 @app.route('/spy_submission', methods=["POST"])
 def spy_submission():
-    result = spydecoder( request.form['level'], request.form['code'] )
-    return jsonify(result)
+    return jsonify(  spydecoder( request.form['level'], request.form['code'] )  )
 
+@app.route('/binary_tool')
+def binary_tool():
+    bit = request.args.get('bit') or 8
+
+    return render_template(
+        '/binary_tool.html',
+        title="Binary Tool",
+        bit=bit
+    )
+
+@app.route('/find_ascii', methods=["POST"])
+def find_ascii():
+    a = int(request.form['ascii'])
+    char = False
+    if a in ascii:
+        char = ascii[a]
+    return jsonify( char )
 
 if __name__ == "__main__":
     app.run()
