@@ -1,0 +1,276 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+    <style>
+        .bit_board .bits, .bit_board .switches {
+            display: grid;
+            grid-template-columns: repeat( {{ bit }} , minmax(50px, 1fr));
+            grid-gap: 10px;
+            margin-top: 40px;
+        }
+        .bit, input.switch{
+            border: 3px solid #000;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        input.bit, input.switch {
+            border-style: dashed;
+            border-color: #999;
+        }
+        .bit.hovered{ background-color: lightyellow !important; }
+        .bit.selected{ background-color: yellow !important; border-color: yellow !important; }
+        .switch .knob{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid #000;
+            margin: 20px auto;
+        }
+        .switch .knob:hover, .switch .knob.selected {
+            cursor: pointer;
+            background-color: lightgreen !important;
+        }
+        .switch .knob.selected {
+            border-color: lightgreen !important;
+        }
+        .total, .test_number { color: green; }
+        .char { color: blue; }
+        .submit_result, .bits_result { margin-top: 30px; }
+    </style>
+
+    <div class="container wrapper">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>{{title}}</h1>
+                <br>
+            </div>
+            <div class="col-sm-6" style="text-align: right;" >
+                <a href="#how_to_binary" uk-toggle><span uk-icon="icon: file-text; ratio: 2"></span></a>
+                <div id="how_to_binary" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">Some quick tips</h2>
+                        <p>
+                            <img src="/static/assets/binary_tip.png" alt="">
+                        </p>
+                        <p class="uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4>How many Bits?</h4>
+                <form class="choose_bit" method="GET">
+                    <input type="number" class="bit_number uk-input uk-form-width-medium uk-form-large" placeholder="how many bits">
+                    <button type="submit" class="uk-button uk-button-primary uk-button-large">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-6" style="text-align: right;">
+                <h4>Choose Mode:</h4>
+                <button onclick="addQuery('mode','normal')" class="uk-button uk-button-secondary uk-button-large mode normal">Normal</button>
+                <button onclick="addQuery('mode','test')" class="uk-button uk-button-primary uk-button-large mode test">Test</button>
+                <button onclick="addQuery('mode','supertest')" class="uk-button uk-button-danger uk-button-large mode supertest">Super Test</button>
+            </div>
+            <div class="col-sm-12 test" style="display: none; text-align: center;">
+                <br>
+                <h2>WRITE THE NUMBER <span class="test_number"></span> IN BINARY.</h2>
+                <br>
+            </div>
+        </div>
+        <div class="bit_board" data-bits="{{bit}}">
+            <div class="bits"></div>
+            <div class="switches"></div>
+        </div>
+        <div class="submit_result" style="display: none;">
+            <button class="check_result uk-button uk-button-primary" onclick="checkResult()"> CHECK ANSWER </button>
+        </div>
+        <div class="bits_result">
+            <div class="row">
+                <div class="col-sm-6 num_char">
+                    <h2> Number Value: <span class="total">0</span> </h2>
+                    <h2> Printable Character: <span class="char"></span> </h2>
+                </div>
+                <div class="col-sm-6 win" style="display: none; text-align: right;">
+                    <h3 class="bold">YAY! You did it !!!</h3>
+                    <img src="https://thumbs.gfycat.com/AggressiveWebbedCormorant-size_restricted.gif" alt="">
+                </div>
+                <div class="col-sm-6 lose" style="display: none;">
+                    <h3 class="bold">Almost, not quite !!!</h3>
+                    <button class="uk-button uk-button-primary try_again">Try Again?</button><br><br>
+                    <img src="https://media3.giphy.com/media/a9xhxAxaqOfQs/giphy.gif" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+
+        var total = 0,
+            maxnum = 0,
+            randnum = 0,
+            bit = parseInt( $('.bit_board').data('bits') ),
+            num = 1,
+            url = new URL(location),
+            bitQuery = url.searchParams.get('bit'),
+            mode = url.searchParams.get('mode');
+
+        for( bit; bit > 0; bit --, num *= 2 ){
+            var inputBit = `<input onchange="checkBit(this)" class='bit' id="bit_${num}" data-bit="${num}">`,
+                designBit = `<div class='bit' id="bit_${num}" data-bit="${num}">${num}</div>`,
+                inputBinary = `<input onchange="checkBinary(this)" class='switch' id="bit_${num}" data-bit="${num}">`,
+                designBinary = `<div class='switch' id="switch_${num}" data-bit="${num}">
+                                    <div class="knob" id="knob_${num}" onmouseover="highlightBit('${num}')" onmouseleave="clearBit('${num}')" onclick="selectBit('${num}')"></div>
+                                </div>`;
+
+            if(mode == 'supertest'){
+                $('.bit_board .bits').prepend(inputBit);
+                $('.bit_board .switches').prepend(inputBinary);
+            }
+            if( mode == 'test'){
+                $('.bit_board .bits').prepend(designBit);
+                $('.bit_board .switches').prepend(inputBinary);
+            }
+            if( mode == 'normal' || !mode ){
+                $('.bit_board .bits').prepend(designBit);
+                $('.bit_board .switches').prepend(designBinary);
+            }
+            maxnum += num;
+        }
+
+        if(mode == 'supertest' || mode == 'test'){
+            $('.bits_result .num_char').hide();
+            $('.submit_result').show();
+
+            randnum = Math.floor( Math.random() * maxnum );
+
+            $('.test').show();
+            $('.test .test_number').text( randnum );
+        }
+
+        $('input.bit_number').val( bitQuery || 8 );
+
+        if ( mode ){
+            $('.mode.'+mode).attr('disabled', 'true');
+        }else{
+            $('.mode.normal').attr('disabled', 'true');
+        }
+        
+        $('form.choose_bit').submit( function (e) {
+            e.preventDefault();
+            addQuery( 'bit', $('input.bit_number').val() );
+        })
+
+        $('.try_again').on('click', function () {
+            $('.win').hide();
+            $('.lose').hide();
+            $('.bits_result .num_char').hide();
+            $('.submit_result').show();
+        });
+        
+        function calculateBits() {
+            var total = 0,
+                bits = $('.bit.selected').map(function (index, item) {
+                    total += parseInt($(item).data('bit'));
+                });
+            return total;
+        }
+
+        function updateData() {
+            var total = calculateBits();
+            $('.bits_result .total').text(total);
+
+            if( total > 0 ){
+                $.ajax({
+                    url: '/find_ascii',
+                    type: 'POST',
+                    data: {ascii: total },
+                    success: function(data) {
+                        $('.bits_result .char').html( data ||  'not a printable bit' );
+                    }
+                });
+            } else {
+                $('.bits_result .char').empty();
+            }
+        }
+
+        function checkResult() {
+            $('input.switch').each(function (index, item) {
+                if( $(item).val() !== '1' ) $(item).val('0');
+            });
+
+            $('.submit_result').hide();
+
+            if ( calculateBits() === randnum ) {
+                $('.bits_result .num_char').show();
+                $('.win').show();
+                $('.lose').hide();
+            } else {
+                $('.win').hide();
+                $('.lose').show();
+            }
+        }
+
+        function highlightBit(bit) {
+            $('#bit_'+bit).addClass('hovered')
+        };
+
+        function clearBit(bit) {
+            $('#bit_'+bit).removeClass('hovered');
+        };
+        
+        function unselectBit(bit) {
+            $('#bit_'+bit).removeClass('selected');
+            $('#knob_'+bit).removeClass('selected');
+            $('#switch_'+bit).removeClass('selected');
+            updateData();
+        };
+
+        function selectBit(bit) {
+            $('#bit_'+bit).toggleClass('selected');
+            $('#knob_'+bit).toggleClass('selected');
+            $('#switch_'+bit).toggleClass('selected');
+            updateData();
+        };
+
+        function addQuery(q, v) {
+            url.searchParams.set(q, v);
+            if (history.pushState) window.history.pushState({ path: url.toString() }, "", url.toString());
+            location.reload();
+        }
+
+        function checkBit(item) {
+            var num = $(item).val();
+            
+            if(num){
+                if (num == $(item).data('bit')) {
+                    $(item).css('border-color', 'green');
+                }else{
+                    $(item).css('border-color', 'red');
+                }
+            }else{
+                $(item).css('border-color', '#999');
+            }
+        }
+
+        function checkBinary(item) {
+            var num = $(item).val(),
+                bit = $(item).data('bit');
+
+            if ( num > 1 || num < 0 ) {
+                $(item).css('border-color', 'red');
+            }else{
+                if (num == 1) { 
+                    selectBit(bit);
+                }else{
+                    unselectBit(bit);
+                }
+                $(item).css('border-color', '#999');
+            }
+        }
+
+    </script>
+
+{% endblock %}
