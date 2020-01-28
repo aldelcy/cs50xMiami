@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            {% for (index, tool) in tools.items() %}
+                <a href="{{ tool }}">
+                    <button class="uk-button uk-button-primary uk-button-large">{{ index }}</button>
+                </a> <br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

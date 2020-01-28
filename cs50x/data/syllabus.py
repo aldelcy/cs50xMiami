@@ -130,19 +130,21 @@ syllabus = {
   'Basics'  :   [
     {
       'title':    "The Basics: 1/2",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     """
+      """,
+      'ppt_code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
       'videos':   {},
       'resources':{},
-      'published': False
+      'published': True
     },
     {
       'title':    "The Basics: 2/2",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     """
+      """,
+      'ppt_code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
       'videos':   {},
       'resources':{},
-      'published': False
+      'published': True
     }
   ],
   'C'       :   [

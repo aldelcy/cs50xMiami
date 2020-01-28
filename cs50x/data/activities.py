@@ -7,7 +7,7 @@ activities = {
                         Use the following, to generate a radom task.
                         <h4 class="bold" class='bold'>
                             Random Task Generator:
-                            <a href='/random_task'> click here </a>
+                            <a href='/tools/random_task'> click here </a>
                         </h4>
                     """,
         'published' : True

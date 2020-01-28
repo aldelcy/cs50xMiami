@@ -63,3 +63,7 @@ staff = {
         }
     }
 }
+
+theStaff = staff.items()
+for (i, person) in theStaff:
+        person['fullname'] = person['fname'] + " " + person['lname']
