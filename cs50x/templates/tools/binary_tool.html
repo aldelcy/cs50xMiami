@@ -15,12 +15,15 @@
             padding: 20px 0;
             font-size: 30px;
         }
-        input.bit, input.switch {
+        input.bit { border-style: dotted; border-color: #333; }
+        input.switch {
             border-style: dashed;
             border-color: #999;
         }
         .bit.hovered{ background-color: lightyellow !important; }
         .bit.selected{ background-color: yellow !important; border-color: yellow !important; }
+        .bit.goodBit { border-color: green; }
+        .bit.badBit { border-color: red; }
         .switch .knob{
             width: 40px;
             height: 40px;
@@ -197,6 +200,19 @@
         }
 
         function checkResult() {
+           
+            if(mode == 'supertest'){
+                var gtg = true;
+                $('input.bit').map(function (index, item) {
+                    if($(item).val().length < 1){
+                        $(item).addClass('badBit');
+                        setTimeout(() => { $(item).removeClass('badBit'); }, 2000)
+                        gtg = false;
+                    }
+                });
+                if( !gtg ) return;
+            }
+
             $('input.switch').each(function (index, item) {
                 if( $(item).val() !== '1' ) $(item).val('0');
             });
@@ -243,12 +259,13 @@
 
         function checkBit(item) {
             var num = $(item).val();
-            
+
             if(num){
                 if (num == $(item).data('bit')) {
-                    $(item).css('border-color', 'green');
+                    $(item).addClass('goodBit');
                 }else{
-                    $(item).css('border-color', 'red');
+                    console.log('test')
+                    $(item).addClass('badBit');
                 }
             }else{
                 $(item).css('border-color', '#999');
