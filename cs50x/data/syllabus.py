@@ -100,7 +100,7 @@ syllabus = {
       'harvard'     :   {
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
-        'time'  : [0,1940]
+        'time'  : [0,1297]
       },
       'videos'      :   {},
       'resources'   :   [
@@ -131,10 +131,35 @@ syllabus = {
     {
       'title':    "The Basics: 1/2",
       'desc':     """
+                <h2>Algorithms:</h2>
+                <h3 class="bold">What are "Algorithms"?</h3>
+
+                <p>a step by step procedure to solve logical and mathematical problems.
+                A recipe is a good example of an algorithm because it tells you what
+                you need to do step by step. It takes inputs (ingredients) and produces
+                an output (the completed dish).</p>
       """,
       'ppt_code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
+      'harvard'     :   {
+        'title' : 'PseudoCoding',
+        'id'    : "jjqgP9dpD1k",
+        'time'  : [1297,1940]
+      },
       'videos':   {},
-      'resources':{},
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Algorithm',
+          'desc'  : "A guessing game",
+          'url'   : 'https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/a/a-guessing-game'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Game',
+          'desc'  : "What is an Algorithm",
+          'url'   : 'https://www.youtube.com/watch?v=CvSOaYi89B4'
+        }
+      ],
       'published': True
     },
     {
