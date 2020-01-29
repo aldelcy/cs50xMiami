@@ -76,10 +76,6 @@ activities = {
     }
 }
 
-
-
-
-
 def spydecoder( level, code ):
     failed = [ False, "SORRY TRY AGAIN" ]
     
