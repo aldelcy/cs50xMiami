@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+
+<style>
+
+    .assessment_block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .question_block {
+
+    }
+    .question {
+
+    }
+    .answer {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        grid-gap: 5px;
+    }
+    .win_lose{
+        width: 30px;
+        height: 30px;
+        background-color: lightgrey;
+        border: 1px solid #999;
+    }
+    .win_lose.yes{ background-color: lightgreen; }
+    .win_lose.no{ background-color: red; }
+
+</style>
+
+
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-12 assessment_block">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const assesment = {
+        "q_1" : { "q" : "1- What is 01100010 01100001 01101110 01100001 01101110 01100001 in Binary?", "a": "banana" },
+        "q_2" : { "q" : "2- What's the maximum we can count with 8 bits", "a": "255" },
+        "q_3" : { "q" : "3- What's the maximum we can count with 16 bits", "a": "65535" },
+        "q_4" : { "q" : "4- What's means FALSE in Binary", "a": "0" },
+        "q_5" : { "q" : "5- What is te ASCII Code for W?", "a": "87" },
+        "q_6" : { "q" : "6- What is a list of Step by Step instructions to tell a computer what to do.", "a": "algorithm" },
+        "q_7" : { "q" : "7- Is '10' and 10 the same?", "a": "No" },
+        "q_8" : { "q" : "8- A String is a collection of ...", "a": "characters" },
+        "q_9" : { "q" : "9- The action of converting data from one type to another type", "a": "typecasting" },
+        "q_10" : { "q" : "10- a piece of code that uses a comparison operator and resolves to a True or False is a ...", "a": "boolean expression" }
+    }
+
+    $.each(assesment, function( index, item ) {
+
+        $('.assessment_block').append(`
+            <div class="question_block">
+                <div class="question" id="${index}">${item.q}</div>
+                <div class="answer">
+                    <div class="win_lose"></div>
+                    <div class="answer_input">
+                        <input class="${index} uk-form-large uk-input" placeholder="Answer here">
+                        <button id="${index}" class="submit uk-button uk-button-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        `);
+    });
+
+    $('.submit').click(function () { 
+        checkAnswer( $(this).attr('id')  );
+    })
+
+    function checkAnswer(index) {
+        var winlose = $('.'+index ).closest('.answer').find('.win_lose');
+        winlose.removeClass('yes');
+        winlose.removeClass('no');
+        if( $('.'+index ).val() == assesment[index].a ){
+            winlose.addClass('yes');
+        }else{
+            winlose.addClass('no');
+        }
+    }
+
+</script>
+
+{% endblock %}
+
+
+

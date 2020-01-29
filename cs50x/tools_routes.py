@@ -26,6 +26,12 @@ def random_task():
     random_task = "Artboard – "+str(randint(1,3))
     return render_template('/tools/random_task.html', title="Random Task", random_task=random_task)
 
+
+@tools.route('/assessment/')
+def assessment():
+    return render_template('/tools/assessment.html', title="Assessment")
+
+
 @tools.route('/spy_submission', methods=["POST"])
 def spy_submission():
     return jsonify(  spydecoder( request.form['level'], request.form['code'] )  )
