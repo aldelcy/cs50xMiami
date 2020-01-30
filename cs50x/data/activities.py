@@ -86,6 +86,90 @@ activities = {
                         their programming background or knowledge is. <br>
                         Pseudo code, as the name suggests, is a false code or a representation of code which can be understood
                         by even a layman with some school level programming knowledge.
+                        <br>
+                        <h4 class="bold">EXAMPLES:</h4>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h5 class="bold">Steet Light</h5>
+    <pre>
+        SET VARIABLE light as the STRING 'Red'
+        
+        IF light is 'Green'
+            MOVE FORWARD
+        ELSE IF light is 'Yellow'
+            SLOW DOWN
+        ELSE IF light is 'Red'
+            STOP
+    </pre>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5 class="bold">Weather</h5>
+    <pre>
+        SET VARIABLE temperature as the STRING 'Cold'
+        SET VARIABLE weather as the STRING 'Rainy'
+        
+        IF temperature is 'Hot'
+            Leave Sweater Home
+        ELSE IF temperature is 'Cold'
+            Take Sweater
+        ELSE
+            Wear a nice sundress
+    
+        Check the weather
+    
+        IF weather is 'Rainy'
+            Take Umbrella
+        ELSE
+            Leave Umbrella Home
+    </pre>                    
+                            </div>
+                        </div>
+                        <h4>
+                            Below are 2 types of tasks. One life task, one coding task. <br>
+                            Choose one of each task and write simple pseudo code to accomplish each task. <br>
+                            The PSEUDOCODE should be simple and straight to the point.
+                        </h4>
+                        <br>
+
+
+                        <hr>
+                        <h2 class="bold"><u>Life Tasks:</u></h2><br>
+
+                        <h4 class="bold">1- Grilled Cheese Sandwich.</h4>
+                        <p>Write pseudocode on how to make a grilled cheese sandwich.</p>
+                        <p>You can choose to put whatever you want in the sandwich.</p>
+                        <p>Also, think about how long the bread needs to stay on the pan, what color to look for and when to flip it.</p>
+                        <p>Good luck, I hope it's delicious.</p>
+                        
+                        <br><br>
+                        <h4 class="bold">2- Cheesy Mac.</h4>
+                        <p>Yes... I love cheese.</p>
+                        <p>Write pseudocode on how to make a a simple mac and cheese.</p>
+                        <p>You can choose to put whatever you want in there.</p>
+                        <p>The idea is to not let it burn, or come out too lumpy</p>
+                        
+                        <br><br>
+                        <h4 class="bold">3- Fill the Tanks:</h4>
+                        <p>There are 4 cars parked in a gas station parking lot.</p>
+                        <p>Write pseudocode to bring each car to the pump and fill them up until it's full.</p>
+                        <p>Think about moving the car to the pump, and then moving it back to the parkign space.</p> 
+                        <p class="bold">To make it extra fun, 2 of the cars are half full, one is quarter full and one is empty.</p>
+                        
+                        <br><br>
+                        <h4 class="bold">4- Morning routine based time and weather.</h4>
+                        <p>Write pseudocode for a simple morning routine.</p>
+                        <p>Think about how many tasks you have to do and what steps you need to do in each task</p>
+                        <p>Don't make it too complicated, just simple enough to get out the door.</p>
+                        <p>Maybe find the group doing the grilled cheese sandwich and use their function? &#128521;</p>
+                        
+                        <hr>
+                        <h2 class="bold"><u>Practical Coding Tasks:</u></h2><br>
+
+                        <h4 class="bold">1- Guess the password.</h4>
+                        <p>Write a pseudocode for a developer to figure ot the logic of a password tool</p>
+                        <p>Think about getting the input from a user and saving it in a variable</p>
+                        <p>Think about what you need to do everytime they input the password and what needs to happen next.</p>
                     """,
         'published' : True
     }
