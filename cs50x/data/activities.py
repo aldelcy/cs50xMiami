@@ -170,6 +170,17 @@ activities = {
                         <p>Write a pseudocode for a developer to figure ot the logic of a password tool</p>
                         <p>Think about getting the input from a user and saving it in a variable</p>
                         <p>Think about what you need to do everytime they input the password and what needs to happen next.</p>
+                        
+                        <br>
+                        <h4 class="bold">2- Simple Loop.</h4>
+                        <p>Write pseudo code to print all multiples of 5 between 1 and 100 (including both 1 and 100)</p>
+                        <p>Let's use a FOR or loop in this PSEUDO and not repeat the same code 20 times 👀</p>
+                        
+                        <br>
+                        <h4 class="bold">3- Sorting.</h4>
+                        <p>Write pseudo code that takes 10 unique, random numbers and writes them all in sorted order.</p>
+                        <p>Think about how you want to store each number and what you will compare thet number to in order to figure out where it goes.</p>
+                        <p>At the end of the Pseudocode, the 10 numbers should be sorted from smallest to highest.</p>
                     """,
         'published' : True
     }
