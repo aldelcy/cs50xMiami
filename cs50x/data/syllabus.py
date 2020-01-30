@@ -121,6 +121,12 @@ syllabus = {
           'title' : 'Binary Math',
           'desc'  : "How to Find a number in Binary",
           'url'   : 'https://www.youtube.com/watch?v=jRSqhjMx0X0'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Binary Video',
+          'desc'  : "Computer Science Basics: Binary",
+          'url'   : 'https://www.youtube.com/watch?v=M41M9ATm49M'
         }
       ],
       'activities'  :   [activities['7g4k9c0o8']],
@@ -168,7 +174,26 @@ syllabus = {
       """,
       'ppt_code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
       'videos':   {},
-      'resources':{},
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Loops',
+          'desc'  : "Intro to Programming",
+          'url'   : 'https://www.youtube.com/watch?v=wxds6MAtUQ0'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Proramming Structures',
+          'desc'  : "Sequences, Selections, and Loops",
+          'url'   : 'https://www.youtube.com/watch?v=eSYeHlwDCNA'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Programming Basics:',
+          'desc'  : "Statements & Functions: Crash Course Computer Science",
+          'url'   : 'https://www.youtube.com/watch?v=l26oaHV7D40'
+        }
+      ],
       'published': True
     }
   ],
