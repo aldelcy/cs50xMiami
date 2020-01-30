@@ -171,6 +171,78 @@ syllabus = {
     {
       'title':    "The Basics: 2/2",
       'desc':     """
+                  <h2 class="bold">Welcome to the Basics 2:</h2>
+
+                  In this lecture we will cover the last 4 components of programming and how they will be useful for you as a programmer.<br><br>
+                  These 4 components will allow you to group and organize your data in order to simplify your code. Mastering these 4 components will allow you to repeat the same line of code multiple times without having to type them over and over again.<br><br>
+                  
+                  <br>
+                  <h3 class="bold">CONDITIONALS</h3>
+                  Conditionals help your program make decisions based on certain inputs or changes in the data you recieve.<br><br>
+                  Just like in real life, you have to make decisions based on information you are given (inputs) and decide whether you want to do THIS action or ANOTHER action.<br>
+                  
+                  <h4>EXAMPLE:</h4>
+
+                  - You are deciding what to make for breakfast.<br>
+                  - You check the fridge<br>
+                  - IF there is Milk and Cereal<br>
+                  - - Then you will eat milk and cereal<br>
+                  - ELSE IF there is bread, peanut butter and jelly<br>
+                  - - Then you will eat a PB&J instead<br>
+                  - ELSE IF there is bread and cheese<br>
+                  - - Then Grilled Cheese Sandwich it is.<br>
+                  - ELSE if there is nothing<br>
+                  - - Then Water it is.<br>
+                  <p>
+                      Notice in this example that you are making decisions based on whether a condition is true:<br><br>
+                      FIRST:  “ there is Milk and Cereal ” ?<br><br>
+                      If that’s True, then I make milk and cereal and move on with my morning. And ignore the rest.<br><br>
+                      If that’s NOT True, then I check IF “ there is bread, peanut butter and jelly ” ?<br><br>
+                      If that’s True, then I make a PB&J and move on with my morning. And ignore the rest.<br><br>
+                      Ect…
+                  </p>
+
+                  ONLY if i don’t find anything else do I drink water.
+
+                  <br><br>
+                  <h3 class="bold">FUNCTIONS</h3>
+                  <p>
+                      Functions allow you to group pieces of code and give it a name.<br>
+                      Whenever you need to run that block of code, you don’t need to write the whole thing over again, you just call it’s name.<br><br>
+                  </p>
+                  <h4>EXAMPLE:</h4>
+                  <p>
+                      Since we’re going with a morning theme… let’s keep doing that.<br><br>
+                      Every Morning, you wake up and you have a morning routine.<br><br>
+                  
+                      Let’s say it consists of:<br>
+                      - Bathing<br>
+                      - Brushing teeth<br>
+                      - Getting dressed<br>
+                      - Fixing hair<br>
+                      - Eating breakfast<br>
+                      - Reading the news<br><br>
+                  </p>   
+                  <p>   
+                      Now imagine that every morning, you wake up and have to write these tasks again from scratch in order to do them. Each of those tasks are made of many steps, and guess what, you have to write all those too. Once you are done doing them… you throw it away and you forget them.<br><br>
+                      That would get tiring real quick.<br>
+                      SO… what’s the solution? You can write a list of steps that’s called “Morning Routine” in a notebook and then, every morning, all you have to do is pick up that notebook and do each task that was saved in there.<br>
+                      NOW… you might want to change these steps based on the time you wake up.<br>
+                      The “time” in this case is a parameter that you pass to your “Morning Routine” Function. Now, everytime you wake up, you HAVE to check the time, and if it’s less than 8AM, you have time to do all your tasks, if not, then you can skip some tasks and rush out.<br>
+                  </p>
+                  
+                  <br>
+                  <h3 class="bold">LOOPS</h3>
+                  <p>
+                      Loops are used to repeat something or a piece of code multiple times.<br>
+                      You can either repeat indefinitely based on whether something is true and only stop when it’s false, OR repeat a specific number of times.<br><br>
+                  </p>
+
+                  <h4>For EXAMPLE:</h4>
+                  <p>
+                      You could decide, this morning, you’re gonna do 30 pushups. In that case you have a specific number of pushups to do.<br>
+                      You could also decide to keep on doing push ups until your phone rings, or you can put bread in your toaster and keep doing push ups until the bread pops up. In this case, the number of push ups might vary depending on how long it takes for you to stop.<br>
+                  </p>
       """,
       'ppt_code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
       'videos':   {},
