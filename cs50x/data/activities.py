@@ -73,6 +73,21 @@ activities = {
                         </center>
                     """,
         'published' : True
+    },
+    "2n4n5f0s0"  :   {
+        'id'        : '2n4n5f0s0',
+        'title'     : 'PSEUDOCODING',
+        'preview'   : "Let's write code in english",
+        'desc'      : """
+                        Pseudo code is a term which is often used in programming and algorithm based fields. <br>
+                        It is a methodology that allows the programmer to represent the implementation of an algorithm.<br>
+                        Simply, we can say that it’s the cooked up representation of an algorithm. Often at times, algorithms are
+                        represented with the help of pseudo codes as they can be interpreted by programmers no matter what
+                        their programming background or knowledge is. <br>
+                        Pseudo code, as the name suggests, is a false code or a representation of code which can be understood
+                        by even a layman with some school level programming knowledge.
+                    """,
+        'published' : True
     }
 }
 
