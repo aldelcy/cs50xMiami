@@ -270,27 +270,80 @@ syllabus = {
       'published': True
     }
   ],
-  'C'       :   [
+  'Command Line'       :   [
     {
       'title':    "The Command Line",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     """
+        <h3 class="bold">How to open Terminal on Mac</h3>
+        <p>The Terminal app is in the Utilities folder in Applications. To open it, either open your Applications folder, then open Utilities and double-click on Terminal, or press Command - spacebar to launch Spotlight and type "Terminal," then double-click the search result.</p>
+
+        <p>You’ll see a small window with a white background open on your desktop. In the title bar are your username, the word "bash" and the dimensions of the window in pixels. Bash stands for "Bourne again shell". There are a number of different shells that can run Unix commands, and on the Mac Bash is the one used by Terminal.</p>
+
+        <p>If you want to make the window bigger, click on the bottom right corner and drag it outwards. If you don’t like the black text on a white background, go to the Shell menu, choose New Window and select from the options in the list.</p>
+
+        <p>If Terminal feels complicated or you have issues with the set-up, let us tell you right away that there are alternatives. MacPilot allows to get access to over 1,200 macOS features without memorizing any commands. Basically, a third-party Terminal for Mac that acts like Finder. </p>
+      """,
+      'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
       'videos':   {},
-      'resources':{},
-      'published': False
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Mac Terminal',
+          'desc'  : "Basic Commands and Concepts",
+          'url'   : 'https://www.youtube.com/watch?v=-Vl4rpZVA6I'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Mac Terminal',
+          'desc'  : "Terminal Basics for Beginners",
+          'url'   : 'https://www.youtube.com/watch?v=5XgBd6rjuDQ'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Windows Terminal',
+          'desc'  : "Introduction to the Command Prompt",
+          'url'   : 'https://www.youtube.com/watch?v=MBBWVgE0ewk'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Windows Terminal',
+          'desc'  : "Listing Files and Directories",
+          'url'   : 'https://www.youtube.com/watch?v=7ABkcHLdG_A'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Terminal Commands',
+          'desc'  : "Ultimate Cheat Sheet",
+          'url'   : 'https://github.com/0nn0/terminal-mac-cheatsheet/blob/master/README.markdown'
+        }
+      ],
+      'published': True
     },
+  ],
+  'C'       :   [
     {
       'title':    "C: Variables, Datatypes & Operators",
       'desc':     "hello",
       'ppt_code': "",
+      'harvard'     :   {
+        'title' : 'Lecture 1: C, Variables and Datatype',
+        'id'    : "e9Eds2Rc_x8",
+        'time'  : [0,2696]
+      },
       'videos':   {},
-      'resources':{},
+      'resources':[
+      ],
       'published': False
     },
     {
       'title':    "C: Conditionals, Arrays & Loops",
       'desc':     "hello",
       'ppt_code': "",
+      'harvard'     :   {
+        'title' : 'Lecture 1: C, Conditionals and Loops',
+        'id'    : "e9Eds2Rc_x8",
+        'time'  : [2696,6373]
+      },
       'videos':   {},
       'resources':{},
       'published': False
