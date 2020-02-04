@@ -274,14 +274,43 @@ syllabus = {
     {
       'title':    "The Command Line",
       'desc':     """
+        <h3 class="bold">The terminal</h3>
+        <p>
+        The terminal (or command prompt) is a very powerful tool.<br>
+        It allows you to navigate folders, create files and directories, delete, rename, move, copy and find files without ever having to touch the mouse. <br>
+        </p>
+        <p>
+        Most of you probably never touched a terminal before this class.<br>
+        After this class however, you 2 wil become inseparable.
+        </p>
+        <p>
+        In fact, almost all programmer in the field is very versed in Terminal commands and almost use them all the time.<br>
+        It allows you to do things fast, efficiently and in bulk.<br>
+        Things that would take you some time to do by clicking around a user interface.
+        </p>
+        <p>
+        For the beginning of this course, we will be using the <a href="https://ide.cs50.io/" target="_blank">CS50 IDE</a> and code online.<br>
+        That terminal is EXACTLY like the Mac Terminal, so you should use the Mac commands in there.<br><br>
+        But just in case you are curious. Here is how to find the terminals in your respective operating systems.
+        </p>
         <h3 class="bold">How to open Terminal on Mac</h3>
-        <p>The Terminal app is in the Utilities folder in Applications. To open it, either open your Applications folder, then open Utilities and double-click on Terminal, or press Command - spacebar to launch Spotlight and type "Terminal," then double-click the search result.</p>
-
-        <p>You’ll see a small window with a white background open on your desktop. In the title bar are your username, the word "bash" and the dimensions of the window in pixels. Bash stands for "Bourne again shell". There are a number of different shells that can run Unix commands, and on the Mac Bash is the one used by Terminal.</p>
-
-        <p>If you want to make the window bigger, click on the bottom right corner and drag it outwards. If you don’t like the black text on a white background, go to the Shell menu, choose New Window and select from the options in the list.</p>
-
-        <p>If Terminal feels complicated or you have issues with the set-up, let us tell you right away that there are alternatives. MacPilot allows to get access to over 1,200 macOS features without memorizing any commands. Basically, a third-party Terminal for Mac that acts like Finder. </p>
+        <p>
+          <ul>
+            <li>Press the <code>Command</code> Key and the <code>Spacebar</code> Key right after the other</li>
+            <li>Type in the word <code>Terminal</code></li>
+            <li>Press <code>Enter</code></li>
+          </ul>
+          You may also have <code>iTerm2</code> as a terminal.
+        </p>
+        <h3 class="bold">How to open Terminal on Windows</h3>
+        <p>
+          <ul>
+            <li>Click on the <code>Start</code> menu icon on the bottom left of the screen</li>
+            <li>Type in the words <code>Command Prompt</code> or simply <code>CMD</code></li>
+            <li>Right click and choose <code>Run as aministrator</code></li>
+          </ul>
+          If you attended the Section last week and turned on the Ubunty Subsystem, you should use <code>hyperJS</code> as a terminal instead.
+        </p>
       """,
       'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
       'videos':   {},

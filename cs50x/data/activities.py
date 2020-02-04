@@ -183,7 +183,81 @@ activities = {
                         <p>At the end of the Pseudocode, the 10 numbers should be sorted from smallest to highest.</p>
                     """,
         'published' : True
-    }
+    },
+    "7g8h0m8j2"  :   {
+        'id'        : '7g8h0m8j2',
+        'title'     : 'LET THERE BE FILES',
+        'preview'   : "In this activity, you will be creating a file structure and manipulating files and directories.",
+        'desc'      : """
+                    <h3>Let's create some files and mess with them</h3>
+                    <p>In this excercise you will be creating a file structure and manupulate some files in there.</p>
+                    <h4 class="bold">First, lets create folder ( directory ) called <code>myFirstApp</code></h4>
+                    <p>In <code>myFirstApp</code>, let's create the following file structure.</p>
+                    <pre>Hint: You are able to create multiple files or folders with one 'mkdir' command.</pre>
+                    <p>PS: You are not allowed to use the UI until specifically asked to do so... I will be able to tell.</p>
+                    <h3 class="bold">File Structure</h3>
+                    <img src="/static/assets/activities/terminal/files.png" style="max-width: 400px; border: 2px dashed #000;">
+                    <hr>
+                    <h3 class="bold">Let the fun begin</h3>
+                    <br>
+                    <h4 class="bold">Creating files:</h4>
+                    <p>
+                        Navigate to the <code>assets</code> folder and create 3 <code>directories</code>:<br>
+                        <ul>
+                            <li>images</li>
+                            <li>styles</li>
+                            <li>javascript</li>
+                        </ul>
+                    </p>
+
+                    <h4 class="bold">Moving files:</h4>
+                    <p>
+                        Move all the files with the extension <code>.css</code> into the <code>styles</code> folder. <br>
+                        Move all the files with the extension <code>.js</code> into the <code>javascript</code> folder. <br>
+                        <pre>Hint: You can move all the files with the same extension by using the (*) wildcard.</pre>
+                        <pre>example: You can move all items with a '.png' extension by using '*.png'</pre>
+                    </p>
+
+                    <h4 class="bold">Renaming files:</h4>
+                    <p>
+                        In your <code>templates</code> folder, let's rename the following files.<br>
+                        <ul>
+                            <li>Rename <code>index.html</code> to <code>home.html</code></li>
+                            <li>Rename <code>gallery.html</code> to <code>media.html</code></li>
+                        </ul>
+                    </p>
+
+                    <h4 class="bold">Creating more files:</h4>
+                    <p>
+                        In the <code>root</code> folder off your app, create a folder called <code>temp</code>.<br>
+                        Using the UI and your browser, find 4 images of cats and drag them to the <code>/temp</code> folder. <br>
+                    </p>
+
+                    <h4 class="bold">Moving more files:</h4>
+                    <p>
+                        While STILL in the <code>/temp</code> folder... (do not change directory).
+                        Move the <code>notes.txt</code> file in <code>/temp</code> folder.<br>
+                        Display a list of the contents of the <code>/temp</code> folder. <br>
+                        Move the all the images into the <code>/assets/images</code> folder.<br>
+                    </p>
+
+                    <h4 class="bold">Displaying and Writing:</h4>
+                    Almost Done.
+                    <p>
+                        While STILL in the <code>/temp</code> folder... (do not change directory). <br>
+                        Display a list of the contents of the <code>/templates</code> folder. <br>
+                        <h5 class="bold">Bonus:</h5>
+                        Find out how to <code>add lines of code in a text file</code> from the terminal. <br>
+                        Copy the name of EACH file in the <code>/templates</code> folder, and add it as a new line in the <code>notes.txt</code> file.
+                        <pre>If I open the notes.txt file, I should the names of each file in the /templates on a new line.</pre>
+                    </p>
+
+                    <h4 class="bold">SHOW ME then Delete:</h4>
+                    Now... come show me so that I can make sure you did everything. <br>
+                    Then you can delete your <code>/temp</code> folder.
+                    """,
+        'published' : True
+    },
 }
 
 def spydecoder( level, code ):
