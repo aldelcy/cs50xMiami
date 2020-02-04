@@ -285,6 +285,11 @@ syllabus = {
       """,
       'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
       'videos':   {},
+      'harvard'     :   {
+        'title' : 'The Command Line',
+        'id'    : "BnJ013X02b8",
+        'time'  : [0,1070]
+      },
       'resources':[
         {
           'type'  : 'link',
