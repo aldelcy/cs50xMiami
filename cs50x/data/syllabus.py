@@ -358,8 +358,8 @@ syllabus = {
   'C'       :   [
     {
       'title':    "C: Variables, Datatypes & Operators",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     "",
+      'ppt_code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
       'harvard'     :   {
         'title' : 'Lecture 1: C, Variables and Datatype',
         'id'    : "e9Eds2Rc_x8",
@@ -368,7 +368,7 @@ syllabus = {
       'videos':   {},
       'resources':[
       ],
-      'published': False
+      'published': True
     },
     {
       'title':    "C: Conditionals, Arrays & Loops",
