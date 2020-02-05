@@ -274,43 +274,43 @@ syllabus = {
     {
       'title':    "The Command Line",
       'desc':     """
-        <h3 class="bold">The terminal</h3>
-        <p>
-        The terminal (or command prompt) is a very powerful tool.<br>
-        It allows you to navigate folders, create files and directories, delete, rename, move, copy and find files without ever having to touch the mouse. <br>
-        </p>
-        <p>
-        Most of you probably never touched a terminal before this class.<br>
-        After this class however, you 2 wil become inseparable.
-        </p>
-        <p>
-        In fact, almost all programmer in the field is very versed in Terminal commands and almost use them all the time.<br>
-        It allows you to do things fast, efficiently and in bulk.<br>
-        Things that would take you some time to do by clicking around a user interface.
-        </p>
-        <p>
-        For the beginning of this course, we will be using the <a href="https://ide.cs50.io/" target="_blank">CS50 IDE</a> and code online.<br>
-        That terminal is EXACTLY like the Mac Terminal, so you should use the Mac commands in there.<br><br>
-        But just in case you are curious. Here is how to find the terminals in your respective operating systems.
-        </p>
-        <h3 class="bold">How to open Terminal on Mac</h3>
-        <p>
-          <ul>
-            <li>Press the <code>Command</code> Key and the <code>Spacebar</code> Key right after the other</li>
-            <li>Type in the word <code>Terminal</code></li>
-            <li>Press <code>Enter</code></li>
-          </ul>
-          You may also have <code>iTerm2</code> as a terminal.
-        </p>
-        <h3 class="bold">How to open Terminal on Windows</h3>
-        <p>
-          <ul>
-            <li>Click on the <code>Start</code> menu icon on the bottom left of the screen</li>
-            <li>Type in the words <code>Command Prompt</code> or simply <code>CMD</code></li>
-            <li>Right click and choose <code>Run as aministrator</code></li>
-          </ul>
-          If you attended the Section last week and turned on the Ubunty Subsystem, you should use <code>hyperJS</code> as a terminal instead.
-        </p>
+                  <h3 class="bold">The terminal</h3>
+                  <p>
+                  The terminal (or command prompt) is a very powerful tool.<br>
+                  It allows you to navigate folders, create files and directories, delete, rename, move, copy and find files without ever having to touch the mouse. <br>
+                  </p>
+                  <p>
+                  Most of you probably never touched a terminal before this class.<br>
+                  After this class however, you 2 wil become inseparable.
+                  </p>
+                  <p>
+                  In fact, almost all programmer in the field is very versed in Terminal commands and almost use them all the time.<br>
+                  It allows you to do things fast, efficiently and in bulk.<br>
+                  Things that would take you some time to do by clicking around a user interface.
+                  </p>
+                  <p>
+                  For the beginning of this course, we will be using the <a href="https://ide.cs50.io/" target="_blank">CS50 IDE</a> and code online.<br>
+                  That terminal is EXACTLY like the Mac Terminal, so you should use the Mac commands in there.<br><br>
+                  But just in case you are curious. Here is how to find the terminals in your respective operating systems.
+                  </p>
+                  <h3 class="bold">How to open Terminal on Mac</h3>
+                  <p>
+                    <ul>
+                      <li>Press the <code>Command</code> Key and the <code>Spacebar</code> Key right after the other</li>
+                      <li>Type in the word <code>Terminal</code></li>
+                      <li>Press <code>Enter</code></li>
+                    </ul>
+                    You may also have <code>iTerm2</code> as a terminal.
+                  </p>
+                  <h3 class="bold">How to open Terminal on Windows</h3>
+                  <p>
+                    <ul>
+                      <li>Click on the <code>Start</code> menu icon on the bottom left of the screen</li>
+                      <li>Type in the words <code>Command Prompt</code> or simply <code>CMD</code></li>
+                      <li>Right click and choose <code>Run as aministrator</code></li>
+                    </ul>
+                    If you attended the Section last week and turned on the Ubunty Subsystem, you should use <code>hyperJS</code> as a terminal instead.
+                  </p>
       """,
       'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
       'videos':   {},
@@ -351,6 +351,7 @@ syllabus = {
           'url'   : 'https://github.com/0nn0/terminal-mac-cheatsheet/blob/master/README.markdown'
         }
       ],
+      'activities'  :   [activities['7g8h0m8j2']],
       'published': True
     },
   ],
