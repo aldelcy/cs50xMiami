@@ -367,6 +367,30 @@ syllabus = {
       },
       'videos':   {},
       'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Tutorial Point',
+          'desc'  : "Defining Variables",
+          'url'   : 'https://www.tutorialspoint.com/cprogramming/c_variables.htm'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Geeks for Geeks',
+          'desc'  : "C Datatypes",
+          'url'   : 'https://www.geeksforgeeks.org/data-types-in-c/'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Geeks for Geeks',
+          'desc'  : "C Operators",
+          'url'   : 'https://www.geeksforgeeks.org/operators-c-c/'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Tutorial Point',
+          'desc'  : "C Operators",
+          'url'   : 'https://www.tutorialspoint.com/cprogramming/c_operators.htm'
+        }
       ],
       'published': True
     },
