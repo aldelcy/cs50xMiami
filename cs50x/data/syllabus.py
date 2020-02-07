@@ -392,6 +392,7 @@ syllabus = {
           'url'   : 'https://www.tutorialspoint.com/cprogramming/c_operators.htm'
         }
       ],
+      'activities'  :   [activities['y48203j0']],
       'published': True
     },
     {

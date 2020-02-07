@@ -263,36 +263,43 @@ activities = {
         'title'     : "Let's Write some programs",
         'preview'   : "In this activity, you will practice writing some simple programs.",
         'desc'      : """
-                    <h3 class="bold">Guessing game</h3>
+                    <h2 class="bold">Guessing game</h2>
                     <p>
                         Write a simple program in C that asks the user to guess a number. <br>
                         Think about how you will store the number they need to guess <br>
                         After they entered the number it, if they guessed it, print "HOORRAY!" <br>
                         If they did not guess it, print "Try Again". <br> <br>
-                        You do not need to include a loop in this. once they guess it and you printed the result. we can run the program again. <br>
+                        You do not need to include a loop in this. Once they guess it and you print the result we can run the program again. <br>
                     </p> <br>
-
-                    <h3 class="bold">Simple Convo</h3>
+                    <hr>
+                    <h2 class="bold">Simple Convo</h2>
                     <p>
                         Write a simple program that has a simple convo with the user.<br>
                         First, ask their name. <br>
                         Then print a response to the user's name like. "Hi there Bob." <br>
                         Then ask another follow-up question and answer that question in your program. <br>
-                        You can ask up to 3 to 5 questions. <br> <br>
+                        You can ask up to 3 to 5 questions. <br>
                         <h4 class="bold">Bonus:</h4>
-                        As a bobus to this task, you can ask a question and based on their answer, give a specific answer. <br>
-
-                    </p>
-
-                    <h3 class="bold">Caltulator game</h3>
+                        As a bonus to this task, you can ask a question and based on their answer, give a specific answer. <br>
+                    </p><br>
+                    <hr>
+                    <h2 class="bold">Calculator game</h2>
                     <p>
                         Write a simple program that asks the user to enter 2 numbers.<br>
                         After the user enters the 2 numbers. in your program perform a mathematical calculation and print the result.<br>
                         <h4 class="bold">Bonus:</h4>
-                        As a bobus to this task, You can give the user some options as to what mathematical operation they woulr like to perform. <br> <br>
+                        As a bonus to this task, You can give the user some options as to what mathematical operation they would like to perform. <br> <br>
                         For example, You can ask them to type in one of the following operations "addition, subtraction, multiplication, division" <br>
                         <code>hint: tell them when they can write</code> <br>
                         An based on what they chose, use an if else to choose what operation to run.
+                    </p><br>
+                    <hr>
+                    <h2 class="bold">Is this a 2 digit number?</h2>
+                    <p>
+                        Ask the user for a number. If the number is a 2 digit number between 10 and 99, print <code>“The number you entered is a 2 digit number”</code> else print out <code>“The number you entered is not a 2 digit number”</code>.<br>
+                        <h4 class="bold">Bonus:</h4>
+                        As a bonus to this task, use a chain of if/ifelse/else statements to print out if the number is a 1, 2, 3 or 4 digit number. <br>
+                        Print out the output: <code>“The number you entered is {x} digits.”</code> <br>
                     </p>
                     """,
         'published' : True
