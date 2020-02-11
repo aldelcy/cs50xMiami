@@ -357,7 +357,7 @@ syllabus = {
   ],
   'C'       :   [
     {
-      'title':    "C: Variables, Datatypes & Operators",
+      'title':    "C: Variables, Datatypes, Operators & Conditionals",
       'desc':     "",
       'ppt_code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
       'harvard'     :   {
@@ -396,9 +396,9 @@ syllabus = {
       'published': True
     },
     {
-      'title':    "C: Conditionals, Arrays & Loops",
+      'title':    "C: Arrays & Loops",
       'desc':     "hello",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
       'harvard'     :   {
         'title' : 'Lecture 1: C, Conditionals and Loops',
         'id'    : "e9Eds2Rc_x8",
@@ -406,7 +406,7 @@ syllabus = {
       },
       'videos':   {},
       'resources':{},
-      'published': False
+      'published': True
     },
     {
       'title':    "C: Functions & Variables Scope",
