@@ -280,7 +280,8 @@ activities = {
                         Then ask another follow-up question and answer that question in your program. <br>
                         You can ask up to 3 to 5 questions. <br>
                         <h4 class="bold">Bonus:</h4>
-                        As a bonus to this task, you can ask a question and based on their answer, give a specific answer. <br>
+                        As a bonus to this task, you can ask a question and based on their answer, give a specific answer. <br><br>
+                        <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">How to compare 2 strings</a>
                     </p><br>
                     <hr>
                     <h2 class="bold">Calculator game</h2>
@@ -291,7 +292,8 @@ activities = {
                         As a bonus to this task, You can give the user some options as to what mathematical operation they would like to perform. <br> <br>
                         For example, You can ask them to type in one of the following operations "addition, subtraction, multiplication, division" <br>
                         <code>hint: tell them when they can write</code> <br>
-                        An based on what they chose, use an if else to choose what operation to run.
+                        An based on what they chose, use an if else to choose what operation to run.<br><br>
+                        <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">How to compare 2 strings</a>
                     </p><br>
                     <hr>
                     <h2 class="bold">Is this a 2 digit number?</h2>
@@ -303,6 +305,75 @@ activities = {
                     </p>
                     """,
         'published' : True
+    },
+    "6a82js91"  :   {
+        'id'        : '6a82js91',
+        'title'     : "Let's Write Better programs",
+        'preview'   : "In this activity, you will putting into practice some of the same concepts as last time, but this time using loops to make it more interesting.",
+        'desc'      : """
+                    <h2 class="bold">Password</h2>
+                    <p>
+                        Write a simple program that asks the user to enter a password.<br>
+                        When they enter a wrong password, print that that they entered a wrong password and ask them to try again.<br>
+                        When they enter the RIGHT password, print "ACCESS GRANTED!". <br>
+                        Use a loop to keep asking them to guess the password until they get it right.<br><br>
+                        Think about wether you would use a While or a DO WHILE Loop and why.<br><br>
+                        <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">How to compare 2 strings</a>
+                    </p> <br>
+
+                    <hr>
+
+                    <h2 class="bold">For Names</h2>
+                    <p>
+                        Create an empty array that will be accepting names.<br>
+                        Using a for loop of up to 4 times, ask the user to enter a name.<br>
+                        Ideally the user should enter 4 names, one after the other, 4 times.<br>
+                        Once they are done entering the names, using ANOTHER for loop. Go through the list of names and print each of them out with a greeting so that the output looks something like this.<br>
+                        <pre>Good Morning Bob</pre>
+                        <pre>Good Morning James</pre>
+                        <pre>Good Morning Marie</pre>
+                        <pre>Good Morning Sarah</pre>
+                        After the greeting loop is over. Print out that it was nice to meet them.
+                    </p> <br>
+
+                    <hr>
+
+                    <h2 class="bold">Guessing Game +</h2>
+                    <p>
+                        Using a WHILE or DO WHILE loop, write a program that asks the user to guess a number.<br>
+                        Everytime the user guesses a wrong number, tell them if they should guess higher or lower next.<br>
+                        You should not stop the loop until they guess the number.<br>
+                        Once they find the number, print "HOORRAY!! You guessed it."
+                    </p>
+                    <h3 class="bold">Bonus Mode (put the pressure):</h3>
+                    <p>
+                        Let's improve on your Number Guessing Game.<br>
+                        We can keep the same concept as above, but this time, add a limit to the numbers of guesses the user can guess. <br><br>
+                        For example, everytime the user guesses, tell them how many guesses they have left.<br>
+                        <pre>You have 4 guesses left.</pre>
+                        <pre>You have 3 guesses left.</pre>
+                        <pre>You have 2 guesses left.</pre>
+                        ...
+                        Once the number of guesses thy reach is zero <code>0</code>, Break out of the loop and tell them they have failed.<br><br>
+                        <a href="https://www.programiz.com/c-programming/c-break-continue-statement">How to break out of a loop in c</a>
+                    </p>
+                    <h3 class="bold">Wizard Mode (warmer / colder):</h3>
+                    <p>
+                        Implement a way to tell them is they are getting Warmer of Colder.<br>
+                        You will have to do some math here. Think about how you would figure out if they are getting warmer or colder.<br>
+                        <code>Warmer:  Based on the number to guess, you are getting closer compared to the LAST number you guessed.</code><br>
+                        <code>Colder:  Based on the number to guess, you are getting further away compared to the LAST number you guessed.</code><br><br>
+                        Think of the number you are trying to guess as a center point.<br>
+                        For example, if the number to guess is <code>10</code> and the last number I guessed was <code>6</code> and now I guess <code>1</code>, then I'm getting colder.<br>
+                        But if I guess <code>8</code> then I'm getting warmer because <code>8</code> is between <code>6</code> and <code>10</code>.
+                    </p>
+                    <h3 class="bold">Mind Blown Mode (look at your mistakes):</h3>
+                    <p>
+                        After they've guessed using all their chances from Bonus mode. If they still got it wrong. Print out all their guesses back to them in the console.<br>
+                        Think about how you would save all the gueses so that you can show it back to them later.
+                    </p><br>
+                    """,
+        'published' : False
     }
 }
 

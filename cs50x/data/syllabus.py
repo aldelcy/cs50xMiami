@@ -7,11 +7,11 @@ syllabus = {
       'desc'        :   """
                         """,
       'ppt_code'    :   "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
-      'harvard'     :   {
+      'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
         'time'  : [1940,3742]
-      },
+      }],
       'videos'      :   {},
       'resources'   :   [
         {
@@ -97,11 +97,11 @@ syllabus = {
                         </div>
                         """,
       'ppt_code'    :   "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
-      'harvard'     :   {
+      'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
         'time'  : [0,1297]
-      },
+      }],
       'videos'      :   {},
       'resources'   :   [
         {
@@ -146,11 +146,11 @@ syllabus = {
                 an output (the completed dish).</p>
       """,
       'ppt_code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
-      'harvard'     :   {
+      'harvard'     :   [{
         'title' : 'PseudoCoding',
         'id'    : "jjqgP9dpD1k",
         'time'  : [1297,1940]
-      },
+      }],
       'videos':   {},
       'resources':[
         {
@@ -314,11 +314,11 @@ syllabus = {
       """,
       'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
       'videos':   {},
-      'harvard'     :   {
+      'harvard'     :   [{
         'title' : 'The Command Line',
         'id'    : "BnJ013X02b8",
         'time'  : [0,1070]
-      },
+      }],
       'resources':[
         {
           'type'  : 'link',
@@ -360,11 +360,11 @@ syllabus = {
       'title':    "C: Variables, Datatypes, Operators & Conditionals",
       'desc':     "",
       'ppt_code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
-      'harvard'     :   {
-        'title' : 'Lecture 1: C, Variables and Datatype',
+      'harvard'     :   [{
+        'title' : 'Lecture 1: Variables and Datatype',
         'id'    : "e9Eds2Rc_x8",
-        'time'  : [0,2696]
-      },
+        'time'  : [0,2994]
+      }],
       'videos':   {},
       'resources':[
         {
@@ -397,15 +397,23 @@ syllabus = {
     },
     {
       'title':    "C: Arrays & Loops",
-      'desc':     "hello",
+      'desc':     "",
       'ppt_code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
-      'harvard'     :   {
-        'title' : 'Lecture 1: C, Conditionals and Loops',
-        'id'    : "e9Eds2Rc_x8",
-        'time'  : [2696,6373]
-      },
+      'harvard' : [
+        {
+          'title' : 'Lecture 2: Arrays in C',
+          'id'    : "8PrOp9t0PyQ",
+          'time'  : [0,3399]
+        },
+        {
+          'title' : 'Lecture 2: Conditionals and Loops',
+          'id'    : "e9Eds2Rc_x8",
+          'time'  : [2696,6373]
+        }
+      ],
       'videos':   {},
       'resources':{},
+      'activities'  :   [activities['6a82js91']],
       'published': True
     },
     {
