@@ -373,7 +373,7 @@ activities = {
                         Think about how you would save all the gueses so that you can show it back to them later.
                     </p><br>
                     """,
-        'published' : False
+        'published' : True
     }
 }
 
