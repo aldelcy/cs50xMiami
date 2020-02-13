@@ -19,6 +19,8 @@
 
                 {{ lecture.desc | safe }}
 
+
+
                 {% if lecture.activities and lecture.activities | length > 0 %}
                     <h2 class="bold"><u>Activities</u></h2>
                     {% for activity in lecture.activities %}

@@ -270,7 +270,7 @@ syllabus = {
       'published': True
     }
   ],
-  'Command Line'       :   [
+  'Command Line' :   [
     {
       'title':    "The Command Line",
       'desc':     """
@@ -418,7 +418,110 @@ syllabus = {
     },
     {
       'title':    "C: Functions & Variables Scope",
-      'desc':     "",
+      'desc':     """
+                  <h2 class="bold">What are functions?</h2>
+                  <p>
+                      Functions help us group code into re-usable blocks.<br>
+                      Imagine you are a cook and that you created this amazing but formula to calculate the perfect quantity of ingredients to buy for x number of guests. <br> <br>
+                      Everytime you throw a party you have to open your notebook and you have to: <br>
+                      - Remember the formula<br>
+                      - Plug in the numbers<br>
+                      - Calculate and hop you did not make any mistakes<br>
+                      - Finally get the final number/output.<br><br>
+                      Wouldn't be nice to be able to just write that formula once and everytime you need to use it, All you need to do is to just plug in the numbers and it gives you the answer?<br>
+                      That's what functions do. They allow you to write an algorithm one time, and use that SAME algorithm everytime you need to use it.
+                  </p>
+                  <h2 class="bold">How to write functions?</h2>
+                  <a>
+                      In C we have a very specific way to write functions:<br><br>
+                      1) First, just like a variable, we need to say the type of function we are declaring by putting the data type first.<br>
+                      <code>char</code>, <code>int</code>, <code>float</code> <br>
+                      OR <br>
+                      <code>void</code><br><br> 
+
+                      2) Then, like a variable, you choose a name for the function. Remember to make it descriptive and follow the rules of <a href="/lecture/2">variable naming conventions</a><br> <br>
+                      <code>int addNumbers</code><br>
+                      <code>float taxCalculation</code><br><br>
+                      3) Next, we open and close parenthesis right after the name, and we then open and close curly braces.</a><br>
+                      <code>int addNumbers() {  };</code><br>
+                      <code>float taxCalculation() {  };</code><br><br>
+                      4) We need to decide if we will need input for the function to use in our algorithm OR if the function will just perform the algorithm with no input.</a><br>
+                      Moving forward, we will refer to functions "Inputs" as "Parameters".<br><br>
+                      ** Parameters are not obligatory, but if you want your function to be flexible and dynamic, they are a great way to put in different data and get differnt results based on the data you provided. <br> <br>
+                      <pre>
+                      // This is an example of a function WITH NO parameters.
+
+                      void sayHello() {
+                          printf( "Hello World" );
+                      };</pre> <br>
+                      In the example above, the function just ran and printed the words <code>Hello World</code>. You did not pass it any input or data. <br> <br>
+                      
+                      Now, let's see an example with parameters. <br> <br>
+                      When asking for parameters, you must declare the data type of each parameters as well as the names you will use them as in your algorithm. <br>
+                      Think of parameters as empty variables that you will use to hold data, and that only exist INSIDE the function. <br>
+                      <pre>
+                      // This is an example of a functions WITH parameters a and b.
+
+                      void addNumbers( int a, int b) {
+                          int result = a + b;
+                          printf( "%i", result );
+                      };</pre> <br>
+                      In the example above, the function required that you give it 2 parameters <code>a</code> and <code>b</code> in order to do the math you wrote in the <code>result</code> variable.
+                  </p> <br>
+
+                  <h2 class="bold">2 Types of Functions?</h2>
+                  <p>
+                      Above, we saw that we made the distinction between: <br>
+                      <code>char</code>, <code>int</code>, <code>float</code> <br>
+                      AND <br>
+                      <code>void</code><br><br>
+
+                      There is a reason for that. <br><br>
+
+                      char, int and float functions require you to <code>return</code> a result of the data type you declared.<br>
+                      void does nor require you to return anything. <br> <br>
+                      
+                      Let's see this example here:<br>
+                      <pre>
+                      void addNumbers( int a, int b) {
+                          int result = a + b;
+                          printf( "%i", result );
+                      };</pre>
+                      This function is a <code>void</code> function and does not return any data, it performs the action and THAT's it, nothing else. You can't use the result of the operation.<br>
+                      If we need to use the result of the operation we need to change it from a <code>void</code> function to an <code>int</code> function and <code>return</code> the result.
+                      <pre>
+                      int addNumbers( int a, int b) {
+                          int result = a + b;
+                          printf( "%i", result );
+                          return result;
+                      };</pre>
+                      Here we are telling it to perform the operation, and return us the result as an <code>int</code> so we can use it later. <br>
+
+                  </p>
+
+                  <h2 class="bold">Using fucntions</h2>
+                  <p>
+                      You've created the functions, but they would be pretty useless if you can't use them right? <br> <br> 
+                      Lets put them to use. <br>  <br> 
+
+                      To call a function, all you need to do it call it's name like so:  <br>
+                      <code>addNumbers();</code> <br>  <br> 
+
+                      But we are not done, If you look at the function declaration above, <code>addNumbers</code> is expecting you to pass it 2 parameters: <code>a</code> and <code>b</code>. <br>
+                      Both of those parameters are <code>int</code>. <br> <br>
+                      Ok, let's give those parameters to the function. <br> <br>
+                      <code>addNumbers( 10, 45 );</code> <br> <br>
+
+                      PERFECT... now we're cooking. <br> <br>
+                      Normally this function should print out <code>55</code> and that's fine if that's all you want it to do. <br> <br>
+
+                      But remember, we might want to use <code>55</code> as part of our code somewhere. Since we are <code>returning</code> the result as an output, we can go ahead an assign that to a vaiable. <br> <br>
+                      for example: <br>
+                      <code>int calculation = addNumbers( 10, 45 );</code> <br><br>
+                      and BOOM, done!!! <br>
+                      No we can use the variable <code>calculation</code> somewhere in our code, because it called the function <code>addNumbers</code> and passed it the parameters <code>10</code> and <code>45</code> and it returned us the result <code>55</code>.
+                  </p>
+      """,
       'ppt_code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
       'harvard' : [
         {
