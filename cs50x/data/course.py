@@ -24,13 +24,13 @@ weeks  = {
   '2':{
     'dates': [date(2020, 2, 4), date(2020, 2, 6) ],
     'topic': lectures["4"]['topic'].lower(),
-    'lectures': [ lectures["4"], lectures["5"] ],
-    'pset' : psets[1]
+    'lectures': [ lectures["4"], lectures["5"] ]
   },
   '3':{
     'dates': [date(2020, 2, 11), date(2020, 2, 13) ],
     'topic': lectures["6"]['topic'].lower(),
-    'lectures': [ lectures["6"], lectures["7"] ]
+    'lectures': [ lectures["6"], lectures["7"] ],
+    'pset' : psets[1]
   },
   '4':{
     'dates': [date(2020, 2, 18), date(2020, 2, 20) ],

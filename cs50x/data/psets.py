@@ -4,7 +4,7 @@ psets = {
   0: {
     "desc" : "<p>Implement your very own Scratch project using Chrome, per <a href='https://docs.cs50.net/2019/x/psets/0/scratch.html'>this specification</a>.</p>",
     "link" : "https://docs.cs50.net/2019/x/psets/0/index.html",
-    "due_date" : date(2020, 2, 2)
+    "due_date" : date(2020, 1, 29)
   },
   1: {
     "desc" : "<p>Submit <a href='https://lab.cs50.io/cs50/labs/2019/x/hello/'>Hello</a></p>\
@@ -19,7 +19,7 @@ psets = {
                 <li><a href='https://lab.cs50.io/cs50/labs/2019/x/credit/'>Credit</a> if feeling more comfortable</li>\
             </ul>",
     "link" : "https://docs.cs50.net/2019/x/psets/1/index.html",
-    "due_date" : date(2020, 2, 9)
+    "due_date" : date(2020, 2, 16)
   },
   2: {
     "desc" : "<p>Submit any two (2) of:</p>\
