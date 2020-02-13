@@ -411,8 +411,13 @@ syllabus = {
           'time'  : [2696,6373]
         }
       ],
-      'videos':   {},
-      'resources':{},
+      'videos':   [
+        {
+          'title': 'How to compare 2 strings.',
+          'url': 'https://www.loom.com/share/759870e2d548446d8e2a8f3683eddf18'
+        }
+      ],
+      'resources':[],
       'activities'  :   [activities['6a82js91']],
       'published': True
     },
@@ -448,24 +453,24 @@ syllabus = {
                       4) We need to decide if we will need input for the function to use in our algorithm OR if the function will just perform the algorithm with no input.</a><br>
                       Moving forward, we will refer to functions "Inputs" as "Parameters".<br><br>
                       ** Parameters are not obligatory, but if you want your function to be flexible and dynamic, they are a great way to put in different data and get differnt results based on the data you provided. <br> <br>
-                      <pre>
-                      // This is an example of a function WITH NO parameters.
+    <pre>
+      // This is an example of a function WITH NO parameters.
 
-                      void sayHello() {
-                          printf( "Hello World" );
-                      };</pre> <br>
+      void sayHello() {
+          printf( "Hello World" );
+      };</pre> <br>
                       In the example above, the function just ran and printed the words <code>Hello World</code>. You did not pass it any input or data. <br> <br>
                       
                       Now, let's see an example with parameters. <br> <br>
                       When asking for parameters, you must declare the data type of each parameters as well as the names you will use them as in your algorithm. <br>
                       Think of parameters as empty variables that you will use to hold data, and that only exist INSIDE the function. <br>
-                      <pre>
-                      // This is an example of a functions WITH parameters a and b.
+    <pre>
+      // This is an example of a functions WITH parameters a and b.
 
-                      void addNumbers( int a, int b) {
-                          int result = a + b;
-                          printf( "%i", result );
-                      };</pre> <br>
+      void addNumbers( int a, int b) {
+          int result = a + b;
+          printf( "%i", result );
+      };</pre> <br>
                       In the example above, the function required that you give it 2 parameters <code>a</code> and <code>b</code> in order to do the math you wrote in the <code>result</code> variable.
                   </p> <br>
 
@@ -482,19 +487,19 @@ syllabus = {
                       void does nor require you to return anything. <br> <br>
                       
                       Let's see this example here:<br>
-                      <pre>
-                      void addNumbers( int a, int b) {
-                          int result = a + b;
-                          printf( "%i", result );
-                      };</pre>
+    <pre>
+      void addNumbers( int a, int b) {
+          int result = a + b;
+          printf( "%i", result );
+      };</pre>
                       This function is a <code>void</code> function and does not return any data, it performs the action and THAT's it, nothing else. You can't use the result of the operation.<br>
                       If we need to use the result of the operation we need to change it from a <code>void</code> function to an <code>int</code> function and <code>return</code> the result.
-                      <pre>
-                      int addNumbers( int a, int b) {
-                          int result = a + b;
-                          printf( "%i", result );
-                          return result;
-                      };</pre>
+    <pre>
+      int addNumbers( int a, int b) {
+          int result = a + b;
+          printf( "%i", result );
+          return result;
+      };</pre>
                       Here we are telling it to perform the operation, and return us the result as an <code>int</code> so we can use it later. <br>
 
                   </p>

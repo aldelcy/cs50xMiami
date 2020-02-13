@@ -311,6 +311,33 @@ activities = {
         'title'     : "Let's Write Better programs",
         'preview'   : "In this activity, you will putting into practice some of the same concepts as last time, but this time using loops to make it more interesting.",
         'desc'      : """
+                    <h2 class="bold">Simple Loop</h2>
+                    <p>
+                        Write a simple program that asks a user to input a number and use a for loop to count from <code>0</code> to that number.
+                    </p> <br>
+
+                    <hr>
+
+                    <h2 class="bold">Simple Loop 2</h2>
+                    <p>
+                        Write a simple program that asks a user to input a number and counts with steps. <br>
+                        So... First, you ask the user to input a <code>number</code>. <br>
+                        Then, you ask them to input another number that you will use as a <code>step</code>.<br>
+                        Now, you will use a for loop to count from <code>0</code> to that number, but instead of counting by one digit, count by the <code>step</code> number. <br><br>
+                        Example:<br>
+                        If the <code>number</code> is <code>10</code> and the <code>step</code> is <code>2</code>, the output will look like this:<br>
+        <pre>
+            0
+            2
+            4
+            6
+            8
+            10                        
+        </pre>
+                    </p> <br>
+
+                    <hr>
+
                     <h2 class="bold">Password</h2>
                     <p>
                         Write a simple program that asks the user to enter a password.<br>
@@ -318,7 +345,8 @@ activities = {
                         When they enter the RIGHT password, print "ACCESS GRANTED!". <br>
                         Use a loop to keep asking them to guess the password until they get it right.<br><br>
                         Think about wether you would use a While or a DO WHILE Loop and why.<br><br>
-                        <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">How to compare 2 strings</a>
+                        Now, in C, you can't just compare 2 strings just like you can compare 2 numbers with the <code>==</code> operator. <br>
+                        Click here to find out <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">how to compare 2 strings</a>.
                     </p> <br>
 
                     <hr>
@@ -372,6 +400,15 @@ activities = {
                         After they've guessed using all their chances from Bonus mode. If they still got it wrong. Print out all their guesses back to them in the console.<br>
                         Think about how you would save all the gueses so that you can show it back to them later.
                     </p><br>
+                    """,
+        'published' : True
+    },
+    "5h23kw23"  :   {
+        'id'        : '5h23kw23',
+        'title'     : "Let's make our programs dynamic.",
+        'preview'   : "In this activity, you will go back to some of your past programs and refactor them into functions that can be re-used.",
+        'desc'      : """
+                    
                     """,
         'published' : True
     }
