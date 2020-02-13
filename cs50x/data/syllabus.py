@@ -406,7 +406,7 @@ syllabus = {
           'time'  : [0,3399]
         },
         {
-          'title' : 'Lecture 2: Conditionals and Loops',
+          'title' : 'Lecture 1: Conditionals and Loops',
           'id'    : "e9Eds2Rc_x8",
           'time'  : [2696,6373]
         }
@@ -418,24 +418,50 @@ syllabus = {
     },
     {
       'title':    "C: Functions & Variables Scope",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     "",
+      'ppt_code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
+      'harvard' : [
+        {
+          'title' : 'Lecture 2: Functions',
+          'id'    : "8PrOp9t0PyQ",
+          'time'  : [3399,5695]
+        }
+      ],
       'videos':   {},
-      'resources':{},
-      'published': False
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'C Functions',
+          'desc'  : 'How to CREATE functions',
+          'url'   : 'https://www.youtube.com/watch?v=DbR-0GfnQOs'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'C Functions',
+          'desc'  : 'How to USE / INVOKE functions',
+          'url'   : 'https://www.youtube.com/watch?v=_0Lp3utEEcs'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'C Functions',
+          'desc'  : 'Void vs Return Functions',
+          'url'   : 'https://www.youtube.com/watch?v=MZAF1R_KzgQ'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "C: Command Line Arguments & Complexity Analysis",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     "",
+      'ppt_code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
       'videos':   {},
       'resources':{},
       'published': False
     },
     {
       'title':    "C: Magic Numbers & Structs",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     "",
+      'ppt_code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
       'videos':   {},
       'resources':{},
       'published': False
