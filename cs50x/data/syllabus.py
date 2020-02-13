@@ -21,7 +21,7 @@ syllabus = {
           'url' : 'https://scratch.mit.edu/'
         },
         {
-          'type': 'link',
+          'type': 'video',
           'title': 'Scratch Tutorial',
           'desc': 'Make your first program',
           'url' : 'https://www.youtube.com/watch?v=1E8opsBP_98'
@@ -111,19 +111,19 @@ syllabus = {
           'url'   : 'https://www.ascii-code.com/'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Tutorial',
           'desc'  : "How to count in Binary",
           'url'   : 'https://www.youtube.com/watch?v=txoRI2t0boI'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Binary Math',
           'desc'  : "How to Find a number in Binary",
           'url'   : 'https://www.youtube.com/watch?v=jRSqhjMx0X0'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Binary Video',
           'desc'  : "Computer Science Basics: Binary",
           'url'   : 'https://www.youtube.com/watch?v=M41M9ATm49M'
@@ -160,7 +160,7 @@ syllabus = {
           'url'   : 'https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/a/a-guessing-game'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Game',
           'desc'  : "What is an Algorithm",
           'url'   : 'https://www.youtube.com/watch?v=CvSOaYi89B4'
@@ -248,19 +248,19 @@ syllabus = {
       'videos':   {},
       'resources':[
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Loops',
           'desc'  : "Intro to Programming",
           'url'   : 'https://www.youtube.com/watch?v=wxds6MAtUQ0'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Proramming Structures',
           'desc'  : "Sequences, Selections, and Loops",
           'url'   : 'https://www.youtube.com/watch?v=eSYeHlwDCNA'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Programming Basics:',
           'desc'  : "Statements & Functions: Crash Course Computer Science",
           'url'   : 'https://www.youtube.com/watch?v=l26oaHV7D40'
@@ -321,25 +321,25 @@ syllabus = {
       }],
       'resources':[
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Mac Terminal',
           'desc'  : "Basic Commands and Concepts",
           'url'   : 'https://www.youtube.com/watch?v=-Vl4rpZVA6I'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Mac Terminal',
           'desc'  : "Terminal Basics for Beginners",
           'url'   : 'https://www.youtube.com/watch?v=5XgBd6rjuDQ'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Windows Terminal',
           'desc'  : "Introduction to the Command Prompt",
           'url'   : 'https://www.youtube.com/watch?v=MBBWVgE0ewk'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'Windows Terminal',
           'desc'  : "Listing Files and Directories",
           'url'   : 'https://www.youtube.com/watch?v=7ABkcHLdG_A'
@@ -430,19 +430,19 @@ syllabus = {
       'videos':   {},
       'resources':[
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'C Functions',
           'desc'  : 'How to CREATE functions',
           'url'   : 'https://www.youtube.com/watch?v=DbR-0GfnQOs'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'C Functions',
           'desc'  : 'How to USE / INVOKE functions',
           'url'   : 'https://www.youtube.com/watch?v=_0Lp3utEEcs'
         },
         {
-          'type'  : 'link',
+          'type'  : 'video',
           'title' : 'C Functions',
           'desc'  : 'Void vs Return Functions',
           'url'   : 'https://www.youtube.com/watch?v=MZAF1R_KzgQ'
@@ -455,8 +455,45 @@ syllabus = {
       'desc':     "",
       'ppt_code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
       'videos':   {},
-      'resources':{},
-      'published': False
+      'harvard':   [
+        {
+          'title' : 'Command Line Arguments',
+          'id'    : "AI6Ccfno6Pk",
+          'time'  : [0,470]
+        },
+        {
+          'title' : 'Complexity Analysis',
+          'id'    : "YoZPTyGL2IQ",
+          'time'  : [0,754]
+        }
+      ],
+      'resources':[
+        {
+          'type'  : 'video',
+          'title' : 'Command Line Arguments',
+          'desc'  : '**Argv and Argc',
+          'url'   : 'https://www.youtube.com/watch?v=6Dk8s0F2gow'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Big O Basics',
+          'desc'  : 'Big O Notation in 5 minutes',
+          'url'   : 'https://www.youtube.com/watch?v=__vX2sjlpXU'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Algorithm Complexity',
+          'desc'  : 'Big O Notation',
+          'url'   : 'https://www.youtube.com/watch?v=kS_gr2_-ws8'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Hacker Rank',
+          'desc'  : 'Big O Notation',
+          'url'   : 'https://www.youtube.com/watch?v=v4cd1O4zkGw'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "C: Magic Numbers & Structs",
