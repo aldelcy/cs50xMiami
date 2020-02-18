@@ -289,7 +289,7 @@ activities = {
                         <h4 class="bold">Bonus:</h4>
                         As a bonus to this task, You can give the user some options as to what mathematical operation they would like to perform. <br> <br>
                         For example, You can ask them to type in one of the following operations "addition, subtraction, multiplication, division" <br>
-                        <code>hint: tell them when they can write</code> <br>
+                        <code>hint: tell them what they can write</code> <br>
                         An based on what they chose, use an if else to choose what operation to run.<br><br>
                         <a href="https://www.programiz.com/c-programming/library-function/string.h/strcmp">How to compare 2 strings</a>
                     </p><br>
@@ -398,7 +398,25 @@ activities = {
                         After they've guessed using all their chances from Bonus mode. If they still got it wrong. Print out all their guesses back to them in the console.<br>
                         Think about how you would save all the gueses so that you can show it back to them later.
                     </p><br>
-                    """,
+        """,
+				'solutions' : [
+					{
+						'title'	: 'Simple loop 1',
+						'video'	: 'https://www.loom.com/share/ec398b8e9c364d27892ccefd443dc554',
+						'url'		:	''
+					},
+					{
+						'title'	: 'Simple loop 2',
+						'video'	: 'https://www.loom.com/share/f79a8181fcb94842afb8248c049d47d2',
+						'url'		:	'https://www.codepile.net/raw/dmGn9oPG.cpp'
+					},
+					{
+						'title'	: 'Password',
+						'video'	: 'https://www.loom.com/share/48b65271fd914c1a9a4ccaa7be56238b',
+						'url'		:	'https://www.codepile.net/raw/rqraYYLJ.cpp'
+					}
+				],
+				'show_solutions': True,
         'published' : True
     },
     "5h23kw23"  :   {
@@ -406,8 +424,43 @@ activities = {
         'title'     : "Let's make our programs dynamic.",
         'preview'   : "In this activity, you will go back to some of your past programs and refactor them into functions that can be re-used.",
         'desc'      : """
-                    
-                    """,
+					<h2 class="bold">Refactoring into functions</h2>
+					Let's revisit our <a href="/activity/y48203j0">Calculator Game</a> and refactor the calculations in fucntions we can use in other places. <br> <br>
+					We will use this boiler plate in order to refactor our calculations into calculating functions and call them when we need them. <br> <br>
+					<b>First</b>, Above the main function, we will write each function and declare what parameters they will need to be passed.<br> <br>
+					<b>Second</b>, we'll decide if the functions are Fruitful or Non-fruitful functions.<br>
+					<a href="/lecture/7"> Data vs Void functions.</a><br><br>
+					<b>Then</b> we will write our Program in the Main function to ask the user for the numbers and the operation they would like to run. <br><br>
+					<b>Finally</b> with an IF / ELSE statement, we will call the appropriate function based on the user's input. <br><br>
+					Below is a starting point to this Program, complete each function to do what it's supposed to do and the IF / ELSE statement below.
+			<pre>
+				// Include the correct libraries
+
+				int add( ){ ... }
+				int substract( ){ ... }
+				int divide( ){ ... }
+				int multiply( ){ ... }
+
+				int main( void ){
+					// Ask the user for the numbers
+					int num1 = get_int("number 1:");
+					int num2 = get_int("number 2:");
+
+					// Ask the user for the operation they would like to run.
+					string operation = get_string("operation:");
+					
+					// Write the IF ELSE statement that calls the right function based on the user's input
+				}
+			</pre>
+        """,
+				'solutions' : [
+					{
+						'title'	: 'Function Refactoring',
+						'video'	: 'https://www.loom.com/share/2b610ec80b494353a235666da565b730',
+						'url'		:	'https://www.codepile.net/raw/nD9Gmr3W.cpp' 
+					}
+				],
+				'show_solutions': True,
         'published' : True
     }
 }

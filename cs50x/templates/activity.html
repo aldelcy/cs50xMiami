@@ -4,18 +4,39 @@
 {% block body %}
 <div class="container wrapper">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-8">
             <h1>{{title}}</h1>
-        </div>
-    </div>
-</div>
-
-<div class="container wrapper">
-    <div class="row">
-        <div class="col-sm-12">
-            {{ if activity.desc }}
+            <br>
+            {% if activity.desc %}
                 {{ activity.desc | safe }}
-            {{endif}}
+            {% endif %}
+        </div>
+        <div class="col-sm-4">
+            <h3 class="bold">Solutions:</h3>
+            <hr>
+            {% if activity.solutions and activity.show_solutions %}
+                {% for solution in activity.solutions %}
+                    <p>
+                        {% if solution.video %}
+                            <a href="{{ solution.video }}" target="_blank">
+                                <button class="btn btn-primary">
+                                    <ion-icon name="videocam" style="font-size: 20px;"></ion-icon>
+                                </button>    
+                            </a>
+                        {% endif %}
+                        {% if solution.url %}
+                            <a href="{{ solution.url }}" target="_blank">
+                                <button class="btn btn-secondary">
+                                    <ion-icon name="document-text-outline" style="font-size: 20px;"></ion-icon>
+                            </button>
+                            </a>
+                        {% endif %}
+                        {{ solution.title }} :: Solution
+                    </p>
+                {% endfor %}
+            {% else %}
+                No solutions yet.
+            {% endif %}
         </div>
     </div>
 </div>

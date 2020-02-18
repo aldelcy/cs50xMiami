@@ -19,20 +19,6 @@
 
                 {{ lecture.desc | safe }}
 
-
-                {% if lecture.activities and lecture.activities | length > 0 %}
-                    <h2 class="bold"><u>Activities</u></h2>
-                    {% for activity in lecture.activities %}
-                        {% if activity.published %}
-                            <h3 class="bold">{{ activity.title }}</h3>
-                            {{ activity.preview | safe }}
-                            <br>
-                            <a href="/activity/{{ activity.id }}">Start Activity</a>
-                            <br>
-                        {% endif %}
-
-                    {% endfor %}
-                {% endif %}
             </div>
 
 
@@ -97,6 +83,24 @@
                             </li>
                         {% endfor %}
                     </ul>
+                {% endif %}
+
+                
+                {% if lecture.activities and lecture.activities | length > 0 %}
+                    <hr>
+                    <h3 class="bold"><u>Activities</u></h3>
+                    {% for activity in lecture.activities %}
+                        {% if activity.published %}
+                            <h4 class="bold">{{ activity.title }}</h4>
+                            {{ activity.preview | safe }}
+                            <br><br>
+                            
+                            <h4 class="bold">
+                                <a href="/activity/{{ activity.id }}">Start Activity</a>
+                            </h4>
+                        {% endif %}
+
+                    {% endfor %}
                 {% endif %}
                 
                 
