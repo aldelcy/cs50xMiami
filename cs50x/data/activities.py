@@ -3,13 +3,11 @@ activities = {
         'id'        : '2a8a3r2c0',
         'title'     : 'We the Machines',
         'preview'   : "Can you communicate effectively as a team? Let's find out. ",
-        'desc'  :    """
-                        Use the following, to generate a radom task.
-                        <h4 class="bold" class='bold'>
-                            Random Task Generator:
-                            <a href='/tools/random_task'> click here </a>
-                        </h4>
-                    """,
+        'desc'  : """Use the following, to generate a radom task.
+											<h4 class="bold" class='bold'>
+													Random Task Generator:
+													<a href='/tools/random_task'> click here </a>
+											</h4>""",
         'published' : True
     },
     "7g4k9c0o8"  :   {
@@ -79,50 +77,50 @@ activities = {
         'title'     : 'PSEUDOCODING',
         'preview'   : "Let's write code in english",
         'desc'      : """
-                        Pseudo code is a term which is often used in programming and algorithm based fields. <br>
-                        It is a methodology that allows the programmer to represent the implementation of an algorithm.<br>
-                        Simply, we can say that it’s the cooked up representation of an algorithm. Often at times, algorithms are
-                        represented with the help of pseudo codes as they can be interpreted by programmers no matter what
-                        their programming background or knowledge is. <br>
-                        Pseudo code, as the name suggests, is a false code or a representation of code which can be understood
-                        by even a layman with some school level programming knowledge.
-                        <br>
-                        <h4 class="bold">EXAMPLES:</h4>
+											Pseudo code is a term which is often used in programming and algorithm based fields. <br>
+											It is a methodology that allows the programmer to represent the implementation of an algorithm.<br>
+											Simply, we can say that it’s the cooked up representation of an algorithm. Often at times, algorithms are
+											represented with the help of pseudo codes as they can be interpreted by programmers no matter what
+											their programming background or knowledge is. <br>
+											Pseudo code, as the name suggests, is a false code or a representation of code which can be understood
+											by even a layman with some school level programming knowledge.
+											<br>
+											<h4 class="bold">EXAMPLES:</h4>
 
                         <div class="row">
                             <div class="col-sm-6">
-                                <h5 class="bold">Steet Light</h5>
-    <pre>
-        SET VARIABLE light as the STRING 'Red'
-        
-        IF light is 'Green'
-            MOVE FORWARD
-        ELSE IF light is 'Yellow'
-            SLOW DOWN
-        ELSE IF light is 'Red'
-            STOP
-    </pre>
-                            </div>
-                            <div class="col-sm-6">
-                                <h5 class="bold">Weather</h5>
-    <pre>
-        SET VARIABLE temperature as the STRING 'Cold'
-        SET VARIABLE weather as the STRING 'Rainy'
-        
-        IF temperature is 'Hot'
-            Leave Sweater Home
-        ELSE IF temperature is 'Cold'
-            Take Sweater
-        ELSE
-            Wear a nice sundress
-    
-        Check the weather
-    
-        IF weather is 'Rainy'
-            Take Umbrella
-        ELSE
-            Leave Umbrella Home
-    </pre>                    
+                                    <h5 class="bold">Steet Light</h5>
+					<pre>
+						SET VARIABLE light as the STRING 'Red'
+						
+						IF light is 'Green'
+							MOVE FORWARD
+						ELSE IF light is 'Yellow'
+							SLOW DOWN
+						ELSE IF light is 'Red'
+							STOP
+					</pre>
+																	</div>
+																	<div class="col-sm-6">
+																			<h5 class="bold">Weather</h5>
+					<pre>
+						SET VARIABLE temperature as the STRING 'Cold'
+						SET VARIABLE weather as the STRING 'Rainy'
+						
+						IF temperature is 'Hot'
+							Leave Sweater Home
+						ELSE IF temperature is 'Cold'
+							Take Sweater
+						ELSE
+							Wear a nice sundress
+				
+						Check the weather
+				
+						IF weather is 'Rainy'
+							Take Umbrella
+						ELSE
+							Leave Umbrella Home
+					</pre>                    
                             </div>
                         </div>
                         <h4>
@@ -270,7 +268,7 @@ activities = {
                         After they entered the number it, if they guessed it, print "HOORRAY!" <br>
                         If they did not guess it, print "Try Again". <br> <br>
                         You do not need to include a loop in this. Once they guess it and you print the result we can run the program again. <br>
-                    </p> <br>
+                    </p>
                     <hr>
                     <h2 class="bold">Simple Convo</h2>
                     <p>

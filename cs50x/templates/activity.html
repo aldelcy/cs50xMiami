@@ -13,7 +13,9 @@
 <div class="container wrapper">
     <div class="row">
         <div class="col-sm-12">
-            {{ activity.desc | safe }}
+            {{ if activity.desc }}
+                {{ activity.desc | safe }}
+            {{endif}}
         </div>
     </div>
 </div>

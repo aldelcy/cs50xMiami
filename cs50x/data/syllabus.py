@@ -560,7 +560,97 @@ syllabus = {
     },
     {
       'title':    "C: Command Line Arguments & Complexity Analysis",
-      'desc':     "",
+      'desc':     """
+        <h2 class="bold">Command Line Arguments</h2>
+        
+        <p>
+            So far, you've been used to just starting your app with the command: <br>
+            <code> make app.c </code> and <code> ./app </code>.
+        </p>
+        <p>
+            In your <code>app.c</code> file, you may notice there is a function called <code>main</code> that is written like so: <br>
+        
+            <pre>int main (void) { ... }</pre>        
+        </p>
+        
+        <p>
+            the <code>void</code> parameter in that function is placed there to avoid any information to be passed to the function while running the application. <br>
+            
+            BUT, just like any other function, you can use declare parameters to be passed to the <code>main</code> function. That's where we will be using the default parameters <code>int argc</code> and <code>char* argv[]</code>.
+        </p>
+        
+        <p>
+            <h4 class="bold">char* argv[ ]</h4>
+            As you can notice, this is a parameter expecting to be passed an array of <code>char*</code> or <code>strings</code>. <br> <br>
+            This will collect the arguments passed in the command line and pass them in as an array to the main function.
+            
+        </p>
+        
+        <p>
+            <h4 class="bold">int argc</h4>
+            Argc is an integer that is meant to represent the NUMBER of array items passed in <code> char* argv[] </code>. As you may have experienced, You can't calculate the size of an Array passed as a parameter, so you have to send in the size of the array as well.
+        </p>
+        
+        
+        <p>
+            <h4 class="bold">Getting Argv Items</h4>
+            Now you can get each item passed from the <code>char* argv[]</code> by indexing like so <code>argv[0]</code>, <code>argv[3]</code> ... ect. <br> <br>
+            
+            You can use a For Loop to interate over the array and see all the arguments passed, or you can use them in whatever algorithm you would like. <br><br>
+            
+            
+            <code>PS:</code> The arguments passed in <code>char* argv[]</code> are all characters. Make sure to type cast as needed. <br> <br>
+            for example: <br>
+            <pre>char* x = "12";</pre>
+            Type casting <code>x</code> into <code>int</code>:
+            <pre> int y = (int) x; </pre>
+            Type casting <code>x</code> into <code>int</code>:
+            <pre> float z = (float) x; </pre>
+            <a href="https://www.geeksforgeeks.org/type-conversion-c/"> How to typecast in C.</a>
+        </p>
+        
+        
+        <br> <br>
+        
+        <h2 class="bold">Complexity Analysis</h2>
+        <p>
+            Computers use resources (RAM - Ramdom Access Memory) in order to process information that you want it to process.
+        </p>
+        
+        <h4 class="bold">For example</h4>
+        <p>
+            When you run a <b>FOR LOOP</b> to count up to 100, you run the same code 100 times them the for loop runs. This might seem insignificant, given that computers are super fast, but when you are dealing with hundreds of request per minute, it can get a bit excessive.
+        </p>
+        
+        <p>
+            <b>Complexity Analysis</b> is a way to measure the steps taken by an algorithm to excecute a program. <br>
+        </p>
+        
+        <p>
+            To measure the steps taken by our algorithm, we will use a methodology called the <b>BIG O Notation</b>. With Big O, we try to calculate the <b>Worst case scenario</b>, and assign a step level to each statement and loop in our algorithm. We can also use <b>BIG OMEGA Notation</b> to calculate the <b>Best case scenario.</b>
+        </p>
+        
+        <p>
+            In the case that BIG O and BIG OMEGA notation are the same complexity, we refer to that as <b>THETA Notation</b>.
+        </p>
+        
+        <p>
+            The Notations assignments are as follows: <br><br>
+            ▪ Polynomial – <b>O(n^2)</b>: Runtime grows quicker than previous all based on n.<br>
+            ▪ Superlinear – <b>O(n log(n))</b>: Runtime grows in proportion to n.<br>
+            ▪ Linear – <b>O(n)</b>: Runtime grows directly in proportion to n.<br>
+            ▪ Logarithmic – <b>O(log(n))</b>: Runtime grows logarithmically in proportion to n.<br>    
+            ▪ Exponential – <b>O(c^n)</b>: Runtime grows even faster than polynomial algorithm based on n.<br>
+            ▪ Constant – <b>O(1)</b>: Runtime will always be in the same regardless of the size of the input data set.<br>
+        </p>
+        
+        <p>
+            Please watch the videos in the resources links to see how to assign a level to each step of your algorithm.
+        </p>
+        <p>
+            After assigning a Notation to each step, we can compile them together and calculate the final BIG O notation of the algorithm as a whole.
+        </p>
+      """,
       'ppt_code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
       'videos':   {},
       'harvard':   [
@@ -599,17 +689,49 @@ syllabus = {
           'title' : 'Hacker Rank',
           'desc'  : 'Big O Notation',
           'url'   : 'https://www.youtube.com/watch?v=v4cd1O4zkGw'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Type casting',
+          'desc'  : 'Type conversion of data in C',
+          'url'   : 'https://www.w3schools.in/c-tutorial/type-casting/'
         }
       ],
       'published': True
     },
     {
-      'title':    "C: Magic Numbers & Structs",
-      'desc':     "",
+      'title':    "C: Constants & Libraries",
+      'desc':     """""",
       'ppt_code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
+      'harvard':  [
+        {
+          'title' : 'Getting Started with Github',
+          'id'    : "MJUJ4wbFm_A",
+          'time'  : [0,2304]
+        }
+      ],
       'videos':   {},
-      'resources':{},
-      'published': False
+      'resources':[
+        {
+          'type'  : 'video',
+          'title' : 'Libraries',
+          'desc'  : "Using Libraries in C",
+          'url'   : 'https://www.youtube.com/watch?v=JSo85ORXKqQ'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Header Files',
+          'desc'  : "Creating your own header file.",
+          'url'   : 'https://www.geeksforgeeks.org/write-header-file-c/'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'C Libraries',
+          'desc'  : "List of Standard C Libraries and headers",
+          'url'   : 'https://en.cppreference.com/w/c/header'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Algorithms: Search",
@@ -628,7 +750,7 @@ syllabus = {
       'published': False
     },
     {
-      'title':    "Memory Management",
+      'title':    "Memory, Pointers & Structs",
       'desc':     "hello",
       'ppt_code': "",
       'videos':   {},

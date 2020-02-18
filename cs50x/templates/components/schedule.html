@@ -24,7 +24,11 @@
                 {% endfor %}
                 <td>
                     {% if 'pset' in week %}
-                        <a href="{{ week.pset.link }}">Pset Due {{ week.pset.due_date.strftime('%m/%d') }}</a>
+                        {% if week.pset.link %}
+                            <a href="{{ week.pset.link }}">Pset {{ week.pset.id }} Due {{ week.pset.due_date.strftime('%m/%d') }}</a>
+                        {% else %}
+                            Pset {{ week.pset.id }} ( Coming soon )</a>
+                        {% endif %}
                     {% endif %}
                 </td>
             </tr>
