@@ -65,6 +65,12 @@ a.video_item >*:hover{
     top: 50px !important;
     box-shadow: 0px 0px 0px !important;
 }
+.codeBlock{
+    display: grid;
+}
+.codeBlock code{
+    white-space: pre-wrap;
+}
 .page_title > *, .no_margin {
     margin: 5px 0;
 }

@@ -399,24 +399,24 @@ activities = {
                         Think about how you would save all the gueses so that you can show it back to them later.
                     </p><br>
         """,
-				'solutions' : [
-					{
-						'title'	: 'Simple loop 1',
-						'video'	: 'https://www.loom.com/share/ec398b8e9c364d27892ccefd443dc554',
-						'url'		:	''
-					},
-					{
-						'title'	: 'Simple loop 2',
-						'video'	: 'https://www.loom.com/share/f79a8181fcb94842afb8248c049d47d2',
-						'url'		:	'https://www.codepile.net/raw/dmGn9oPG.cpp'
-					},
-					{
-						'title'	: 'Password',
-						'video'	: 'https://www.loom.com/share/48b65271fd914c1a9a4ccaa7be56238b',
-						'url'		:	'https://www.codepile.net/raw/rqraYYLJ.cpp'
-					}
-				],
-				'show_solutions': True,
+        'solutions' : [
+            {
+                'title'	: 'Simple loop 1',
+                'video'	: 'https://www.loom.com/share/ec398b8e9c364d27892ccefd443dc554',
+                'url'		:	''
+            },
+            {
+                'title'	: 'Simple loop 2',
+                'video'	: 'https://www.loom.com/share/f79a8181fcb94842afb8248c049d47d2',
+                'url'		:	'https://www.codepile.net/raw/dmGn9oPG.cpp'
+            },
+            {
+                'title'	: 'Password',
+                'video'	: 'https://www.loom.com/share/48b65271fd914c1a9a4ccaa7be56238b',
+                'url'		:	'https://www.codepile.net/raw/rqraYYLJ.cpp'
+            }
+        ],
+        'show_solutions': True,
         'published' : True
     },
     "5h23kw23"  :   {
@@ -426,7 +426,7 @@ activities = {
         'desc'      : """
 					<h2 class="bold">Refactoring into functions</h2>
 					Let's revisit our <a href="/activity/y48203j0">Calculator Game</a> and refactor the calculations in fucntions we can use in other places. <br> <br>
-					We will use this boiler plate in order to refactor our calculations into calculating functions and call them when we need them. <br> <br>
+					We will use the boiler plate below in order to refactor our calculations into calculating functions and call them when we need them. <br> <br>
 					<b>First</b>, Above the main function, we will write each function and declare what parameters they will need to be passed.<br> <br>
 					<b>Second</b>, we'll decide if the functions are Fruitful or Non-fruitful functions.<br>
 					<a href="/lecture/7"> Data vs Void functions.</a><br><br>
@@ -462,6 +462,97 @@ activities = {
 				],
 				'show_solutions': True,
         'published' : True
+    },
+		"6dj72j28"  :   {
+			'id'        : '6dj72j28',
+			'title'     : "Straigh through the command line",
+			'preview'   : "In this activity, you will revisit yet again th calculator game and some other past activites and make them use the command line arguments.",
+			'desc'      : """
+				<h2 class="bold">Hello World</h2>
+				<p>
+					Let's start small. Let's create an app that takes One command line argument and make it say "Hello".<br>
+					The command line argument will be a name.<br><br>
+					when is it excecuted like so:<br>
+					<code>./app Bob</code><br>
+					It should print out:<br>
+					<code>Hello Bob, How are you?</code><br>
+				</p>
+
+				<br><hr><br>
+				
+				<h2 class="bold">Refactoring to Command Line Arguments</h2>
+				<p>
+					Let's create a new file and revisit our <a href="/activity/5h23kw23">Calculator Game Refactor</a> from last activity and refactor yet again, in order to use the command line arguments. <br> <br>
+					The goal is to pass in the numbers and the operation right when you call to tun the app. <br>
+				</p>
+				<p>
+					<h3 class="bold">What you had before</h3>
+					<div class="codeBlock">
+						<code>./app</code>
+						<code>Number 1: 10</code>
+						<code>Number 2: 20</code>
+						<code>multiply</code>
+						<code>Your result is 200</code>
+					</div>
+				</p>
+				<p>
+					<h3 class="bold">What you should have now:</h3>
+					<code>./app multiply 10 20</code><br>
+					<code>Your result is 200</code><br>
+				</p>
+				<p>
+					<b>First</b>, Let's remove the <code>void</code> parameter from the main function and replace it with the arguments we learned in class.<br> <br>
+					<b>Second</b>, We can now remove the <code>get_int(...)</code> and <code>get_string(...)</code> functions to ask user input.<br>
+					Instead, we will use <code>argv</code> and get the right position of the arguements we passed by indexing it at the right place<br>
+					<b>Finally</b> Make sure to properly Type Cast the data you are passed in order to perform operations on the numbers passed as arguments. Remember, they come in as strings. <br><br>
+					To Convert a string into an integer in C, you need to use the <code>atoi()</code> function from the <code>stdlib.h</code> Library<br><br>
+					<a href="https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm"> Converting string to int in C using <code>atoi( ... )</code>.</a><br><br>
+					<a href="https://www.geeksforgeeks.org/type-conversion-c/"> Type Casting in C.</a><br><br>
+					
+					I should be able to run <code>./app add 10 20</code><br> and get the output <code>Your result is 30</code><br>
+				</p>
+
+				<br><hr><br>
+
+				<h2 class="bold">Calculate the Big O Complexity:</h2>
+				<br>
+				<h3 class="bold">Algorithm A:</h3>
+				<div class="codeBlock">
+					<code>int count = 0;</code>
+					<code>for (int j = 0; j < 50; j++) {</code>
+					<code> printf( "%i", j );</code>
+					<code>}</code>
+				</div>
+				
+				<br>
+				
+				<h3 class="bold">Algorithm B:</h3>
+				<div class="codeBlock">
+					<code>int count = 0;</code>
+					<code>for (int i = N; i > 0; i /= 2) {</code>
+					<code> for (int j = 0; j < i; j++) {</code>
+					<code>  count += 1;</code>
+					<code> }</code>
+					<code>}</code>
+				</div>
+				<br>
+				<h3 class="bold">Algorithm C:</h3>
+				<div class="codeBlock">
+					<code>int name = "Al";</code>
+					<code>int num = 100;\n\n</code>
+					<code>if( strcmp( name, "Bob") {</code>
+					<code> for (int j = 0; j < num; j++) {</code>
+					<code>   printf( "%i", j );</code>
+					<code>   num = num / 2;</code>
+					<code> }</code>
+					<code>} else { </code>
+					<code> printf( "inalid name" );</code>
+					<code>}</code>
+				</div>
+			""",
+			'solutions' : [],
+			'show_solutions': False,
+			'published' : True
     }
 }
 

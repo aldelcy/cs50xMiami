@@ -698,6 +698,7 @@ syllabus = {
           'url'   : 'https://www.w3schools.in/c-tutorial/type-casting/'
         }
       ],
+      'activities'  :   [activities['6dj72j28']],
       'published': True
     },
     {
