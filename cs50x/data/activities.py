@@ -479,6 +479,20 @@ activities = {
 				</p>
 
 				<br><hr><br>
+
+				<h2 class="bold">Add 2 numbers</h2>
+				<p>
+					Now, Let's create an app that takes TWO command line arguments and adds them together.<br>
+					The command line argument will be 2 numbers.<br><br>
+					when is it excecuted like so:<br>
+					<code>./app 10 50</code><br>
+					It should print out:<br>
+					<code>60</code><br><br>
+					To Convert a string into an integer in C, you need to use the <code>atoi()</code> function from the <code>stdlib.h</code> Library<br><br>
+					<a href="https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm"> Converting string to int in C using <code>atoi( ... )</code>.</a><br><br>
+				</p>
+
+				<br><hr><br>
 				
 				<h2 class="bold">Refactoring to Command Line Arguments</h2>
 				<p>
