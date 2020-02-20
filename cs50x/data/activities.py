@@ -466,6 +466,9 @@ challenges = {
 			- If name1 is longer, return name1.<br>
 			- If name2 is longer, return name2.<br>
 			<br>
+			Lets look at the <code>strlen()</code> Library and see how we can get the size of a string:<br>
+			<a href="https://www.geeksforgeeks.org/strlen-function-in-c/" target="_blank">The <code>strlen()</code> Function</a><br>
+			<a href="https://www.geeksforgeeks.org/difference-strlen-sizeof-string-c-reviewed/" target="_blank">strlen() vs sizeof()</a><br>
 			Now, we can go to our Main function and ask the user to give us 2 names that we then pass to the longerName() function.<br>
 			Remember to include the library on the top of your code.<br>
 			<br>
