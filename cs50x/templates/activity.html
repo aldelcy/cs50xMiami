@@ -10,33 +10,38 @@
             {% if activity.desc %}
                 {{ activity.desc | safe }}
             {% endif %}
+            {% if activity.challenges %}
+                {% for challenge in activity.challenges %}
+                    <h2 class="bold"> {{ challenge.title }}</h2>
+                    <br>
+                    {{ challenge.desc | safe }}
+                {% endfor %}
+            {% endif %}
         </div>
         <div class="col-sm-4">
             <h3 class="bold">Solutions:</h3>
             <hr>
-            {% if activity.solutions and activity.show_solutions %}
-                {% for solution in activity.solutions %}
+            {% for challenge in activity.challenges %}
+                {% if challenge.solution and activity.show_solutions %}
                     <p>
-                        {% if solution.video %}
-                            <a href="{{ solution.video }}" target="_blank">
-                                <button class="btn btn-primary">
-                                    <ion-icon name="videocam" style="font-size: 20px;"></ion-icon>
-                                </button>    
-                            </a>
-                        {% endif %}
-                        {% if solution.url %}
-                            <a href="{{ solution.url }}" target="_blank">
-                                <button class="btn btn-secondary">
-                                    <ion-icon name="document-text-outline" style="font-size: 20px;"></ion-icon>
-                            </button>
-                            </a>
-                        {% endif %}
-                        {{ solution.title }} :: Solution
+                        <a href="#show_solution" uk-toggle>
+                            {{ challenge.title }} :: Solution   
+                        </a>
+                        
+                        <div id="show_solution" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">Solution for {{ challenge.title }}</h2>
+                                <p>
+                                    {% include 'components/solution.html' %}
+                                </p>
+                                <p class="uk-text-center">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                                </p>
+                            </div>
+                        </div>
                     </p>
-                {% endfor %}
-            {% else %}
-                No solutions yet.
-            {% endif %}
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>

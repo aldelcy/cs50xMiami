@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>{{title}}</h1>
+            <br>
+            {% if challenge.desc %}
+                {{ challenge.desc | safe }}
+            {% endif %}
+        </div>
+        {% if challenge.solution %}
+            <div class="col-sm-12">
+                <button class="show_solution uk-button uk-button-secondary uk-button-large"> show solution </button>
+            
+                <div class="solution" style="display: none;">
+                    <h3>Solution</h3>
+                    <hr>
+                    {% include '/components/solution.html' %}
+                </div>
+            </div>
+            <script>
+                $('.show_solution').click( function(){
+                    $('.solution').fadeToggle(500);
+                });
+            </script>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

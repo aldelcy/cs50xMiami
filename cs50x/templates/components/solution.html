@@ -1,0 +1,18 @@
+{% if challenge.solution.video_host == "loom" %}
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;">
+        <iframe src="https://www.loom.com/embed/{{ challenge.solution.video_url }}" 
+        frameborder="0" 
+        webkitallowfullscreen mozallowfullscreen allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+</div>
+{% endif %}
+{% if challenge.solution.code %}
+<br>
+<h3 class="bold">Code:</h3>
+    <iframe id="code" src="{{ challenge.solution.code }}"
+            style="width: 100%; height: 400px; padding: 10px; background-color: #ddd;"
+            allowtransparency="true"
+            scrolling="yes"
+    ></iframe>
+{% endif %}

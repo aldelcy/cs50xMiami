@@ -11,6 +11,8 @@ sys.path.append(  os.getcwd()  +  '/cs50x/data/'   )
 from activities import *
 from libs import *
 
+theChallenges = challenges
+
 
 @tools.route('/')
 def cs50_tools():
@@ -19,7 +21,7 @@ def cs50_tools():
         'Random Tasks': url_for('tools.random_task')
         # 'Test Assesment: 1': url_for('tools.random_task')
     }
-    return render_template('/tools/index.html', title="Tools", tools=tools)
+    return render_template('/tools/index.html', title="Challenges", tools=tools, challenges=theChallenges)
 
 @tools.route('/random_task')
 def random_task():
@@ -30,6 +32,12 @@ def random_task():
 @tools.route('/assessment/')
 def assessment():
     return render_template('/tools/assessment.html', title="Assessment")
+
+
+@tools.route('/challenge/<id>')
+def challenge(id):
+    challenge = theChallenges[id]
+    return render_template('/tools/challenge.html', title=challenge['title'], challenge=challenge)
 
 
 @tools.route('/spy_submission', methods=["POST"])
