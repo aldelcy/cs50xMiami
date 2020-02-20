@@ -703,7 +703,22 @@ syllabus = {
     },
     {
       'title':    "C: Libraries",
-      'desc':     """""",
+      'desc':     """
+        <h2 class="bold">Libraries</h2>
+        Libraries in any language are files or ONE compiled file that holds many functions that you can use in your program without having to write those functions yourself.<br>
+        <br>
+        <h3 class="bold">Why is that useful?</h3><br>
+        Somethings will ALWAYS be the same, and never really change, like math properties, or how to find the length of a string. So instead of having to write all that logic yourself, you can use a library where another programmer already wrote those for you.<br>
+        <br>
+        <h3 class="bold">Why create personal libraries ( helpers )</h3><br>
+        Just like external libraries, you may have a function that can be used multiple times in a project. when that happens, you may want to put that function in a library and include it at the top of your file whenever you need in it in that file.<br>
+        <br>
+        Think of them as helpers of functions or code you can group together and use without having your code bloated with too many functions.<br>
+        <br>
+        You can create your own library of math equations that you will use later.<br>
+        Or a library of specific password scrambler and key generator… ect.<br>
+
+      """,
       'ppt_code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
       'harvard':  [
         {
@@ -731,6 +746,12 @@ syllabus = {
           'title' : 'C Libraries',
           'desc'  : "List of Standard C Libraries and headers",
           'url'   : 'https://en.cppreference.com/w/c/header'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'More C Libraries and Resources',
+          'desc'  : "List of Standard C Libraries and headers",
+          'url'   : 'https://www.programiz.com/c-programming/library-function'
         }
       ],
       'activities'  :   [activities['k232kn34']],
