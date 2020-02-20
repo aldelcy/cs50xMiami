@@ -702,7 +702,7 @@ syllabus = {
       'published': True
     },
     {
-      'title':    "C: Constants & Libraries",
+      'title':    "C: Libraries",
       'desc':     """""",
       'ppt_code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
       'harvard':  [
@@ -733,6 +733,7 @@ syllabus = {
           'url'   : 'https://en.cppreference.com/w/c/header'
         }
       ],
+      'activities'  :   [activities['k232kn34']],
       'published': True
     },
     {

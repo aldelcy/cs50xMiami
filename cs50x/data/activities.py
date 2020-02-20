@@ -452,6 +452,68 @@ challenges = {
 		""",
 		'solution': {}
 	},
+	"size_of_names":	{
+		'title'	: "Name Comparison",
+		'desc'	: """
+			Create a library named libs.<br>
+			In that Library, create a function called <code>longerName()</code><br>
+			In this function, you will require 2 parameters: <code>name1</code> and <code>name2</code>.<br>
+			Both of those parameters are strings.<br>
+			In the function, we will build an Algorithm that will compare the length of the 2 names and return the name with the most letters.<br><br>
+			To do that, in the <code>longerName()</code> function we will need to do the following:<br>
+			- Find how long each name is.<br>
+			- Compare the length of both names.<br>
+			- If name1 is longer, return name1.<br>
+			- If name2 is longer, return name2.<br>
+			<br>
+			Now, we can go to our Main function and ask the user to give us 2 names that we then pass to the longerName() function.<br>
+			Remember to include the library on the top of your code.<br>
+			<br>
+			<h3 class="bold">Bonus:</h3><br>
+			Let's now write a <code>longestName()</code> function that will take a list of names and return the one that is the longest out of all of them.<br>
+			In this function, you will also require 2 parameters: <code>nameList</code> and <code>sizeOfNameList</code>.<br>
+			The <code>nameList</code> will be an array of all the names I'm passing.<br>
+			The <code>sizeOfNameList</code> will be lenght of my <code>nameList</code> array.<br>
+			Remember to calculate the size of the array in order to send it to the function.<br><br>
+			To do that, in the <code>longestName()</code> function we will need to do the following:<br>
+			- Use a for loop to go through the array of names.<br>
+			- Find how long each name is.<br>
+			- keep track of the longest name in a variable called longName.<br>
+			- return the longuest name after the loop ends.<br>
+		""",
+		'solution': {}
+	},
+	"tax_calculator":	{
+		'title'	: "Tax Calculator",
+		'desc'	: """
+			Let's create a simple Tax Calculator.<br><br>
+			The task is to: <br>
+			- Ask the User how many items they would like to add<br>
+			- Ask the user for an item name.<br>
+			- Add the name to an items array.<br>
+			- Then ask for the price of that <code>item</code>.<br>
+			- Add the price to an <code>itemPrices</code> array.<br>
+			<br>
+			When the loop is over. Ask the User what they would like to get:<br>
+			<code>total</code>, <code>tax</code><br>
+			<br>
+			If they choose <code>total</code>. Run code to return them the total price of all Items.<br>
+			<div class="codeBlock">
+				<code>Total Price: $5.000000</code>
+			</div><br><br>
+
+			If they choose <code>tax</code>. Run code to show them the modified price of each item and a total of All the items with tax.<br>
+			In our program, we will set the Tax to <code>7%</code> or <code>0.07</code> cents to the dollar. <br><br>
+			The output should look like:
+			<div class="codeBlock">
+				<code>Banana: $1.00, with tax: $1.070000 </code>
+				<code>Milk: $3.00, with tax: $3.210000 </code>
+				<code>Brad: $2.00, with tax: $2.140000 </code>
+				<code>Total Price: 6.420000</code>
+			</div>
+		""",
+		'solution': {}
+	}
 }
 
 activities = {
@@ -670,6 +732,19 @@ activities = {
 			challenges['add_2_numbers'],
 			challenges['refactoring_cla'],
 			challenges['big_o']
+		],
+		'solutions' : [],
+		'show_solutions': False,
+		'published' : True
+	},
+	"k232kn34"  :   {
+		'id'        : 'k232kn34',
+		'title'     : "Lets build some programs",
+		'preview'   : "In this activity, We will build some more complex programs and review the past activities if we have some time left.",
+		'desc'      : """""",
+		'challenges': [
+			challenges['size_of_names'],
+			challenges['tax_calculator']
 		],
 		'solutions' : [],
 		'show_solutions': False,
