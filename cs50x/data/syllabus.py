@@ -758,20 +758,80 @@ syllabus = {
       'published': True
     },
     {
-      'title':    "Algorithms: Search",
-      'desc':     "hello",
-      'ppt_code': "",
-      'videos':   {},
-      'resources':{},
-      'published': False
+      'title':    "Algorithms: Searching",
+      'desc':     """
+      """,
+      'ppt_code': "2PACX-1vS0bizVVMblWF6UC0PlNn3NJuLciHd6izNwf1QBpwRSf2LIxLTmffMsinFSrJsAccm6fJ_cbcS9g-LY",
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 3 - Searching Algorithms',
+          'id'    : "fykrlqbV9wM",
+          'time'  : [0,2238]
+        },
+        {
+          'title' : 'Linear Search',
+          'id'    : "TwsgCHYmbbA",
+          'time'  : [0,168]
+        },
+        {
+          'title' : 'Binary Search',
+          'id'    : "T98PIp4omUA",
+          'time'  : [0,568]
+        }
+      ],
+      'videos':   [],
+      'resources':[
+        {
+          'type'  : 'video',
+          'title' : 'Algorithms: Binary Search',
+          'desc'  : 'Learn the basics of binary search algorithm',
+          'url'   : 'https://www.youtube.com/watch?v=P3YID7liBug'
+        },
+      ],
+      'published': True
     },
     {
       'title':    "Algorithms: Sorting",
-      'desc':     "hello",
-      'ppt_code': "",
-      'videos':   {},
-      'resources':{},
-      'published': False
+      'desc':     """
+      """,
+      'ppt_code': "2PACX-1vSj2krye8zTj46z7bsnUVu-rB2G2M7ZAX7o3C4wES2gMzD5wxETfPqYaeShDMVuH3fQ4aCMJqH843QG",
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 3 - Sorting Algorithms',
+          'id'    : "fykrlqbV9wM",
+          'time'  : [2238,5337]
+        },
+        {
+          'title' : 'Selection Sort',
+          'id'    : "3hH8kTHFw2A",
+          'time'  : [0,239]
+        },
+        {
+          'title' : 'Bubble Sort',
+          'id'    : "RT-hUXUWQ2I",
+          'time'  : [0,353]
+        },
+        {
+          'title' : 'Insertion Sort',
+          'id'    : "O0VbBkUvriI",
+          'time'  : [0,284]
+        },
+        {
+          'title' : 'Merge Sort',
+          'id'    : "Ns7tGNbtvV4",
+          'time'  : [0,626]
+        }
+      ],
+      'videos':   [],
+      'resources':[
+        {
+          'type'  : 'video',
+          'title' : 'Algorithms: Quick Sort',
+          'desc'  : 'Learn the basics of quicksort',
+          'url'   : 'https://www.youtube.com/watch?v=SLauY6PpjW4'
+        },
+      ],
+      'published': True
     },
     {
       'title':    "Memory, Pointers & Structs",
