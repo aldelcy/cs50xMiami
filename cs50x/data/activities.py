@@ -484,7 +484,12 @@ challenges = {
 			- keep track of the longest name in a variable called longName.<br>
 			- return the longuest name after the loop ends.<br>
 		""",
-		'solution': {}
+		'solution': {
+			'title'	: 'Size of names',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: 'https://www.codepile.net/raw/6radvMZJ.cpp'
+		}
 	},
 	"tax_calculator":	{
 		'title'	: "Tax Calculator",
@@ -513,6 +518,94 @@ challenges = {
 				<code>Milk: $3.00, with tax: $3.210000 </code>
 				<code>Brad: $2.00, with tax: $2.140000 </code>
 				<code>Total Price: 6.420000</code>
+			</div>
+		""",
+		'solution': {}
+	},
+	"linear_search":	{
+		'title'	: "Linear Search",
+		'desc'	: """
+			Let's implement a <code>Linear Search</code> algorithm.<br>
+			Your job will be to come up with the pseudocode that we will follow in class to find a search term that the user will type in.<br>
+			First we will ask the user to search for a specific thing. it could be a word, a name, a number, a car model, ect. You decide.<br>
+			Next, we will establish a list of names, or numbers, or car model, or whatever you decide your data set will be comprized of.<br>
+			Next, as a team, you will write in Pseudocode how the developer will go about searching that list and finding the search term the user has typed.<br>
+			<br>
+			The goal is to find it in as little steps as possible. So we have to think about a couple things:<br>
+			- Have a message for when you DO find the search term.<br>
+			- Have a message for when you DONT find the search term.<br>
+			- Keep track of how many loops you are doing.<br>
+			- Keep track of what index you found the search term at.<br>
+			<br>
+			The output should look something like this:<br>
+			Let's say your DataSet is of 50 items.<br>
+			<br>
+			When they search something that is in the list:<br>
+			<div class="codeBlock">
+				<code>We found your search for "Toyota" within our list.</code>
+				<code>It was at index 15.</code>
+				<code>It took 20 searches.</code>
+			</div><br>
+
+			When they search something that is NOT the list:<br>
+			<div class="codeBlock">
+				<code>We could not find your search term after 50 searches.</code>
+			</div>
+		""",
+		'solution': {}
+	},
+	"count_algorithm":	{
+		'title'	: "Count Algorithm",
+		'desc'	: """
+			Let's build on our <code>Linear Search</code> Algorithm above.<br>
+			Instead of just FINDING the item and returning if we did or did not find it, this time, we're going to count how many times that item is in the list.<br>
+			Your job will be to come up with the pseudocode that we will follow in class to find a search term that the user will type in.<br>
+			<br>
+			If you do find instances of the search term, our output should look like this:<br>
+			<div class="codeBlock">
+				<code>We found your search term: "Banana" 3 times in our list.</code>
+			</div>
+			<br>
+			If you DONT find instances of the search term, our output should look like this:<br>
+			<div class="codeBlock">
+				<code>We did not find your search term: "Banana" in our list.</code>
+			</div><br>
+
+			What is the maind difference you notice in our algorithm?<br>
+		""",
+		'solution': {}
+	},
+	"binary_search":	{
+		'title'	: "Binary Search",
+		'desc'	: """
+			Let's implement a <code>Binary Search</code> algorithm.<br>
+			Your job will be to come up with the pseudocode that we will follow in class to find a search term that the user will type in.<br>
+			This time though, we will assume that the list we have is ordered in Ascending Alphabetical or Numerical order.<br>
+			<br>
+			Remember that Binary search cuts the list in half at every loop, so, think about:<br>
+			- How you will set a BEGINNING index to limit your list.<br>
+			- How you will set an ENDING index to limit your list.<br>
+			- How you will update that BEGINNING or ENDING index at every loop to cut down your list every time.<br>
+			<br>
+			Like our linear search, the goal is to find it in as little steps as possible:<br>
+			- Have a message for when you DO find the search term.<br>
+			- Have a message for when you DONT find the search term.<br>
+			- Keep track of how many loops you are doing.<br>
+			- Keep track of what index you found the search term at.<br>
+			<br>
+			The output should look something like this:<br>
+			Let's say your DataSet is of 50 items.<br>	
+			<br>
+			When they search something that is in the list:<br>
+			<div class="codeBlock">
+				<code>We found your search for "Mango" within our list.</code>
+				<code>It was at index 7.</code>
+				<code>It took 3 searches.</code>
+			</div><br>
+		
+			When they search something that is NOT the list:<br>
+			<div class="codeBlock">
+				<code>We could not find your search term after 5 searches.</code>
 			</div>
 		""",
 		'solution': {}
@@ -750,8 +843,22 @@ activities = {
 			challenges['tax_calculator']
 		],
 		'solutions' : [],
-		'show_solutions': False,
+		'show_solutions': True,
 		'published' : True
+	},
+	"h5j30345"  :   {
+		'id'        : 'h5j30345',
+		'title'     : "Searcing Algorithms",
+		'preview'   : "In this activity, we will build some searching algorithms and figure out the logic of finding a item in a list.",
+		'desc'      : """""",
+		'challenges': [
+			challenges['linear_search'],
+			challenges['count_algorithm'],
+			challenges['binary_search']
+		],
+		'solutions' : [],
+		'show_solutions': False,
+		'published' : False
 	}
 }
 
