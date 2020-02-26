@@ -552,7 +552,12 @@ challenges = {
 				<code>We could not find your search term after 50 searches.</code>
 			</div>
 		""",
-		'solution': {}
+		'solution': {
+			'title'	: 'Linear Search',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: 'https://www.codepile.net/raw/l649LnpE.cpp'
+		}
 	},
 	"count_algorithm":	{
 		'title'	: "Count Algorithm",
@@ -573,7 +578,12 @@ challenges = {
 
 			What is the maind difference you notice in our algorithm?<br>
 		""",
-		'solution': {}
+		'solution': {
+			'title'	: 'Count Algorithm',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: 'https://www.codepile.net/raw/jEalRzDy.cpp'
+		}
 	},
 	"binary_search":	{
 		'title'	: "Binary Search",
@@ -608,7 +618,12 @@ challenges = {
 				<code>We could not find your search term after 5 searches.</code>
 			</div>
 		""",
-		'solution': {}
+		'solution': {
+			'title'	: 'Binary Search',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: 'https://www.codepile.net/raw/1RqbzzMo.cpp'
+		}
 	}
 }
 
@@ -857,7 +872,7 @@ activities = {
 			challenges['binary_search']
 		],
 		'solutions' : [],
-		'show_solutions': False,
+		'show_solutions': True,
 		'published' : True
 	}
 }
