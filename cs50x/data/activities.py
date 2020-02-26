@@ -858,7 +858,7 @@ activities = {
 		],
 		'solutions' : [],
 		'show_solutions': False,
-		'published' : False
+		'published' : True
 	}
 }
 
