@@ -67,6 +67,8 @@ a.video_item >*:hover{
 }
 .codeBlock{
     display: grid;
+    padding: 10px 14px;
+    background-color: #f8f8f8;
 }
 .codeBlock code{
     white-space: pre-wrap;

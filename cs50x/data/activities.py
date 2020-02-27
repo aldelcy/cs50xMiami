@@ -537,6 +537,7 @@ challenges = {
 			- Keep track of how many loops you are doing.<br>
 			- Keep track of what index you found the search term at.<br>
 			<br>
+			<h4 class="bold">FOR EXAMPLE</h4>
 			The output should look something like this:<br>
 			Let's say your DataSet is of 50 items.<br>
 			<br>
@@ -544,7 +545,7 @@ challenges = {
 			<div class="codeBlock">
 				<code>We found your search for "Toyota" within our list.</code>
 				<code>It was at index 15.</code>
-				<code>It took 20 searches.</code>
+				<code>It took 16 searches.</code>
 			</div><br>
 
 			When they search something that is NOT the list:<br>
@@ -603,6 +604,7 @@ challenges = {
 			- Keep track of how many loops you are doing.<br>
 			- Keep track of what index you found the search term at.<br>
 			<br>
+			<h3 class="bold">FOR EXAMPLE</h3>
 			The output should look something like this:<br>
 			Let's say your DataSet is of 50 items.<br>	
 			<br>
@@ -624,7 +626,108 @@ challenges = {
 			'video_url'	: '',
 			'code'		: 'https://www.codepile.net/raw/1RqbzzMo.cpp'
 		}
-	}
+	},
+	"bubble_sort":	{
+		'title'	: "Bubble Sort",
+		'desc'	: """
+			Let's build a <code>Bubble Sort</code> Algorithm.<br>
+			The bubble sort algorithm goes though an array, compares the <code>current</code> element to the element next to it. <br>
+			If the element next to it is bigger, then it swaps places with it and then keeps on doing that until it reaches the end of the array.<br><br>
+			Whenever it does a swap, we should record that somehow to make sure we know to check the list one last time.
+			Everytime it repeats the loop, it will do the same thing to bubble the largest number to the end of the array.
+			It will keep on repeating the whole loop again until it hasnt recorded a swap during a loop.
+			
+			
+			<h3 class="bold">FOR EXAMPLE</h3>
+			The output should look something like this:<br>
+			<br>
+			Given this list:  <code>2,5,6,3,1</code><br>
+			Our loops would look like this at every iteration.
+			<code><b>loop: 1 => {  2,5,3,1,6  }, swapped => 1</b></code> <br>
+			Notice that the 1 and the 2 swapped places. How did we do this? <br><br>
+
+			Let's keep looking.
+			<div class="codeBlock">
+				<code><b>loop: 2 => {  2,3,1,5,6  }, swapped => 1</b></code>
+				<code><b>loop: 3 => {  2,1,3,5,6  }, swapped => 1</b></code>
+				<code><b>loop: 4 => {  1,2,3,5,6  }, swapped => 1</b></code>
+				<code><b>loop: 5 => {  1,2,3,5,6  }, swapped => 0</b></code>
+			</div><br>
+			And we're done.<br>
+			Notice that we have an extra loop at the bottom as Loop 5.<br>
+			Because we performed a swap at loop 4, we have to check one more time to make sure we have no more swaps to perform.<br>
+			Now, Let's figure out the Pseudocode to tho this together and you can start coding.
+			<br>
+			<br>
+		""",
+		'solution': {
+			'title'	: 'Bubble Sort',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: ''
+		}
+	},
+	"selection_sort":	{
+		'title'	: "Selection Sort",
+		'desc'	: """
+			Let's build a <code>Selection Sort</code> Algorithm.<br>
+			The selection sort algorithm finds the minimum element from and moves it at the beginning of the array. <br>
+			To prevent shifting of all the other elements to another index, we will swap the element found with the element currently at the beggining of the array.<br><br>
+			
+			Once the item is moved to the front of the array, you no longer need to care about it anymore and you can keep sorting the remainder fo the array.<br>
+			At every loop, your array should be smaller and smaller to search.<br><br>
+			
+			<h4 class="bold">FOR EXAMPLE</h4>
+			The output should look something like this:<br>
+			<br>
+			Given this list:  <code>2,5,6,3,1,8,7,9</code><br>
+			Our loops would look like this at every iteration.
+			<code><b>loop: 1 => {  1,5,6,3,2,8,7,9  }</b></code> <br>
+			Notice that the 1 and the 2 swapped places. How did we do this? <br><br>
+
+			Let's keep looking.
+			<div class="codeBlock">
+				<code><b>loop: 2 => {  1,2,6,3,5,8,7,9  }</b></code>
+				<code><b>loop: 3 => {  1,2,3,6,5,8,7,9  }</b></code>
+				<code><b>loop: 4 => {  1,2,3,5,6,8,7,9  }</b></code>
+				<code><b>loop: 5 => {  1,2,3,5,6,8,7,9  }</b></code>
+				<code><b>loop: 6 => {  1,2,3,5,6,7,8,9  }</b></code>
+				<code><b>loop: 7 => {  1,2,3,5,6,7,8,9  }</b></code>
+			</div><br>
+			And we're done.<br>
+			Notice that Loops 4 and 5 are the same and Loops 6 an 7 are the same.<br>
+			The reason they are the same is because even though 6,8,7,9 in loop 4 were already ordered, we still had to go through it to make sure it in fact was picking the smallest item and moving it to the front.<br>
+			In this case the smallest item was already 6.<br><br>
+			Let's figure out the Pseudocode to tho this together and you can start coding.
+			<br>
+			<br>
+		""",
+		'solution': {
+			'title': 'Selection Sort',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: ''
+		}
+	},
+	"insertion_sort":	{
+		'title'	: "Insertion Sort",
+		'desc'	: """
+			Let's build a <code>Insertion Sort</code> Algorithm.<br>
+			Insertion Sort is like sorting cards.<br>
+			As you go through the list, you pick the current item, then go back to the begining of the list and do a mini loop up to the current index.<br>
+			As you are going through that sublist, you are comapring it with each item of the sublist.<br><br>
+			If it's bigger then then current sublist item, keep going up that sublist until you reach the end and put it at the end.<br>
+			If it's smaller then then current sublist item, place the current main item in front of the sublist item, then move on to the next main list item.<br><br>
+			
+			Let's figure out the Pseudocode to tho this together and you can start coding.
+		""",
+		'solution': {
+			'title'	: 'Insertion Sort',
+			'video_host': '',
+			'video_url'	: '',
+			'code'		: ''
+		}
+	},
 }
 
 activities = {
@@ -870,6 +973,20 @@ activities = {
 			challenges['linear_search'],
 			challenges['count_algorithm'],
 			challenges['binary_search']
+		],
+		'solutions' : [],
+		'show_solutions': True,
+		'published' : True
+	},
+	"344ij0i5"  :   {
+		'id'        : '344ij0i5',
+		'title'     : "Sorting Algorithms",
+		'preview'   : "In this activity, we will build some sorting algorithms and figure out the logic of ordering items in a list.",
+		'desc'      : """""",
+		'challenges': [
+			challenges['bubble_sort'],
+			challenges['selection_sort'],
+			challenges['insertion_sort']
 		],
 		'solutions' : [],
 		'show_solutions': True,

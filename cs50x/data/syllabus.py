@@ -832,6 +832,7 @@ syllabus = {
           'url'   : 'https://www.youtube.com/watch?v=SLauY6PpjW4'
         },
       ],
+      'activities'  :   [activities['344ij0i5']],
       'published': True
     },
     {
