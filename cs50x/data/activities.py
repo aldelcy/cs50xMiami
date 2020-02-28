@@ -664,7 +664,7 @@ challenges = {
 			'title'	: 'Bubble Sort',
 			'video_host': '',
 			'video_url'	: '',
-			'code'		: ''
+			'code'		: 'https://www.codepile.net/raw/mBLQwP93.cpp'
 		}
 	},
 	"selection_sort":	{
@@ -706,7 +706,7 @@ challenges = {
 			'title': 'Selection Sort',
 			'video_host': '',
 			'video_url'	: '',
-			'code'		: ''
+			'code'		: 'https://www.codepile.net/raw/ald3g6X1.cpp'
 		}
 	},
 	"insertion_sort":	{
