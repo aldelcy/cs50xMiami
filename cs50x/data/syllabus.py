@@ -858,20 +858,56 @@ syllabus = {
           'title' : 'Memory Leaks, valgrind',
           'id'    : "z4QOYi6FXIo",
           'time'  : [0,128]
+        },
+        {
+          'title' : 'Structures',
+          'id'    : "N5pA7RvvQDg",
+          'time'  : [0,479]
         }
       ],
       'ppt_code': "2PACX-1vS97UPH6ItPBfCA8dWqdIjsvMvMDVL0m2cKqZpKWf92OgbSaT1dUdlxn2rdW9DJDBGlJZme2qUQueFC",
-      'videos':   [],
+      'videos':   [
+        {
+          'title': 'structs-0',
+          'url': 'https://www.youtube.com/watch?v=yMvRqKmbRm4'
+        },
+        {
+          'title': 'structs-1',
+          'url': 'https://www.youtube.com/watch?v=hZ2Fy-J8DwQ'
+        }
+      ],
       'resources':[],
       'published': True
     },
     {
       'title':    "C: Data Structures (Linked Lists, Queues, Stacks ... )",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vTVlxBXJFQyppD1YY5KRKrmIwGZxOn5KyxV46ebMf8pLHX-FXMPrbM2uO05fM8obUVbjXkrgEImsaLZ",
       'videos':   {},
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 5 - Data Structures',
+          'id'    : "4IrUAqYKjIA",
+          'time'  : [0,6302]
+        },
+        {
+          'title' : 'Pointers',
+          'id'    : "XISnO2YhnsY",
+          'time'  : [0,1747]
+        },
+        {
+          'title' : 'Singly-Linked Lists',
+          'id'    : "zQI3FyWm144",
+          'time'  : [0,1392]
+        },
+        {
+          'title' : 'Doubly-Linked Lists',
+          'id'    : "FHMPswJDCvU",
+          'time'  : [0,588]
+        }
+      ],
       'resources':{},
-      'published': False
+      'published': True
     }
   ],
   'Midterm' :   [
