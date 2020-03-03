@@ -803,6 +803,11 @@ syllabus = {
           'time'  : [2238,5337]
         },
         {
+          'title' : 'Lecture 4 - Swapping Values',
+          'id'    : "cF6YkH-8vFk",
+          'time'  : [4121,4390]
+        },
+        {
           'title' : 'Selection Sort',
           'id'    : "3hH8kTHFw2A",
           'time'  : [0,239]
@@ -842,7 +847,7 @@ syllabus = {
         {
           'title' : 'Lecture 4 - Memory',
           'id'    : "cF6YkH-8vFk",
-          'time'  : [0,2238]
+          'time'  : [0,6474]
         },
         {
           'title' : 'Dynamic Memory Allocation',
