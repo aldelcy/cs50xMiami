@@ -837,11 +837,28 @@ syllabus = {
     },
     {
       'title':    "Memory, Pointers & Structs",
-      'desc':     "hello",
-      'ppt_code': "",
-      'videos':   {},
-      'resources':{},
-      'published': False
+      'desc':     """""",
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 4 - Memory',
+          'id'    : "cF6YkH-8vFk",
+          'time'  : [0,2238]
+        },
+        {
+          'title' : 'Dynamic Memory Allocation',
+          'id'    : "xa4ugmMDhiE",
+          'time'  : [0,845]
+        },
+        {
+          'title' : 'Memory Leaks, valgrind',
+          'id'    : "z4QOYi6FXIo",
+          'time'  : [0,128]
+        }
+      ],
+      'ppt_code': "2PACX-1vS97UPH6ItPBfCA8dWqdIjsvMvMDVL0m2cKqZpKWf92OgbSaT1dUdlxn2rdW9DJDBGlJZme2qUQueFC",
+      'videos':   [],
+      'resources':[],
+      'published': True
     },
     {
       'title':    "C: Data Structures (Linked Lists, Queues, Stacks ... )",
