@@ -906,17 +906,28 @@ syllabus = {
           'time'  : [0,588]
         }
       ],
-      'resources':{},
+      'resources':{
+
+      },
       'published': True
     }
   ],
   'Midterm' :   [
     {
       'title':    "Midterm Week",
-      'desc':     """""",
+      'desc':     """
+        
+      """,
       'ppt_code': "2PACX-1vTg9GBTa1PUN0rayILyPkWkJNKAFCWKoZLgHVjP7NUyb5DRO-22tpvujJwdP_ZqLFTVKrbIS2lncC83",
       'videos':   {},
-      'resources':{},
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Review PDF',
+          'desc'  : 'Review Document for Quiz 0',
+          'url'   : '../static/data/review_0.pdf'
+        }
+      ],
       'published': True
     },
     {}
