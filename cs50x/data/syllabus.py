@@ -913,11 +913,11 @@ syllabus = {
   'Midterm' :   [
     {
       'title':    "Midterm Week",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vTg9GBTa1PUN0rayILyPkWkJNKAFCWKoZLgHVjP7NUyb5DRO-22tpvujJwdP_ZqLFTVKrbIS2lncC83",
       'videos':   {},
       'resources':{},
-      'published': False
+      'published': True
     },
     {}
   ],
