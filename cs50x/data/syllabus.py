@@ -935,11 +935,18 @@ syllabus = {
   'Python'  :   [
     {
       'title':    "Python: (Syntax Comparison to C) Data Types, Strings",
-      'desc':     "hello",
-      'ppt_code': "",
+      'desc':     "Welcome to Python",
+      'ppt_code': "2PACX-1vQnCUskqzx0vtxZAqF4-VqhdoEaokLb8Kimnic3ygZmWSO0db9JpajSugnFmyl1fX-IJx61D-Z7tsxf",
       'videos':   {},
       'resources':{},
-      'published': False
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 6 - Python',
+          'id'    : "fL308_-Kbt0",
+          'time'  : [0,2149]
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Python: Lists, Dictionaries, tuples",

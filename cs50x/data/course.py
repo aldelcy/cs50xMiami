@@ -55,67 +55,67 @@ weeks  = {
     'lectures': [ lectures["14"], lectures["15"] ]
   },
   '8':{
-    'dates': [date(2020, 3, 17), date(2020, 3, 19) ],
+    'dates': [date(2020, 3, 30), date(2020, 4, 2) ],
     'topic': lectures["16"]['topic'].lower(),
     'lectures': [ lectures["16"], lectures["17"] ],
     'pset' : psets[4]
   },
   '9':{
-    'dates': [date(2020, 3, 24), date(2020, 3, 26) ],
+    'dates': [date(2020, 4, 7), date(2020, 4, 9) ],
     'topic': lectures["18"]['topic'].lower(),
     'lectures': [ lectures["18"], lectures["19"] ]
   },
   '10':{
-    'dates': [date(2020, 3, 31), date(2020, 4, 2) ],
+    'dates': [date(2020, 4, 14), date(2020, 4, 16) ],
     'topic': lectures["20"]['topic'].lower(),
     'lectures': [ lectures["20"], lectures["21"] ],
     'pset' : psets[5]
   },
   '11':{
-    'dates': [date(2020, 4, 7), date(2020, 4, 9) ],
+    'dates': [date(2020, 4, 21), date(2020, 4, 23) ],
     'topic': lectures["22"]['topic'].lower(),
     'lectures': [ lectures["22"], lectures["23"] ]
   },
   '12':{
-    'dates': [date(2020, 4, 14), date(2020, 4, 16) ],
+    'dates': [date(2020, 4, 28), date(2020, 4, 30) ],
     'topic': lectures["24"]['topic'].lower(),
     'lectures': [ lectures["24"], lectures["25"] ],
     'pset' : psets[6]
   },
   '13':{
-    'dates': [date(2020, 4, 21), date(2020, 4, 23) ],
+    'dates': [date(2020, 5, 5), date(2020, 5, 7) ],
     'topic': lectures["26"]['topic'].lower(),
     'lectures': [ lectures["26"], lectures["27"] ]
   },
   '14':{
-    'dates': [date(2020, 4, 28), date(2020, 4, 30) ],
+    'dates': [date(2020, 5, 12), date(2020, 5, 14) ],
     'topic': lectures["28"]['topic'].lower(),
     'lectures': [ lectures["28"], lectures["29"] ],
     'pset' : psets[7]
   },
   '15':{
-    'dates': [date(2020, 5, 5), date(2020, 5, 7) ],
+    'dates': [date(2020, 5, 19), date(2020, 5, 21) ],
     'topic': lectures["30"]['topic'].lower(),
     'lectures': [ lectures["30"], lectures["31"] ]
   },
   '16':{
-    'dates': [date(2020, 5, 12), date(2020, 5, 14) ],
+    'dates': [date(2020, 5, 26), date(2020, 5, 28) ],
     'topic': lectures["32"]['topic'].lower(),
     'lectures': [ lectures["32"], lectures["33"] ],
     'pset' : psets[8]
   },
   '17':{
-    'dates': [date(2020, 5, 19), date(2020, 5, 21) ],
+    'dates': [date(2020, 6, 2), date(2020, 6, 4) ],
     'topic': lectures["34"]['topic'].lower(),
     'lectures': [ lectures["34"], lectures["35"] ]
   },
   '18':{
-    'dates': [date(2020, 5, 26), date(2020, 5, 28) ],
+    'dates': [date(2020, 6, 9), date(2020, 6, 11) ],
     'topic': lectures["36"]['topic'].lower(),
     'lectures': [ lectures["36"], lectures["37"] ]
   },
   '19':{
-    'dates': [date(2020, 6, 2), date(2020, 6, 24) ],
+    'dates': [date(2020, 6, 16), date(2020, 6, 18) ],
     'topic': lectures["38"]['topic'].lower(),
     'lectures': [ lectures["38"], lectures["39"] ]
   }
