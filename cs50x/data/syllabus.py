@@ -151,7 +151,7 @@ syllabus = {
         'id'    : "jjqgP9dpD1k",
         'time'  : [1297,1940]
       }],
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'link',
@@ -245,7 +245,7 @@ syllabus = {
                   </p>
       """,
       'ppt_code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'video',
@@ -313,7 +313,7 @@ syllabus = {
                   </p>
       """,
       'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
-      'videos':   {},
+      'videos':   [],
       'harvard'     :   [{
         'title' : 'The Command Line',
         'id'    : "BnJ013X02b8",
@@ -365,7 +365,7 @@ syllabus = {
         'id'    : "e9Eds2Rc_x8",
         'time'  : [0,2994]
       }],
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'link',
@@ -535,7 +535,7 @@ syllabus = {
           'time'  : [3399,5695]
         }
       ],
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'video',
@@ -653,7 +653,7 @@ syllabus = {
         </p>
       """,
       'ppt_code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
-      'videos':   {},
+      'videos':   [],
       'harvard':   [
         {
           'title' : 'Command Line Arguments',
@@ -727,7 +727,7 @@ syllabus = {
           'time'  : [0,2304]
         }
       ],
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'video',
@@ -883,7 +883,7 @@ syllabus = {
       'title':    "C: Data Structures (Linked Lists, Queues, Stacks ... )",
       'desc':     """""",
       'ppt_code': "2PACX-1vTVlxBXJFQyppD1YY5KRKrmIwGZxOn5KyxV46ebMf8pLHX-FXMPrbM2uO05fM8obUVbjXkrgEImsaLZ",
-      'videos':   {},
+      'videos':   [],
       'harvard'     :   [
         {
           'title' : 'Lecture 5 - Data Structures',
@@ -915,11 +915,9 @@ syllabus = {
   'Midterm' :   [
     {
       'title':    "Midterm Week",
-      'desc':     """
-        
-      """,
+      'desc':     """""",
       'ppt_code': "2PACX-1vTg9GBTa1PUN0rayILyPkWkJNKAFCWKoZLgHVjP7NUyb5DRO-22tpvujJwdP_ZqLFTVKrbIS2lncC83",
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type'  : 'link',
@@ -935,10 +933,10 @@ syllabus = {
   'Python'  :   [
     {
       'title':    "Python: (Syntax Comparison to C) Data Types, Strings",
-      'desc':     "Welcome to Python",
+      'desc':     """""",
       'ppt_code': "2PACX-1vQnCUskqzx0vtxZAqF4-VqhdoEaokLb8Kimnic3ygZmWSO0db9JpajSugnFmyl1fX-IJx61D-Z7tsxf",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'harvard'     :   [
         {
           'title' : 'Lecture 6 - Python',
@@ -949,78 +947,137 @@ syllabus = {
       'published': True
     },
     {
-      'title':    "Python: Lists, Dictionaries, tuples",
-      'desc':     "hello",
-      'ppt_code': "",
-      'videos':   {},
-      'resources':{},
-      'published': False
+      'title':    "Python: Lists, Dictionaries and Tuples",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vQfgJQOngawB8tQcs-CMQrLAw7PBZVYWl2RJyiEdFOQb7cVpax9gWvTMiqiRJcBn0tRGVVGHk98ulBr",
+      'videos':   [],
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 6 - Python',
+          'id'    : "fL308_-Kbt0",
+          'time'  : [4390,5120]
+        }
+      ],
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Python Operators',
+          'desc'  : 'How to use operators in python',
+          'url'   : 'https://docs.google.com/presentation/d/e/2PACX-1vSihCXcXk-P1BOC28ViIoZRPsle5hczmaX39ndifOArriP934wVBM4GuRRvX2Rg8qWfEEq1F_wLt_p8/embed?slide=id.g5e7925e13f_0_27'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Lists, Dictionaries, tuples',
+          'desc'  : 'Basic Overview',
+          'url'   : 'https://www.youtube.com/watch?v=R-HLU9Fl5ug'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Lists, Dictionaries, Tuples',
+          'desc'  : 'Python for Beginners',
+          'url'   : 'https://www.youtube.com/watch?v=W8KRzm-HUcc'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Python: Built-in Methods and Functions",
-      'desc':     "hello",
-      'ppt_code': "",
-      'videos':   {},
-      'resources':{},
-      'published': False
+      'desc':     """""",
+      'ppt_code': "2PACX-1vSIIv8iozJ1VDSEow1tzFDf7xtWVnvJf22w3abE9nO9XKOHlxfh_LTly2m8xOWFFP91gM4oPxZ9ATt9",
+      'videos':   [],
+      'resources':[
+        {
+          'type'  : 'video',
+          'title' : 'Functions',
+          'desc'  : 'How to build python functions',
+          'url'   : 'https://www.youtube.com/watch?v=9Os0o3wzS_I'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Built in Functions',
+          'desc'  : 'How to use Python Functions',
+          'url'   : 'https://www.youtube.com/watch?v=7rjJrQy9gi4'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Built in Methods',
+          'desc'  : 'How to use Python Methods',
+          'url'   : 'https://www.youtube.com/watch?v=fbaSAS9DWZw'
+        }
+      ],
+      'harvard'  : [
+        {
+          'title' : 'Lecture 6 - Python',
+          'id'    : "fL308_-Kbt0",
+          'time'  : [2149,4390]
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Python: Classes, Objects",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Python: Inheritance, Abstractions",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Python: Idk yet (Python Challenges?)",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 6 - Python',
+          'id'    : "fL308_-Kbt0",
+          'time'  : [5120,6489]
+        }
+      ],
       'published': False
     },
   ],
   'MVC1'    :   [
     {
       'title':    "MVC: Flask",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "MVC: Jinja2",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Front_end':  [
     {
       'title':    "HTML",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "CSS",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
+      'videos':   [],
       'resources':[
         {
           'type': 'link',
@@ -1035,119 +1092,119 @@ syllabus = {
   'MVC2'    :   [
     {
       'title':    "MVC: SQL",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "MVC: Flask Alquemy",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Final'   :   [
     {
       'title':    "Final Week",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {}
   ],
   'Full_app':   [
     {
-      'title':    "APP: Designing and Planing",
-      'desc':     "hello",
+      'title':    "APP: Designing and Planning",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "App: Coordinating",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Javascript': [
     {
       'title':    "Javacript: Intro",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Javacript: Ajax",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Bootstrap':  [
     {
       'title':    "Bootstrap / Get UI KIT",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Where to get assets",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Github'  :   [
     {
       'title':    "Github: Basics",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Github: Collaborating",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
   'Last_week':  [
     {
       'title':    "Hack-a-thon",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     },
     {
       'title':    "Project Presentation",
-      'desc':     "hello",
+      'desc':     """""",
       'ppt_code': "",
-      'videos':   {},
-      'resources':{},
+      'videos':   [],
+      'resources':[],
       'published': False
     }
   ],
