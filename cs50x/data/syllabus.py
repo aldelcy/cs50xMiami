@@ -960,12 +960,6 @@ syllabus = {
       ],
       'resources':[
         {
-          'type'  : 'link',
-          'title' : 'Python Operators',
-          'desc'  : 'How to use operators in python',
-          'url'   : 'https://docs.google.com/presentation/d/e/2PACX-1vSihCXcXk-P1BOC28ViIoZRPsle5hczmaX39ndifOArriP934wVBM4GuRRvX2Rg8qWfEEq1F_wLt_p8/embed?slide=id.g5e7925e13f_0_27'
-        },
-        {
           'type'  : 'video',
           'title' : 'Lists, Dictionaries, tuples',
           'desc'  : 'Basic Overview',
@@ -981,7 +975,7 @@ syllabus = {
       'published': True
     },
     {
-      'title':    "Python: Built-in Methods and Functions",
+      'title':    "Python: Methods and Functions",
       'desc':     """""",
       'ppt_code': "2PACX-1vSIIv8iozJ1VDSEow1tzFDf7xtWVnvJf22w3abE9nO9XKOHlxfh_LTly2m8xOWFFP91gM4oPxZ9ATt9",
       'videos':   [],
@@ -1015,9 +1009,43 @@ syllabus = {
       'published': True
     },
     {
+      'title':    "Python: Operators, Main and Libraries",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vSihCXcXk-P1BOC28ViIoZRPsle5hczmaX39ndifOArriP934wVBM4GuRRvX2Rg8qWfEEq1F_wLt_p8",
+      'videos':   [],
+      'resources':[
+        {
+          'type'  : 'link',
+          'title' : 'Python Coding challlenges',
+          'desc'  : 'Practice, Practice, Practice',
+          'url'   : 'https://codingbat.com/python'
+        },
+        {
+          'type'  : 'video',
+          'title' : 'Python TURTLE',
+          'desc'  : 'Draw Graphics with the python library turtle',
+          'url'   : 'https://www.youtube.com/watch?v=pxKu2pQ7ILo'
+        },
+        {
+          'type'  : 'link',
+          'title' : 'Python TURTLE',
+          'desc'  : 'Turtle challenges',
+          'url'   : 'https://docs.google.com/presentation/d/e/2PACX-1vTzHY5E1FigTXmyd-U-KUR2Zxyj16uZ4ggNzOINcwF5gW9U6OqlBvoE1CoWSZgFrH_UarSV43YIt278/embed'
+        }
+      ],
+      'harvard'     :   [
+        {
+          'title' : 'Lecture 6 - Python',
+          'id'    : "fL308_-Kbt0",
+          'time'  : [5120,6489]
+        }
+      ],
+      'published': True
+    },
+    {
       'title':    "Python: Classes, Objects",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vRknLBdzTcW6GhAccp5dfKWpzv5kfWhxhJp9F6H8HW84uwOYCVwvswjSIqQUwR2zhVhxQyskGkku4mR",
       'videos':   [],
       'resources':[],
       'published': False
@@ -1028,21 +1056,6 @@ syllabus = {
       'ppt_code': "",
       'videos':   [],
       'resources':[],
-      'published': False
-    },
-    {
-      'title':    "Python: Idk yet (Python Challenges?)",
-      'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
-      'resources':[],
-      'harvard'     :   [
-        {
-          'title' : 'Lecture 6 - Python',
-          'id'    : "fL308_-Kbt0",
-          'time'  : [5120,6489]
-        }
-      ],
       'published': False
     },
   ],
