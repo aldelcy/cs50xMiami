@@ -55,9 +55,9 @@ syllabus = {
                       <span class="bold">Github</span> <a href="https://desktop.github.com/">Download Desktop manager </a><br>
                       <span class="bold">VisualStudio Code</span> <a href="https://code.visualstudio.com/Download">Preferred Text Editor. Download here</a> <br>
                       <span class="bold">Hyper JS: Terminal</span> <a href="https://hyper.is/#installation">Downoad Latest version </a><br>
-                      
+
                       <br><br>
-                      
+
                       <h3>Why learn BINARY?</h3>
                       <p>
                           The main reason for learning binary is to understand how computers think at the bottom most level. <br>
@@ -73,7 +73,7 @@ syllabus = {
                           <li>The positive and negative poles of magnetic media are quickly translated into binary.</li>
                           <li>Binary is the most efficient way to control logic circuits.</li>
                       </ul>
-                      
+
                       <h3>Will I use binary?</h3>
                       <p>Most likely not if you are just going to be programming, but it's always fun to know how to read it and why it's used.</p>
 
@@ -175,12 +175,12 @@ syllabus = {
 
                   In this lecture we will cover the last 4 components of programming and how they will be useful for you as a programmer.<br><br>
                   These 4 components will allow you to group and organize your data in order to simplify your code. Mastering these 4 components will allow you to repeat the same line of code multiple times without having to type them over and over again.<br><br>
-                  
+
                   <br>
                   <h3 class="bold">CONDITIONALS</h3>
                   Conditionals help your program make decisions based on certain inputs or changes in the data you recieve.<br><br>
                   Just like in real life, you have to make decisions based on information you are given (inputs) and decide whether you want to do THIS action or ANOTHER action.<br>
-                  
+
                   <h4>EXAMPLE:</h4>
 
                   - You are deciding what to make for breakfast.<br>
@@ -214,7 +214,7 @@ syllabus = {
                   <p>
                       Since we’re going with a morning theme… let’s keep doing that.<br><br>
                       Every Morning, you wake up and you have a morning routine.<br><br>
-                  
+
                       Let’s say it consists of:<br>
                       - Bathing<br>
                       - Brushing teeth<br>
@@ -222,15 +222,15 @@ syllabus = {
                       - Fixing hair<br>
                       - Eating breakfast<br>
                       - Reading the news<br><br>
-                  </p>   
-                  <p>   
+                  </p>
+                  <p>
                       Now imagine that every morning, you wake up and have to write these tasks again from scratch in order to do them. Each of those tasks are made of many steps, and guess what, you have to write all those too. Once you are done doing them… you throw it away and you forget them.<br><br>
                       That would get tiring real quick.<br>
                       SO… what’s the solution? You can write a list of steps that’s called “Morning Routine” in a notebook and then, every morning, all you have to do is pick up that notebook and do each task that was saved in there.<br>
                       NOW… you might want to change these steps based on the time you wake up.<br>
                       The “time” in this case is a parameter that you pass to your “Morning Routine” Function. Now, everytime you wake up, you HAVE to check the time, and if it’s less than 8AM, you have time to do all your tasks, if not, then you can skip some tasks and rush out.<br>
                   </p>
-                  
+
                   <br>
                   <h3 class="bold">LOOPS</h3>
                   <p>
@@ -442,7 +442,7 @@ syllabus = {
                       1) First, just like a variable, we need to say the type of function we are declaring by putting the data type first.<br>
                       <code>char</code>, <code>int</code>, <code>float</code> <br>
                       OR <br>
-                      <code>void</code><br><br> 
+                      <code>void</code><br><br>
 
                       2) Then, like a variable, you choose a name for the function. Remember to make it descriptive and follow the rules of <a href="/lecture/2">variable naming conventions</a><br> <br>
                       <code>int addNumbers</code><br>
@@ -460,7 +460,7 @@ syllabus = {
           printf( "Hello World" );
       };</pre> <br>
                       In the example above, the function just ran and printed the words <code>Hello World</code>. You did not pass it any input or data. <br> <br>
-                      
+
                       Now, let's see an example with parameters. <br> <br>
                       When asking for parameters, you must declare the data type of each parameters as well as the names you will use them as in your algorithm. <br>
                       Think of parameters as empty variables that you will use to hold data, and that only exist INSIDE the function. <br>
@@ -485,7 +485,7 @@ syllabus = {
 
                       char, int and float functions require you to <code>return</code> a result of the data type you declared.<br>
                       void does nor require you to return anything. <br> <br>
-                      
+
                       Let's see this example here:<br>
     <pre>
       void addNumbers( int a, int b) {
@@ -506,11 +506,11 @@ syllabus = {
 
                   <h2 class="bold">Using fucntions</h2>
                   <p>
-                      You've created the functions, but they would be pretty useless if you can't use them right? <br> <br> 
-                      Lets put them to use. <br>  <br> 
+                      You've created the functions, but they would be pretty useless if you can't use them right? <br> <br>
+                      Lets put them to use. <br>  <br>
 
                       To call a function, all you need to do it call it's name like so:  <br>
-                      <code>addNumbers();</code> <br>  <br> 
+                      <code>addNumbers();</code> <br>  <br>
 
                       But we are not done, If you look at the function declaration above, <code>addNumbers</code> is expecting you to pass it 2 parameters: <code>a</code> and <code>b</code>. <br>
                       Both of those parameters are <code>int</code>. <br> <br>
@@ -563,43 +563,43 @@ syllabus = {
       'title':    "C: Command Line Arguments & Complexity Analysis",
       'desc':     """
         <h2 class="bold">Command Line Arguments</h2>
-        
+
         <p>
             So far, you've been used to just starting your app with the command: <br>
             <code> make app.c </code> and <code> ./app </code>.
         </p>
         <p>
             In your <code>app.c</code> file, you may notice there is a function called <code>main</code> that is written like so: <br>
-        
-            <pre>int main (void) { ... }</pre>        
+
+            <pre>int main (void) { ... }</pre>
         </p>
-        
+
         <p>
             the <code>void</code> parameter in that function is placed there to avoid any information to be passed to the function while running the application. <br>
-            
+
             BUT, just like any other function, you can use declare parameters to be passed to the <code>main</code> function. That's where we will be using the default parameters <code>int argc</code> and <code>char* argv[]</code>.
         </p>
-        
+
         <p>
             <h4 class="bold">char* argv[ ]</h4>
             As you can notice, this is a parameter expecting to be passed an array of <code>char*</code> or <code>strings</code>. <br> <br>
             This will collect the arguments passed in the command line and pass them in as an array to the main function.
-            
+
         </p>
-        
+
         <p>
             <h4 class="bold">int argc</h4>
             Argc is an integer that is meant to represent the NUMBER of array items passed in <code> char* argv[] </code>. As you may have experienced, You can't calculate the size of an Array passed as a parameter, so you have to send in the size of the array as well.
         </p>
-        
-        
+
+
         <p>
             <h4 class="bold">Getting Argv Items</h4>
             Now you can get each item passed from the <code>char* argv[]</code> by indexing like so <code>argv[0]</code>, <code>argv[3]</code> ... ect. <br> <br>
-            
+
             You can use a For Loop to interate over the array and see all the arguments passed, or you can use them in whatever algorithm you would like. <br><br>
-            
-            
+
+
             <code>PS:</code> The arguments passed in <code>char* argv[]</code> are all characters. Make sure to type cast as needed. <br> <br>
             for example: <br>
             <pre>char* x = "12";</pre>
@@ -609,42 +609,42 @@ syllabus = {
             <pre> float z = (float) x; </pre>
             <a href="https://www.geeksforgeeks.org/type-conversion-c/"> How to typecast in C.</a>
         </p>
-        
-        
+
+
         <br> <br>
-        
+
         <h2 class="bold">Complexity Analysis</h2>
         <p>
             Computers use resources (RAM - Ramdom Access Memory) in order to process information that you want it to process.
         </p>
-        
+
         <h4 class="bold">For example</h4>
         <p>
             When you run a <b>FOR LOOP</b> to count up to 100, you run the same code 100 times them the for loop runs. This might seem insignificant, given that computers are super fast, but when you are dealing with hundreds of request per minute, it can get a bit excessive.
         </p>
-        
+
         <p>
             <b>Complexity Analysis</b> is a way to measure the steps taken by an algorithm to excecute a program. <br>
         </p>
-        
+
         <p>
             To measure the steps taken by our algorithm, we will use a methodology called the <b>BIG O Notation</b>. With Big O, we try to calculate the <b>Worst case scenario</b>, and assign a step level to each statement and loop in our algorithm. We can also use <b>BIG OMEGA Notation</b> to calculate the <b>Best case scenario.</b>
         </p>
-        
+
         <p>
             In the case that BIG O and BIG OMEGA notation are the same complexity, we refer to that as <b>THETA Notation</b>.
         </p>
-        
+
         <p>
             The Notations assignments are as follows: <br><br>
             ▪ Polynomial – <b>O(n^2)</b>: Runtime grows quicker than previous all based on n.<br>
             ▪ Superlinear – <b>O(n log(n))</b>: Runtime grows in proportion to n.<br>
             ▪ Linear – <b>O(n)</b>: Runtime grows directly in proportion to n.<br>
-            ▪ Logarithmic – <b>O(log(n))</b>: Runtime grows logarithmically in proportion to n.<br>    
+            ▪ Logarithmic – <b>O(log(n))</b>: Runtime grows logarithmically in proportion to n.<br>
             ▪ Exponential – <b>O(c^n)</b>: Runtime grows even faster than polynomial algorithm based on n.<br>
             ▪ Constant – <b>O(1)</b>: Runtime will always be in the same regardless of the size of the input data set.<br>
         </p>
-        
+
         <p>
             Please watch the videos in the resources links to see how to assign a level to each step of your algorithm.
         </p>
@@ -1021,6 +1021,12 @@ syllabus = {
           'url'   : 'https://codingbat.com/python'
         },
         {
+          'type'  : 'Video',
+          'title' : '__name__ == __main__',
+          'desc'  : 'Python Tutorial: if __name__ == "__main__"',
+          'url'   : 'https://www.youtube.com/watch?v=sugvnHA7ElY'
+        },
+        {
           'type'  : 'video',
           'title' : 'Python TURTLE',
           'desc'  : 'Draw Graphics with the python library turtle',
@@ -1045,18 +1051,44 @@ syllabus = {
     {
       'title':    "Python: Classes, Objects",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRknLBdzTcW6GhAccp5dfKWpzv5kfWhxhJp9F6H8HW84uwOYCVwvswjSIqQUwR2zhVhxQyskGkku4mR",
+      'ppt_code': "2PACX-1vQp2rh9JgwUEvWoiqY7TmpEyuM2C2T4XzUvjQ1SR4sgkxLojus6NxP9UZBBPa8RbSI5MQZprzqGk57v",
       'videos':   [],
-      'resources':[],
-      'published': False
+      'resources':[
+        {
+          'type'  : 'videos',
+          'title' : 'Python Classes and Obects',
+          'desc'  : 'Python OOP Tutorial 1: Classes and Instances',
+          'url'   : 'https://www.youtube.com/watch?v=ZDa-Z5JzLYM'
+        },
+        {
+          'type'  : 'videos',
+          'title' : 'Python Classes 2',
+          'desc'  : 'Python OOP Tutorial: Class Variables',
+          'url'   : 'https://www.youtube.com/watch?v=BJ-VvGyQxho'
+        },
+        {
+          'type'  : 'videos',
+          'title' : 'Python Classes',
+          'desc'  : 'OBJECT-ORIENTED PROGRAMMING IN PYTHON',
+          'url'   : 'https://www.youtube.com/watch?v=ECMSnU9ilbQ'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Python: Inheritance, Abstractions",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vTlnFQf0YGvwoD1srBETTQyGrw6eZUlBwcW9U39NxTHwBPmLmC5dhWredWmEYbL9lnPWfOfVBegXTC8",
       'videos':   [],
-      'resources':[],
-      'published': False
+      'resources':[
+        {
+          'type'  : 'videos',
+          'title' : 'Python Class Inheritance',
+          'desc'  : 'Python OOP Tutorial: Inheritance - Creating Subclasses',
+          'url'   : 'https://www.youtube.com/watch?v=RSl87lqOXDE'
+        }
+      ],
+      'published': True
     },
   ],
   'MVC1'    :   [
@@ -1221,4 +1253,4 @@ syllabus = {
       'published': False
     }
   ],
-}	
+}
