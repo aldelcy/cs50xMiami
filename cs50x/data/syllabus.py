@@ -1091,6 +1091,69 @@ syllabus = {
       'published': True
     },
   ],
+  'Front_end':  [
+    {
+      'title':    "Front End: HTML / Github",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vThWQwKcNvvcwos52xtb8kFwUf3J5zABoXzzeBbZu8iYwOQKz0oFmqdrJfHQhz3yNCw989NekHDUJkn",
+      'videos':   [],
+      'harvard':   [
+        {
+          'title' : 'HTML',
+          'id'    : "uEmF74eHRO8",
+          'time'  : [1802,3630]
+        },
+        {
+          'title' : '**GITHUB',
+          'id'    : "eulnSXkhE7I",
+          'time'  : [0,3939]
+        }
+      ],
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'What is GITHUB?',
+          'desc': "Let's see how Eddie and his team use GitHub.",
+          'url': 'https://www.youtube.com/watch?v=w3jLJU7DT5E'
+        },
+        {
+          'type': 'video',
+          'title': 'Learn GITHUB in 20mns',
+          'desc': 'Learn how to use Git & Github to share code and collaborate with other developers.',
+          'url': 'https://www.youtube.com/watch?v=nhNq2kIvi9s'
+        },
+        {
+          'type': 'link',
+          'title': 'GITHUB Steps',
+          'desc': 'Steps to use and pushing to Github',
+          'url': 'https://docs.google.com/presentation/d/e/2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S/pub?start=false&loop=false&delayms=3000'
+        }
+      ],
+      'published': True
+    },
+    {
+      'title':    "Front End: CSS",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vSo6WpKlhGX0bbA9EhC6KX-WzHhYvVswo93ePFgp2IisPiVgdOPhPm73W4byYCOu5LpagfTqHP563Ke",
+      'videos':   [],
+      'harvard':   [
+        {
+          'title' : 'HTML',
+          'id'    : "uEmF74eHRO8",
+          'time'  : [3630, 6318]
+        }
+      ],
+      'resources':[
+        {
+          'type': 'link',
+          'title': 'HOW TO EVERYTHING',
+          'desc': 'The BIG List of "HOW TOs"',
+          'url': 'https://www.w3schools.com/howto/default.asp'
+        }
+      ],
+      'published': False
+    }
+  ],
   'MVC1'    :   [
     {
       'title':    "MVC: Flask",
@@ -1106,31 +1169,6 @@ syllabus = {
       'ppt_code': "",
       'videos':   [],
       'resources':[],
-      'published': False
-    }
-  ],
-  'Front_end':  [
-    {
-      'title':    "HTML",
-      'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
-      'resources':[],
-      'published': False
-    },
-    {
-      'title':    "CSS",
-      'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
-      'resources':[
-        {
-          'type': 'link',
-          'title': 'HOW TO EVERYTHING',
-          'desc': 'The BIG List of "HOW TOs"',
-          'url': 'https://www.w3schools.com/howto/default.asp'
-        }
-      ],
       'published': False
     }
   ],
