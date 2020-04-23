@@ -1145,13 +1145,31 @@ syllabus = {
       ],
       'resources':[
         {
+          'type': 'video',
+          'title': 'CSS Tutorial',
+          'desc': 'Ultimate CSS tutorial',
+          'url': 'https://www.youtube.com/watch?v=yfoY53QXEnI'
+        },
+        {
+          'type': 'link',
+          'title': 'Bootstrap',
+          'desc': 'Bootstrap Documentation',
+          'url': 'https://getbootstrap.com/'
+        },
+        {
+          'type': 'link',
+          'title': 'Materialize',
+          'desc': 'Materialize Documentation',
+          'url': 'https://materializecss.com/'
+        },
+        {
           'type': 'link',
           'title': 'HOW TO EVERYTHING',
           'desc': 'The BIG List of "HOW TOs"',
           'url': 'https://www.w3schools.com/howto/default.asp'
         }
       ],
-      'published': False
+      'published': True
     }
   ],
   'MVC1'    :   [

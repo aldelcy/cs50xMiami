@@ -41,7 +41,7 @@
                                     <h2 class="uk-modal-title">{{lecture.title}}</h2>
                                     <p>
                                         <iframe src="https://www.youtube-nocookie.com/embed/{{harvLect.id}}?start={{harvLect.time[0]}}&amp;end={{harvLect.time[1]}}&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                                                width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive 
+                                                width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive
                                                 uk-video="automute: false">
                                         </iframe>
                                     </p>
@@ -51,15 +51,15 @@
                         <br>
                     {% endfor %}
                 {% endif %}
-                
+
                 <br>
-                
+
                 <a href="#all-lectures" uk-toggle>
                     <div class="uk-button uk-button-primary">All Lectures</div>
                 </a>
-                
+
                 <br><br>
-                
+
                 {% if lecture.videos and lecture.videos | length > 0 %}
                     <br>
                     <h3 class="bold"><u>Videos:</u></h3>
@@ -69,7 +69,7 @@
                         <br>
                     {% endfor %}
                 {% endif %}
-                
+
 
                 {% if lecture.resources and lecture.resources | length > 0 %}
                     <h3 class="bold"><u>Resources:</u></h3>
@@ -81,11 +81,12 @@
                                 {% if resource.type == "challenge" %}<ion-icon name="trophy-outline"></ion-icon>{% endif %}
                                 {{ resource.title }}: <a href="{{ resource.url }}" target="_blank">{{ resource.desc }}</a>
                             </li>
+                            <br>
                         {% endfor %}
                     </ul>
                 {% endif %}
 
-                
+
                 {% if lecture.activities and lecture.activities | length > 0 %}
                     <hr>
                     <h3 class="bold"><u>Activities</u></h3>
@@ -94,7 +95,7 @@
                             <h4 class="bold">{{ activity.title }}</h4>
                             {{ activity.preview | safe }}
                             <br><br>
-                            
+
                             <h4 class="bold">
                                 <a href="/activity/{{ activity.id }}">Start Activity</a>
                             </h4>
@@ -102,8 +103,8 @@
 
                     {% endfor %}
                 {% endif %}
-                
-                
+
+
             </div>
         </div>
     </div>
