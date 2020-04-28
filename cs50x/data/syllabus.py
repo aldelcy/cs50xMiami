@@ -1176,17 +1176,38 @@ syllabus = {
     {
       'title':    "MVC: Flask",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
+      'harvard':   [
+        {
+          'title' : 'FLASK',
+          'id'    : "pP23CtOI-1U",
+          'time'  : [2475, 4845]
+        }
+      ],
       'videos':   [],
-      'resources':[],
-      'published': False
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Flask Basics: part 1',
+          'desc': 'Flask Controller basics',
+          'url': 'https://www.youtube.com/watch?v=MwZwr5Tvyxo'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "MVC: Jinja2",
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
-      'resources':[],
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Flask Basics: part 2',
+          'desc': 'Flask Templates',
+          'url': 'https://www.youtube.com/watch?v=QnDWIZuWYW0'
+        }
+      ],
       'published': False
     }
   ],
@@ -1196,7 +1217,14 @@ syllabus = {
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
-      'resources':[],
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Flask Basics: part 4',
+          'desc': 'SQL and Databases',
+          'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
+        }
+      ],
       'published': False
     },
     {
@@ -1204,7 +1232,14 @@ syllabus = {
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
-      'resources':[],
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Flask Basics: part 3',
+          'desc': 'Form Validation',
+          'url': 'https://www.youtube.com/watch?v=UIJKdCIEXUQ'
+        }
+      ],
       'published': False
     }
   ],
@@ -1233,7 +1268,14 @@ syllabus = {
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
-      'resources':[],
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Flask Basics: part 3',
+          'desc': 'Form Validation',
+          'url': 'https://www.youtube.com/watch?v=CSHx6eCkmv0'
+        }
+      ],
       'published': False
     }
   ],
