@@ -1198,9 +1198,22 @@ syllabus = {
     {
       'title':    "MVC: Jinja2",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vTN91SQNPrNhKumWfv6gkekqzD2Mx6Tdaa4vt4Z4dtDaTBqx3Ypwbnqth8S258MTeFCjNYcNt7tnNRj",
       'videos':   [],
+      'harvard':   [
+        {
+          'title' : 'FLASK',
+          'id'    : "pP23CtOI-1U",
+          'time'  : [2475, 4845]
+        }
+      ],
       'resources':[
+        {
+          'type': 'link',
+          'title': 'HTTP REQUESTS and URL Handling',
+          'desc': 'Understanding HTTP Requests',
+          'url': 'https://docs.google.com/presentation/d/e/2PACX-1vRSCSLrWiQWshZfyL5iKAvqPO7sLXPW6-wO-QOuKeAgRarzlP7jBijjvPas9ck-UcJvSh9cvd05FYC5/pub?start=false&loop=false&delayms=3000'
+        },
         {
           'type': 'video',
           'title': 'Flask Basics: part 2',
@@ -1208,7 +1221,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=QnDWIZuWYW0'
         }
       ],
-      'published': False
+      'published': True
     }
   ],
   'MVC2'    :   [
