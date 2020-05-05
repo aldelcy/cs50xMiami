@@ -1228,9 +1228,27 @@ syllabus = {
     {
       'title':    "MVC: SQL",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vQnDDYh29mtpgIvRZGhYRIfUAO-Kz5Nt1ZC-Eo7jBR5iWGRfZIBvBQAjfUIXHT82i6lBa-z7i5pTNl7",
       'videos':   [],
+      'harvard':   [
+        {
+          'title' : 'SQL Overview',
+          'id'    : "u5pDdEKnbKA",
+          'time'  : [0, 2325]
+        },
+        {
+          'title' : 'SQL and Graphical Interface',
+          'id'    : "LxDetsPQAPQ",
+          'time'  : [1747, 4374]
+        }
+      ],
       'resources':[
+        {
+          'type': 'link',
+          'title': 'W3 School SQL tool',
+          'desc': 'Practice SQL with W3 Schools SQL tool',
+          'url': 'https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in'
+        },
         {
           'type': 'video',
           'title': 'Flask Basics: part 4',
@@ -1238,13 +1256,20 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
         }
       ],
-      'published': False
+      'published': True
     },
     {
-      'title':    "MVC: Flask Alquemy",
+      'title':    "MVC: CS50 SQL Library",
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
+      'harvard':   [
+        {
+          'title' : 'How to use CS50 SQL',
+          'id'    : "LxDetsPQAPQ",
+          'time'  : [4374, 6859]
+        }
+      ],
       'resources':[
         {
           'type': 'video',

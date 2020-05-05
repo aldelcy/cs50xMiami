@@ -32,7 +32,7 @@
                             <div style="display: inline-block; width: 78%;">
                                 <a href="http://www.youtube.com/watch?v={{harvLect.id}}&start={{harvLect.time[0]}}&end={{harvLect.time[1]}} " target="_blank">Watch HARVARD Lecture</a><br>
                                 <!-- <a href="#hardvard_video" uk-toggle>Watch HARVARD Lecture</a><br> -->
-                                {{harvLect.title}} <br>
+                                <b><u>{{harvLect.title}}</u></b> <br>
                                 from: <b>{{ (harvLect.time[0]/60) | round(1, 'floor') }} mns</b> - to: <b>{{ (harvLect.time[1]/60) | round(1, 'floor') }} mns</b>
                                 Duration: <b>{{ ((harvLect.time[1] - harvLect.time[0]) / 60) | round }} mns</b>
                             </div>
