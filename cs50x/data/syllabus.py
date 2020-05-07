@@ -1251,7 +1251,7 @@ syllabus = {
         },
         {
           'type': 'video',
-          'title': 'Flask Basics: part 4',
+          'title': 'IMPORTANT :: Flask Basics: part 4',
           'desc': 'SQL and Databases',
           'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
         }
@@ -1261,7 +1261,7 @@ syllabus = {
     {
       'title':    "MVC: CS50 SQL Library",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vRw9ITcyFBf_gC4vm2-bmcmMzdQEMlj8BFSxhSHKLM8FKA9teh8DU6bv6NpS3kOUlid9SQimCgYD3mL",
       'videos':   [],
       'harvard':   [
         {
@@ -1273,12 +1273,12 @@ syllabus = {
       'resources':[
         {
           'type': 'video',
-          'title': 'Flask Basics: part 3',
+          'title': 'IMPORTANT :: Flask Basics: part 3',
           'desc': 'Form Validation',
           'url': 'https://www.youtube.com/watch?v=UIJKdCIEXUQ'
         }
       ],
-      'published': False
+      'published': True
     }
   ],
   'Final'   :   [

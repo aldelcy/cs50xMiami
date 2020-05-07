@@ -25,11 +25,11 @@ from info import *
 
 
 js = Bundle('./js/script.js',
-             output='gen/scripts.js')
+            output='gen/scripts.js')
 assets.register('js_all', js)
 
 css = Bundle('./styles/base.css', './styles/style.css',
-             output='gen/styles.css')
+            output='gen/styles.css')
 assets.register('css_all', css)
 
 
@@ -37,10 +37,10 @@ assets.register('css_all', css)
 def home():
     today = date.today()
     thisYear = date.today().strftime("%Y")
-    
-    return render_template('index.html', 
-        title="Home", 
-        events=sessions, today=today, 
+
+    return render_template('index.html',
+        title="Home",
+        events=sessions, today=today,
         thisYear=thisYear,
         staff=theStaff
     )
