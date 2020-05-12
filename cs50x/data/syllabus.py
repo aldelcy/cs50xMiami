@@ -1285,10 +1285,10 @@ syllabus = {
     {
       'title':    "Final Week",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vSgq5_zCPFe5aaLBgOltujqv68y2DWXVpLdDOSODrioa1oJPwnPly8ipckso-RVBQwdQRH5liMjZUEp",
       'videos':   [],
       'resources':[],
-      'published': False
+      'published': True
     },
     {}
   ],
