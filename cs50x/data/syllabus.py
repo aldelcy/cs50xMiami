@@ -1290,7 +1290,14 @@ syllabus = {
       'resources':[],
       'published': True
     },
-    {}
+    {
+      'title':    "Building and App :: Planning",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vRsKgTPyiqHJCMvDNZv9LG2SA_Y59mmCE_rX9Ya2l8l4eWSuB79EHkzB5U1gP8F72Az1yNUp8nr697D",
+      'videos':   [],
+      'resources':[],
+      'published': True
+    }
   ],
   'Full_app':   [
     {
