@@ -1349,7 +1349,7 @@ syllabus = {
     {
       'title':    "Javacript: Ajax",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRaNon1h8M8z1wUqx4fIfwLnLY01RSFPkzeguLgt5EvfC6xWhhsK4AtEI-ZfJnauGb24q1VeJ_-ry6i,
+      'ppt_code': "2PACX-1vRaNon1h8M8z1wUqx4fIfwLnLY01RSFPkzeguLgt5EvfC6xWhhsK4AtEI-ZfJnauGb24q1VeJ_-ry6i",
       'videos':   [],
       'resources':[
         {
