@@ -1328,18 +1328,38 @@ syllabus = {
     {
       'title':    "Javacript: Intro",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vRuAODXHJdF1sTjJ0MgkiNzQ0FWYTzUUB_vurn_-2xcJir8keBI20LibT4EAfonwPlItXOmkcw06rPq",
       'videos':   [],
-      'resources':[],
-      'published': False
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'Vanilla JS',
+          'desc':   'Learn vanilla JS in about 10 minutes',
+          'url':    'https://www.youtube.com/watch?v=IQn_up6ZUkk'
+        },
+        {
+          'type': 'video',
+          'title': 'jQuery Tutorial #1',
+          'desc': 'jQuery Tutorial for Beginners',
+          'url': 'https://www.youtube.com/watch?v=hMxGhHNOkCU'
+        }
+      ],
+      'published': True
     },
     {
       'title':    "Javacript: Ajax",
       'desc':     """""",
-      'ppt_code': "",
+      'ppt_code': "2PACX-1vRaNon1h8M8z1wUqx4fIfwLnLY01RSFPkzeguLgt5EvfC6xWhhsK4AtEI-ZfJnauGb24q1VeJ_-ry6i,
       'videos':   [],
-      'resources':[],
-      'published': False
+      'resources':[
+        {
+          'type': 'video',
+          'title': 'jQuery/Ajax Tutorial',
+          'desc': "Using AJAX & API's (jQuery Tutorial #7)",
+          'url': 'https://www.youtube.com/watch?v=fEYx8dQr_cQ'
+        }
+      ],
+      'published': True
     }
   ],
   'Bootstrap':  [
