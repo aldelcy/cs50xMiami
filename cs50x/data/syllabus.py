@@ -1362,6 +1362,24 @@ syllabus = {
       'published': True
     }
   ],
+  'Github'  :   [
+    {
+      'title':    "Github: Basics",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
+      'videos':   [],
+      'resources':[],
+      'published': True
+    },
+    {
+      'title':    "Github: Collaborating",
+      'desc':     """""",
+      'ppt_code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
+      'videos':   [],
+      'resources':[],
+      'published': False
+    }
+  ],
   'Bootstrap':  [
     {
       'title':    "Bootstrap / Get UI KIT",
@@ -1373,24 +1391,6 @@ syllabus = {
     },
     {
       'title':    "Where to get assets",
-      'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
-      'resources':[],
-      'published': False
-    }
-  ],
-  'Github'  :   [
-    {
-      'title':    "Github: Basics",
-      'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
-      'resources':[],
-      'published': False
-    },
-    {
-      'title':    "Github: Collaborating",
       'desc':     """""",
       'ppt_code': "",
       'videos':   [],
