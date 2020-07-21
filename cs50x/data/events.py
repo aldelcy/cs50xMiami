@@ -2,7 +2,7 @@ from datetime import date, time
 
 sessions = [
     {
-        'title': 'CS50x Miami: Cohort 11 Master Class info',
+        'title': 'CS50x Miami: Cohort 12 Master Class info',
         'desc': 'Intro to Algorithmic Thinking | CS50x Miami. <br> Problems, problems everywhere! Problem solving is an essential skill and is in everything you do, just like computing.',
         'date': date(2020, 1, 16),
         'start_time': time(19,0),
