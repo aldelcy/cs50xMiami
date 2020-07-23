@@ -11,79 +11,79 @@ for (topic, courses) in syllabus.items():
 
 weeks  = {
   '0':{
-    'dates': [date(2020, 1, 21), date(2020, 1, 23) ],
+    'dates': [date(2020, 7, 21), date(2020, 7, 23) ],
     'topic': lectures["0"]['topic'].lower(),
     'lectures': [ lectures["0"], lectures["1"] ]
   },
   '1':{
-    'dates': [date(2020, 1, 28), date(2020, 1, 30) ],
+    'dates': [date(2020, 7, 28), date(2020, 7, 30) ],
     'topic': lectures["2"]['topic'].lower(),
     'lectures': [ lectures["2"], lectures["3"] ],
     'pset' : psets[0]
   },
   '2':{
-    'dates': [date(2020, 2, 4), date(2020, 2, 6) ],
+    'dates': [date(2020, 8, 4), date(2020, 8, 6) ],
     'topic': lectures["4"]['topic'].lower(),
     'lectures': [ lectures["4"], lectures["5"] ]
   },
   '3':{
-    'dates': [date(2020, 2, 11), date(2020, 2, 13) ],
+    'dates': [date(2020, 8, 11), date(2020, 8, 13) ],
     'topic': lectures["6"]['topic'].lower(),
     'lectures': [ lectures["6"], lectures["7"] ],
     'pset' : psets[1]
   },
   '4':{
-    'dates': [date(2020, 2, 18), date(2020, 2, 20) ],
+    'dates': [date(2020, 8, 18), date(2020, 8, 20) ],
     'topic': lectures["8"]['topic'].lower(),
     'lectures': [ lectures["8"], lectures["9"] ],
     'pset' : psets[2]
   },
   '5':{
-    'dates': [date(2020, 2, 25), date(2020, 2, 27) ],
+    'dates': [date(2020, 8, 25), date(2020, 8, 27) ],
     'topic': lectures["10"]['topic'].lower(),
     'lectures': [ lectures["10"], lectures["11"] ]
   },
   '6':{
-    'dates': [date(2020, 3, 3), date(2020, 3, 5) ],
+    'dates': [date(2020, 9, 1), date(2020, 9, 3) ],
     'topic': lectures["12"]['topic'].lower(),
     'lectures': [ lectures["12"], lectures["13"] ],
     'pset' : psets[3]
   },
   '7':{
-    'dates': [date(2020, 3, 10), date(2020, 3, 12) ],
+    'dates': [date(2020, 9, 8), date(2020, 9, 10) ],
     'topic': lectures["14"]['topic'].lower(),
     'lectures': [ lectures["14"], lectures["15"] ]
   },
   '8':{
-    'dates': [date(2020, 3, 30), date(2020, 4, 2) ],
+    'dates': [date(2020, 9, 15), date(2020, 9, 17) ],
     'topic': lectures["16"]['topic'].lower(),
     'lectures': [ lectures["16"], lectures["17"] ],
     'pset' : psets[4]
   },
   '9':{
-    'dates': [date(2020, 4, 7), date(2020, 4, 9) ],
+    'dates': [date(2020, 9, 22), date(2020, 9, 24) ],
     'topic': lectures["18"]['topic'].lower(),
     'lectures': [ lectures["18"], lectures["19"] ]
   },
   '10':{
-    'dates': [date(2020, 4, 14), date(2020, 4, 16) ],
+    'dates': [date(2020, 9, 29), date(2020, 10, 1) ],
     'topic': lectures["20"]['topic'].lower(),
     'lectures': [ lectures["20"], lectures["21"] ],
     'pset' : psets[5]
   },
   '11':{
-    'dates': [date(2020, 4, 21), date(2020, 4, 23) ],
+    'dates': [date(2020, 10, 6), date(2020, 10, 8) ],
     'topic': lectures["22"]['topic'].lower(),
     'lectures': [ lectures["22"], lectures["23"] ]
   },
   '12':{
-    'dates': [date(2020, 4, 28), date(2020, 4, 30) ],
+    'dates': [date(2020, 10, 13), date(2020, 10, 15) ],
     'topic': lectures["24"]['topic'].lower(),
     'lectures': [ lectures["24"], lectures["25"] ],
     'pset' : psets[6]
   },
   '13':{
-    'dates': [date(2020, 5, 5), date(2020, 5, 7) ],
+    'dates': [date(2020, 10, 20), date(2020, 10, 22) ],
     'topic': lectures["26"]['topic'].lower(),
     'lectures': [ lectures["26"], lectures["27"] ]
   },

@@ -10,7 +10,7 @@ psets = {
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/college/2020/spring/psets/0/",
-    "due_date" : date(2020, 1, 29)
+    "due_date" : date(2020, 8, 1)
   },
   1: {
     "id": 1,
@@ -34,7 +34,7 @@ psets = {
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/college/2020/spring/psets/1/",
-    "due_date" : date(2020, 2, 16)
+    "due_date" : date(2020, 8, 15)
   },
   2: {
     "id": 2,
@@ -52,7 +52,7 @@ psets = {
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/college/2020/spring/psets/2/",
-    "due_date" : date(2020, 2, 23)
+    "due_date" : date(2020, 8, 22)
   },
   3: {
     "id": 3,

@@ -29,7 +29,7 @@ staff = {
     "2" : {
         "fname": "Urbano",
         "lname": "Baz",
-        "role" : "Program Coordinator - Teaching Fellow",
+        "role" : "Program Coordinator - Co-Instructor",
         "desc" : "",
         "contact": {
             "phone": "305-237-7822",
@@ -40,28 +40,28 @@ staff = {
             "twitter" : "https://www.twitter.com/ubaz_3"
         }
     },
-    "3" : {
-        "fname": "Gloria",
-        "lname": "Jimenez",
-        "role" : "Teaching Fellow",
-        "short_desc" : "Gloria a Computer Science teacher and a student in Udacity's Nanodegree Android Basics by Google.",
-        "desc" : "<p>\
-                Gloria a Computer Science teacher and a student in Udacity's Nanodegree Android Basics by Google.\
-                As an educator and program coordinator she has worked in inner city communities as well as internationally\
-                with youth populations and everyday people fighting for justice.</p>\
-                <p>Her tech experience includes knowledge of both front end and back end technologies. She has experience\
-                teaching computer programming to both youth and adult learners.</p>\
-            ",
-        "contact": {
-            "phone": "",
-            "email": "gjimena@mdc.edu"
-        },
-        "social" : {
-            "linkedin" : "https://www.linkedin.com/in/gloriajimenez/",
-            "instagram" : "",
-            "website" : "",
-        }
-    }
+    # "3" : {
+    #     "fname": "Gloria",
+    #     "lname": "Jimenez",
+    #     "role" : "Teaching Fellow",
+    #     "short_desc" : "Gloria a Computer Science teacher and a student in Udacity's Nanodegree Android Basics by Google.",
+    #     "desc" : "<p>\
+    #             Gloria a Computer Science teacher and a student in Udacity's Nanodegree Android Basics by Google.\
+    #             As an educator and program coordinator she has worked in inner city communities as well as internationally\
+    #             with youth populations and everyday people fighting for justice.</p>\
+    #             <p>Her tech experience includes knowledge of both front end and back end technologies. She has experience\
+    #             teaching computer programming to both youth and adult learners.</p>\
+    #         ",
+    #     "contact": {
+    #         "phone": "",
+    #         "email": "gjimena@mdc.edu"
+    #     },
+    #     "social" : {
+    #         "linkedin" : "https://www.linkedin.com/in/gloriajimenez/",
+    #         "instagram" : "",
+    #         "website" : "",
+    #     }
+    # }
 }
 
 theStaff = staff.items()
