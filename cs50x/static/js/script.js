@@ -24,7 +24,7 @@ new TypeIt('#masterclass_title', {
 
 // ACTIVITIES
 
-// SPY YPS SPY 
+// SPY YPS SPY
 
 var passwords = [
     "01100010 01100001 01111010 01101001 01101110 01100111 01100001",
@@ -39,7 +39,7 @@ $('div#password').text( passwords[ Math.floor(Math.random() * passwords.length) 
 
 $('.submit_password').click(function(){
     $.ajax({
-        url:'/spy_submission',
+        url:'/tools/spy_submission',
         type:'POST',
         data: { level: 1, code: $('input#thePassword').val() },
         success: function (data){
@@ -65,7 +65,7 @@ $('.submit_password').click(function(){
 $('.submit_thecode').click(function(){
     var code = $('textarea#theCode');
     $.ajax({
-        url:'/spy_submission',
+        url:'/tools/spy_submission',
         type:'POST',
         data: { level: 2, code: code.data('code')+"+"+code.val() },
         success: function (data){
