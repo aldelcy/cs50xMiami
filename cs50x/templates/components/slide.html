@@ -1,12 +1,4 @@
-<iframe class="slides" src="https://docs.google.com/presentation/d/e/{{ ppt_code }}/embed?start=false&loop=true&delayms=3000" 
-        frameborder="0" width="100%" allowfullscreen="true" 
+<iframe class="slides" src="https://docs.google.com/presentation/d/e/{{ ppt_code }}/embed?start=false&loop=true&delayms=3000"
+        frameborder="0" width="100%" allowfullscreen="true"
         mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
-<script>
-    function reziseIframe(){
-        var iframe = $('.ppt iframe');
-        iframe.height( parseInt(iframe.width()) * 0.59 );
-    }
-    reziseIframe();
-    $(document).resize(function(){ reziseIframe(); })
-</script>

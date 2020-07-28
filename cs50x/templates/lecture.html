@@ -4,7 +4,7 @@
 {% block body %}
 
 {%  if lecture.published %}
-    <div class="container wrapper">
+    <div class="container-fluid wrapper" style="max-width: 90%;">
         <div class="row">
             <div class="col-sm-12 page_title">
                 <h5>{{lecture.topic}}</h5>
@@ -12,13 +12,46 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-9 ppt">
-                {% with ppt_code = lecture.ppt_code %}
-                    {% include 'components/slide.html' %}
-                {% endwith %}
+            <div class="col-12 col-sm-6">
+                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                    {% for ppt in lecture.ppts %}
+                        <li>
+                            <a onclick="reziseIframe('{{loop.index}}')" href="#">
+                                {% if ppt.title %} {{ppt.title}} {% else %} Slide {{ loop.index }} {% endif %}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <hr>
+                <ul class="uk-switcher uk-margin">
+                    {% for ppt in lecture.ppts %}
+                        <div id="ppt_{{loop.index}}" style="height:400px;">
+                            {% with ppt_code = ppt.code %}
+                                {% include 'components/slide.html' %}
+                            {% endwith %}
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
 
-                {{ lecture.desc | safe }}
+            {% if 'recording' in lecture %}
+                <div class="col-12 col-sm-6">
+                    <h4>Class Recording</h4>
+                    <hr style="margin: 10px 0;">
+                    <video width="100%" class="recording" controls style="background-color: black;">
+                        <source src="https://www.dropbox.com/s/{{lecture.recording}}.mp4?raw=1&autoplay=1" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <script>
+                        $('.recording').height( parseInt($('.recording').width()) * 0.63 )
+                    </script>
+                </div>
+            {% endif %}
 
+            <div class="col-12 col-sm-9" style="border-right: solid #ccc 1px;">
+                {% if lecture.desc | length > 0 %}
+                    {{ lecture.desc | safe }}
+                {% endif %}
             </div>
 
 
@@ -129,6 +162,7 @@
             </p>
         </div>
     </div>
+
 {% else %}
 
 <div class="container wrapper">
@@ -164,5 +198,9 @@
 </div>
 
 {% endif %}
+
+<script>
+    reziseIframe(1)
+</script>
 
 {% endblock %}

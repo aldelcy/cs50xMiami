@@ -6,13 +6,18 @@ syllabus = {
       'title'       :   "Scratch",
       'desc'        :   """
                         """,
-      'ppt_code'    :   "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code'    :   "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
+        }
+      ],
       'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
         'time'  : [1940,3742]
       }],
-      'videos'      :   {},
+      'recording'      :   "",
       'resources'   :   [
         {
           'type': 'link',
@@ -96,13 +101,18 @@ syllabus = {
                           </div>
                         </div>
                         """,
-      'ppt_code'    :   "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code'    :   "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
+        }
+      ],
       'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
         'time'  : [0,1297]
       }],
-      'videos'      :   {},
+      'recording'      :   "",
       'resources'   :   [
         {
           'type'  : 'link',
@@ -145,13 +155,18 @@ syllabus = {
                 you need to do step by step. It takes inputs (ingredients) and produces
                 an output (the completed dish).</p>
       """,
-      'ppt_code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
+        }
+      ],
       'harvard'     :   [{
         'title' : 'PseudoCoding',
         'id'    : "jjqgP9dpD1k",
         'time'  : [1297,1940]
       }],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'link',
@@ -244,8 +259,13 @@ syllabus = {
                       You could also decide to keep on doing push ups until your phone rings, or you can put bread in your toaster and keep doing push ups until the bread pops up. In this case, the number of push ups might vary depending on how long it takes for you to stop.<br>
                   </p>
       """,
-      'ppt_code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -312,8 +332,13 @@ syllabus = {
                     If you attended the Section last week and turned on the Ubunty Subsystem, you should use <code>hyperJS</code> as a terminal instead.
                   </p>
       """,
-      'ppt_code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
+        }
+      ],
+      'recording':   "",
       'harvard'     :   [{
         'title' : 'The Command Line',
         'id'    : "BnJ013X02b8",
@@ -359,13 +384,18 @@ syllabus = {
     {
       'title':    "C: Variables, Datatypes, Operators & Conditionals",
       'desc':     "",
-      'ppt_code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
+        }
+      ],
       'harvard'     :   [{
         'title' : 'Lecture 1: Variables and Datatype',
         'id'    : "e9Eds2Rc_x8",
         'time'  : [0,2994]
       }],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'link',
@@ -398,7 +428,12 @@ syllabus = {
     {
       'title':    "C: Arrays & Loops",
       'desc':     "",
-      'ppt_code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
+        }
+      ],
       'harvard' : [
         {
           'title' : 'Lecture 2: Arrays in C',
@@ -411,7 +446,8 @@ syllabus = {
           'time'  : [2696,6373]
         }
       ],
-      'videos':   [
+      'recording': "",
+      'ppts': [
         {
           'title': 'How to compare 2 strings.',
           'url': 'https://www.loom.com/share/759870e2d548446d8e2a8f3683eddf18'
@@ -527,7 +563,12 @@ syllabus = {
                       No we can use the variable <code>calculation</code> somewhere in our code, because it called the function <code>addNumbers</code> and passed it the parameters <code>10</code> and <code>45</code> and it returned us the result <code>55</code>.
                   </p>
       """,
-      'ppt_code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
+        }
+      ],
       'harvard' : [
         {
           'title' : 'Lecture 2: Functions',
@@ -535,7 +576,7 @@ syllabus = {
           'time'  : [3399,5695]
         }
       ],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -652,8 +693,13 @@ syllabus = {
             After assigning a Notation to each step, we can compile them together and calculate the final BIG O notation of the algorithm as a whole.
         </p>
       """,
-      'ppt_code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'Command Line Arguments',
@@ -719,7 +765,12 @@ syllabus = {
         Or a library of specific password scrambler and key generator… ect.<br>
 
       """,
-      'ppt_code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
+        }
+      ],
       'harvard':  [
         {
           'title' : 'Getting Started with Github',
@@ -727,7 +778,7 @@ syllabus = {
           'time'  : [0,2304]
         }
       ],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -761,7 +812,12 @@ syllabus = {
       'title':    "Algorithms: Searching",
       'desc':     """
       """,
-      'ppt_code': "2PACX-1vS0bizVVMblWF6UC0PlNn3NJuLciHd6izNwf1QBpwRSf2LIxLTmffMsinFSrJsAccm6fJ_cbcS9g-LY",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vS0bizVVMblWF6UC0PlNn3NJuLciHd6izNwf1QBpwRSf2LIxLTmffMsinFSrJsAccm6fJ_cbcS9g-LY",
+        }
+      ],
       'harvard'     :   [
         {
           'title' : 'Lecture 3 - Searching Algorithms',
@@ -779,7 +835,7 @@ syllabus = {
           'time'  : [0,568]
         }
       ],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -795,7 +851,12 @@ syllabus = {
       'title':    "Algorithms: Sorting",
       'desc':     """
       """,
-      'ppt_code': "2PACX-1vSj2krye8zTj46z7bsnUVu-rB2G2M7ZAX7o3C4wES2gMzD5wxETfPqYaeShDMVuH3fQ4aCMJqH843QG",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vSj2krye8zTj46z7bsnUVu-rB2G2M7ZAX7o3C4wES2gMzD5wxETfPqYaeShDMVuH3fQ4aCMJqH843QG",
+        }
+      ],
       'harvard'     :   [
         {
           'title' : 'Lecture 3 - Sorting Algorithms',
@@ -828,7 +889,7 @@ syllabus = {
           'time'  : [0,626]
         }
       ],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -865,25 +926,39 @@ syllabus = {
           'time'  : [0,479]
         }
       ],
-      'ppt_code': "2PACX-1vS97UPH6ItPBfCA8dWqdIjsvMvMDVL0m2cKqZpKWf92OgbSaT1dUdlxn2rdW9DJDBGlJZme2qUQueFC",
-      'videos':   [
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vS97UPH6ItPBfCA8dWqdIjsvMvMDVL0m2cKqZpKWf92OgbSaT1dUdlxn2rdW9DJDBGlJZme2qUQueFC",
+        }
+      ],
+      'recording': "",
+      'resources':[
         {
           'title': 'structs-0',
+          'type': 'video',
+          'desc': "",
           'url': 'https://www.youtube.com/watch?v=yMvRqKmbRm4'
         },
         {
           'title': 'structs-1',
+          'type': 'video',
+          'desc': "",
           'url': 'https://www.youtube.com/watch?v=hZ2Fy-J8DwQ'
         }
       ],
-      'resources':[],
       'published': False
     },
     {
       'title':    "C: Data Structures (Linked Lists, Queues, Stacks ... )",
       'desc':     """""",
-      'ppt_code': "2PACX-1vTVlxBXJFQyppD1YY5KRKrmIwGZxOn5KyxV46ebMf8pLHX-FXMPrbM2uO05fM8obUVbjXkrgEImsaLZ",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vTVlxBXJFQyppD1YY5KRKrmIwGZxOn5KyxV46ebMf8pLHX-FXMPrbM2uO05fM8obUVbjXkrgEImsaLZ",
+        }
+      ],
+      'recording':   "",
       'harvard'     :   [
         {
           'title' : 'Lecture 5 - Data Structures',
@@ -916,8 +991,13 @@ syllabus = {
     {
       'title':    "Midterm Week",
       'desc':     """""",
-      'ppt_code': "2PACX-1vTg9GBTa1PUN0rayILyPkWkJNKAFCWKoZLgHVjP7NUyb5DRO-22tpvujJwdP_ZqLFTVKrbIS2lncC83",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vTg9GBTa1PUN0rayILyPkWkJNKAFCWKoZLgHVjP7NUyb5DRO-22tpvujJwdP_ZqLFTVKrbIS2lncC83",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'link',
@@ -934,8 +1014,13 @@ syllabus = {
     {
       'title':    "Python: (Syntax Comparison to C) Data Types, Strings",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQnCUskqzx0vtxZAqF4-VqhdoEaokLb8Kimnic3ygZmWSO0db9JpajSugnFmyl1fX-IJx61D-Z7tsxf",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQnCUskqzx0vtxZAqF4-VqhdoEaokLb8Kimnic3ygZmWSO0db9JpajSugnFmyl1fX-IJx61D-Z7tsxf",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'harvard'     :   [
         {
@@ -949,8 +1034,13 @@ syllabus = {
     {
       'title':    "Python: Lists, Dictionaries and Tuples",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQfgJQOngawB8tQcs-CMQrLAw7PBZVYWl2RJyiEdFOQb7cVpax9gWvTMiqiRJcBn0tRGVVGHk98ulBr",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQfgJQOngawB8tQcs-CMQrLAw7PBZVYWl2RJyiEdFOQb7cVpax9gWvTMiqiRJcBn0tRGVVGHk98ulBr",
+        }
+      ],
+      'recording':   "",
       'harvard'     :   [
         {
           'title' : 'Lecture 6 - Python',
@@ -977,8 +1067,13 @@ syllabus = {
     {
       'title':    "Python: Methods and Functions",
       'desc':     """""",
-      'ppt_code': "2PACX-1vSIIv8iozJ1VDSEow1tzFDf7xtWVnvJf22w3abE9nO9XKOHlxfh_LTly2m8xOWFFP91gM4oPxZ9ATt9",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vSIIv8iozJ1VDSEow1tzFDf7xtWVnvJf22w3abE9nO9XKOHlxfh_LTly2m8xOWFFP91gM4oPxZ9ATt9",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'video',
@@ -1011,8 +1106,13 @@ syllabus = {
     {
       'title':    "Python: Operators, Main and Libraries",
       'desc':     """""",
-      'ppt_code': "2PACX-1vSihCXcXk-P1BOC28ViIoZRPsle5hczmaX39ndifOArriP934wVBM4GuRRvX2Rg8qWfEEq1F_wLt_p8",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vSihCXcXk-P1BOC28ViIoZRPsle5hczmaX39ndifOArriP934wVBM4GuRRvX2Rg8qWfEEq1F_wLt_p8",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type'  : 'link',
@@ -1051,23 +1151,25 @@ syllabus = {
     {
       'title':    "Python: Classes, Objects",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQp2rh9JgwUEvWoiqY7TmpEyuM2C2T4XzUvjQ1SR4sgkxLojus6NxP9UZBBPa8RbSI5MQZprzqGk57v",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQp2rh9JgwUEvWoiqY7TmpEyuM2C2T4XzUvjQ1SR4sgkxLojus6NxP9UZBBPa8RbSI5MQZprzqGk57v",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
-          'type'  : 'videos',
           'title' : 'Python Classes and Obects',
           'desc'  : 'Python OOP Tutorial 1: Classes and Instances',
           'url'   : 'https://www.youtube.com/watch?v=ZDa-Z5JzLYM'
         },
         {
-          'type'  : 'videos',
           'title' : 'Python Classes 2',
           'desc'  : 'Python OOP Tutorial: Class Variables',
           'url'   : 'https://www.youtube.com/watch?v=BJ-VvGyQxho'
         },
         {
-          'type'  : 'videos',
           'title' : 'Python Classes',
           'desc'  : 'OBJECT-ORIENTED PROGRAMMING IN PYTHON',
           'url'   : 'https://www.youtube.com/watch?v=ECMSnU9ilbQ'
@@ -1078,11 +1180,15 @@ syllabus = {
     {
       'title':    "Python: Inheritance, Abstractions",
       'desc':     """""",
-      'ppt_code': "2PACX-1vTlnFQf0YGvwoD1srBETTQyGrw6eZUlBwcW9U39NxTHwBPmLmC5dhWredWmEYbL9lnPWfOfVBegXTC8",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vTlnFQf0YGvwoD1srBETTQyGrw6eZUlBwcW9U39NxTHwBPmLmC5dhWredWmEYbL9lnPWfOfVBegXTC8",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
-          'type'  : 'videos',
           'title' : 'Python Class Inheritance',
           'desc'  : 'Python OOP Tutorial: Inheritance - Creating Subclasses',
           'url'   : 'https://www.youtube.com/watch?v=RSl87lqOXDE'
@@ -1095,8 +1201,13 @@ syllabus = {
     {
       'title':    "Front End: HTML / Github",
       'desc':     """""",
-      'ppt_code': "2PACX-1vThWQwKcNvvcwos52xtb8kFwUf3J5zABoXzzeBbZu8iYwOQKz0oFmqdrJfHQhz3yNCw989NekHDUJkn",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vThWQwKcNvvcwos52xtb8kFwUf3J5zABoXzzeBbZu8iYwOQKz0oFmqdrJfHQhz3yNCw989NekHDUJkn",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'HTML',
@@ -1134,8 +1245,13 @@ syllabus = {
     {
       'title':    "Front End: CSS",
       'desc':     """""",
-      'ppt_code': "2PACX-1vSo6WpKlhGX0bbA9EhC6KX-WzHhYvVswo93ePFgp2IisPiVgdOPhPm73W4byYCOu5LpagfTqHP563Ke",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vSo6WpKlhGX0bbA9EhC6KX-WzHhYvVswo93ePFgp2IisPiVgdOPhPm73W4byYCOu5LpagfTqHP563Ke",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'HTML',
@@ -1176,7 +1292,12 @@ syllabus = {
     {
       'title':    "MVC: Flask",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
+        }
+      ],
       'harvard':   [
         {
           'title' : 'FLASK',
@@ -1184,7 +1305,7 @@ syllabus = {
           'time'  : [2475, 4845]
         }
       ],
-      'videos':   [],
+      'recording':   "",
       'resources':[
         {
           'type': 'video',
@@ -1198,8 +1319,13 @@ syllabus = {
     {
       'title':    "MVC: Jinja2",
       'desc':     """""",
-      'ppt_code': "2PACX-1vTN91SQNPrNhKumWfv6gkekqzD2Mx6Tdaa4vt4Z4dtDaTBqx3Ypwbnqth8S258MTeFCjNYcNt7tnNRj",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vTN91SQNPrNhKumWfv6gkekqzD2Mx6Tdaa4vt4Z4dtDaTBqx3Ypwbnqth8S258MTeFCjNYcNt7tnNRj",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'FLASK',
@@ -1228,8 +1354,13 @@ syllabus = {
     {
       'title':    "MVC: SQL",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQnDDYh29mtpgIvRZGhYRIfUAO-Kz5Nt1ZC-Eo7jBR5iWGRfZIBvBQAjfUIXHT82i6lBa-z7i5pTNl7",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQnDDYh29mtpgIvRZGhYRIfUAO-Kz5Nt1ZC-Eo7jBR5iWGRfZIBvBQAjfUIXHT82i6lBa-z7i5pTNl7",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'SQL Overview',
@@ -1261,8 +1392,13 @@ syllabus = {
     {
       'title':    "MVC: CS50 SQL Library",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRw9ITcyFBf_gC4vm2-bmcmMzdQEMlj8BFSxhSHKLM8FKA9teh8DU6bv6NpS3kOUlid9SQimCgYD3mL",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRw9ITcyFBf_gC4vm2-bmcmMzdQEMlj8BFSxhSHKLM8FKA9teh8DU6bv6NpS3kOUlid9SQimCgYD3mL",
+        }
+      ],
+      'recording':   "",
       'harvard':   [
         {
           'title' : 'How to use CS50 SQL',
@@ -1285,16 +1421,26 @@ syllabus = {
     {
       'title':    "Final Week",
       'desc':     """""",
-      'ppt_code': "2PACX-1vSgq5_zCPFe5aaLBgOltujqv68y2DWXVpLdDOSODrioa1oJPwnPly8ipckso-RVBQwdQRH5liMjZUEp",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vSgq5_zCPFe5aaLBgOltujqv68y2DWXVpLdDOSODrioa1oJPwnPly8ipckso-RVBQwdQRH5liMjZUEp",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     },
     {
       'title':    "Building and App :: Planning",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRsKgTPyiqHJCMvDNZv9LG2SA_Y59mmCE_rX9Ya2l8l4eWSuB79EHkzB5U1gP8F72Az1yNUp8nr697D",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRsKgTPyiqHJCMvDNZv9LG2SA_Y59mmCE_rX9Ya2l8l4eWSuB79EHkzB5U1gP8F72Az1yNUp8nr697D",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     }
@@ -1303,16 +1449,26 @@ syllabus = {
     {
       'title':    "APP: Designing and Planning",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     },
     {
       'title':    "App: Coordinating",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type': 'video',
@@ -1328,8 +1484,13 @@ syllabus = {
     {
       'title':    "Javacript: Intro",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRuAODXHJdF1sTjJ0MgkiNzQ0FWYTzUUB_vurn_-2xcJir8keBI20LibT4EAfonwPlItXOmkcw06rPq",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRuAODXHJdF1sTjJ0MgkiNzQ0FWYTzUUB_vurn_-2xcJir8keBI20LibT4EAfonwPlItXOmkcw06rPq",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type': 'video',
@@ -1349,8 +1510,13 @@ syllabus = {
     {
       'title':    "Javacript: Ajax",
       'desc':     """""",
-      'ppt_code': "2PACX-1vRaNon1h8M8z1wUqx4fIfwLnLY01RSFPkzeguLgt5EvfC6xWhhsK4AtEI-ZfJnauGb24q1VeJ_-ry6i",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vRaNon1h8M8z1wUqx4fIfwLnLY01RSFPkzeguLgt5EvfC6xWhhsK4AtEI-ZfJnauGb24q1VeJ_-ry6i",
+        }
+      ],
+      'recording':   "",
       'resources':[
         {
           'type': 'video',
@@ -1366,16 +1532,26 @@ syllabus = {
     {
       'title':    "Github: Basics",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     },
     {
       'title':    "Github: Collaborating",
       'desc':     """""",
-      'ppt_code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     }
@@ -1384,16 +1560,26 @@ syllabus = {
     {
       'title':    "Bootstrap / Get UI KIT",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     },
     {
       'title':    "Where to get assets",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     }
@@ -1402,16 +1588,26 @@ syllabus = {
     {
       'title':    "Hack-a-thon",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     },
     {
       'title':    "Project Presentation",
       'desc':     """""",
-      'ppt_code': "",
-      'videos':   [],
+      'ppts' : [
+        {
+          'title'   : "",
+          'code': "",
+        }
+      ],
+      'recording':   "",
       'resources':[],
       'published': False
     }

@@ -44,6 +44,16 @@
   </head>
   <body>
 
+    <script>
+        function reziseIframe(index){
+            var iframe = $('#ppt_'+index+' iframe');
+            setTimeout(() => {
+                iframe.height( parseInt(iframe.width()) * 0.61 );
+            }, 500);
+            $(document).resize( function(){ reziseIframe(index); })
+        }
+    </script>
+
     <!-- NAVBAR -->
     <nav class="uk-navbar-container" uk-navbar style="padding:0 10%;">
         <div class="uk-navbar-left">
