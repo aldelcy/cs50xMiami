@@ -4,20 +4,20 @@ syllabus = {
   'Scratch' :   [
     {
       'title'       :   "Scratch",
-      'desc'        :   """
-                        """,
+      'desc'        :   "0_scratch.html",
       'ppts' : [
         {
           'title'   : "",
           'code'    :   "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
         'time'  : [1940,3742]
       }],
-      'recording'      :   "",
+      'recording'   :   "",
       'resources'   :   [
         {
           'type': 'link',
@@ -43,70 +43,14 @@ syllabus = {
     },
     {
       'title'       :   "Computer Basics & Binary",
-      'desc'        :   """
-                        <h2>The Computer</h2>
-                      <p>
-                          This macgical tool we use everyday is full of surprises.<br>
-                          Over the course of CS50, you will be using a LOT of it as well as opening under the hood to better understand how it works.
-                      </p>
-
-                      <p>
-                          For Now though, let's download the apps and tools we need to do our programming work effectively.
-                      </p>
-
-                      <h2>Computer Setup:</h2>
-                      <span class="bold">Slack Communication tool</span> <a href="https://slack.com/downloads/">Download the latest version here</a><br>
-                      <span class="bold">Python</span> <a href="https://www.python.org/downloads/">Download 3.8.1 here</a><br>
-                      <span class="bold">Github</span> <a href="https://desktop.github.com/">Download Desktop manager </a><br>
-                      <span class="bold">VisualStudio Code</span> <a href="https://code.visualstudio.com/Download">Preferred Text Editor. Download here</a> <br>
-                      <span class="bold">Hyper JS: Terminal</span> <a href="https://hyper.is/#installation">Downoad Latest version </a><br>
-
-                      <br><br>
-
-                      <h3>Why learn BINARY?</h3>
-                      <p>
-                          The main reason for learning binary is to understand how computers think at the bottom most level. <br>
-                          A key aspect involves the comprehension that no real programmer, nor hardware engineer for that matter, deals directly with binary.
-                      </p>
-
-                      <h3>Why do computers use binary?</h3>
-
-                      <p>Binary is still the primary language for computers for the following reasons.</p>
-                      <ul>
-                          <li>It is a simple and elegant design.</li>
-                          <li>Binary's 0 and 1 method is quick to detect an electrical signal's off or on state.</li>
-                          <li>The positive and negative poles of magnetic media are quickly translated into binary.</li>
-                          <li>Binary is the most efficient way to control logic circuits.</li>
-                      </ul>
-
-                      <h3>Will I use binary?</h3>
-                      <p>Most likely not if you are just going to be programming, but it's always fun to know how to read it and why it's used.</p>
-
-                      <br><br>
-
-                      <div class="row">
-                          <div class="col-12 col-sm-4">
-                              <a href="https://www.youtube.com/watch?v=nuPZUUED5uk" target="_blank">
-                                  <img src="https://awsimages.detik.net.id/customthumb/2015/02/05/398/130725_ajak.jpg?w=700&q=90" alt="">
-                              </a>
-                          </div>
-                          <div class="col-12 col-sm-8">
-                              <h3 class="bold"> Watch Recommendation: </h3>
-                              <h2 class="bold">The Imitation Game</h2>
-                              In 1939, newly created British intelligence agency MI6 recruits Cambridge
-                              mathematics alumnus Alan Turing (Benedict Cumberbatch) to crack Nazi codes,
-                              including Enigma -- which cryptanalysts had thought unbreakable. Turing's team,
-                              including Joan Clarke (Keira Knightley), analyze Enigma messages while he builds
-                              a machine to decipher them. Turing and team finally succeed and become heroes.
-                          </div>
-                        </div>
-                        """,
+      'desc'        :   "1_binary.html",
       'ppts' : [
         {
           'title'   : "",
           'code'    :   "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [{
         'title' : 'Computational Thinking, Scratch',
         'id'    : "jjqgP9dpD1k",
@@ -146,21 +90,14 @@ syllabus = {
   'Basics'  :   [
     {
       'title':    "The Basics: 1/2",
-      'desc':     """
-                <h2>Algorithms:</h2>
-                <h3 class="bold">What are "Algorithms"?</h3>
-
-                <p>a step by step procedure to solve logical and mathematical problems.
-                A recipe is a good example of an algorithm because it tells you what
-                you need to do step by step. It takes inputs (ingredients) and produces
-                an output (the completed dish).</p>
-      """,
+      'desc':     "2_basics1.html",
       'ppts' : [
         {
           'title'   : "",
           'code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [{
         'title' : 'PseudoCoding',
         'id'    : "jjqgP9dpD1k",
@@ -181,7 +118,7 @@ syllabus = {
           'url'   : 'https://www.youtube.com/watch?v=CvSOaYi89B4'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title':    "The Basics: 2/2",
@@ -339,6 +276,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [{
         'title' : 'The Command Line',
         'id'    : "BnJ013X02b8",
@@ -390,6 +328,7 @@ syllabus = {
           'code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/1/',
       'harvard'     :   [{
         'title' : 'Lecture 1: Variables and Datatype',
         'id'    : "e9Eds2Rc_x8",
@@ -434,6 +373,7 @@ syllabus = {
           'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard' : [
         {
           'title' : 'Lecture 2: Arrays in C',
@@ -569,6 +509,7 @@ syllabus = {
           'code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard' : [
         {
           'title' : 'Lecture 2: Functions',
@@ -700,6 +641,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'Command Line Arguments',
@@ -771,6 +713,7 @@ syllabus = {
           'code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':  [
         {
           'title' : 'Getting Started with Github',
@@ -818,6 +761,7 @@ syllabus = {
           'code': "2PACX-1vS0bizVVMblWF6UC0PlNn3NJuLciHd6izNwf1QBpwRSf2LIxLTmffMsinFSrJsAccm6fJ_cbcS9g-LY",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 3 - Searching Algorithms',
@@ -857,6 +801,7 @@ syllabus = {
           'code': "2PACX-1vSj2krye8zTj46z7bsnUVu-rB2G2M7ZAX7o3C4wES2gMzD5wxETfPqYaeShDMVuH3fQ4aCMJqH843QG",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 3 - Sorting Algorithms',
@@ -904,6 +849,7 @@ syllabus = {
     {
       'title':    "Memory, Pointers & Structs",
       'desc':     """""",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 4 - Memory',
@@ -959,6 +905,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 5 - Data Structures',
@@ -1022,6 +969,7 @@ syllabus = {
       ],
       'recording':   "",
       'resources':[],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 6 - Python',
@@ -1041,6 +989,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 6 - Python',
@@ -1094,6 +1043,7 @@ syllabus = {
           'url'   : 'https://www.youtube.com/watch?v=fbaSAS9DWZw'
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'  : [
         {
           'title' : 'Lecture 6 - Python',
@@ -1139,6 +1089,7 @@ syllabus = {
           'url'   : 'https://docs.google.com/presentation/d/e/2PACX-1vTzHY5E1FigTXmyd-U-KUR2Zxyj16uZ4ggNzOINcwF5gW9U6OqlBvoE1CoWSZgFrH_UarSV43YIt278/embed'
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard'     :   [
         {
           'title' : 'Lecture 6 - Python',
@@ -1208,6 +1159,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'HTML',
@@ -1252,6 +1204,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'HTML',
@@ -1298,6 +1251,7 @@ syllabus = {
           'code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
         }
       ],
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'FLASK',
@@ -1326,6 +1280,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'FLASK',
@@ -1361,6 +1316,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'SQL Overview',
@@ -1399,6 +1355,7 @@ syllabus = {
         }
       ],
       'recording':   "",
+      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
       'harvard':   [
         {
           'title' : 'How to use CS50 SQL',

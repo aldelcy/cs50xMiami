@@ -1,12 +1,24 @@
 from datetime import date
 from syllabus import *
 from psets import *
+import os
 
 lectures, i = {}, 0
 
 for (topic, courses) in syllabus.items():
   for course in courses:
     lectures[str(i)] = {**course, **{'topic': topic, 'number': i}}
+    if 'desc' in lectures[str(i)]:
+      if lectures[str(i)]['published']:
+        file = lectures[str(i)]['desc']
+        path = os.getcwd() + "/cs50x/lectures/" + file
+        try:
+          content = open( path, 'r')
+          lectures[str(i)]['desc'] = "\n".join([line.strip() for line in content])
+        except:
+          lectures[str(i)]['desc'] = ""
+        finally:
+          content.close()
     i += 1
 
 weeks  = {
