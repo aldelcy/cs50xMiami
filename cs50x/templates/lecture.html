@@ -93,14 +93,10 @@
 
                 <br><br>
 
-                {% if lecture.videos and lecture.videos | length > 0 %}
+                {% if lecture.harvard_link %}
                     <br>
-                    <h3 class="bold"><u>Videos:</u></h3>
-                    {% for video in lecture.videos %}
-                        <ion-icon name="videocam"></ion-icon>
-                        <a href="{{ video.url }}" target="_blank">{{ video.title }}</a>
-                        <br>
-                    {% endfor %}
+                    <h3 class="bold"><u>Harvard Week Link:</u></h3>
+                    <a href="{{ lecture.harvard_link }}" > {{lecture.harvard_link}} </a>
                 {% endif %}
 
 
