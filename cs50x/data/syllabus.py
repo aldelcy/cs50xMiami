@@ -56,7 +56,7 @@ syllabus = {
         'id'    : "jjqgP9dpD1k",
         'time'  : [0,1297]
       }],
-      'recording'      :   "",
+      'recording'      :   "o4159urnsrv82te/July%2023rd%202020",
       'resources'   :   [
         {
           'type'  : 'link',
