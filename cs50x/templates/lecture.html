@@ -34,19 +34,21 @@
                 </ul>
             </div>
 
-            {% if 'recording' in lecture %}
-                <div class="col-12 col-sm-6">
-                    <h4>Class Recording</h4>
-                    <hr style="margin: 10px 0;">
+            <div class="col-12 col-sm-6">
+                <h4>Class Recording</h4>
+                <hr style="margin: 10px 0 20px;">
+                {% if lecture.recording.type == 'youtube' %}
+                    <iframe width="100%" class="recording" src="https://www.youtube.com/embed/{{ lecture.recording.code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {% else %}
                     <video width="100%" class="recording" controls style="background-color: black;">
-                        <source src="https://www.dropbox.com/s/{{lecture.recording}}.mp4?raw=1&autoplay=1" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <script>
-                        $('.recording').height( parseInt($('.recording').width()) * 0.63 )
-                    </script>
-                </div>
-            {% endif %}
+                        <source src="https://www.dropbox.com/s/{{lecture.recording.code}}.mp4?raw=1&autoplay=1" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                {% endif %}
+                <script>
+                    $('.recording').height( parseInt($('.recording').width()) * 0.62 )
+                </script>
+            </div>
 
             <div class="col-12 col-sm-9" style="border-right: solid #ccc 1px;">
                 {% if lecture.desc | length > 0 %}
