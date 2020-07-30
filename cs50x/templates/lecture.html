@@ -4,201 +4,215 @@
 {% block body %}
 
 {%  if lecture.published %}
-    <div class="container-fluid wrapper" style="max-width: 90%;">
-        <div class="row">
-            <div class="col-sm-12 page_title">
-                <h5>{{lecture.topic}}</h5>
-                <h2>{{title}}</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                    {% for ppt in lecture.ppts %}
-                        <li>
-                            <a onclick="reziseIframe('{{loop.index}}')" href="#">
-                                {% if ppt.title %} {{ppt.title}} {% else %} Slide {{ loop.index }} {% endif %}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <hr>
-                <ul class="uk-switcher uk-margin">
-                    {% for ppt in lecture.ppts %}
-                        <div id="ppt_{{loop.index}}" style="height:400px;">
-                            {% with ppt_code = ppt.code %}
-                                {% include 'components/slide.html' %}
-                            {% endwith %}
-                        </div>
-                    {% endfor %}
-                </ul>
-            </div>
+	<div class="container-fluid wrapper" style="max-width: 90%;">
+			<div class="row">
+				<div class="col-sm-12 page_title">
+					<h5>{{lecture.topic}}</h5>
+					<h2>{{title}}</h2>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12 col-sm-6">
+						<ul class="uk-subnav uk-subnav-pill" uk-switcher>
+							{% for ppt in lecture.ppts %}
+								<li>
+									<a onclick="reziseIframe('{{loop.index}}')" href="#">
+										{% if ppt.title %} {{ppt.title}} {% else %} Slide {{ loop.index }} {% endif %}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+						<hr>
+						<ul class="uk-switcher uk-margin">
+								{% for ppt in lecture.ppts %}
+								<div id="ppt_{{loop.index}}" style="height:400px;">
+									{% with ppt_code = ppt.code %}
+										{% include 'components/slide.html' %}
+									{% endwith %}
+								</div>
+								{% endfor %}
+						</ul>
+					</div>
 
-            <div class="col-12 col-sm-6">
-                <h4>Class Recording</h4>
-                <hr style="margin: 10px 0 20px;">
-                {% if lecture.recording.type == 'youtube' %}
-                    <iframe width="100%" class="recording" src="https://www.youtube.com/embed/{{ lecture.recording.code }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                {% else %}
-                    <video width="100%" class="recording" controls style="background-color: black;">
-                        <source src="https://www.dropbox.com/s/{{lecture.recording.code}}.mp4?raw=1&autoplay=1" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                {% endif %}
-                <script>
-                    $('.recording').height( parseInt($('.recording').width()) * 0.62 )
-                </script>
-            </div>
+					<div class="col-12 col-sm-6">
+							<h4>Class Recording</h4>
+							<hr style="margin: 10px 0 20px;">
+							{% if lecture.recording.type == 'youtube' %}
+								<iframe width="100%" class="recording" src="https://www.youtube.com/embed/{{ lecture.recording.code }}"
+									frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							{% else %}
+								<video width="100%" class="recording" controls style="background-color: black;">
+									<source src="https://www.dropbox.com/s/{{lecture.recording.code}}.mp4?raw=1&autoplay=1"
+										type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							{% endif %}
+							<script>
+								$('.recording').height(parseInt($('.recording').width()) * 0.62)
+							</script>
+					</div>
 
-            <div class="col-12 col-sm-9" style="border-right: solid #ccc 1px;">
-                {% if lecture.desc | length > 0 %}
-                    {{ lecture.desc | safe }}
-                {% endif %}
-            </div>
-
-
-            <div class="col-12 col-sm-3" style="padding: 15px 20px;">
-                {% if 'harvard' in lecture %}
-                    {% for harvLect in lecture.harvard %}
-                        <div class="row">
-                            <div style="display: inline-block; width: 20%; margin-right: 2%;">
-                                <img src="/static/assets/harvard_logo.png" alt="">
-                            </div>
-                            <div style="display: inline-block; width: 78%;">
-                                <a href="http://www.youtube.com/watch?v={{harvLect.id}}&start={{harvLect.time[0]}}&end={{harvLect.time[1]}} " target="_blank">Watch HARVARD Lecture</a><br>
-                                <!-- <a href="#hardvard_video" uk-toggle>Watch HARVARD Lecture</a><br> -->
-                                <b><u>{{harvLect.title}}</u></b> <br>
-                                from: <b>{{ (harvLect.time[0]/60) | round(1, 'floor') }} mns</b> - to: <b>{{ (harvLect.time[1]/60) | round(1, 'floor') }} mns</b>
-                                Duration: <b>{{ ((harvLect.time[1] - harvLect.time[0]) / 60) | round }} mns</b>
-                            </div>
-                            <!-- <div id="hardvard_video" class="uk-modal-container" uk-modal>
-                                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-                                    <h2 class="uk-modal-title">{{lecture.title}}</h2>
-                                    <p>
-                                        <iframe src="https://www.youtube-nocookie.com/embed/{{harvLect.id}}?start={{harvLect.time[0]}}&amp;end={{harvLect.time[1]}}&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                                                width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive
-                                                uk-video="automute: false">
-                                        </iframe>
-                                    </p>
-                                </div>
-                            </div> -->
-                        </div>
-                        <br>
-                    {% endfor %}
-                {% endif %}
-
-                <br>
-
-                <a href="#all-lectures" uk-toggle>
-                    <div class="uk-button uk-button-primary">All Lectures</div>
-                </a>
-
-                <br><br>
-
-                {% if lecture.harvard_link %}
-                    <br>
-                    <h3 class="bold"><u>Harvard Week Link:</u></h3>
-                    <a href="{{ lecture.harvard_link }}" > {{lecture.harvard_link}} </a>
-                {% endif %}
+					<div class="col-12 col-sm-9" style="border-right: solid #ccc 1px;">
+						{% if lecture.desc | length > 0 %}
+						{{ lecture.desc | safe }}
+						{% endif %}
+					</div>
 
 
-                {% if lecture.resources and lecture.resources | length > 0 %}
-                    <h3 class="bold"><u>Resources:</u></h3>
-                    <ul>
-                        {% for resource in lecture.resources %}
-                            <li>
-                                {% if resource.type == "video" %}<ion-icon name="videocam"></ion-icon>{% endif %}
-                                {% if resource.type == "link" %}<ion-icon name="document-text-outline"></ion-icon>{% endif %}
-                                {% if resource.type == "challenge" %}<ion-icon name="trophy-outline"></ion-icon>{% endif %}
-                                {{ resource.title }}: <a href="{{ resource.url }}" target="_blank">{{ resource.desc }}</a>
-                            </li>
-                            <br>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
+					<div class="col-12 col-sm-3" style="padding: 15px 20px;">
+							{% if 'harvard' in lecture %}
+								{% for harvLect in lecture.harvard %}
+									<div class="row">
+											<div style="display: inline-block; width: 20%; margin-right: 2%;">
+													<img src="/static/assets/harvard_logo.png" alt="">
+											</div>
+											<div style="display: inline-block; width: 78%;">
+												<a href="http://www.youtube.com/watch?v={{harvLect.id}}&start={{harvLect.time[0]}}&end={{harvLect.time[1]}} "
+													target="_blank">Watch HARVARD Lecture</a><br>
+												<!-- <a href="#hardvard_video" uk-toggle>Watch HARVARD Lecture</a><br> -->
+												<b><u>{{harvLect.title}}</u></b> <br>
+												from: <b>{{ (harvLect.time[0]/60) | round(1, 'floor') }} mns</b> - to:
+												<b>{{ (harvLect.time[1]/60) | round(1, 'floor') }} mns</b>
+												Duration: <b>{{ ((harvLect.time[1] - harvLect.time[0]) / 60) | round }} mns</b>
+											</div>
+											<!-- <div id="hardvard_video" class="uk-modal-container" uk-modal>
+														<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+															<h2 class="uk-modal-title">{{lecture.title}}</h2>
+															<p>
+																<iframe src="https://www.youtube-nocookie.com/embed/{{harvLect.id}}?start={{harvLect.time[0]}}&amp;end={{harvLect.time[1]}}&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
+																	width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive
+																	uk-video="automute: false">
+																</iframe>
+															</p>
+														</div>
+													</div> -->
+									</div>
+									<br>
+								{% endfor %}
+							{% endif %}
 
+							<br>
 
-                {% if lecture.activities and lecture.activities | length > 0 %}
-                    <hr>
-                    <h3 class="bold"><u>Activities</u></h3>
-                    {% for activity in lecture.activities %}
-                        {% if activity.published %}
-                            <h4 class="bold">{{ activity.title }}</h4>
-                            {{ activity.preview | safe }}
-                            <br><br>
+							<a href="#all-lectures" uk-toggle>
+									<div class="uk-button uk-button-primary">All Lectures</div>
+							</a>
 
-                            <h4 class="bold">
-                                <a href="/activity/{{ activity.id }}">Start Activity</a>
-                            </h4>
-                        {% endif %}
+							<br><br>
 
-                    {% endfor %}
-                {% endif %}
+							{% if lecture.harvard_link %}
+								<br>
+								<h3 class="bold"><u>Harvard Week Link:</u></h3>
+								<a href="{{ lecture.harvard_link }}"> {{lecture.harvard_link}} </a>
+							{% endif %}
 
+							{% if lecture.resources and lecture.resources | length > 0 %}
+								<h3 class="bold"><u>Resources:</u></h3>
+								<ul>
+										{% for resource in lecture.resources %}
+										<li>
+												{% if resource.type == "video" %}<ion-icon name="videocam"></ion-icon>{% endif %}
+												{% if resource.type == "link" %}<ion-icon name="document-text-outline"></ion-icon>{% endif %}
+												{% if resource.type == "challenge" %}<ion-icon name="trophy-outline"></ion-icon>{% endif %}
+												{{ resource.title }}: <a href="{{ resource.url }}" target="_blank">{{ resource.desc }}</a>
+										</li>
+										<br>
+										{% endfor %}
+								</ul>
+							{% endif %}
 
-            </div>
-        </div>
-    </div>
+							{% if lecture.activities and lecture.activities | length > 0 %}
+								<hr>
+								<h3 class="bold"><u>Activities</u></h3>
+								{% for activity in lecture.activities %}
+									{% if activity.published %}
+										<h4 class="bold">{{ activity.title }}</h4>
+										{{ activity.preview | safe }}
+										<br><br>
 
-    <div id="all-lectures" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-            <h2 class="uk-modal-title">Lectures</h2>
-            <p>
-                {% for (i, l) in lectures %}
-                    {% if l.title %}
-                        {% if l.published %}
-                            {{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
-                        {% else %}
-                            {{i}} - {{l.title}}
-                        {% endif %}
-                    {% endif %}
-                    <br>
-                {% endfor %}
-            </p>
-            <p class="uk-text-center">
-                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
-            </p>
-        </div>
-    </div>
+										<h4 class="bold">
+												<a href="/activity/{{ activity.id }}">Start Activity</a>
+										</h4>
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+
+					</div>
+			</div>
+	</div>
+
+	<div id="all-lectures" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+					<h2 class="uk-modal-title">Lectures</h2>
+					<p>
+							{% for (i, l) in lectures %}
+								{% if l.title %}
+									{% if l.published %}
+										{{i}} - <a href="/lecture/{{i}}">{{l.title}}</a>
+									{% else %}
+										{{i}} - {{l.title}}
+									{% endif %}
+								{% endif %}
+								<br>
+							{% endfor %}
+					</p>
+					<p class="uk-text-center">
+							<button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+					</p>
+			</div>
+	</div>
 
 {% else %}
 
-<div class="container wrapper">
-    <div class="row">
-        <div class="col-12">
-            <h3 class="bold">{{ lecture.title }}</h3>
-            <h1>
-                LECTURE NOT YET ACTIVATED
-            </h1>
-            <br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h4>
-                But, I can tell you are eager to learn, so here's a fun fact:
-            </h4>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="col-12 col-sm-4">
-            <img src="http://www.computersciencelab.com/ComputerHistory/HtmlHelp/Images2/JacquardLoom.jpg" alt="">
-        </div>
-        <div class="col-12 col-sm-8">
-            <h4 class="bold">The first “pre-computers” were powered by steam </h4>
-            <p>In 1801, a French weaver and merchant, Joseph Marie Jacquard, <a href="http://www.computersciencelab.com/ComputerHistory/HistoryPt2.htm" target="_blank" rel="nofollow noopener">invented a power loom </a>that could base the design of a fabric upon punched wooden cards.</p>
-            <p>Fast forward to the 1830s, and the world marvelled at <a href="http://www.computersciencelab.com/ComputerHistory/HistoryPt2.htm" target="_blank" rel="nofollow noopener">a device large as a house and powered by six steam engines</a>. It was&nbsp;invented by Charles Babbage, <a href="http://www.cbi.umn.edu/about/babbage.html" target="_blank" rel="nofollow noopener">the father of computing</a>&nbsp;– and he&nbsp;called it the Analytic Engine.</p>
-            <p>Babbage used punch cards to allow the monstrous machine to be programmable. The machine consisted of <a href="http://www.britannica.com/technology/Analytical-Engine" target="_blank" rel="nofollow noopener">four parts</a>: The mill (analogous to CPU), the store (analogous to memory and storage), the reader (input) and the printer (output).</p>
-            <p>It is the reader that makes the Analytic Engine <a href="http://www.britannica.com/technology/Analytical-Engine" target="_blank" rel="nofollow noopener">innovative</a>. Using the card-reading technology of the Jacquard loom, <a href="http://www.fourmilab.ch/babbage/cards.html" target="_blank" rel="nofollow noopener">three different punched cards were used</a>: Operation cards, number cards and variable cards.</p>
-        </div>
-    </div>
-</div>
+	<div class="container wrapper">
+			<div class="row">
+					<div class="col-12">
+							<h3 class="bold">{{ lecture.title }}</h3>
+							<h1>
+									LECTURE NOT YET ACTIVATED
+							</h1>
+							<br>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-12">
+							<h4>
+									But, I can tell you are eager to learn, so here's a fun fact:
+							</h4>
+							<br>
+							<br>
+							<br>
+					</div>
+					<div class="col-12 col-sm-4">
+							<img src="http://www.computersciencelab.com/ComputerHistory/HtmlHelp/Images2/JacquardLoom.jpg" alt="">
+					</div>
+					<div class="col-12 col-sm-8">
+							<h4 class="bold">The first “pre-computers” were powered by steam </h4>
+							<p>In 1801, a French weaver and merchant, Joseph Marie Jacquard, <a
+											href="http://www.computersciencelab.com/ComputerHistory/HistoryPt2.htm" target="_blank"
+											rel="nofollow noopener">invented a power loom </a>that could base the design of a fabric upon
+									punched wooden cards.</p>
+							<p>Fast forward to the 1830s, and the world marvelled at <a
+											href="http://www.computersciencelab.com/ComputerHistory/HistoryPt2.htm" target="_blank"
+											rel="nofollow noopener">a device large as a house and powered by six steam engines</a>. It
+									was&nbsp;invented by Charles Babbage, <a href="http://www.cbi.umn.edu/about/babbage.html"
+											target="_blank" rel="nofollow noopener">the father of computing</a>&nbsp;– and he&nbsp;called it the
+									Analytic Engine.</p>
+							<p>Babbage used punch cards to allow the monstrous machine to be programmable. The machine consisted of <a
+											href="http://www.britannica.com/technology/Analytical-Engine" target="_blank"
+											rel="nofollow noopener">four parts</a>: The mill (analogous to CPU), the store (analogous to memory
+									and storage), the reader (input) and the printer (output).</p>
+							<p>It is the reader that makes the Analytic Engine <a
+											href="http://www.britannica.com/technology/Analytical-Engine" target="_blank"
+											rel="nofollow noopener">innovative</a>. Using the card-reading technology of the Jacquard loom, <a
+											href="http://www.fourmilab.ch/babbage/cards.html" target="_blank" rel="nofollow noopener">three
+											different punched cards were used</a>: Operation cards, number cards and variable cards.</p>
+					</div>
+			</div>
+	</div>
 
 {% endif %}
 
-<script>
-    reziseIframe(1)
-</script>
+<script>reziseIframe(1)</script>
 
 {% endblock %}
