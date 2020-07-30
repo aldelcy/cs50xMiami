@@ -13,7 +13,7 @@
 .final { background-color: #ffffff; }
 .full_app { background-color: #ffffff; }
 .javascript, .bootstrap, .github { background-color: #fffee0; }
-.last_week { 
+.last_week {
     background-color: #000;
     color: #fff;
 }
@@ -29,12 +29,12 @@
 }
 
 .last_week a,
-.last_week h4 { 
+.last_week h4 {
     color: #fff;
 }
 
 .past,
-.past h4{ 
+.past h4{
     background-color: #fff;
     color: #ccc !important;
 }
@@ -232,4 +232,8 @@ footer .footer {
 
     .hide-on-mobile { display: none; }
     .show-on-mobile { display: block !important; }
+}
+
+.hide {
+    display: none;
 }

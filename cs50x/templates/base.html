@@ -45,12 +45,12 @@
   <body>
 
     <script>
-        function reziseIframe(index){
+        window.reziseIframe = function(index){
             var iframe = $('#ppt_'+index+' iframe');
             setTimeout(() => {
                 iframe.height( parseInt(iframe.width()) * 0.61 );
             }, 500);
-            $(document).resize( function(){ reziseIframe(index); })
+            $(document).resize( function(){ window.reziseIframe(index); })
         }
     </script>
 
@@ -175,10 +175,12 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit-icons.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 
     <!-- Custom JS -->
     {% assets "js_all" %}
         <script type="text/javascript" src="{{ ASSET_URL }}"></script>
     {% endassets %}
+    {% block inlinejs %}{% endblock %}
   </body>
 </html>

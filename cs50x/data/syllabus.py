@@ -127,7 +127,7 @@ syllabus = {
       }],
       'recording':{
         "type": "youtube",
-        "code": ""
+        "code": "c2-yWRg-imU"
       },
       'resources': [{
           'type': 'video',

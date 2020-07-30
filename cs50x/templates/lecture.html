@@ -12,11 +12,11 @@
 				</div>
 			</div>
 			<div class="row">
-					<div class="col-12 col-sm-6">
+					<div :class="slides">
 						<ul class="uk-subnav uk-subnav-pill" uk-switcher>
 							{% for ppt in lecture.ppts %}
 								<li>
-									<a onclick="reziseIframe('{{loop.index}}')" href="#">
+									<a onclick="window.reziseIframe('{{loop.index}}')" href="#">
 										{% if ppt.title %} {{ppt.title}} {% else %} Slide {{ loop.index }} {% endif %}
 									</a>
 								</li>
@@ -34,8 +34,12 @@
 						</ul>
 					</div>
 
-					<div class="col-12 col-sm-6">
-							<h4>Class Recording</h4>
+					<div :class="live">
+							<h4>
+								Class Recording
+								<ion-icon name="contract-outline" v-if="expanded" style="float: right;" @click="expandLive(false)"></ion-icon>
+								<ion-icon name="expand-outline" v-else style="float: right;" @click="expandLive(true)"></ion-icon>
+							</h4>
 							<hr style="margin: 10px 0 20px;">
 							{% if lecture.recording.type == 'youtube' %}
 								<iframe width="100%" class="recording" src="https://www.youtube.com/embed/{{ lecture.recording.code }}"
@@ -48,9 +52,6 @@
 									Your browser does not support the video tag.
 								</video>
 							{% endif %}
-							<script>
-								$('.recording').height(parseInt($('.recording').width()) * 0.62)
-							</script>
 					</div>
 
 					<div class="col-12 col-sm-9" style="border-right: solid #ccc 1px;">
@@ -213,6 +214,41 @@
 
 {% endif %}
 
-<script>reziseIframe(1)</script>
+{% endblock %}
 
+{% block inlinejs %}
+	<script>
+		new Vue({
+			el:'.wrapper',
+			data(){
+				return {
+					baseSize: "col-12 col-sm-6",
+					fullSize: "col-12 col-sm-12",
+					slides: "col-12 col-sm-6",
+					live: "col-12 col-sm-6",
+					expanded: false,
+				}
+			},
+			methods: {
+				expandLive(expand){
+					this.expanded = expand;
+					if(expand){
+						this.live = this.fullSize;
+						this.slides = "hide";
+					}else{
+						this.live = this.baseSize;
+						this.slides = this.baseSize;
+					}
+					this.resizeRecording();
+				},
+				resizeRecording(){
+					$('.recording').height(parseInt($('.recording').width()) * 0.62)
+				}
+			},
+			mounted(){
+				window.reziseIframe(1);
+				this.resizeRecording();
+			}
+		})
+	</script>
 {% endblock %}
