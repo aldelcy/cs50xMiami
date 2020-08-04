@@ -8,7 +8,7 @@ syllabus = {
         'title': "Welcome",
         'code': "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Computational Thinking, Scratch',
         'id': "jjqgP9dpD1k",
@@ -47,7 +47,7 @@ syllabus = {
         'title': "Binary",
         'code': "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Computational Thinking, Scratch',
         'id': "jjqgP9dpD1k",
@@ -93,7 +93,7 @@ syllabus = {
         'title': "Basics",
         'code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'PseudoCoding',
         'id': "jjqgP9dpD1k",
@@ -163,7 +163,7 @@ syllabus = {
       "type": "dropbox",
       "code": ""
     },
-    'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+    'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
     'harvard': [{
       'title': 'The Command Line',
       'id': "BnJ013X02b8",
@@ -201,7 +201,7 @@ syllabus = {
       }
     ],
     'activities': [activities['7g8h0m8j2']],
-    'published': False
+    'published': True
   }],
   'C': [{
       'title': "C: Variables, Datatypes, Operators & Conditionals",
@@ -210,7 +210,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/1/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/1/',
       'harvard': [{
         'title': 'Lecture 1: Variables and Datatype',
         'id': "e9Eds2Rc_x8",
@@ -246,7 +246,7 @@ syllabus = {
         }
       ],
       'activities': [activities['y48203j0']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Arrays & Loops",
@@ -255,7 +255,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Lecture 2: Arrays in C',
           'id': "8PrOp9t0PyQ",
@@ -286,7 +286,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Lecture 2: Functions',
         'id': "8PrOp9t0PyQ",
@@ -329,7 +329,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Command Line Arguments',
           'id': "AI6Ccfno6Pk",
@@ -382,7 +382,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Getting Started with Github',
         'id': "MJUJ4wbFm_A",
@@ -427,7 +427,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vS0bizVVMblWF6UC0PlNn3NJuLciHd6izNwf1QBpwRSf2LIxLTmffMsinFSrJsAccm6fJ_cbcS9g-LY",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Lecture 3 - Searching Algorithms',
           'id': "fykrlqbV9wM",
@@ -464,7 +464,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vSj2krye8zTj46z7bsnUVu-rB2G2M7ZAX7o3C4wES2gMzD5wxETfPqYaeShDMVuH3fQ4aCMJqH843QG",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Lecture 3 - Sorting Algorithms',
           'id': "fykrlqbV9wM",
@@ -512,7 +512,7 @@ syllabus = {
     {
       'title': "Memory, Pointers & Structs",
       'desc': "",
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Lecture 4 - Memory',
           'id': "cF6YkH-8vFk",
@@ -568,7 +568,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'Lecture 5 - Data Structures',
           'id': "4IrUAqYKjIA",
@@ -629,7 +629,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Lecture 6 - Python',
         'id': "fL308_-Kbt0",
@@ -648,7 +648,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Lecture 6 - Python',
         'id': "fL308_-Kbt0",
@@ -699,7 +699,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=fbaSAS9DWZw'
         }
       ],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Lecture 6 - Python',
         'id': "fL308_-Kbt0",
@@ -743,7 +743,7 @@ syllabus = {
           'url': 'https://docs.google.com/presentation/d/e/2PACX-1vTzHY5E1FigTXmyd-U-KUR2Zxyj16uZ4ggNzOINcwF5gW9U6OqlBvoE1CoWSZgFrH_UarSV43YIt278/embed'
         }
       ],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'Lecture 6 - Python',
         'id': "fL308_-Kbt0",
@@ -810,7 +810,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'HTML',
           'id': "uEmF74eHRO8",
@@ -854,7 +854,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'HTML',
         'id': "uEmF74eHRO8",
@@ -895,7 +895,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'FLASK',
         'id': "pP23CtOI-1U",
@@ -924,7 +924,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'FLASK',
         'id': "pP23CtOI-1U",
@@ -957,7 +957,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
           'title': 'SQL Overview',
           'id': "u5pDdEKnbKA",
@@ -995,7 +995,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/college/2020/spring/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
         'title': 'How to use CS50 SQL',
         'id': "LxDetsPQAPQ",
