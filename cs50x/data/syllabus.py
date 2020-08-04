@@ -160,8 +160,8 @@ syllabus = {
       'code': "2PACX-1vQCULe-AyITdYYqgClUqjETevYea2mu6f36ZSyURpYCn7jVDY0CSLRMVv3HXtDoAk6u715Hd8JDgnAZ",
     }],
     'recording':{
-      "type": "dropbox",
-      "code": ""
+      "type": "youtube",
+      "code": "craDDyHpFqs"
     },
     'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
     'harvard': [{
