@@ -218,7 +218,7 @@ syllabus = {
       }],
       'recording':{
         "type": "dropbox",
-        "code": ""
+        "code": "p4kl1a7bjyadib7/August%206th%202020"
       },
       'resources': [{
           'type': 'link',
