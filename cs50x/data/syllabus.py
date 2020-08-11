@@ -271,7 +271,7 @@ syllabus = {
         "type": "youtube",
         "code": "TQOO434l3IQ"
       },
-      'ppts': [{
+      'videos': [{
         'title': 'How to compare 2 strings.',
         'url': 'https://www.loom.com/share/759870e2d548446d8e2a8f3683eddf18'
       }],
