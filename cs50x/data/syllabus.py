@@ -252,7 +252,7 @@ syllabus = {
       'title': "C: Arrays & Loops",
       'desc': "",
       'ppts': [{
-        'title': "",
+        'title': "Arrays",
         'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
       }],
       'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
@@ -268,8 +268,8 @@ syllabus = {
         }
       ],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "TQOO434l3IQ"
       },
       'ppts': [{
         'title': 'How to compare 2 strings.',
@@ -277,7 +277,7 @@ syllabus = {
       }],
       'resources': [],
       'activities': [activities['6a82js91']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Functions & Variables Scope",
@@ -316,7 +316,7 @@ syllabus = {
         }
       ],
       'activities': [activities['5h23kw23']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Command Line Arguments & Complexity Analysis",
