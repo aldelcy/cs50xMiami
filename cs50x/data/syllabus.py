@@ -293,8 +293,8 @@ syllabus = {
         'time': [3399, 5695]
       }],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "QDQibEhNqkU"
       },
       'resources': [{
           'type': 'video',
