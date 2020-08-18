@@ -326,8 +326,8 @@ syllabus = {
         'code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
       }],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "NL4ClbM0qYY"
       },
       'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
@@ -373,7 +373,7 @@ syllabus = {
         }
       ],
       'activities': [activities['6dj72j28']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Libraries",
