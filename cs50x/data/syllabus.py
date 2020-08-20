@@ -418,7 +418,7 @@ syllabus = {
         }
       ],
       'activities': [activities['k232kn34']],
-      'published': False
+      'published': True
     },
     {
       'title': "Algorithms: Searching",
