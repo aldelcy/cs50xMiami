@@ -445,8 +445,8 @@ syllabus = {
         }
       ],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "jx4JWL3DJgc"
       },
       'resources': [{
         'type': 'video',
@@ -455,7 +455,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=P3YID7liBug'
       }, ],
       'activities': [activities['h5j30345']],
-      'published': False
+      'published': True
     },
     {
       'title': "Algorithms: Sorting",
@@ -497,7 +497,7 @@ syllabus = {
         }
       ],
       'recording':{
-        "type": "dropbox",
+        "type": "youtube",
         "code": ""
       },
       'resources': [{
@@ -507,7 +507,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=SLauY6PpjW4'
       }, ],
       'activities': [activities['344ij0i5']],
-      'published': False
+      'published': True
     },
     {
       'title': "Memory, Pointers & Structs",
