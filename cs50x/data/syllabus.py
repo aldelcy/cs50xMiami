@@ -539,8 +539,8 @@ syllabus = {
         'code': "2PACX-1vS97UPH6ItPBfCA8dWqdIjsvMvMDVL0m2cKqZpKWf92OgbSaT1dUdlxn2rdW9DJDBGlJZme2qUQueFC",
       }],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "B9KYEcfmo4c"
       },
       'resources': [{
           'title': 'structs-0',
