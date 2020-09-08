@@ -613,7 +613,7 @@ syllabus = {
         'desc': 'Review Document for Quiz 0',
         'url': '../static/data/review_0.pdf'
       }],
-      'published': False
+      'published': True
     },
     {}
   ],
