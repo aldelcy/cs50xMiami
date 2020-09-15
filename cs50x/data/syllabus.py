@@ -635,7 +635,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [0, 2149]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Lists, Dictionaries and Tuples",
@@ -667,7 +667,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=W8KRzm-HUcc'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Methods and Functions",
