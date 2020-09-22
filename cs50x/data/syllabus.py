@@ -677,8 +677,8 @@ syllabus = {
         'code': "2PACX-1vSIIv8iozJ1VDSEow1tzFDf7xtWVnvJf22w3abE9nO9XKOHlxfh_LTly2m8xOWFFP91gM4oPxZ9ATt9",
       }],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "pyJPSKst3mA"
       },
       'resources': [{
           'type': 'video',
