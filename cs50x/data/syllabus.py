@@ -705,7 +705,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [2149, 4390]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Operators, Main and Libraries",
@@ -749,7 +749,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [5120, 6489]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Classes, Objects",
