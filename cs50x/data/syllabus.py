@@ -759,8 +759,8 @@ syllabus = {
         'code': "2PACX-1vQp2rh9JgwUEvWoiqY7TmpEyuM2C2T4XzUvjQ1SR4sgkxLojus6NxP9UZBBPa8RbSI5MQZprzqGk57v",
       }],
       'recording':{
-        "type": "dropbox",
-        "code": ""
+        "type": "youtube",
+        "code": "WgLvFxQ3JrI"
       },
       'resources': [{
           'title': 'Python Classes and Obects',
@@ -778,7 +778,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=ECMSnU9ilbQ'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Inheritance, Abstractions",
@@ -796,7 +796,7 @@ syllabus = {
         'desc': 'Python OOP Tutorial: Inheritance - Creating Subclasses',
         'url': 'https://www.youtube.com/watch?v=RSl87lqOXDE'
       }],
-      'published': False
+      'published': True
     },
   ],
   'Front_end': [{
