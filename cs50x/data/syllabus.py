@@ -885,7 +885,7 @@ syllabus = {
           'url': 'https://www.w3schools.com/howto/default.asp'
         }
       ],
-      'published': False
+      'published': True
     }
   ],
   'MVC1': [{
