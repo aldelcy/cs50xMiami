@@ -841,7 +841,7 @@ syllabus = {
           'url': 'https://docs.google.com/presentation/d/e/2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S/pub?start=false&loop=false&delayms=3000'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Front End: CSS",
