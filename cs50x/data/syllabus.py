@@ -1022,7 +1022,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     },
     {
       'title': "Building and App :: Planning",
@@ -1036,7 +1036,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     }
   ],
   'Full_app': [{
@@ -1051,7 +1051,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     },
     {
       'title': "App: Coordinating",
@@ -1070,7 +1070,7 @@ syllabus = {
         'desc': 'Form Validation',
         'url': 'https://www.youtube.com/watch?v=CSHx6eCkmv0'
       }],
-      'published': False
+      'published': True
     }
   ],
   'Javascript': [{
@@ -1097,7 +1097,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=hMxGhHNOkCU'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Javacript: Ajax",
@@ -1116,7 +1116,7 @@ syllabus = {
         'desc': "Using AJAX & API's (jQuery Tutorial #7)",
         'url': 'https://www.youtube.com/watch?v=fEYx8dQr_cQ'
       }],
-      'published': False
+      'published': True
     }
   ],
   'Github': [{
@@ -1131,7 +1131,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     },
     {
       'title': "Github: Collaborating",
@@ -1145,7 +1145,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     }
   ],
   'Bootstrap': [{
