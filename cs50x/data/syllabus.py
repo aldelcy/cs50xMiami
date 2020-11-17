@@ -1160,7 +1160,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     },
     {
       'title': "Where to get assets",
@@ -1174,7 +1174,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     }
   ],
   'Last_week': [{
@@ -1189,7 +1189,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
     },
     {
       'title': "Project Presentation",
