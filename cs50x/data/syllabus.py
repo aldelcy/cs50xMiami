@@ -38,7 +38,7 @@ syllabus = {
         }
       ],
       'activities': [activities['2a8a3r2c0']],
-      'published': True
+      'published': False
     },
     {
       'title': "Computer Basics & Binary",
@@ -83,7 +83,7 @@ syllabus = {
         }
       ],
       'activities': [activities['7g4k9c0o8']],
-      'published': True
+      'published': False
     }
   ],
   'Basics': [{
@@ -116,7 +116,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=CvSOaYi89B4'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "The Basics: 2/2",
@@ -149,7 +149,7 @@ syllabus = {
         }
       ],
       'activities': [activities['2n4n5f0s0']],
-      'published': True
+      'published': False
     }
   ],
   'Command Line': [{
@@ -201,7 +201,7 @@ syllabus = {
       }
     ],
     'activities': [activities['7g8h0m8j2']],
-    'published': True
+    'published': False
   }],
   'C': [{
       'title': "C: Variables, Datatypes, Operators & Conditionals",
@@ -246,7 +246,7 @@ syllabus = {
         }
       ],
       'activities': [activities['y48203j0']],
-      'published': True
+      'published': False
     },
     {
       'title': "C: Arrays & Loops",
@@ -277,7 +277,7 @@ syllabus = {
       }],
       'resources': [],
       'activities': [activities['6a82js91']],
-      'published': True
+      'published': False
     },
     {
       'title': "C: Functions & Variables Scope",
@@ -316,7 +316,7 @@ syllabus = {
         }
       ],
       'activities': [activities['5h23kw23']],
-      'published': True
+      'published': False
     },
     {
       'title': "C: Command Line Arguments & Complexity Analysis",
@@ -373,7 +373,7 @@ syllabus = {
         }
       ],
       'activities': [activities['6dj72j28']],
-      'published': True
+      'published': False
     },
     {
       'title': "C: Libraries",
@@ -418,7 +418,7 @@ syllabus = {
         }
       ],
       'activities': [activities['k232kn34']],
-      'published': True
+      'published': False
     },
     {
       'title': "Algorithms: Searching",
@@ -455,7 +455,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=P3YID7liBug'
       }, ],
       'activities': [activities['h5j30345']],
-      'published': True
+      'published': False
     },
     {
       'title': "Algorithms: Sorting",
@@ -507,7 +507,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=SLauY6PpjW4'
       }, ],
       'activities': [activities['344ij0i5']],
-      'published': True
+      'published': False
     },
     {
       'title': "Memory, Pointers & Structs",
@@ -555,7 +555,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=hZ2Fy-J8DwQ'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "C: Data Structures (Linked Lists, Queues, Stacks ... )",
@@ -593,7 +593,7 @@ syllabus = {
       'resources': {
 
       },
-      'published': True
+      'published': False
     }
   ],
   'Midterm': [{
@@ -613,7 +613,7 @@ syllabus = {
         'desc': 'Review Document for Quiz 0',
         'url': '../static/data/review_0.pdf'
       }],
-      'published': True
+      'published': False
     },
     {}
   ],
@@ -635,7 +635,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [0, 2149]
       }],
-      'published': True
+      'published': False
     },
     {
       'title': "Python: Lists, Dictionaries and Tuples",
@@ -667,7 +667,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=W8KRzm-HUcc'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "Python: Methods and Functions",
@@ -705,7 +705,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [2149, 4390]
       }],
-      'published': True
+      'published': False
     },
     {
       'title': "Python: Operators, Main and Libraries",
@@ -749,7 +749,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [5120, 6489]
       }],
-      'published': True
+      'published': False
     },
     {
       'title': "Python: Classes, Objects",
@@ -778,7 +778,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=ECMSnU9ilbQ'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "Python: Inheritance, Abstractions",
@@ -796,7 +796,7 @@ syllabus = {
         'desc': 'Python OOP Tutorial: Inheritance - Creating Subclasses',
         'url': 'https://www.youtube.com/watch?v=RSl87lqOXDE'
       }],
-      'published': True
+      'published': False
     },
   ],
   'Front_end': [{
@@ -841,7 +841,7 @@ syllabus = {
           'url': 'https://docs.google.com/presentation/d/e/2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S/pub?start=false&loop=false&delayms=3000'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "Front End: CSS",
@@ -885,7 +885,7 @@ syllabus = {
           'url': 'https://www.w3schools.com/howto/default.asp'
         }
       ],
-      'published': True
+      'published': False
     }
   ],
   'MVC1': [{
@@ -911,7 +911,7 @@ syllabus = {
         'desc': 'Flask Controller basics',
         'url': 'https://www.youtube.com/watch?v=MwZwr5Tvyxo'
       }],
-      'published': True
+      'published': False
     },
     {
       'title': "MVC: Jinja2",
@@ -943,7 +943,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=QnDWIZuWYW0'
         }
       ],
-      'published': True
+      'published': False
     }
   ],
   'MVC2': [{
@@ -982,7 +982,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "MVC: CS50 SQL Library",
@@ -1007,7 +1007,7 @@ syllabus = {
         'desc': 'Form Validation',
         'url': 'https://www.youtube.com/watch?v=UIJKdCIEXUQ'
       }],
-      'published': True
+      'published': False
     }
   ],
   'Final': [{
@@ -1022,7 +1022,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': True
+      'published': False
     },
     {
       'title': "Building and App :: Planning",
@@ -1036,7 +1036,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': True
+      'published': False
     }
   ],
   'Full_app': [{
@@ -1051,7 +1051,7 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': True
+      'published': False
     },
     {
       'title': "App: Coordinating",
@@ -1070,7 +1070,7 @@ syllabus = {
         'desc': 'Form Validation',
         'url': 'https://www.youtube.com/watch?v=CSHx6eCkmv0'
       }],
-      'published': True
+      'published': False
     }
   ],
   'Javascript': [{
@@ -1097,7 +1097,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=hMxGhHNOkCU'
         }
       ],
-      'published': True
+      'published': False
     },
     {
       'title': "Javacript: Ajax",
@@ -1116,11 +1116,11 @@ syllabus = {
         'desc': "Using AJAX & API's (jQuery Tutorial #7)",
         'url': 'https://www.youtube.com/watch?v=fEYx8dQr_cQ'
       }],
-      'published': True
+      'published': False
     }
   ],
   'Github': [{
-      'title': "Github: Basics",
+      'title': "Github: Basics & Collaborating",
       'desc': "",
       'ppts': [{
         'title': "",
@@ -1131,68 +1131,26 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': True
-    },
-    {
-      'title': "Github: Collaborating",
-      'desc': "",
-      'ppts': [{
-        'title': "",
-        'code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
-      }],
-      'recording':{
-        "type": "dropbox",
-        "code": ""
-      },
-      'resources': [],
-      'published': True
+      'published': False
     }
+    # ,
+    # {
+    #   'title': "Github: Collaborating",
+    #   'desc': "",
+    #   'ppts': [{
+    #     'title': "",
+    #     'code': "2PACX-1vQC0X7Ti8Y6TvZFpIy9lwtZxpeD3h9AFScVBdMUB8htHbdGw9ouYaEGz0HwGe3x3WAcY-xfmE7JHO0S",
+    #   }],
+    #   'recording':{
+    #     "type": "dropbox",
+    #     "code": ""
+    #   },
+    #   'resources': [],
+    #   'published': False
+    # }
   ],
   'Bootstrap': [{
-      'title': "Bootstrap / Get UI KIT",
-      'desc': "",
-      'ppts': [{
-        'title': "",
-        'code': "",
-      }],
-      'recording':{
-        "type": "dropbox",
-        "code": ""
-      },
-      'resources': [],
-      'published': True
-    },
-    {
-      'title': "Where to get assets",
-      'desc': "",
-      'ppts': [{
-        'title': "",
-        'code': "",
-      }],
-      'recording':{
-        "type": "dropbox",
-        "code": ""
-      },
-      'resources': [],
-      'published': True
-    }
-  ],
-  'Last_week': [{
-      'title': "Hack-a-thon",
-      'desc': "",
-      'ppts': [{
-        'title': "",
-        'code': "",
-      }],
-      'recording':{
-        "type": "dropbox",
-        "code": ""
-      },
-      'resources': [],
-      'published': True
-    },
-    {
-      'title': "Project Presentation",
+      'title': "Bootstrap / Get UI KIT & Where to get assets",
       'desc': "",
       'ppts': [{
         'title': "",
@@ -1205,5 +1163,49 @@ syllabus = {
       'resources': [],
       'published': False
     }
-  ],
+    # ,
+    # {
+    #   'title': "Where to get assets",
+    #   'desc': "",
+    #   'ppts': [{
+    #     'title': "",
+    #     'code': "",
+    #   }],
+    #   'recording':{
+    #     "type": "dropbox",
+    #     "code": ""
+    #   },
+    #   'resources': [],
+    #   'published': False
+    # }
+  ]
+  # 'Last_week': [{
+  #     'title': "Hack-a-thon",
+  #     'desc': "",
+  #     'ppts': [{
+  #       'title': "",
+  #       'code': "",
+  #     }],
+  #     'recording':{
+  #       "type": "dropbox",
+  #       "code": ""
+  #     },
+  #     'resources': [],
+  #     'published': False
+  #   },
+  #   {
+  #     'title': "Project Presentation",
+  #     'desc': "",
+  #     'ppts': [{
+  #       'title': "",
+  #       'code': "",
+  #     }],
+  #     'recording':{
+  #       "type": "dropbox",
+  #       "code": ""
+  #     },
+  #     'resources': [],
+  #     'published': False
+  #   }
+  # ],
 }
