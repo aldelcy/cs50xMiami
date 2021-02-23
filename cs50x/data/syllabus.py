@@ -38,7 +38,7 @@ syllabus = {
         }
       ],
       'activities': [activities['2a8a3r2c0']],
-      'published': False
+      'published': True
     },
     {
       'title': "Computer Basics & Binary",
@@ -83,7 +83,7 @@ syllabus = {
         }
       ],
       'activities': [activities['7g4k9c0o8']],
-      'published': False
+      'published': True
     }
   ],
   'Basics': [{
