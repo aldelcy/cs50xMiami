@@ -8,11 +8,11 @@ syllabus = {
         'title': "Welcome",
         'code': "2PACX-1vTPbdgFdyj1a8So3XTxHOVgETZR5nQyExRAIqkclpdaij6wBTl09IqYfbegmNTIDXKFTxvmQxRydOLo",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/0/',
       'harvard': [{
-        'title': 'Computational Thinking, Scratch',
-        'id': "jjqgP9dpD1k",
-        'time': [1940, 3742]
+        'title': 'CS50 2020 - Lecture 0 - Scratch',
+        'id': "YoXxevp1WRQ",
+        'time': [3269, 6057]
       }],
       'recording':{
         "type": "dropbox",
@@ -47,15 +47,16 @@ syllabus = {
         'title': "Binary",
         'code': "2PACX-1vSs6x06eE_7kEtOX3-cuvXmibi7McMBuyRitFm9XryuFfM6jRMYNkcWGRHiMil_xmJSvuv0f6Y1ayHb",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/0/',
       'harvard': [{
-        'title': 'Computational Thinking, Scratch',
-        'id': "jjqgP9dpD1k",
-        'time': [0, 1297]
+        'title': 'CS50 2020 - Lecture 0 - Scratch',
+        'id': "YoXxevp1WRQ",
+        'time': [0, 3269]
       }],
       'recording':{
         "type": "dropbox",
-        "code": "o4159urnsrv82te/July%2023rd%202020"
+        "code": "",
+        "codex": "o4159urnsrv82te/July%2023rd%202020"
       },
       'resources': [{
           'type': 'link',
