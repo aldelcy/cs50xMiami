@@ -9,7 +9,7 @@ psets = {
         <li>Implement your very own Scratch project using Chrome, per <a href="scratch">this specification</a>.</li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/0/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/0/",
     "due_date" : date(2021, 3, 6)
   },
   1: {
@@ -33,7 +33,7 @@ psets = {
         <li>Submit <a href="https://forms.cs50.io/d1b7f746-47c4-4930-b9bf-d6e6a92e2528">this form</a>!</li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/1/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/1/",
     "due_date" : date(2021, 3, 13)
   },
   2: {
@@ -51,7 +51,7 @@ psets = {
         <li>Submit <a href="https://forms.cs50.io/9fe04482-eda8-4eed-b501-a7a7978e94b5">this form</a></li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/2/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/2/",
     "due_date" : date(2020, 8, 22)
   },
   3: {
@@ -68,7 +68,7 @@ psets = {
         <li>Submit this form (coming soon!)</li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/3/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/3/",
     "due_date" : date(2020, 3, 8)
   },
   4: {
@@ -85,7 +85,7 @@ psets = {
         <li>Submit <a href="https://forms.cs50.io/0f360293-e6b5-429d-86ee-7a782bd5dd1f">this form</a></li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/4/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/4/",
     "due_date" : date(2020, 3, 22)
   },
   5: {
@@ -100,7 +100,7 @@ psets = {
         </li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/5/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/5/",
     "due_date" : date(2020, 4, 5)
   },
   6: {
@@ -125,7 +125,7 @@ psets = {
         <li>Submit <a href="https://forms.cs50.io/34c2a163-f85f-47fc-8897-bba1ead85af1">this form</a></li>
       </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/6/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/6/",
     "due_date" : date(2020, 4, 19)
   },
   7: {
@@ -137,7 +137,7 @@ psets = {
       <li>Submit <a href="https://forms.cs50.io/d3f3ced8-0e2c-4f83-afc4-6d10d469508a">this form</a></li>
     </ol>
     """,
-    "link" : "https://cs50.harvard.edu/college/2021/spring/psets/7/",
+    "link" : "https://cs50.harvard.edu/x/2021/psets/7/",
     "due_date" : date(2020, 5, 3)
   },
   8: {
