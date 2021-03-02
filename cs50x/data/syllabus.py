@@ -94,7 +94,7 @@ syllabus = {
         'title': "Basics",
         'code': "2PACX-1vQjn9S_W3FyTO2Q7ou5DUrrS0JOtt3cWGEo2i0TRnbI--FER06m5N9_YW_PGHRHMZJCxLNymE7uUZ2n",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/0/',
       'harvard': [{
         'title': 'PseudoCoding',
         'id': "jjqgP9dpD1k",
@@ -117,7 +117,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=CvSOaYi89B4'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "The Basics: 2/2",
@@ -126,6 +126,7 @@ syllabus = {
         'title': "Basics 2",
         'code': "2PACX-1vT2Dj1UmLwnip0L_FUncuwFNg0mDW7RhlmHxdkV1H62V0TsahZx6Lt88Sx4ZSpGdCMZNpgvYf16-PJk",
       }],
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/0/',
       'recording':{
         "type": "youtube",
         "code": "c2-yWRg-imU"
@@ -150,7 +151,7 @@ syllabus = {
         }
       ],
       'activities': [activities['2n4n5f0s0']],
-      'published': False
+      'published': True
     }
   ],
   'Command Line': [{
