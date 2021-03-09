@@ -203,7 +203,7 @@ syllabus = {
       }
     ],
     'activities': [activities['7g8h0m8j2']],
-    'published': False
+    'published': True
   }],
   'C': [{
       'title': "C: Variables, Datatypes, Operators & Conditionals",
@@ -248,7 +248,7 @@ syllabus = {
         }
       ],
       'activities': [activities['y48203j0']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Arrays & Loops",
