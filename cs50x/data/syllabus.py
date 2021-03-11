@@ -210,7 +210,7 @@ syllabus = {
       'desc': "",
       'ppts': [{
         'title': "",
-        'code': "2PACX-1vRQzjjGDAj9dus0DxS4vkSCQjAXBovZ43fGy9mdATWKzAMWwbeYv-QIbqZAl2JJD2QWtkj2RUac6enL",
+        'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
       }],
       'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/1/',
       'harvard': [{
