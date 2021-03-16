@@ -16,6 +16,7 @@ psets = {
     "id": 1,
     "desc" : """
       <ol>
+        <li>Go to <a href="https://ide.cs50.io">ide.cs50.io</a> and click “Sign in with GitHub” to access your CS50 IDE.</li>
         <li>Submit <a href="https://cs50.harvard.edu/x/2021/labs/1/hello/">Hello</a></li>
         <li>Submit one of:
           <ul class="fa-ul">
@@ -38,7 +39,6 @@ psets = {
     "id": 2,
     "desc" : """
       <ol>
-        <li>Go to <a href="https://ide.cs50.io">ide.cs50.io</a> and click “Sign in with GitHub” to access your CS50 IDE.</li>
         <li>Submit <a href="https://cs50.harvard.edu/x/2021/psets/2/readability">Readability</a></li>
         <li>Submit one of:
           <ul class="fa-ul">
@@ -46,6 +46,7 @@ psets = {
             <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="https://cs50.harvard.edu/x/2021/psets/2/substitution">Substitution</a> if feeling more comfortable</li>
           </ul>
         </li>
+        <li>If you submit both Caesar and Substitution, we’ll record the higher of your two scores.</li>
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/x/2021/psets/2/",
@@ -55,14 +56,13 @@ psets = {
     "id": 3,
     "desc" : """
       <ol>
-        <li>Submit <a href="plurality">Plurality</a></li>
+        <li>Submit <a href="https://cs50.harvard.edu/x/2021/psets/3/plurality">Plurality</a></li>
         <li>Submit one of:
           <ul class="fa-ul">
-            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="runoff">Runoff</a> if feeling less comfortable</li>
-            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="tideman">Tideman</a> if feeling more comfortable</li>
+            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="https://cs50.harvard.edu/x/2021/psets/3/runoff">Runoff</a> if feeling less comfortable</li>
+            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="https://cs50.harvard.edu/x/2021/psets/3/tideman">Tideman</a> if feeling more comfortable</li>
           </ul>
         </li>
-        <li>Submit this form (coming soon!)</li>
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/x/2021/psets/3/",
@@ -74,12 +74,11 @@ psets = {
       <ol>
         <li>Submit one of:
           <ul class="fa-ul">
-            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="filter/less">this version of Filter</a> if feeling less comfortable</li>
-            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="filter/more">this version of Filter</a> if feeling more comfortable</li>
+            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="https://cs50.harvard.edu/x/2021/psets/4/filter/less">this version of Filter</a> if feeling less comfortable</li>
+            <li data-marker="*"><span class="fa-li"><i class="fas fa-circle"></i></span><a href="https://cs50.harvard.edu/x/2021/psets/4/filter/more">this version of Filter</a> if feeling more comfortable</li>
           </ul>
         </li>
-        <li>Submit <a href="recover">Recover</a></li>
-        <li>Submit <a href="https://forms.cs50.io/0f360293-e6b5-429d-86ee-7a782bd5dd1f">this form</a></li>
+        <li>Submit <a href="https://cs50.harvard.edu/x/2021/psets/4/recover">Recover</a></li>
       </ol>
     """,
     "link" : "https://cs50.harvard.edu/x/2021/psets/4/",
