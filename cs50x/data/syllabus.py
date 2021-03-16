@@ -279,7 +279,7 @@ syllabus = {
       }],
       'resources': [],
       'activities': [activities['6a82js91']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Functions & Variables Scope",
@@ -318,7 +318,7 @@ syllabus = {
         }
       ],
       'activities': [activities['5h23kw23']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Command Line Arguments & Complexity Analysis",
@@ -598,8 +598,13 @@ syllabus = {
       'published': False
     }
   ],
-  'Midterm': [{
-      'title': "Midterm Week",
+  'Midterm': [
+    {
+      'title': "C: Review, PSet Help",
+      'desc': "This class will focus on Reviewing C and working os helping with Psets.",
+    },
+    {
+      'title': "Midterm",
       'desc': "",
       'ppts': [{
         'title': "",
@@ -616,8 +621,7 @@ syllabus = {
         'url': '../static/data/review_0.pdf'
       }],
       'published': False
-    },
-    {}
+    }
   ],
   'Python': [{
       'title': "Python: (Syntax Comparison to C) Data Types, Strings",
