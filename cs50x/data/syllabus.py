@@ -87,6 +87,9 @@ syllabus = {
       'published': True
     }
   ],
+  
+  
+  
   'Basics': [{
       'title': "The Basics: 1/2",
       'desc': "2_basics1.html",
@@ -154,6 +157,10 @@ syllabus = {
       'published': True
     }
   ],
+  
+  
+  
+  
   'Command Line': [{
     'title': "The Command Line",
     'desc': "4_command_line.html",
@@ -205,6 +212,9 @@ syllabus = {
     'activities': [activities['7g8h0m8j2']],
     'published': True
   }],
+  
+  
+  
   'C': [{
       'title': "C: Variables, Datatypes, Operators & Conditionals",
       'desc': "",
@@ -212,7 +222,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/1/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/1/',
       'harvard': [{
         'title': 'Lecture 1: Variables and Datatype',
         'id': "e9Eds2Rc_x8",
@@ -257,7 +267,7 @@ syllabus = {
         'title': "Arrays",
         'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/2/',
       'harvard': [{
           'title': 'Lecture 2: Arrays in C',
           'id': "8PrOp9t0PyQ",
@@ -288,7 +298,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/2/',
       'harvard': [{
         'title': 'Lecture 2: Functions',
         'id': "8PrOp9t0PyQ",
@@ -331,7 +341,7 @@ syllabus = {
         "type": "youtube",
         "code": "NL4ClbM0qYY"
       },
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/2/',
       'harvard': [{
           'title': 'Command Line Arguments',
           'id': "AI6Ccfno6Pk",
