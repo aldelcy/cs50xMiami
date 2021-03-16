@@ -53,24 +53,26 @@ weeks  = {
   '5':{
     'dates': [date(2021, 3, 30), date(2021, 4, 1) ],
     'topic': lectures["10"]['topic'].lower(),
-    'lectures': [ lectures["10"], lectures["11"] ]
+    'lectures': [ lectures["10"], lectures["11"] ],
+    'pset' : psets[3]
   },
   '6':{
     'dates': [date(2021, 4, 6), date(2021, 4, 8) ],
     'topic': lectures["12"]['topic'].lower(),
     'lectures': [ lectures["12"], lectures["13"] ],
-    'pset' : psets[3]
+    'pset' : psets[4]
   },
   '7':{
     'dates': [date(2021, 4, 13), date(2021, 4, 15) ],
     'topic': lectures["14"]['topic'].lower(),
-    'lectures': [ lectures["14"], lectures["15"] ]
+    'lectures': [ lectures["14"], lectures["15"] ],
+    'pset' : psets[5]
   },
   '8':{
     'dates': [date(2021, 4, 20), date(2021, 4, 22) ],
     'topic': lectures["16"]['topic'].lower(),
     'lectures': [ lectures["16"], lectures["17"] ],
-    'pset' : psets[4]
+    'pset' : psets[6]
   },
   '9':{
     'dates': [date(2021, 4, 27), date(2021, 4, 29) ],
@@ -81,7 +83,7 @@ weeks  = {
     'dates': [date(2021, 5, 4), date(2021, 5, 6) ],
     'topic': lectures["20"]['topic'].lower(),
     'lectures': [ lectures["20"], lectures["21"] ],
-    'pset' : psets[5]
+    'pset' : psets[7]
   },
   '11':{
     'dates': [date(2021, 5, 11), date(2021, 5, 13) ],
@@ -92,7 +94,7 @@ weeks  = {
     'dates': [date(2021, 5, 18), date(2021, 5, 20) ],
     'topic': lectures["24"]['topic'].lower(),
     'lectures': [ lectures["24"], lectures["25"] ],
-    'pset' : psets[6]
+    'pset' : psets[8]
   },
   '13':{
     'dates': [date(2021, 5, 25), date(2021, 5, 27) ],
@@ -103,7 +105,7 @@ weeks  = {
     'dates': [date(2021, 6, 1), date(2021, 6, 3) ],
     'topic': lectures["28"]['topic'].lower(),
     'lectures': [ lectures["28"], lectures["29"] ],
-    'pset' : psets[7]
+    'pset' : psets[9]
   },
   '15':{
     'dates': [date(2021, 6, 8), date(2021, 5, 10) ],
