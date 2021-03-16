@@ -265,7 +265,7 @@ syllabus = {
       'desc': "",
       'ppts': [{
         'title': "Arrays",
-        'code': "2PACX-1vR_Mm-zwmbEwWvsCebYUDHbKZqTfJvPq82S1Jzm1eYXyfQbsZVsAvLyBmtx0W4j_QGFWzKO10-GGGzT",
+        'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
       }],
       'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/2/',
       'harvard': [{
