@@ -26,7 +26,7 @@ challenges = {
 					<div id="password"></div><br>
 					<div class="uk-margin" style="max-width: 400px; margin: 5px auto;">
 						<input class="uk-input" type="text" id="thePassword" placeholder="Type password here">
-					</div> 
+					</div>
 					<button class="uk-button uk-button-primary submit_password"> submit password </button><br>
 				</div>
 				<div class="phase_2" style="display: none;">
@@ -35,7 +35,7 @@ challenges = {
 					You will do well to decode our secret message. BUT, we had to kick it up a notch. <br>
 					Below are some legends to help you decypher the BINARY message.
 					<br><br>
-					Secret coded decypher thingy : 
+					Secret coded decypher thingy :
 					<a href="/static/assets/activities/spy/Ascii_table.pdf" target="_blank"> Click Here </a>
 					<br><br><br>
 					<div class="row" style="max-width: 1000px; margin: auto;">
@@ -61,7 +61,7 @@ challenges = {
 					If you're not, it's ok, you'll still win something.
 					<br><br>
 					BE SURE TO SHOW YOUR WORK.
-				</div>            
+				</div>
 			</center>
 		""",
 		'solution': {}
@@ -91,7 +91,7 @@ challenges = {
 		'desc'	: """
 			<p>There are 4 cars parked in a gas station parking lot.</p>
 			<p>Write pseudocode to bring each car to the pump and fill them up until it's full.</p>
-			<p>Think about moving the car to the pump, and then moving it back to the parkign space.</p> 
+			<p>Think about moving the car to the pump, and then moving it back to the parkign space.</p>
 			<p class="bold">To make it extra fun, 2 of the cars are half full, one is quarter full and one is empty.</p>
 		""",
 		'solution': {}
@@ -342,7 +342,7 @@ challenges = {
 			'title'	: 'Function Refactoring',
 			'video_host'	: 'loom',
 			'video_url'	: '2b610ec80b494353a235666da565b730',
-			'code'		:	'https://www.codepile.net/raw/nD9Gmr3W.cpp' 
+			'code'		:	'https://www.codepile.net/raw/nD9Gmr3W.cpp'
 		}
 	},
 	"hello_world":	{
@@ -406,7 +406,7 @@ challenges = {
 				To Convert a string into an integer in C, you need to use the <code>atoi()</code> function from the <code>stdlib.h</code> Library<br><br>
 				<a href="https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm"> Converting string to int in C using <code>atoi( ... )</code>.</a><br><br>
 				<a href="https://www.geeksforgeeks.org/type-conversion-c/"> Type Casting in C.</a><br><br>
-				
+
 				I should be able to run <code>./app add 10 20</code><br> and get the output <code>Your result is 30</code><br>
 			</p>
 		""",
@@ -423,9 +423,9 @@ challenges = {
 				<code> printf( "%i", j );</code>
 				<code>}</code>
 			</div>
-			
+
 			<br>
-			
+
 			<h3 class="bold">Algorithm B:</h3>
 			<div class="codeBlock">
 				<code>int count = 0;</code>
@@ -606,7 +606,7 @@ challenges = {
 			<br>
 			<h3 class="bold">FOR EXAMPLE</h3>
 			The output should look something like this:<br>
-			Let's say your DataSet is of 50 items.<br>	
+			Let's say your DataSet is of 50 items.<br>
 			<br>
 			When they search something that is in the list:<br>
 			<div class="codeBlock">
@@ -614,7 +614,7 @@ challenges = {
 				<code>It was at index 7.</code>
 				<code>It took 3 searches.</code>
 			</div><br>
-		
+
 			When they search something that is NOT the list:<br>
 			<div class="codeBlock">
 				<code>We could not find your search term after 5 searches.</code>
@@ -636,8 +636,8 @@ challenges = {
 			Whenever it does a swap, we should record that somehow to make sure we know to check the list one last time.
 			Everytime it repeats the loop, it will do the same thing to bubble the largest number to the end of the array.
 			It will keep on repeating the whole loop again until it hasnt recorded a swap during a loop.
-			
-			
+
+
 			<h3 class="bold">FOR EXAMPLE</h3>
 			The output should look something like this:<br>
 			<br>
@@ -673,10 +673,10 @@ challenges = {
 			Let's build a <code>Selection Sort</code> Algorithm.<br>
 			The selection sort algorithm finds the minimum element from and moves it at the beginning of the array. <br>
 			To prevent shifting of all the other elements to another index, we will swap the element found with the element currently at the beggining of the array.<br><br>
-			
+
 			Once the item is moved to the front of the array, you no longer need to care about it anymore and you can keep sorting the remainder fo the array.<br>
 			At every loop, your array should be smaller and smaller to search.<br><br>
-			
+
 			<h4 class="bold">FOR EXAMPLE</h4>
 			The output should look something like this:<br>
 			<br>
@@ -718,7 +718,7 @@ challenges = {
 			As you are going through that sublist, you are comapring it with each item of the sublist.<br><br>
 			If it's bigger then then current sublist item, keep going up that sublist until you reach the end and put it at the end.<br>
 			If it's smaller then then current sublist item, place the current main item in front of the sublist item, then move on to the next main list item.<br><br>
-			
+
 			Let's figure out the Pseudocode to tho this together and you can start coding.
 		""",
 		'solution': {
@@ -799,7 +799,7 @@ activities = {
 						<code>	Take Umbrella</code><br>
 						<code>ELSE</code><br>
 						<code>	Leave Umbrella Home</code><br>
-					</div>                    
+					</div>
 				</div>
 			</div>
 			<h4>
@@ -807,7 +807,7 @@ activities = {
 				Choose one of each task and write simple pseudo code to accomplish each task. <br>
 				The PSEUDOCODE should be simple and straight to the point.
 			</h4>
-			<br>			
+			<br>
 		""",
 		'challenges': [
 			challenges['grilled_cheese'],
@@ -901,8 +901,6 @@ activities = {
 			'desc'      : """""",
 			'challenges': [
 				challenges['simple_convo'],
-				challenges['guessing_game'],
-				challenges['calculator_game'],
 				challenges['two_digit']
 			],
 			'published' : True
@@ -911,7 +909,7 @@ activities = {
 			'id'        : '6a82js91',
 			'title'     : "Let's Write Better programs",
 			'preview'   : "In this activity, you will putting into practice some of the same concepts as last time, but this time using loops to make it more interesting.",
-			'desc'      : """				
+			'desc'      : """
 			""",
 			'challenges': [
 				challenges['simple_loop'],
@@ -996,7 +994,7 @@ activities = {
 
 def spydecoder( level, code ):
     failed = [ False, "SORRY TRY AGAIN" ]
-    
+
     if level == '1':
         if code in ["PassWord", "bazinga"]:
             return  [ True, "2" ]
@@ -1005,7 +1003,7 @@ def spydecoder( level, code ):
         if code in ["maRio", "QWERTY"]:
             return  [ True, "3" ]
         return failed
-    
+
     if level == '2':
         messages = [
             "The cake is a LIE!",
@@ -1017,5 +1015,5 @@ def spydecoder( level, code ):
         if code.split('+')[1] == message:
             return [ True, message ]
         return failed
-    
+
     return failed
