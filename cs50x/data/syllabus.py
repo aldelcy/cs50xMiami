@@ -87,9 +87,9 @@ syllabus = {
       'published': True
     }
   ],
-  
-  
-  
+
+
+
   'Basics': [{
       'title': "The Basics: 1/2",
       'desc': "2_basics1.html",
@@ -157,10 +157,10 @@ syllabus = {
       'published': True
     }
   ],
-  
-  
-  
-  
+
+
+
+
   'Command Line': [{
     'title': "The Command Line",
     'desc': "4_command_line.html",
@@ -212,9 +212,9 @@ syllabus = {
     'activities': [activities['7g8h0m8j2']],
     'published': True
   }],
-  
-  
-  
+
+
+
   'C': [{
       'title': "C: Variables, Datatypes, Operators & Conditionals",
       'desc': "",
@@ -612,6 +612,7 @@ syllabus = {
     {
       'title': "C: Review, PSet Help",
       'desc': "This class will focus on Reviewing C and working os helping with Psets.",
+      'published': False
     },
     {
       'title': "Midterm",
