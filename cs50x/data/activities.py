@@ -928,7 +928,8 @@ activities = {
 			'preview'   : "In this activity, you will go back to some of your past programs and refactor them into functions that can be re-used.",
 			'desc'      : """""",
 			'challenges': [
-				challenges['function_refactoring']
+				challenges['calculator_game'],
+				challenges['function_refactoring'],
 			],
 			'solutions' : [],
 			'show_solutions': True,
