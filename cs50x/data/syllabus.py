@@ -296,7 +296,7 @@ syllabus = {
       'desc': "c_functions_scope.html",
       'ppts': [{
         'title': "",
-        'code': "2PACX-1vS3rpYnX6KBElMdsCY3-xIpwY0DocufYGDh5wCozsfgSKaRD1o8QJzDqnoL-vBCdPAUyeMMpuH5-XSp",
+        'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
       }],
       'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/2/',
       'harvard': [{
@@ -335,7 +335,8 @@ syllabus = {
       'desc': "c_complexity.html",
       'ppts': [{
         'title': "",
-        'code': "2PACX-1vR9Prvp89ENtQRuBAAMDuBlsCEl1EbjlYoEjLGm-FXgLD0m5hnh3Dl7lTJ0pKdXvVEdiG31HGzVc3Yz",
+        'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
+        'slide': 'gca5806d471_0_0',
       }],
       'recording':{
         "type": "youtube",
@@ -385,14 +386,14 @@ syllabus = {
         }
       ],
       'activities': [activities['6dj72j28']],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Libraries",
       'desc': "c_libraries.html",
       'ppts': [{
         'title': "",
-        'code': "2PACX-1vTx26R7VRhz-2ozd7a2ygKQr6TVm7iSA94XNK-snT7Dc8BOs96bZ9Uh9GPYYYyGGXURqGr70mvWYVKf",
+        'code': "2PACX-1vQS-TvmRMekxSxfmQmh5i-N7DiaQxp3nAHRDykL9YHzhhDkXXy6a1-aZWmK_MmtL5GhHnHPPA7E91Ga",
       }],
       'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
       'harvard': [{
@@ -430,7 +431,7 @@ syllabus = {
         }
       ],
       'activities': [activities['k232kn34']],
-      'published': False
+      'published': True
     },
     {
       'title': "Algorithms: Searching",
