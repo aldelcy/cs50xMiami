@@ -468,7 +468,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=P3YID7liBug'
       }, ],
       'activities': [activities['h5j30345']],
-      'published': False
+      'published': True
     },
     {
       'title': "Algorithms: Sorting",
@@ -520,7 +520,7 @@ syllabus = {
         'url': 'https://www.youtube.com/watch?v=SLauY6PpjW4'
       }, ],
       'activities': [activities['344ij0i5']],
-      'published': False
+      'published': True
     },
     {
       'title': "Memory, Pointers & Structs",
