@@ -568,7 +568,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=hZ2Fy-J8DwQ'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "C: Data Structures (Linked Lists, Queues, Stacks ... )",
@@ -606,7 +606,7 @@ syllabus = {
       'resources': {
 
       },
-      'published': False
+      'published': True
     }
   ],
   'Midterm': [
