@@ -613,7 +613,7 @@ syllabus = {
     {
       'title': "C: Review, PSet Help",
       'desc': "This class will focus on Reviewing C and working os helping with Psets.",
-      'published': False
+      'published': True
     },
     {
       'title': "Midterm",
@@ -632,7 +632,7 @@ syllabus = {
         'desc': 'Review Document for Quiz 0',
         'url': '../static/data/review_0.pdf'
       }],
-      'published': False
+      'published': True
     }
   ],
   'Python': [{
@@ -653,7 +653,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [0, 2149]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Lists, Dictionaries and Tuples",
@@ -685,7 +685,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=W8KRzm-HUcc'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Methods and Functions",
@@ -723,7 +723,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [2149, 4390]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Operators, Main and Libraries",
