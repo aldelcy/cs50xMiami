@@ -728,6 +728,107 @@ challenges = {
 			'code'		: ''
 		}
 	},
+	"python_shopping_cart" : {
+		'title'	: "",
+		'desc'	: """
+			<h2> Welcome to PYTHON</h2>
+            I hope you're ready to have some fun :)<br><br>
+
+            Now that we've introduced python a bit compare to C. Let's see how we can recreate and improve a C assignement in python.<br>
+
+            First, we create a python file with the <code>.py</code> extension.<br>
+            We can name it <code>ShoppingCart.py</code><br> <br>
+
+            Ok, now that you have the file, here is your assignment:<br>
+            You are building a shopping cart for a store.<br>
+
+            You will need to first create a dictionaty of available items.<br>
+            The dictionarie's keys will be the name of the items.<br>
+            The values will be their respective prices.<br><br>
+
+            Example:<br>
+            <div class="codeBlock">
+                <code>inventory = {</code>
+                <code>    "Banana" : 1.97,</code>
+                <code>    "Milk"   : 2.45,</code>
+                <code>    ...</code>
+                <code>}</code>
+            </div>
+
+            <p>
+                Next, we create a user <code> cart </code> variable.<br>
+                You can make it an array or a dictionary. ( You can decide that after a few steps ).
+            </p>
+            <p>
+                <h3>From there, you can start writing your code.</h3>
+                The program will first ask the user for his name using a python <code>input("...")</code>.<br>
+                Then it will welcome the user to the store.<br><br>
+                The program will then ask the user what items they would like to buy.<br>
+                <code>note:</code> Do not show the available items to the user.<br>
+                The user will them type the item they want to buy.<br>
+                <code>note:</code> You should consider using a for loop or a while loop to keep asking the user to type items untill they type <code>done</code>
+            </p>
+            <p>
+                If the item exists in the inventory, you can go ahead and add it to the user's cart.
+                <code>Bonus: </code>
+                <div class="codeBlock">
+                    <code>Remember when you created the cart variable above? now is the time to decide what it should be.</code>
+                    <code>You can do one of 2 things, you can save the items names in an array.</code>
+                    <code>or you can same the name and the quantity in a dictionary where the key is the item name and the values is the quantity they wanna buy.</code>
+                    <code>If you do that however, you have to also ask the user how many they want right after you ask them the name of the item.</code>
+                </div>
+            </p>
+            <p>
+                If the item is not in the list of inventory. print out a message that tells the user that the item does not exist in the store.<br>
+                <code>Bonus: </code> Make to keep capitalization in mind. Users don't tend to be gramatically perfect.
+            </p>
+
+            <p>
+                OUUUFFF!!!! ok... you've gotten pretty far. Now let's finish this<br>
+                Now that the user has typed <code>done</code>. You can now do the final total.<br>
+                As a final output result for the program, run a for loop that adds the items that the user typed in and generated a total.<br><br>
+                <code>Bonus: </code> If you asked the user the amount of items they want each time, remember to multiply that by the cost of the item.<br>
+                <code>Example: 2 bananas at $1.97 would cost $3.94. so make sure to add $3.94 to the total, NOT $1.97</code>
+            </p>
+
+            <hr>
+
+            <h3><code>SUPER BONUS:</code></h3>
+            <p>Remember your tax Calcualtor from C?</p>
+            <p>Attempt to implement that same function in Python.</p>
+            <p>Use that function to calculate the final price of the cart including tax.</p>
+
+            <hr>
+
+            <h3><code>NINJA BONUS:</code></h3>
+            <p>In the tax Calcualtor, consider having a dictionary of different states and their respective tax.<br>
+            Ask the user their State<br>
+            Use the correct tax for that state in your final price calculation.</p>
+
+            <p>Maybe you want to also introduce a shipping cost function?.<br>
+            Use the same phylosophy as the tax calculator fucntion.<br>
+            Ask the user their State<br>
+            Use the correct shipping cost for that state and include that in your final price calculation.</p>
+            <hr>
+            <h3><code>WIZARD BONUS:</code></h3>
+            Let's kick it up a notch.<br>
+            Let's improve the inventory by adding a quantity and a price.<br><br>
+            Example:<br>
+            <div class="codeBlock">
+                <code>inventory = {</code>
+                <code>    "Banana" : {"qty": 12, "price": 1.97},</code>
+                <code>    "Milk"   : {"qty": 20, "price": 2.45},</code>
+                <code>    ...</code>
+                <code>}</code>
+            </div>
+
+            Now... Every time a user types in an item that is in the list, you should remove one item from the inventory.<br>
+            When the user has taken everything from the inventory, you should not add anymore of that item to his cart.<br>
+            For example if they've added all 12 bananas to their cart, and they try to add one more.<br>
+            You should tell them that there are no more bananas.<br>
+            The rest of the code continues as usual.
+		"""
+	}
 }
 
 activities = {
@@ -990,7 +1091,19 @@ activities = {
 		'solutions' : [],
 		'show_solutions': True,
 		'published' : True
-	}
+	},
+	"H2oj30-203jwjwj"  :   {
+		'id'        : 'H2oj30-203jwjwj',
+		'title'     : "Python Shopping Cart",
+		'preview'   : "In this activity, we will build a shopping cart in python",
+		'desc'      : """""",
+		'challenges': [
+			challenges['python_shopping_cart']
+		],
+		'solutions' : [],
+		'show_solutions': False,
+		'published' : True
+	},
 }
 
 def spydecoder( level, code ):

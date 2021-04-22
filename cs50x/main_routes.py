@@ -96,3 +96,7 @@ def alumni():
 @routes.route('/verification')
 def verification():
     return render_template('/verification.html', title="Verification")
+
+@routes.route('/test')
+def test():
+    return render_template('/test.html', title="test")
