@@ -768,7 +768,7 @@ syllabus = {
         'id': "fL308_-Kbt0",
         'time': [5120, 6489]
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Classes, Objects",
@@ -797,7 +797,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=ECMSnU9ilbQ'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "Python: Inheritance, Abstractions",
@@ -815,7 +815,7 @@ syllabus = {
         'desc': 'Python OOP Tutorial: Inheritance - Creating Subclasses',
         'url': 'https://www.youtube.com/watch?v=RSl87lqOXDE'
       }],
-      'published': False
+      'published': True
     },
   ],
   'Front_end': [{
