@@ -828,7 +828,108 @@ challenges = {
             You should tell them that there are no more bananas.<br>
             The rest of the code continues as usual.
 		"""
+	},
+	"python_store_classes" : {
+		"title" : "Python Store Classes",
+		"desc" : """
+			Awesome, you've mad it quite far.<br>
+            Now... let's take it up a notch.<br>
+            There are many things you can do to improve your past code... but let's focus on moving things forward. You can refactor later and spend more time playing with it.<br><br>
+
+            So far, you've been playing with functions and simple loops and writing everything in one page.<br>
+            Next you started working on moving code to separate helpers and modules.<br>
+            Now, let's work on building classes that help you perform operations in a more understandable manner :)<br><br>
+
+            First let's take a look at the project, whet do we have?<br>
+            <ul>
+                <li>A store.</li>
+                <li>A store's inventory.</li>
+                <li>Some products in that inventory with prices and quantity.</li>
+                <li>A shopping cart that holds the item and it's cart quantity.</li>
+                <li>A Tax formula by State.</li>
+                <li>A Shipping Formula by State.</li>
+            </ul><br>
+
+            We can think about breaking this down in a couple ways.<br>
+            What are they individual ELEMENTS of this particular scenario?<br>
+
+            <hr>
+
+            We can break it down to:<br>
+            <ul>
+            <li>Product</li>
+            <li>Inventory</li>
+            <li>Cart</li>
+            <li>Store</li>
+            </ul><br>
+
+            Each of these elements are responsible for their own set of attributes/states and actions/methods.<br>
+
+            For example:<br>
+            - A Product can have <code>name, price, type, sale_percentage</code> attributes amongst others.<br>
+            - If you want to be more specific, you can add: <code>id, barcode, expiration_date</code>, and other details tha individualize the product.<br><br>
+
+            Ok cool, a product doesn't exactly have any actions it can perform, but you can set some actions that you want the developer to be able to access from that product class.<br>
+            Here are a couple to get started:<br>
+            <code>def availabe()</code> This could return you a boolean of wether there is still some of that product in inventory.<br>
+            <b>BONUS:</b> <code>def expired()</code> Using the dateime module, this could compare the current date with the expiration date and return if the product is expired or not.<br><br>
+
+            Now that you have a <b>Product</b> class, we can think about the inventory.<br>
+            The Inventory class could be thought of like so...<br>
+            It has ONE attribute that holds a dictionary of <code>Product</code> objects, along with the <code>quantity</code> of products in the inventory.<br><br>
+
+            The actions an <b>Inventory</b> class can perform are to:<br>
+            <code>def addProduct(product, x)</code> This should take the product you want to add the to he Inventory and how many you would like to add.<br>
+            <code>def removeProduct(product, x)</code> This should take the product you want to remove the to he Inventory and how many you would like to remove.<br>
+            These can be used whenever you want to remove an item when you add to cart or when you confirm purchase.<br><br>
+            Finally, <code>def list()</code> This could print you a lisf of the items in inventory along with their prices.<br><br>
+
+            <hr>
+
+            Similarly, you can think about the <b>Cart</b> class in a similar manner:<br>
+            It has ONE attribute that holds a dictionary of <code>Product</code> objects, along with the <code>quantity</code> of products in the cart.<br><br>
+
+            The actions a <b>Cart</b> class can perform are to:<br>
+            <code>def addProduct(product, x)</code> This should take the product you want to add the to he Cart and how many you would like to add.<br>
+            <code>def removeProduct(product, x)</code> This should take the product you want to remove the to he Cart and how many you would like to remove.<br>
+            You should think about using the Inventory's classes to update the inventory.<br><br>
+            <code>def list()</code> This could print you a lisf of the items in the Cart along with their prices.<br>
+            <code>def total()</code> This could print you a SUM total of your cart's item prices.<br>
+
+            <hr>
+
+            <h3>NINJA BONUS:</h3><br>
+            Implement the __repr__ function in each class so that when I print the object alone, it prints me a summary of the object.<br><br>
+            Example:<br>
+
+            <div class="codeBlock">
+                <code>banana = Product("Banana", "Fruit", 0.4)</code>
+                <code>print( banana )</code>
+                <code>>> This is a Banana (Fruit) at $0.4</code>
+            </div>
+
+            <hr>
+
+            <h3>WIZARD BONUS:</h3><br>
+            In the Wizard Bonus, let's work on the <b>Store</b> Class.<br>
+            By now, you've go the gist of things.<br>
+            I want you to work on a Store Class that has the following attributes and actions:<br>
+
+            <b>Attributes</b><br>
+            <code>- name</code><br>
+            <code>- address</code><br>
+            <code>- type</code><br><br>
+
+            <b>Actions</b><br>
+            <code>greet_customer()</code> <br>
+            This is where you should ask the customer their names and greet them.<br><br>
+
+            <code>checkout()</code><br>
+            This is  where you should perform the inventory update. You've already done it in th Cart actions, you can do them here instead and save your system the repetition of doing it everytime you add the item to the cart.<br><br>
+            ... and any other actions that a store in the general sense can perform.<br>
+		"""
 	}
+
 }
 
 activities = {
@@ -1099,6 +1200,18 @@ activities = {
 		'desc'      : """""",
 		'challenges': [
 			challenges['python_shopping_cart']
+		],
+		'solutions' : [],
+		'show_solutions': False,
+		'published' : True
+	},
+	"HA20u1e1n1i"  :   {
+		'id'        : 'HA20u1e1n1i',
+		'title'     : "Python Shopping Cart Classes",
+		'preview'   : "In this activity, we will inprove on our shopping cart and make it stronger using python classes.",
+		'desc'      : """""",
+		'challenges': [
+			challenges['python_store_classes']
 		],
 		'solutions' : [],
 		'show_solutions': False,

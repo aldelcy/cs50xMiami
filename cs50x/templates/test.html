@@ -7,105 +7,102 @@
         <div class="col-sm-12">
             <h1>{{title}}</h1>
 
-            <h2> Welcome to PYTHON</h2>
-            I hope you're ready to have some fun :)<br><br>
+            <h2>Store Classes</h2>
+            Awesome, you've mad it quite far.<br>
+            Now... let's take it up a notch.<br>
+            There are many things you can do to improve your past code... but let's focus on moving things forward. You can refactor later and spend more time playing with it.<br><br>
 
-            Now that we've introduced python a bit compare to C. Let's see how we can recreate and improve a C assignement in python.<br>
+            So far, you've been playing with functions and simple loops and writing everything in one page.<br>
+            Next you started working on moving code to separate helpers and modules.<br>
+            Now, let's work on building classes that help you perform operations in a more understandable manner :)<br><br>
 
-            First, we create a python file with the <code>.py</code> extension.<br>
-            We can name it <code>ShoppingCart.py</code><br> <br>
+            First let's take a look at the project, whet do we have?<br>
+            <ul>
+                <li>A store.</li>
+                <li>A store's inventory.</li>
+                <li>Some products in that inventory with prices and quantity.</li>
+                <li>A shopping cart that holds the item and it's cart quantity.</li>
+                <li>A Tax formula by State.</li>
+                <li>A Shipping Formula by State.</li>
+            </ul><br>
 
-            Ok, now that you have the file, here is your assignment:<br>
-            You are building a shopping cart for a store.<br>
+            We can think about breaking this down in a couple ways.<br>
+            What are they individual ELEMENTS of this particular scenario?<br>
 
-            You will need to first create a dictionaty of available items.<br>
-            The dictionarie's keys will be the name of the items.<br>
-            The values will be their respective prices.<br><br>
+            <hr>
 
+            We can break it down to:<br>
+            <ul>
+            <li>Product</li>
+            <li>Inventory</li>
+            <li>Cart</li>
+            <li>Store</li>
+            </ul><br>
+
+            Each of these elements are responsible for their own set of attributes/states and actions/methods.<br>
+
+            For example:<br>
+            - A Product can have <code>name, price, type, sale_percentage</code> attributes amongst others.<br>
+            - If you want to be more specific, you can add: <code>id, barcode, expiration_date</code>, and other details tha individualize the product.<br><br>
+
+            Ok cool, a product doesn't exactly have any actions it can perform, but you can set some actions that you want the developer to be able to access from that product class.<br>
+            Here are a couple to get started:<br>
+            <code>def availabe()</code> This could return you a boolean of wether there is still some of that product in inventory.<br>
+            <b>BONUS:</b> <code>def expired()</code> Using the dateime module, this could compare the current date with the expiration date and return if the product is expired or not.<br><br>
+
+            Now that you have a <b>Product</b> class, we can think about the inventory.<br>
+            The Inventory class could be thought of like so...<br>
+            It has ONE attribute that holds a dictionary of <code>Product</code> objects, along with the <code>quantity</code> of products in the inventory.<br><br>
+
+            The actions an <b>Inventory</b> class can perform are to:<br>
+            <code>def addProduct(product, x)</code> This should take the product you want to add the to he Inventory and how many you would like to add.<br>
+            <code>def removeProduct(product, x)</code> This should take the product you want to remove the to he Inventory and how many you would like to remove.<br>
+            These can be used whenever you want to remove an item when you add to cart or when you confirm purchase.<br><br>
+            Finally, <code>def list()</code> This could print you a lisf of the items in inventory along with their prices.<br><br>
+
+            <hr>
+
+            Similarly, you can think about the <b>Cart</b> class in a similar manner:<br>
+            It has ONE attribute that holds a dictionary of <code>Product</code> objects, along with the <code>quantity</code> of products in the cart.<br><br>
+
+            The actions a <b>Cart</b> class can perform are to:<br>
+            <code>def addProduct(product, x)</code> This should take the product you want to add the to he Cart and how many you would like to add.<br>
+            <code>def removeProduct(product, x)</code> This should take the product you want to remove the to he Cart and how many you would like to remove.<br>
+            You should think about using the Inventory's classes to update the inventory.<br><br>
+            <code>def list()</code> This could print you a lisf of the items in the Cart along with their prices.<br>
+            <code>def total()</code> This could print you a SUM total of your cart's item prices.<br>
+
+            <hr>
+
+            <h3>NINJA BONUS:</h3><br>
+            Implement the __repr__ function in each class so that when I print the object alone, it prints me a summary of the object.<br><br>
             Example:<br>
+
             <div class="codeBlock">
-                <code>inventory = {</code>
-                <code>    "Banana" : 1.97,</code>
-                <code>    "Milk"   : 2.45,</code>
-                <code>    ...</code>
-                <code>}</code>
+                <code>banana = Product("Banana", "Fruit", 0.4)</code>
+                <code>print( banana )</code>
+                <code>>> This is a Banana (Fruit) at $0.4</code>
             </div>
 
-            <p>
-                Next, we create a user <code> cart </code> variable.<br>
-                You can make it an array or a dictionary. ( You can decide that after a few steps ).
-            </p>
-            <p>
-                <h3>From there, you can start writing your code.</h3>
-                The program will first ask the user for his name using a python <code>input("...")</code>.<br>
-                Then it will welcome the user to the store.<br><br>
-                The program will then ask the user what items they would like to buy.<br>
-                <code>note:</code> Do not show the available items to the user.<br>
-                The user will them type the item they want to buy.<br>
-                <code>note:</code> You should consider using a for loop or a while loop to keep asking the user to type items untill they type <code>done</code>
-            </p>
-            <p>
-                If the item exists in the inventory, you can go ahead and add it to the user's cart.
-                <code>Bonus: </code>
-                <div class="codeBlock">
-                    <code>Remember when you created the cart variable above? now is the time to decide what it should be.</code>
-                    <code>You can do one of 2 things, you can save the items names in an array.</code>
-                    <code>or you can same the name and the quantity in a dictionary where the key is the item name and the values is the quantity they wanna buy.</code>
-                    <code>If you do that however, you have to also ask the user how many they want right after you ask them the name of the item.</code>
-                </div>
-            </p>
-            <p>
-                If the item is not in the list of inventory. print out a message that tells the user that the item does not exist in the store.<br>
-                <code>Bonus: </code> Make to keep capitalization in mind. Users don't tend to be gramatically perfect.
-            </p>
-
-            <p>
-                OUUUFFF!!!! ok... you've gotten pretty far. Now let's finish this<br>
-                Now that the user has typed <code>done</code>. You can now do the final total.<br>
-                As a final output result for the program, run a for loop that adds the items that the user typed in and generated a total.<br><br>
-                <code>Bonus: </code> If you asked the user the amount of items they want each time, remember to multiply that by the cost of the item.<br>
-                <code>Example: 2 bananas at $1.97 would cost $3.94. so make sure to add $3.94 to the total, NOT $1.97</code>
-            </p>
-
             <hr>
 
-            <h3><code>SUPER BONUS:</code></h3>
-            <p>Remember your tax Calcualtor from C?</p>
-            <p>Attempt to implement that same function in Python.</p>
-            <p>Use that function to calculate the final price of the cart including tax.</p>
+            <h3>WIZARD BONUS:</h3><br>
+            In the Wizard Bonus, let's work on the <b>Store</b> Class.<br>
+            By now, you've go the gist of things.<br>
+            I want you to work on a Store Class that has the following attributes and actions:<br>
 
-            <hr>
+            <b>Attributes</b><br>
+            <code>- name</code><br>
+            <code>- address</code><br>
+            <code>- type</code><br><br>
 
-            <h3><code>NINJA BONUS:</code></h3>
-            <p>In the tax Calcualtor, consider having a dictionary of different states and their respective tax.<br>
-            Ask the user their State<br>
-            Use the correct tax for that state in your final price calculation.</p>
+            <b>Actions</b><br>
+            <code>greet_customer()</code> <br>
+            This is where you should ask the customer their names and greet them.<br><br>
 
-            <p>Maybe you want to also introduce a shipping cost function?.<br>
-            Use the same phylosophy as the tax calculator fucntion.<br>
-            Ask the user their State<br>
-            Use the correct shipping cost for that state and include that in your final price calculation.</p>
-            <hr>
-            <h3><code>WIZARD BONUS:</code></h3>
-            Let's kick it up a notch.<br>
-            Let's improve the inventory by adding a quantity and a price.<br><br>
-            Example:<br>
-            <div class="codeBlock">
-                <code>inventory = {</code>
-                <code>    "Banana" : {"qty": 12, "price": 1.97},</code>
-                <code>    "Milk"   : {"qty": 20, "price": 2.45},</code>
-                <code>    ...</code>
-                <code>}</code>
-            </div>
-
-            Now... Every time a user types in an item that is in the list, you should remove one item from the inventory.<br>
-            When the user has taken everything from the inventory, you should not add anymore of that item to his cart.<br>
-            For example if they've added all 12 bananas to their cart, and they try to add one more.<br>
-            You should tell them that there are no more bananas.<br>
-            The rest of the code continues as usual.
-
-
-
+            <code>checkout()</code><br>
+            This is  where you should perform the inventory update. You've already done it in th Cart actions, you can do them here instead and save your system the repetition of doing it everytime you add the item to the cart.<br><br>
+            ... and any other actions that a store in the general sense can perform.<br>
 
         </div>
     </div>
