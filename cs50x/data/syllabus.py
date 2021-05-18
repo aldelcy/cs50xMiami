@@ -931,7 +931,7 @@ syllabus = {
         'desc': 'Flask Controller basics',
         'url': 'https://www.youtube.com/watch?v=MwZwr5Tvyxo'
       }],
-      'published': False
+      'published': True
     },
     {
       'title': "MVC: Jinja2",
@@ -963,7 +963,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=QnDWIZuWYW0'
         }
       ],
-      'published': False
+      'published': True
     }
   ],
   'MVC2': [{
