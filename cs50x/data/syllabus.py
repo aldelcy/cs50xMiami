@@ -1000,6 +1000,12 @@ syllabus = {
           'title': 'IMPORTANT :: Flask Basics: part 4',
           'desc': 'SQL and Databases',
           'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
+        },
+        {
+          'type': 'link',
+          'title': 'Khan Academy',
+          'desc': 'Practice SQL',
+          'url': 'https://www.khanacademy.org/computing/computer-programming/sql'
         }
       ],
       'published': True
