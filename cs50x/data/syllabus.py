@@ -1002,7 +1002,7 @@ syllabus = {
           'url': 'https://www.youtube.com/watch?v=cYWiDiIUxQc'
         }
       ],
-      'published': False
+      'published': True
     },
     {
       'title': "MVC: CS50 SQL Library",
@@ -1027,7 +1027,7 @@ syllabus = {
         'desc': 'Form Validation',
         'url': 'https://www.youtube.com/watch?v=UIJKdCIEXUQ'
       }],
-      'published': False
+      'published': True
     }
   ],
   'Final': [{
