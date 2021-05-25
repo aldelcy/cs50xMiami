@@ -830,7 +830,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/8/',
       'harvard': [{
           'title': 'HTML',
           'id': "uEmF74eHRO8",
@@ -874,7 +874,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/8/',
       'harvard': [{
         'title': 'HTML',
         'id': "uEmF74eHRO8",
@@ -915,7 +915,7 @@ syllabus = {
         'title': "",
         'code': "2PACX-1vRzUoWmEYk--3RYwARkTGqQnTBzY5IdzJIhatNy1RZzsrsZfmPpoz-EIwWXZM1IVnUpR1GGKpLitx1T",
       }],
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/9/',
       'harvard': [{
         'title': 'FLASK',
         'id': "pP23CtOI-1U",
@@ -944,7 +944,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/9/',
       'harvard': [{
         'title': 'FLASK',
         'id': "pP23CtOI-1U",
@@ -977,7 +977,7 @@ syllabus = {
         "type": "dropbox",
         "code": ""
       },
-      'harvard_link': 'https://cs50.harvard.edu/x/2020/weeks/0/',
+      'harvard_link': 'https://cs50.harvard.edu/x/2021/weeks/7/',
       'harvard': [{
           'title': 'SQL Overview',
           'id': "u5pDdEKnbKA",
