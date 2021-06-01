@@ -1036,20 +1036,7 @@ syllabus = {
       'published': True
     }
   ],
-  'Final': [{
-      'title': "Final Week",
-      'desc': "",
-      'ppts': [{
-        'title': "",
-        'code': "2PACX-1vSgq5_zCPFe5aaLBgOltujqv68y2DWXVpLdDOSODrioa1oJPwnPly8ipckso-RVBQwdQRH5liMjZUEp",
-      }],
-      'recording':{
-        "type": "dropbox",
-        "code": ""
-      },
-      'resources': [],
-      'published': False
-    },
+  'Final': [
     {
       'title': "Building and App :: Planning",
       'desc': "",
@@ -1062,7 +1049,21 @@ syllabus = {
         "code": ""
       },
       'resources': [],
-      'published': False
+      'published': True
+    },
+    {
+      'title': "Final Week",
+      'desc': "",
+      'ppts': [{
+        'title': "",
+        'code': "2PACX-1vSgq5_zCPFe5aaLBgOltujqv68y2DWXVpLdDOSODrioa1oJPwnPly8ipckso-RVBQwdQRH5liMjZUEp",
+      }],
+      'recording':{
+        "type": "dropbox",
+        "code": ""
+      },
+      'resources': [],
+      'published': True
     }
   ],
   'Full_app': [{
